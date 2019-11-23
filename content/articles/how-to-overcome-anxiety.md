@@ -1,7 +1,7 @@
 ---
 title: "How to Overcome Anxiety"
 date: 2019-11-16T11:36:02Z
-draft: true
+draft: false
 type: article
 tags: ["anxiety"]
 categories: ["mental-health"]

@@ -1,7 +1,7 @@
 ---
 title: "So I met a girl on Instagram"
 date: 2019-11-16T11:36:02Z
-draft: true
+draft: false
 type: article
 tags: ["relationships"]
 categories: ["relationships"]
