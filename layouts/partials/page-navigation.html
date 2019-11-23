@@ -6,7 +6,7 @@
                     <ul class="featured">
                         
                         <li class="bg-gradient-text">//</li>
-                        {{- $scratch := newScratch  -}}
+                        {{- $scratch := newScratch -}}
                         {{- $scratch.Set "myLimit" 0 }}
                         {{- range $name, $items := site.Taxonomies.tags }}
                         {{- $scratch.Set "myLimit" (add ($scratch.Get "myLimit") 1) }}
