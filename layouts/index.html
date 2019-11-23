@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+    {{ partial "page-navigation.html" }}
+
+    <!-- PAGE HEADER -->
+    {{ partial "page-header.html" }}
+
+    <!-- VIDEO OF THE DAY -->
+    <div class="section var-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="title videos"><i class="fas fa-video"></i> Featured</h2>
+                    <h5 class="subtitle">A GOOD LIFE, TOO: Alonzo Clemons</h5>
+                </div>
+                <div class="col s12 m8">
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="border-gradient"><iframe
+                            src="https://player.vimeo.com/video/68863716?autoplay=0&color=ffffff&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+                            allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="col s12 m4">
+                    <h4>A GOOD LIFE, TOO: Alonzo Clemons</h4>
+                    <p>
+                        When he was a toddler, Alonzo Clemons suffered a brain injury. It forever changed the way he learns and
+                        communicates but
+                        also the way he interprets the world around him. Very early it became clear to Alonzo that he had to sculpt. He
+                        was
+                        institutionalized for ten years in a state hospital which wasn't a pleasant experience, but he continued to find
+                        ways to
+                        make delicate figures with his hands. When they wouldn't give him clay, he would scrape warm tar from the
+                        parking lot.
+                    </p>
+                    <a href="#">More on Vimeo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INSPIRATIONAL CELEBS-->
+    <div class="section">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title news">Inspirational Celebs</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                {{ range .Site.Data.news.celebrity.source }}
+                <div class="col s6 m6 l3">
+                    <div class="card">
+                        <img src="{{.image}}" />
+                        <h6 class="heading">{{ .source }}</h6>
+                        <h4 class="caption"><a href="{{ .url }}">{{ .title }}</a></h4>
+                        <!-- <h5 class="age">1h ago</h5> -->
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+
+    <!-- REAL PEOPLE -->
+    <div class="section var-1">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title news">Ordinary people doing extraordinary things</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                {{ range .Site.Data.news.realpeople.source }}
+                <div class="col s6 m6 l3">
+                    <div class="card">
+                        <img src="{{.image}}" />
+                        <h6 class="heading">{{ .source }}</h6>
+                        <h4 class="caption"><a href="{{ .url }}">{{ .title }}</a></h4>
+                        <!-- <h5 class="age">1h ago</h5> -->
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ARTICLES -->
+    <div class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title articles">Real-life stories to inspire you</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/articles">View All Articles</a></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                {{ range where .Site.Pages "Type" "article" }}
+                <div class="col s6 m6 l3">
+                    <div class="card {{ .Type }}">
+                        <article>
+                            <img src="{{.Params.image}}" />
+                            <h5 class="heading"><a href="/authors/{{- .Params.authors -}}">{{ .Params.authors }}</a></h5>
+                            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        </article>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- QUOTES -->
+    <div class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title quotes">Quote Collections</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/categories">View All Collections</a></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                {{ range where .Site.Pages "Type" "categories" }}
+                    {{ if ne .Title "Categories" }}
+                    <div class="col s6 m6 l3">
+                        <div class="card {{ .Type }}">
+                            <article>
+                                <img src="{{.Params.image}}" />
+                                <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            </article>
+                        </div>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="section var-2">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title videos">Handpicked Inspirational Videos</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/inspirational-videos">View All Videos</a></h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- <i class="fas fa-video fas-background"></i> -->
+                {{ range where .Site.Pages "Type" "video" }}
+                <div class="col s6 m6 l3">
+                    <div class="card {{ .Type }}">
+                        <img src="{{.Params.image}}" />
+                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }} </a></h4>
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <!-- TAGS -->
+    <div class="section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3 class="title">Browse by Tag</h3>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="subtitle right"><a href="/tags">View All Tags</a></h3>
+                </div>
+            </div>
+            
+            <div class="row">
+
+                {{- $.Scratch.Set "myLimit" 0 }}
+                {{- range $name, $items := .Site.Taxonomies.tags }}
+                {{- $.Scratch.Set "myLimit" (add ($.Scratch.Get "myLimit") 1) }}
+                {{- if le ($.Scratch.Get "myLimit") ($.Site.Param "tagsLimit_HomePage") }}
+                <div class="col s6 m6 l3">
+                    <div class="card tag">
+                        <h3><a class="tag" href="{{ $.Site.BaseURL }}/tags/{{ $name | urlize | lower }}">{{ $name }}</a></h3>
+                    </div>
+                </div>
+                {{- end }}
+                {{- end }}
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE FOOTER AND SCRIPTS -->
+    {{ partial "page-footer" }}
+
+</body>
+
+</html>

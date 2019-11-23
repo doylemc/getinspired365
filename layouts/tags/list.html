@@ -1,0 +1,26 @@
+{{ define "content" }}
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12">
+                <h2>Content tagged with <strong class="border-bottom-gradient">{{ .Title | humanize }}</strong></h2>
+            </div>
+
+            {{ range .Pages }}
+            <div class="col s6 m6 l3">
+                <div class="card {{ .Type }}">
+                    <article>
+                        <img src="{{.Params.image}}" />
+                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    </article>
+                </div>
+            </div>
+            {{ end }}
+
+        </div>
+    </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,12 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "GETINSPIRED365 | Inspiration"
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  video = "videos"
+  
+ [params]
+ tagsLimit_TopBar = 5
+ tagsLimit_HomePage = 8
