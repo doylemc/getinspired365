@@ -8,9 +8,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/materialize.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -29,19 +27,25 @@
     <div class="section var-2">
         <div class="container">
             <div class="row">
-                <div class="col s12">
-                    <h2 class="title videos"><i class="fas fa-video"></i> Featured</h2>
+
+                <!-- <div class="col s12">
                     <h5 class="subtitle">A GOOD LIFE, TOO: Alonzo Clemons</h5>
+                    <h2 class="title">Featured</h2>
+                </div> -->
+
+                <div class="col s12">
+                    <h2 class="title">A GOOD LIFE, TOO: Alonzo Clemons</h2>
                 </div>
+
                 <div class="col s12 m8">
-                    <div style="padding:56.25% 0 0 0;position:relative;" class="border-gradient"><iframe
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="b-gradient bw2"><iframe
                             src="https://player.vimeo.com/video/68863716?autoplay=0&color=ffffff&title=0&byline=0&portrait=0"
                             style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
                             allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
                 <div class="col s12 m4">
-                    <h4>A GOOD LIFE, TOO: Alonzo Clemons</h4>
+                    <h3>Alonzo Clemons</h3>
                     <p>
                         When he was a toddler, Alonzo Clemons suffered a brain injury. It forever changed the way he learns and
                         communicates but
@@ -52,19 +56,19 @@
                         make delicate figures with his hands. When they wouldn't give him clay, he would scrape warm tar from the
                         parking lot.
                     </p>
-                    <a href="#">More on Vimeo</a>
+                    <a href="/inspirational-videos" target="_blank" class="btn">> More Inspirational Videos</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- INSPIRATIONAL CELEBS-->
-    <div class="section">
+    <div class="section var-1">
         <div class="container">
             
             <div class="row">
                 <div class="col s12 m6">
-                    <h3 class="title news">Inspirational Celebs</h3>
+                    <h2 class="title">Inspirational Celebs</h2>
                 </div>
                 <div class="col s12 m6">
                     <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
@@ -72,8 +76,10 @@
             </div>
 
             <div class="row">
+                <div class="col l6">
+
                 {{ range .Site.Data.news.celebrity.source }}
-                <div class="col s6 m6 l3">
+                <div class="col s6 m6 l6">
                     <div class="card">
                         <img src="{{.image}}" />
                         <h6 class="heading">{{ .source }}</h6>
@@ -82,18 +88,19 @@
                     </div>
                 </div>
                 {{ end }}
+                </div>
             </div>
 
         </div>
     </div>
 
     <!-- REAL PEOPLE -->
-    <div class="section var-1">
+    <div class="section">
         <div class="container">
 
             <div class="row">
                 <div class="col s12 m6">
-                    <h3 class="title news">Ordinary people doing extraordinary things</h3>
+                    <h2 class="title news">Real-Life Inspiration</h2>
                 </div>
                 <div class="col s12 m6">
                     <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
@@ -117,12 +124,12 @@
     </div>
 
     <!-- ARTICLES -->
-    <div class="section">
+    <div class="section var-1">
         <div class="container">
 
             <div class="row">
                 <div class="col s12 m6">
-                    <h3 class="title articles">Real-life stories to inspire you</h3>
+                    <h2 class="title articles">Get Inspired Originals</h2>
                 </div>
                 <div class="col s12 m6">
                     <h5 class="subtitle right"><a href="/articles">View All Articles</a></h3>
@@ -147,7 +154,7 @@
     </div>
 
     <!-- QUOTES -->
-    <div class="section">
+    <div class="section var-3">
         <div class="container">
 
             <div class="row">
