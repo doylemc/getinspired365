@@ -3,14 +3,15 @@ title: "Never stop believing"
 date: 2019-11-16T11:36:02Z
 draft: false
 type: article
-tags: ["sport"]
+tags: ["sport", "celebrity"]
 categories: ["mental-health"]
 authors: ["Steve Whyley"]
 image: "https://images.unsplash.com/photo-1542683305-710078a12f73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
 featured: 1
+summary: "Barcelona scored three times in six minutes and completed what seemed an impossible comeback."
 ---
 
-Barcelona scored three times in six minutes and completed what seemed an impossible comeback.
+{{< param summary >}}
 
 {{< figure src="https://images.unsplash.com/photo-1523495338267-31cbca7759e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" attr="Unsplash | Fernando" attrlink="https://unsplash.com/@dearferdo" >}}
 

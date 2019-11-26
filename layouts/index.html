@@ -24,21 +24,16 @@
     {{ partial "page-header.html" }}
 
     <!-- VIDEO OF THE DAY -->
-    <div class="section var-2">
+    <div class="section">
         <div class="container">
             <div class="row">
-
-                <!-- <div class="col s12">
-                    <h5 class="subtitle">A GOOD LIFE, TOO: Alonzo Clemons</h5>
-                    <h2 class="title">Featured</h2>
-                </div> -->
 
                 <div class="col s12">
                     <h2 class="title">A GOOD LIFE, TOO: Alonzo Clemons</h2>
                 </div>
 
                 <div class="col s12 m8">
-                    <div style="padding:56.25% 0 0 0;position:relative;" class="b-gradient bw2"><iframe
+                    <div style="padding:56.25% 0 0 0;position:relative;" class="b-featured"><iframe
                             src="https://player.vimeo.com/video/68863716?autoplay=0&color=ffffff&title=0&byline=0&portrait=0"
                             style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
                             allowfullscreen></iframe></div>
@@ -56,96 +51,61 @@
                         make delicate figures with his hands. When they wouldn't give him clay, he would scrape warm tar from the
                         parking lot.
                     </p>
-                    <a href="/inspirational-videos" target="_blank" class="btn">> More Inspirational Videos</a>
+                    <a href="/inspirational-videos" class="btn video">> More Inspirational Videos</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- INSPIRATIONAL CELEBS-->
+    <!-- NEWS -->
     <div class="section var-1">
         <div class="container">
-            
             <div class="row">
-                <div class="col s12 m6">
-                    <h2 class="title">Inspirational Celebs</h2>
-                </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col l6">
-
-                {{ range .Site.Data.news.celebrity.source }}
-                <div class="col s6 m6 l6">
-                    <div class="card">
-                        <img src="{{.image}}" />
-                        <h6 class="heading">{{ .source }}</h6>
-                        <h4 class="caption"><a href="{{ .url }}">{{ .title }}</a></h4>
-                        <!-- <h5 class="age">1h ago</h5> -->
+                <div class="col s12 m9">
+                    <h2 class="title news">Celebrity Inspiration</h2>
+                    {{ range first 6 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "celebrity") }}
+                    <div class="col s6 m6 l4">
+                        {{ partial "card-news.html" . }}
                     </div>
+                    {{ end }}
                 </div>
-                {{ end }}
+                <div class="col s12 m3">
+                    <h2 class="title news">Real-Life Heroes</h2>
+                    {{ range first 5 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "real-life") }}
+                    <div class="col s6 l12">
+                        {{ partial "card-news.html" . }}
+                    </div>
+                    {{ end }}
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- REAL PEOPLE -->
-    <div class="section">
-        <div class="container">
-
-            <div class="row">
-                <div class="col s12 m6">
-                    <h2 class="title news">Real-Life Inspiration</h2>
-                </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/news">View All News Stories</a></h3>
-                </div>
-            </div>
-
-            <div class="row">
-                {{ range .Site.Data.news.realpeople.source }}
-                <div class="col s6 m6 l3">
-                    <div class="card">
-                        <img src="{{.image}}" />
-                        <h6 class="heading">{{ .source }}</h6>
-                        <h4 class="caption"><a href="{{ .url }}">{{ .title }}</a></h4>
-                        <!-- <h5 class="age">1h ago</h5> -->
-                    </div>
-                </div>
-                {{ end }}
-            </div>
-
-        </div>
-    </div>
 
     <!-- ARTICLES -->
-    <div class="section var-1">
-        <div class="container">
+    <div class="section">
+        <div class="container1">
 
             <div class="row">
-                <div class="col s12 m6">
-                    <h2 class="title articles">Get Inspired Originals</h2>
-                </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/articles">View All Articles</a></h3>
-                </div>
-            </div>
+                <div class="col s6 l2 offset-l1">
+                    <!-- <br><br> -->
+                    <br>
+                    <h2 class="title">STORIES TO <span class="bb-gradient">MOVE</span> ...YOU</h2>
+                    <h4 class="">
+                        GetInspired's original articles feaure stories which will move you, incredible stories about real people experiencing and overcoming life's challenges.
+                    </h4>
+                    <br>
+                    <a href="/articles" class="btn article">> View more articles</a>
+                                        <!-- <h6 class="">
+                                            "The human spirit is more powerful than any drug - and that is what needs to be nourished: with work, play,
+                                            friendship, family. These are the things that matter." <br> - Robin Williams
+                                        </h6> -->
 
-            <div class="row">
-                {{ range where .Site.Pages "Type" "article" }}
-                <div class="col s6 m6 l3">
-                    <div class="card {{ .Type }}">
-                        <article>
-                            <img src="{{.Params.image}}" />
-                            <h5 class="heading"><a href="/authors/{{- .Params.authors -}}">{{ .Params.authors }}</a></h5>
-                            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                        </article>
-                    </div>
+                </div>
+
+                {{ range first 4 (where .Site.Pages "Type" "article") }}
+                <div class="col s6 m6 l2">
+                    {{ partial "card-article.html" . }}
                 </div>
                 {{ end }}
             </div>
@@ -158,16 +118,17 @@
         <div class="container">
 
             <div class="row">
-                <div class="col s12 m6">
-                    <h3 class="title quotes">Quote Collections</h3>
+                <div class="col s12 l7">
+                    <h3 class="title quotes">Quotes By Topic</h3>
                 </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/categories">View All Collections</a></h3>
+                <div class="col s12 l5">
+                    <h5 class="subtitle right"><a href="/categories">View All Topics</a></h3>
                 </div>
             </div>
 
             <div class="row">
-                {{ range where .Site.Pages "Type" "categories" }}
+                <div class="col s12 l9">
+                    {{ range where .Site.Pages "Type" "categories" }}
                     {{ if ne .Title "Categories" }}
                     <div class="col s6 m6 l3">
                         <div class="card {{ .Type }}">
@@ -178,14 +139,35 @@
                         </div>
                     </div>
                     {{ end }}
-                {{ end }}
+                    {{ end }}
+                </div>
+                <div class="col s12 l3 bg-trianglify br z-depth-5">
+                    <br>
+                    <h3 class="title quotes bb-gradient">3 Quotes we like today</h3>
+                    <br>
+                    <h3><i class="fas fa-dice-one1 bg-gradient-text"></i>
+                        "If you don't follow your heart, you might spend the rest of your life wishing you had."</h3>
+                    <h6>- Brigitte Nicole</h6>
+                    <br>
+                    <h3><i class="fas fa-dice-two1 bg-gradient-text"></i>
+                        "There is only one thing that makes a dream impossible to achieve: the fear of failure."</h3>
+                    <h6>- From the film The Alchemist</h6>
+                    <br>
+                    <h3><i class="fas fa-dice-three1 bg-gradient-text"></i>
+                    "Everyone has talent. What's rare is the courage to follow it to the dark places where it leads."
+                    </h3>
+                    <h6>- Erica Jong</h6>
+                    <br>
+                    <a href="/categories" class="btn quote">> View All Topics</a>
+                    <br><br><br>
+                </div>
             </div>
     
         </div>
     </div>
 
     <!-- VIDEOS -->
-    <div class="section var-2">
+    <div class="section videos var-1">
         <div class="container">
 
             <div class="row">

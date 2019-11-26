@@ -10,12 +10,16 @@
 
             {{ range .Pages }}
             <div class="col s6 m6 l3">
-                <div class="card {{ .Type }}">
-                    <article>
-                        <img src="{{.Params.image}}" />
-                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    </article>
-                </div>
+                {{ if eq .Type "article"}}
+                    {{ partial "card-article.html" . }}
+                {{ else }}
+                    <div class="card {{ .Type }}">
+                        <article>
+                            <img src="{{.Params.image}}" />
+                            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                        </article>
+                    </div>
+                {{ end }}
             </div>
             {{ end }}
 

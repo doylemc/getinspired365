@@ -62,14 +62,14 @@
         <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){
 		var title = document.getElementsByTagName('title')[0].innerHTML;
 		title = encodeURIComponent(title) ;
-		var selection = '';
+        var selection = '';
 		if (window.getSelection) {
 		selection = window.getSelection().toString();
 		} else if (document.selection &amp;&amp; document.selection.type != 'Control') {
 		selection = document.selection.createRange().text;
 		}
-		selection = encodeURIComponent(selection);
-		new_window=window.open('http://localhost:1313/bookmark.html?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=700,location=0'); })();">Post GI News</a></p>
+        selection = encodeURIComponent(selection);
+		new_window=window.open('http://localhost:1313/bookmark.html?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'GetInspiredPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=700,location=0'); })();">Post GI News</a></p>
     
     </div>
     <script>
@@ -129,7 +129,6 @@
             var image = $('#p_image').val();
 
             var p_body = '---\n';
-            p_body = p_body + 'layout: news \n';
             p_body = p_body + 'date: ' + post_date() + ' \n';
             p_body = p_body + 'source: "' + source + '" \n';
             p_body = p_body + 'title: "' + title + '" \n';
@@ -141,7 +140,9 @@
             // p_body = p_body + 'tags:\n  - links\n';
 
             p_body = p_body + '---\n';
+            p_body = p_body + '{{< figure src="' + image + '" title="' + title + '" >}}';
             p_body = p_body + '\n' + $('#p_body').val();
+            p_body = p_body + '\n' + "<br/><br/><br/>\n<a href='" + link + "' class='btn' target='_blank'>View Full Article</a>"
 
             var posted_ok = false;
             $.ajax({
@@ -159,7 +160,7 @@
                 },
                 success: function (data) {
                     posted_ok = true;
-                    $('#container1').html('<h2>Successfully posted to GetInspired365</h2');
+                    $('#container1').html('<h2>Posted to GetInspired365</h2');
                 },
                 error: function (request, status, error) {
                     responseText = jQuery.parseJSON(request.responseText);
@@ -181,7 +182,7 @@
                 $('#p_title').val(src_title);
             }
             if (query_params['selection']) {
-                var src_body = '> ' + query_params['selection'];
+                var src_body = query_params['selection'];
             }
             if (query_params['body']) {
                 var src_body = query_params['body'];

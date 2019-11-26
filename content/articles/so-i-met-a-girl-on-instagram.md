@@ -8,10 +8,11 @@ categories: ["relationships"]
 authors: ["Mike Doyle"]
 image: https://images.unsplash.com/photo-1490111718993-d98654ce6cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
 featured: 1
+summary: "This is the brilliant love story of a 22 year old missionary serving in the slums in Kenya who happened across a picture of a 20 year old youth pastor on Instagram."
 ---
 
-This is the brilliant love story of a 22 year old missionary serving in the slums in Kenya who happened across a picture of a 20 year old youth pastor on Instagram.
-
+{{< param summary >}}
+    
 {{< figure src="https://images.unsplash.com/photo-1490111718993-d98654ce6cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" attr="Unsplash | Joshua Ness" attrlink="https://unsplash.com/@theexplorerdad" >}}
 
 She was a 20 year old youth pastor and was really cute. I found her on a hashtag and followed her instantly. I then went through all of her pictures and liked them all! It was a bold strategy to get her attention and it worked

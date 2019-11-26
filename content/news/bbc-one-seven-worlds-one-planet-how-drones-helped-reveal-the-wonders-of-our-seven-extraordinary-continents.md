@@ -3,8 +3,9 @@ date: 2019-11-24T19:36:22.787Z
 source: "BBC" 
 title: "BBC One - Seven Worlds, One Planet - How drones helped reveal the wonders of our seven extraordinary continents" 
 link: "https://www.bbc.co.uk/programmes/articles/4XWP81RTYF36HNc4GT2G00M/how-drones-helped-reveal-the-wonders-of-our-seven-extraordinary-continents" 
-tags: "natured" 
+tags: "nature" 
 image: "https://ichef.bbci.co.uk/images/ic/1008xn/p07v2jrq.jpg" 
+type: "news"
 ---
 {{< figure src="https://ichef.bbci.co.uk/images/ic/1008xn/p07v2jrq.jpg" title="BBC One - Seven Worlds, One Planet - How drones helped reveal the wonders of our seven extraordinary continents" >}}
 Whether above ground in the dense jungles of Borneo or below it in Slovenia’s remote cave system, drones proved vital in capturing the extraordinary moments featured across the series.

@@ -1,0 +1,12 @@
+<div class="card {{ .Type }}">
+    <article>
+        <img src="{{ .Params.Image }}" />
+        <div class="meta">
+            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+            {{ if isset .Params "summary" }}
+            <p class="clearfix">{{ .Summary }}</p>
+            {{ end }}
+            <a href="{{ .Page.Permalink }}" class="btn article">Read Article Now</a>
+        </div>
+    </article>
+</div>

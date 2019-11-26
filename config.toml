@@ -5,8 +5,7 @@ title = "GETINSPIRED365 | Inspiration"
 [taxonomies]
   author = "authors"
   tag = "tags"
-  video = "videos"
   
- [params]
+[params]
  tagsLimit_TopBar = 5
  tagsLimit_HomePage = 8

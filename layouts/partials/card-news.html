@@ -1,0 +1,18 @@
+<div class="card">
+    <img src="{{ .Params.image}}" />
+    {{- $source:= replace .Params.source " " "-" -}}
+    {{- $source:= lower $source -}}
+    <h6 class="heading ns-{{- $source -}}">{{ .Params.source }}</h6>
+    <h4 class="caption"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h4>
+    {{ $t := (time .Params.date) }}
+    {{ $n := (time now) }}
+    {{ $delta := $t.Sub ($n) }}
+    {{ $delta := int (mul $delta.Minutes -1) }}
+    {{ if lt $delta 60 }}
+    <h6 class="age">{{ $delta }}m ago</h6>
+    {{ else if lt $delta 1440 }}
+    <h6 class="age">{{ div $delta 60 }}h ago</h6>
+    {{ else }}
+    <h6 class="age">{{ div $delta 1440 }}d ago</h6>
+    {{ end}}
+</div>

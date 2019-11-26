@@ -8,9 +8,10 @@ categories: ["mental-health"]
 authors: ["Steve Whyley"]
 image: "https://images.unsplash.com/photo-1523495338267-31cbca7759e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
 featured: 1
+summary: "Married to an anxiety sufferer, Steve takes a look at things you and your partner can do to help improve it and even eventually overcome it."
 ---
 
-Married to an anxiety sufferer, Steve takes a look at things you and your partner can do to help improve it and even eventually overcome it.
+{{< param summary >}}
 
 {{< figure src="https://images.unsplash.com/photo-1523495338267-31cbca7759e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" attr="Unsplash | Fernando" attrlink="https://unsplash.com/@dearferdo" >}}
 
