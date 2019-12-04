@@ -1,28 +1,113 @@
 {{ define "content" }}
 
-<div class="section">
+<div class="section no-pad var-2a">
     <div class="container">
         <div class="row">
-
-            <div class="col s12">
-                <h2>Content tagged with <strong class="border-bottom-gradient">{{ .Title | humanize }}</strong></h2>
-            </div>
-
-            {{ range .Pages }}
+            {{- range .Pages -}}
             <div class="col s6 m6 l3">
-                {{ if eq .Type "article"}}
-                    {{ partial "card-article.html" . }}
-                {{ else }}
-                    <div class="card {{ .Type }}">
-                        <article>
-                            <img src="{{.Params.image}}" />
-                            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                        </article>
-                    </div>
-                {{ end }}
+                {{- partial "card-article.html" . -}}
             </div>
-            {{ end }}
+            {{- end -}}
+        </div>
+    </div>
+</div>
 
+<!-- COUNT THE DIFFERENT TYPES OF RESULT AND ONLY DISPLAY IF > 0 -->
+{{- $.Scratch.Set "news" 0 -}}
+{{- $.Scratch.Set "articles" 0 -}}
+{{- $.Scratch.Set "quotes_by_topic" 0 -}}
+{{- $.Scratch.Set "quotes_by_author" 0 -}}
+
+{{- range .Pages -}}
+    {{- if eq .Type "news" -}}
+        {{- $.Scratch.Set "news" (add ($.Scratch.Get "news") 1 ) -}}
+    {{- else if eq .Type "articles" -}}
+        {{- $.Scratch.Set "articles" (add ($.Scratch.Get "articles") 1 ) -}}
+    {{- else if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
+        {{- $.Scratch.Set "quotes_by_topic" (add ($.Scratch.Get "quotes_by_topic") 1 ) -}}
+    {{- else if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
+        {{- $.Scratch.Set "quotes_by_author" (add ($.Scratch.Get "quotes_by_author") 1 ) -}}
+    {{- end -}}
+{{- end -}}
+
+<!-- NEWS -->
+{{- if gt ($.Scratch.Get "news") 0 -}}
+<div class="section no-pad var-2a">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>News tagged with <strong class="bb-gradient">{{ .Title | humanize }}</strong></h2>
+            </div>
+            {{- range .Pages -}}
+                {{- if eq .Type "news" -}}
+                    <div class="col s6 m6 l2">
+                        {{- partial "card-news.html" . -}}
+                    </div>
+                {{- end -}}
+            {{- end -}}
+            </div>
+        </div>
+    </div>
+</div>  
+
+{{- end -}}
+
+<!-- ARTICLES -->
+<div class="section no-pad">
+    <div class="container">
+        <div class="row">
+            {{- if gt ($.Scratch.Get "articles") 0 -}}
+            <div class="col s12">
+                <h2>Articles tagged with <strong class="bb-gradient">{{ .Title | humanize }}</strong></h2>
+            </div>
+            {{- range .Pages -}}
+                {{- if eq .Type "articles" -}}
+                    <div class="col s6 m6 l3">
+                        {{- partial "card-article.html" . -}}
+                    </div>
+                {{- end -}}
+            {{- end -}}
+            {{- end -}}
+        </div>
+    </div>
+</div>
+
+<!-- QUOTES BY TOPIC -->
+<div class="section no-pad">
+    <div class="container">
+        <div class="row">
+            {{- if gt ($.Scratch.Get "quotes_by_topic") 0 -}}
+                <div class="col s12">
+                    <h2>Topics tagged with <strong class="bb-gradient">{{ .Title | humanize }}</strong></h2>
+                </div>
+                {{- range .Pages -}}
+                    {{- if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
+                        <div class="col s6 m6 l3">
+                            {{- partial "card-quotes-by-topic.html" . -}}
+                        </div>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        </div>
+    </div>
+</div>
+
+<!-- QUOTES BY AUTHOR -->
+<div class="section no-pad">
+    <div class="container">
+        <div class="row">
+            {{- if gt ($.Scratch.Get "quotes_by_author") 0 -}}
+                <div class="col s12">
+                    <h2>Authors tagged with <strong class="bb-gradient">{{ .Title | humanize }}</strong></h2>
+                </div>
+                {{- range .Pages -}}
+                    {{- if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
+                        <div class="col s6 m3 l2">
+                            {{- partial "card-quotes-by-author.html" . -}}
+                        </div>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
         </div>
     </div>
 </div>

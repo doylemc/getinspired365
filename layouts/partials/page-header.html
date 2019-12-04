@@ -2,11 +2,22 @@
     <div class="container">
         <div class="row no-margin-bottom">
             <header>
-
                 <div class="col s12 m5">
                     <!-- LOGO -->
                     <div class="logo">
-                        <h3><a href="{{ site.BaseURL }}">GETINSPIRED365</h3>
+                        {{- if eq .Title "getinspired365" -}}
+                            <h3 class="gradient-text"><a href="{{ site.BaseURL }}">Welcome to GetInspired365</a></h3>
+                        {{- else if eq .Title "About GetInspired365" -}}
+                            <h3 class="gradient-text1"><a href="{{ site.BaseURL }}">About GetInspired365</a></h3>
+                        {{- else if or (eq .Section "news") (eq .Section "articles") (eq .Section "quotes") (eq .Section "videos") -}}
+                            <h3 class="{{- .Section -}}-gradient-text"><a href="/{{ .Section }}">{{- upper .Section -}}</a></h3>
+                        {{ else if eq .Section "tags"}}
+                            {{ if eq .Title "Tags" }}
+                                <h3 class="gradient-text"><a href="{{ site.BaseURL }}tags">TAGS</a></h3>
+                            {{ else }}
+                                <h3 class="gradient-text"><a href="{{ site.BaseURL }}tags">{{ upper .Section }} / {{ upper .Title }}</a></h3>
+                            {{ end }}
+                        {{- end -}}
                         <h3 class="date">{{ dateFormat "2 January" now }}</h3>
                     </div>
                     <div class="hide-on-med-and-up right">
@@ -14,14 +25,13 @@
                     </div>
                 </div>
                 
-                <div class="col s12 m7">
-                    <!-- MAIN LINKS -->
-                    <ul>
-                        <li><a class="bb-video1" href="{{ site.BaseURL }}inspirational-videos"><span>VIDEOS</span></a></li>
-                        <li><a class="bb-quote1" href="{{ site.BaseURL }}categories"><span>QUOTES</span></a></li>
-                        <li><a class="bb-article1" href="{{ site.BaseURL }}articles"><span>ARTICLES</span></a></li>
-                        <li><a class="bb-news1" href="{{ site.BaseURL }}news"><span>NEWS</span></a></li>
-                    </ul>
+                <div class="col s12 m5 offset-m2" style="text-align:right">
+                    <div class="right">
+                            <h6 class="quotes-gradient-text">
+                                "Few are those who see with their own eyes and feel with their own hearts."
+                                <br>- Albert Einstein
+                            </h6>
+                    </div>
                 </div>
 
             </header>

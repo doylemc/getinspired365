@@ -1,0 +1,35 @@
+<div class="section no-pad bb">
+    <div class="container">
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                {{ .Scratch.Delete "path" }}
+                {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+                {{ $.Scratch.Add "path" .Site.BaseURL }}
+                <ul class="section-nav">
+                    <li><a href="/">HOME</a></li>
+                    {{ range $index, $element := split $url "/" }}
+                    {{ $.Scratch.Add "path" $element }}
+                    {{ if ne $element "" }}
+                    <li><a href='{{ $.Scratch.Get "path" }}'>{{ . | upper }}</a></li>
+                    {{ $.Scratch.Add "path" "/" }}
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <ol class="nav navbar-nav">
+    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</ol>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<li{{ if eq .p1 .p2 }} class="active" {{ end }}>
+    <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
+    </li>
+{{ end }} -->

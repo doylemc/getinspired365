@@ -1,0 +1,23 @@
+{{ define "content" }}
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l9">
+                <h2 class="quotes-gradient-text">
+                    {{- if isset .Params "image" -}}
+                        <img src="{{ .Params.image }}" alt="{{ .Title}}" style="width: 48px; height: 48px; float: left; border-radius: 4em;" />
+                    {{ end }}
+                    {{- .Title -}}
+                </h2>
+                <br>
+                {{- .Content -}}
+            </div>
+            <div class="col s12 l3">
+                <h2 class="quotes-gradient-text">Related</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

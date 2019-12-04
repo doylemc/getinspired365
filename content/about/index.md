@@ -2,8 +2,8 @@
 title: "About GetInspired365"
 date: 1999-12-31T23:59:59Z
 draft: false
-type: article
-authors: ["GetInspired365"]
+type: articles
+writers: ["GetInspired365"]
 categories: ['inspiration']
 tags: ['inspiration','love','life','happiness','laughter']
 image: "https://images.unsplash.com/photo-1512223886638-d2914abf5df3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"

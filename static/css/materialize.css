@@ -70,6 +70,10 @@
             position: relative;
         }
 
+        .row .col .no-pad {
+            padding: 0;
+        }
+
         .row .col.s1 {
             width: 8.3333333333%;
             margin-left: auto;

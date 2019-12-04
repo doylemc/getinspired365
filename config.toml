@@ -1,11 +1,12 @@
-baseURL = "https://happy-villani-795c50.netlify.com/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "GETINSPIRED365 | Inspiration"
+title = "GetInspired365 - Home"
 
 [taxonomies]
-  author = "authors"
   tag = "tags"
+  writer = "writers"
   
 [params]
- tagsLimit_TopBar = 5
- tagsLimit_HomePage = 8
+ tagsLimit_TopBar = 11
+ tagsLimit_HomePage = 12
+

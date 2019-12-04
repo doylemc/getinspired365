@@ -1,0 +1,7 @@
+{{- with .NextInSection -}}
+    <a class="navigate prev z-depth-5 bg-{{ .Section }}-gradient1" href="{{ .Permalink }}"><i class="fas fa-chevron-left"></i></a>
+{{- end -}}
+
+{{- with .PrevInSection -}}
+    <a class="navigate next z-depth-5 bg-{{ .Section }}-gradient1" href="{{ .Permalink }}"><i class="fas fa-chevron-right"></i></a>
+{{- end -}}

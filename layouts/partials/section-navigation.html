@@ -1,0 +1,50 @@
+{{ if eq .Section "news" }}
+<div class="section no-pad bb bg-news-darken-more var-2 z-depth-5">
+    <div class="container">
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <ul class="section-nav news">
+                    <li{{ if eq .Section (path.Base .File.Dir)}} class="selected" {{ end }}><a href="/news">HOME</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/news/celebrity"))}} class="selected" {{ end }}><a href="/news/celebrity">CELEBRITY</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/news/real-life"))}} class="selected" {{ end }}><a href="/news/real-life">REAL LIFE HEROES</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+{{ if eq .Section "quotes" }}
+<div class="section no-pad bb z-depth-5">
+    <div class="container">
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <ul class="section-nav quotes">
+                    <li{{ if eq .Section (path.Base .File.Dir)}} class="selected"{{ end }}><a href="/quotes">HOME</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/quotes/authors"))}} class="selected"{{ end }}><a href="/quotes/authors">AUTHORS</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/quotes/topics"))}} class="selected"{{ end }}><a href="/quotes/topics">TOPICS</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/quotes/top-lists"))}} class="selected" {{ end }}><a href="/quotes/top-lists">TOP LISTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+{{- if eq .Section "tags" -}}
+<div class="section no-pad bb bg-tags-darken-more">
+    <div class="container">
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <ul class="section-nav tags gradient-text">
+                    <li><a href="/tags">HOME</a></li>
+                    {{- $t := .Site.GetPage "/tags" -}}
+                    {{- range first 11 $t.Data.Terms.ByCount -}}
+                        <li><a href="/tags/{{- .Page.Title | urlize -}}">{{ upper .Page.Title }}</a></li>
+                    {{- end -}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{- end -}}

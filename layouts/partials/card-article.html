@@ -1,12 +1,12 @@
-<div class="card {{ .Type }}">
+<div class="card article z-depth-5 hoverable">
     <article>
-        <img src="{{ .Params.Image }}" />
-        <div class="meta">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.Image }}" alt="{{ .Title }}" /></a>
+        <div class="content">
             <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
             {{ if isset .Params "summary" }}
-            <p class="clearfix">{{ .Summary }}</p>
+            <p class="clearfix">{{ .Summary }} <br><br> <i class="fas fa-clock"></i> {{ .ReadingTime }} min(s)</p>
+
             {{ end }}
-            <a href="{{ .Page.Permalink }}" class="btn article">Read Article Now</a>
         </div>
     </article>
 </div>

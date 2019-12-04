@@ -1,0 +1,105 @@
+{{ define "content" }}
+
+<!-- What is this author's name ? -->
+{{- $thisauthor := .Params.author -}}
+
+<!-- Get the details from the authors csv -->
+{{- $url := "/data/authors.csv" -}}
+{{- $sep := "," -}}
+{{- range $i, $r := getCSV $sep $url -}}
+    {{- $author := index $r 8 -}}
+    {{- if eq $author $thisauthor -}}
+        {{- $.Scratch.Set "profession" (index $r 9) -}}
+        {{- $.Scratch.Set "nationality" (index $r 10) -}}
+        {{- $.Scratch.Set "dob" (index $r 11) -}}
+        {{- $.Scratch.Set "dod" (index $r 12) -}}
+        {{- $.Scratch.Set "briefbio" (index $r 13) -}}
+        {{- $.Scratch.Set "fullbio" (index $r 17) -}}
+    {{- end -}}
+{{- end -}}
+
+<div class="section bb">
+    <div class="container">
+        <div class="row">
+            <div class="col1 s12 l12">
+                
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+
+                    <div class="grid-item">
+                        <div class="quotes-gradient-text center">
+                            <h2>
+                                {{- if isset .Params "image" -}}
+                                <!-- <img src="{{ .Params.image }}" alt="{{ .Title}}"
+                                    style="width: 96px; height: 48px; float: left; border-radius: 4em;" /> -->
+                                {{ end }}
+                                {{- .Params.Author -}}
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="center">
+                            <h3 class="quotes-gradient-text">PROFILE</h3>
+                            <h4>{{ $thisauthor }}</h4>
+                            <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
+                            <h4>{{ $.Scratch.Get "nationality" }}</h4>
+                            <!-- <h3 class="quotes-gradient-text">Profession</h3> -->
+                            <h4>{{ $.Scratch.Get "profession" }}</h4>
+                            <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
+                            <h4>DOB {{ $.Scratch.Get "dob" }}</h4>
+                            <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
+                            <h4><a target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
+                        </div>
+                    </div>
+
+                    <!-- <div class="grid-item">
+                        <div class="card">
+                            <h3>BIO</h3>
+                            <p>{{- $.Scratch.Get "briefbio" -}}</p>
+                        </div>
+                    </div> -->
+
+                {{- $url := "/data/quotes.csv" -}}
+                    {{- $sep := "," -}}
+                    {{- range $i, $r := getCSV $sep $url -}}
+                    {{- $author := index $r 3 -}}
+                    {{- if eq $author $thisauthor -}}
+                    {{- $quote := index $r 8 -}}
+                    <div class="grid-item">
+                        <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}">
+                            <p>{{ $quote | humanize }}<cite>{{ $author }}</cite></p>
+                        </blockquote>
+                    </div>
+                    {{- end -}}
+                    {{ end }}
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section var-2">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Tags</h2>
+                {{- range .Params.tags -}}
+                <a class="btn tag" href="/tags/{{- . -}}">{{- . -}}</a>
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/colcade@0/colcade.js"></script>
+<script src="/js/colcade.js"></script>
+
+{{ end }}

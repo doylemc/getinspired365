@@ -1,41 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/materialize.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-
-<body>
-
-    <!-- TOPBAR -->
-    {{ partial "page-navigation.html" }}
-
-    <!-- PAGE HEADER -->
-    {{ partial "page-header.html" }}
+{{ define "content" }}
 
     <!-- VIDEO OF THE DAY -->
-    <div class="section">
+    <div class="section bb">
         <div class="container">
             <div class="row">
 
                 <div class="col s12">
-                    <h2 class="title">A GOOD LIFE, TOO: Alonzo Clemons</h2>
+                    <h2 class="title videos-gradient-text"><span class="gradient-text">Featured:</span> A GOOD LIFE, TOO: Alonzo Clemons</h2>
                 </div>
 
                 <div class="col s12 m8">
-                    <div style="padding:56.25% 0 0 0;position:relative;" class="b-featured"><iframe
+                    <div style="padding:56.25% 0 0 0;position:relative; border-radius: 0.5em" class=""><iframe
                             src="https://player.vimeo.com/video/68863716?autoplay=0&color=ffffff&title=0&byline=0&portrait=0"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 0.5em;" frameborder="0" allow="autoplay; fullscreen"
                             allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </div>
@@ -58,135 +35,118 @@
     </div>
 
     <!-- NEWS -->
-    <div class="section var-1">
+    <div class="section var-2a">
         <div class="container">
             <div class="row">
-                <div class="col s12 m9">
-                    <h2 class="title news">Celebrity Inspiration</h2>
-                    {{ range first 6 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "celebrity") }}
-                    <div class="col s6 m6 l4">
-                        {{ partial "card-news.html" . }}
-                    </div>
-                    {{ end }}
+                <div class="col s12">
+                    <h2><a class="news-gradient-text" href="/news/celebrity">Celebrity Inspiration ></a></h2>
                 </div>
-                <div class="col s12 m3">
-                    <h2 class="title news">Real-Life Heroes</h2>
-                    {{ range first 5 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "real-life") }}
-                    <div class="col s6 l12">
-                        {{ partial "card-news.html" . }}
-                    </div>
-                    {{ end }}
+                {{ range first 8 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "celebrity") }}
+                <div class="col s6 m6 l3">
+                    {{ partial "card-news.html" . }}
                 </div>
+                {{ end }}
             </div>
         </div>
     </div>
 
+    <!-- REAL LIFE HEROS -->
+    <div class="section var-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2><a class="news-gradient-text" href="/news/real-life">Real Life Heroes ></a></h2>
+                </div>
+                {{ range first 5 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "real-life") }}
+                <div class="col s6 l3">
+                    {{ partial "card-news.html" . }}
+                </div>
+                {{ end }}
+
+            </div>
+        </div>
+    </div>
 
     <!-- ARTICLES -->
     <div class="section">
-        <div class="container1">
-
+        <div class="container">
+            <h2><a class="articles-gradient-text" href="/articles">Original Articles ></a></h2>
             <div class="row">
-                <div class="col s6 l2 offset-l1">
-                    <!-- <br><br> -->
-                    <br>
-                    <h2 class="title">STORIES TO <span class="bb-gradient">MOVE</span> ...YOU</h2>
-                    <h4 class="">
-                        GetInspired's original articles feaure stories which will move you, incredible stories about real people experiencing and overcoming life's challenges.
-                    </h4>
-                    <br>
-                    <a href="/articles" class="btn article">> View more articles</a>
-                                        <!-- <h6 class="">
-                                            "The human spirit is more powerful than any drug - and that is what needs to be nourished: with work, play,
-                                            friendship, family. These are the things that matter." <br> - Robin Williams
-                                        </h6> -->
-
-                </div>
-
-                {{ range first 4 (where .Site.Pages "Type" "article") }}
-                <div class="col s6 m6 l2">
+                {{- range first 4 (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") -}}
+                <div class="col s6 l3">
                     {{ partial "card-article.html" . }}
                 </div>
-                {{ end }}
+                {{- end -}}
             </div>
-            
         </div>
     </div>
 
     <!-- QUOTES -->
-    <div class="section var-3">
+    <div class="section">
         <div class="container">
-
             <div class="row">
-                <div class="col s12 l7">
-                    <h3 class="title quotes">Quotes By Topic</h3>
+                <div class="col s12">
+                    <h2><a class="quotes-gradient-text" href="/quotes/topics">Quotes By Topic ></a></h2>
                 </div>
-                <div class="col s12 l5">
-                    <h5 class="subtitle right"><a href="/categories">View All Topics</a></h3>
+                {{ range shuffle (where .Site.Pages "Section" "quotes") | first 5 }}
+                    {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
+                        {{ if ne .Title "Quotes By Topic" }}
+                            <div class="col s4 m3 l2">
+                                {{ partial "card-quotes-by-topic.html" . }}
+                            </div>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <!-- AUTHORS -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col s9">
+                    <h2><a class="quotes-gradient-text" href="/quotes/authors"> Famous Authors ></a></h2>
+                    {{ range where .Site.Pages "Section" "quotes" }}
+                        {{ if .IsDescendant ($.Site.GetPage "/quotes/authors") }}
+                            {{ if ne .Title "Quotes By Author" }}
+                                <div class="col s4 m3 l2">
+                                    <h3>{{ partial "card-quotes-by-author.html" . }}</h3>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div class="col s3">
+                    <h2 class="quotes">Today we like</h2>
+                    <!-- 5 Random Quotes -->
+                    {{- $url := "/data/quotes.csv" -}}
+                    {{- $sep := "," -}}
+                    {{- range $i, $r := getCSV $sep $url | shuffle | first 5 -}}
+                    <h6>{{ index $r 8 }}</h6>
+                    <h6>{{ index $r 3 }}</h6>
+                    {{- end -}}
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col s12 l9">
-                    {{ range where .Site.Pages "Type" "categories" }}
-                    {{ if ne .Title "Categories" }}
-                    <div class="col s6 m6 l3">
-                        <div class="card {{ .Type }}">
-                            <article>
-                                <img src="{{.Params.image}}" />
-                                <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            </article>
-                        </div>
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                </div>
-                <div class="col s12 l3 bg-trianglify br z-depth-5">
-                    <br>
-                    <h3 class="title quotes bb-gradient">3 Quotes we like today</h3>
-                    <br>
-                    <h3><i class="fas fa-dice-one1 bg-gradient-text"></i>
-                        "If you don't follow your heart, you might spend the rest of your life wishing you had."</h3>
-                    <h6>- Brigitte Nicole</h6>
-                    <br>
-                    <h3><i class="fas fa-dice-two1 bg-gradient-text"></i>
-                        "There is only one thing that makes a dream impossible to achieve: the fear of failure."</h3>
-                    <h6>- From the film The Alchemist</h6>
-                    <br>
-                    <h3><i class="fas fa-dice-three1 bg-gradient-text"></i>
-                    "Everyone has talent. What's rare is the courage to follow it to the dark places where it leads."
-                    </h3>
-                    <h6>- Erica Jong</h6>
-                    <br>
-                    <a href="/categories" class="btn quote">> View All Topics</a>
-                    <br><br><br>
-                </div>
-            </div>
-    
         </div>
     </div>
 
     <!-- VIDEOS -->
-    <div class="section videos var-1">
+    <div class="section var-2">
         <div class="container">
-
             <div class="row">
-                <div class="col s12 m6">
-                    <h3 class="title videos">Handpicked Inspirational Videos</h3>
-                </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/inspirational-videos">View All Videos</a></h3>
+                <div class="col s12">
+                    <h2><a class="videos-gradient-text" href="/videos">Handpicked Inspirational Videos ></a></h2>
                 </div>
             </div>
-
             <div class="row">
                 <!-- <i class="fas fa-video fas-background"></i> -->
-                {{ range where .Site.Pages "Type" "video" }}
+                {{ range where .Site.Pages "Type" "videos" | shuffle | first 8 }}
                 <div class="col s6 m6 l3">
-                    <div class="card {{ .Type }}">
-                        <img src="{{.Params.image}}" />
+                    <div class="card video">
+                        <a href="{{ .Permalink }}"><img src="{{.Params.image}}" /></a>
                         <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }} </a></h4>
-                        <i class="far fa-play-circle"></i>
+                        <a href="{{ .Permalink }}"><i class="far fa-play-circle"></i></a>
                     </div>
                 </div>
                 {{ end }}
@@ -197,37 +157,22 @@
     <!-- TAGS -->
     <div class="section">
         <div class="container">
-
             <div class="row">
-                <div class="col s12 m6">
-                    <h3 class="title">Browse by Tag</h3>
-                </div>
-                <div class="col s12 m6">
-                    <h5 class="subtitle right"><a href="/tags">View All Tags</a></h3>
+                <div class="col s12">
+                    <h2 class="title"><a class="gradient-text" href="/tags">Most Popular Tags ></a></h2>
                 </div>
             </div>
-            
             <div class="row">
-
-                {{- $.Scratch.Set "myLimit" 0 }}
-                {{- range $name, $items := .Site.Taxonomies.tags }}
-                {{- $.Scratch.Set "myLimit" (add ($.Scratch.Get "myLimit") 1) }}
-                {{- if le ($.Scratch.Get "myLimit") ($.Site.Param "tagsLimit_HomePage") }}
-                <div class="col s6 m6 l3">
+                {{- $t := .Site.GetPage "/tags" -}}
+                {{- range first 12 $t.Data.Terms.ByCount -}}
+                <div class="col s6 m6 l2">
                     <div class="card tag">
-                        <h3><a class="tag" href="{{ $.Site.BaseURL }}/tags/{{ $name | urlize | lower }}">{{ $name }}</a></h3>
+                        <h4><a class="tag" href="{{ $.Site.BaseURL }}/tags/{{ .Page.Title | urlize }}">{{ upper .Page.Title }}</a></h4>
                     </div>
                 </div>
-                {{- end }}
-                {{- end }}
-
+                {{- end -}}
             </div>
         </div>
     </div>
 
-    <!-- PAGE FOOTER AND SCRIPTS -->
-    {{ partial "page-footer" }}
-
-</body>
-
-</html>
+{{ end }}

@@ -5,32 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }}{{ end }}{{ end }}</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/materialize.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-</head>
-
+    <!-- DON'T INDEX TAG PAGES -->
+    {{- if .Data.Singular -}}<meta name="robots" content="noindex">{{- end -}}</head>
 <body>
-
-    {{ partial "page-navigation"}}
-
-    {{ partial "page-header" }}
-
-    {{ block "content" . }}
-    {{ end }}
-   
-    {{ block "content-footer" . }}
-    {{ end }}
-
-    {{ partial "page-footer" }}
-
+    {{- partial "site-navigation" . -}}
+    {{- partial "page-header" . -}}
+    {{- partial "section-navigation" . -}}
+    {{- block "content" . -}}
+    {{- end -}}
+    {{- block "content-footer" . -}}
+    {{- end -}}
+    {{- partial "page-footer.html" . -}}
+    {{- partial "prevnext-page.html" . -}}
 </body>
 </html>
