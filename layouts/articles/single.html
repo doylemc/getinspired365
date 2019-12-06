@@ -36,53 +36,24 @@
     </div>
 </div>
 
-<div class="section var-1">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-
-                <h3>RELATED TAGS</h3>
-                {{ with .Params.tags }}
-                {{ range . }}
-                <h4><a class="btn" href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a></h4>
-                {{ end }}
-                {{ end }}
-
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="section">
     <div class="container">
 
         <div class="row">
     
             <div class="col s12">
-                <h3><a href="/articles">ARTICLES</a></h3>
+                <h3><a href="/articles">RELATED ARTICLES</a></h3>
             </div>
 
             {{ with .PrevInSection }}
             <div class="col s6 m6 l3">
-                <div class="card {{ .Type }}">
-                    <article>
-                        <img src="{{.Params.image}}" />
-                        <h5 class="heading"><a href="/writers/{{- .Params.writers -}}">{{ .Params.writers }}</a></h5>
-                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    </article>
-                </div>
+                {{ partial "card-article.html" . }}
             </div>
             {{ end }}
 
             {{ with .NextInSection }}
             <div class="col s6 m6 l3">
-                <div class="card {{ .Type }}">
-                    <article>
-                        <img src="{{.Params.image}}" />
-                        <h5 class="heading"><a href="/writers/{{- .Params.writers -}}">{{ .Params.writers }}</a></h5>
-                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    </article>
-                </div>
+                {{ partial "card-article.html" . }}
             </div>
             {{ end }}
 

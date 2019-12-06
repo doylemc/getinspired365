@@ -3,7 +3,7 @@ date: 2019-11-27T20:32:39.655Z
 source: "Good News Network" 
 title: "Boss Pays Off His Employee's Mortgage So the Vietnam Vet Can Finally Retire" 
 link: "https://www.goodnewsnetwork.org/boss-pays-off-employees-mortgage-so-he-can-retire/" 
-tags: "real-life" 
+tags: ["real-life"]
 image: "https://www.goodnewsnetwork.org/wp-content/uploads/2019/11/Albert-Brigas-and-Rudy-Quinones-KENS5-Embed-Screenshot-324x235.jpg" 
 ---
 {{< figure src="https://www.goodnewsnetwork.org/wp-content/uploads/2019/11/Albert-Brigas-and-Rudy-Quinones-KENS5-Embed-Screenshot-324x235.jpg" title="Boss Pays Off His Employee's Mortgage So the Vietnam Vet Can Finally Retire" >}}

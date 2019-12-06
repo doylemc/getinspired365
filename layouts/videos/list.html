@@ -1,0 +1,28 @@
+{{ define "content" }}
+
+<!-- VIDEOS -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+
+                    <!-- Random Quotes taken from the video section -->
+                    {{- range .Pages -}}
+                    <div class="grid-item">
+                        {{ partial "card-video.html" . }}
+                    </div>
+                    {{- end -}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

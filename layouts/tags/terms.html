@@ -6,8 +6,11 @@
         <div class="row">
             {{- range .Site.Taxonomies.tags -}}
             <div class="col s6 m6 l2">
-                <div class="card tag hoverable">
-                    <h4><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></h4>
+                <div class="card fluid z-depth-5">
+                    <div class="content center bg-angled-dark">
+                        <br>
+                        <h4 class="c-gradient"><a href="{{ .Page.Permalink }}">{{ .Page.Title | upper }} ({{ .Count }})</a></h4>
+                    </div>
                 </div>
             </div>
             {{- end -}}

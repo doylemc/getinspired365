@@ -1,0 +1,216 @@
+<!-- GET RANDOM DATA FROM A CSV -->
+{{- $url := "/data/quotes_motivation.csv" -}}
+{{- $sep := "," -}}
+{{- range $i, $r := getCSV $sep $url | shuffle | first 8 -}}
+<div class="grid-item">
+    <blockquote class="z-depth-5">
+        <p>{{- index $r 8 -}}<cite>{{- index $r 3 -}}</cite></p>
+    </blockquote>
+</div>
+{{- end -}}
+
+<!-- COLOURS -->
+<!-- :root {
+--news-color-100: #1dbaf8;
+--news-color-200: #116d91;
+--news-color-300: #073242;
+--news-color-400: #020b0f;
+--articles-color-100: #165bcc;
+--articles-color-200: #0e3e8a;
+--articles-color-300: #051836;
+--articles-color-400: #020914;
+--quotes-color-100: #8b639c;
+--quotes-color-200: #5a3f66;
+--quotes-color-300: #2f2136;
+--quotes-color-400: #0b080d;
+--videos-color-100: #cf3c6f;
+--videos-color-200: #7d2443;
+--videos-color-300: #3d1120;
+--videos-color-400: #0d0407;
+--tags-color: #161616;
+--gutter-width: 1rem;
+} -->
+
+<!-- :root {
+--news-color-100: #1dbaf8;
+--news-color-200: #1585B1;
+--news-color-300: #0E5B79;
+--news-color-400: #041C25;
+--news-color-500: #020F14;
+--articles-color-100: #165BCC;
+--articles-color-200: #124AA6;
+--articles-color-300: #0D3577;
+--articles-color-400: #071C3F;
+--articles-color-500: #030B17;
+--quotes-color-100: #8B639C;
+--quotes-color-200: #6B4D78;
+--quotes-color-300: #45324E;
+--quotes-color-400: #231927;
+--quotes-color-500: #0D090F;
+--videos-color-100: #CE1A58;
+--videos-color-200: #9E1645;
+--videos-color-300: #701031;
+--videos-color-400: #390819;
+--videos-color-500: #0d0205;
+--tags-color: #161616;
+--gutter-width: 1rem;
+} -->
+
+
+<!-- HOMEPAGE SECTION LAYOUT -->
+
+    <!-- VIDEO OF THE DAY -->
+    <!-- <div class="section bb bg-quotes-4001">
+            <div class="container">
+                    <h2 class="c-videos-gradient"><a href="/">Today's Featured Video</a></h2>
+                    {{- range shuffle (where .Site.Pages "Section" "videos") | first 1 -}}
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="card video embed">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ .Params.videoid }}" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <h3>About the Video</h3>
+                            <p>{{ .Params.summary }}</p>
+                            <a class="btn video" href="/videos">More Inspirational Videos ></a>
+                        </div>
+                    </div>
+                    {{- end -}}
+                </div>
+            </div>
+        </div> -->
+    
+    <!-- NEWS -->
+    <div class="section bg-news-400">
+        <div class="container">
+            <h2><a class="c-news-gradient" href="/news/celebrity">Celebrity Inspiration ></a></h2>
+            <div class="row">
+                {{- range (where .Site.Pages "Type" "news") | shuffle -}}
+                <div class="col s6 m4 l2">
+                    {{ partial "card-news.html" . }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    
+    <!-- REAL LIFE HEROS -->
+    <div class="section bg-news-300">
+        <div class="container">
+            <h2><a class="c-news-gradient" href="/news/real-life">Real Life Heroes ></a></h2>
+            <div class="row">
+                {{ range first 5 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "real-life") }}
+                <div class="col s6 l3">
+                    {{ partial "card-news.html" . }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    
+    <!-- ARTICLES -->
+    <div class="section bg-articles-400">
+        <div class="container">
+            <h2><a class="c-articles-gradient" href="/articles">Original Articles ></a></h2>
+            <div class="row">
+                {{- range first 4 (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") -}}
+                <div class="col s6 l3">
+                    {{ partial "card-article.html" . }}
+                </div>
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+    
+    <!-- QUOTES BY TOPIC -->
+    <div class="section bg-quotes-400">
+        <div class="container">
+            <h2><a class="c-quotes-gradient" href="/quotes/topics">Quotes By Topic ></a></h2>
+            <div class="row">
+                {{ range where .Site.Pages "Section" "quotes" | first 10 }}
+                {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
+                {{ if ne .Title "Quotes By Topic" }}
+                <div class="col s4 m3 l4">
+                    {{ partial "card-quotes-by-topic.html" . }}
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    
+    <!-- AUTHORS -->
+    <div class="section bg-quotes-300">
+        <div class="container">
+            <h2><a class="c-quotes-gradient" href="/quotes/authors"> Famous Authors ></a></h2>
+            <div class="row">
+                {{- range where .Site.Pages "Section" "quotes" -}}
+                {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                {{- if ne .Title "Quotes By Author" -}}
+                <div class="col s4 m3 l3">
+                    <h3>{{- partial "card-quotes-by-topic.html" . -}}</h3>
+                </div>
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+    
+    <!-- RANDOM MOTIVATIONAL QUOTES -->
+    <div class="section bg-quotes-400">
+        <div class="container">
+            <h2><a class="c-quotes-gradient" href="/quotes/authors"> Today's Pick of Motivational Quotes ></a></h2>
+            <div class="row">
+                <div class="col s12">
+                    <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+    
+                        <!-- columns -->
+                        <div class="grid-col grid-col--1"></div>
+                        <div class="grid-col grid-col--2"></div>
+                        <div class="grid-col grid-col--3"></div>
+                        <div class="grid-col grid-col--4"></div>
+    
+                        <!-- Random Quotes taken from the video section -->
+                        {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                        <div class="grid-item">
+                            <blockquote class="bg-quotes-300 z-depth-5">
+                                <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
+                            </blockquote>
+                        </div>
+                        {{- end -}}
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- VIDEOS -->
+    <div class="section">
+        <div class="container">
+            <h2><a class="c-videos-gradient" href="/videos">Handpicked Inspirational Videos ></a></h2>
+            <div class="row">
+                <div class="col s12">
+                    <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+    
+                        <!-- columns -->
+                        <div class="grid-col grid-col--1"></div>
+                        <div class="grid-col grid-col--2"></div>
+                        <div class="grid-col grid-col--3"></div>
+                        <div class="grid-col grid-col--4"></div>
+    
+                        <!-- Random Quotes taken from the video section -->
+                        {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                        <div class="grid-item">
+                            {{ partial "card-video.html" . }}
+                        </div>
+                        {{- end -}}
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

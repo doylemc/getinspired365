@@ -6,33 +6,30 @@
                     <!-- LOGO -->
                     <div class="logo">
                         {{- if eq .Title "getinspired365" -}}
-                            <h3 class="gradient-text"><a href="{{ site.BaseURL }}">Welcome to GetInspired365</a></h3>
+                            <h3 class="c-gradient"><a href="{{ site.BaseURL }}">GETINSPIRED365</a></h3>
                         {{- else if eq .Title "About GetInspired365" -}}
-                            <h3 class="gradient-text1"><a href="{{ site.BaseURL }}">About GetInspired365</a></h3>
+                            <h3 class="c-gradient"><a href="{{ site.BaseURL }}">About GetInspired365</a></h3>
                         {{- else if or (eq .Section "news") (eq .Section "articles") (eq .Section "quotes") (eq .Section "videos") -}}
-                            <h3 class="{{- .Section -}}-gradient-text"><a href="/{{ .Section }}">{{- upper .Section -}}</a></h3>
+                            <h3 class="c-{{- .Section -}}-gradient"><a href="/{{ .Section }}">{{- upper .Section -}}</a></h3>
                         {{ else if eq .Section "tags"}}
                             {{ if eq .Title "Tags" }}
-                                <h3 class="gradient-text"><a href="{{ site.BaseURL }}tags">TAGS</a></h3>
+                                <h3 class="c-gradient"><a href="{{ site.BaseURL }}tags">TAGS</a></h3>
                             {{ else }}
-                                <h3 class="gradient-text"><a href="{{ site.BaseURL }}tags">{{ upper .Section }} / {{ upper .Title }}</a></h3>
+                                <h3 class="c-gradient"><a href="{{ site.BaseURL }}tags">{{ upper .Section }} / {{ upper .Title }}</a></h3>
                             {{ end }}
                         {{- end -}}
-                        <h3 class="date">{{ dateFormat "2 January" now }}</h3>
+                        <h3 class="date">{{ dateFormat "Monday 2 January 2006" now }}</h3>
                     </div>
                     <div class="hide-on-med-and-up right">
                         <a href="#"><i class="fas fa-bars"></i></a>
                     </div>
                 </div>
                 
-                <div class="col s12 m5 offset-m2" style="text-align:right">
+                <!-- <div class="col s12 m5 offset-m2" style="text-align:right">
                     <div class="right">
-                            <h6 class="quotes-gradient-text">
-                                "Few are those who see with their own eyes and feel with their own hearts."
-                                <br>- Albert Einstein
-                            </h6>
+                        <h2><i class="fas fa-video"></i></h2>
                     </div>
-                </div>
+                </div> -->
 
             </header>
         </div>

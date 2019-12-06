@@ -3,7 +3,7 @@ date: 2019-11-25T19:59:47.502Z
 source: "Business News Daily" 
 title: "25 Entrepreneurs on the Celebrities Who Inspire Them" 
 link: "https://www.businessnewsdaily.com/8713-entrepreneurs-celebrity-inspirations.html" 
-tags: "celebrity" 
+tags: ["celebrity"]
 image: "https://img.business.com/rc/816x500/aHR0cHM6Ly93d3cuYnVzaW5lc3MuY29tL2ltYWdlcy9jb250ZW50LzVjYS8zZDI1OTVhMjE1ZThhNDU4YjcyNTkvMC04MDAt" 
 ---
 {{< figure src="https://img.business.com/rc/816x500/aHR0cHM6Ly93d3cuYnVzaW5lc3MuY29tL2ltYWdlcy9jb250ZW50LzVjYS8zZDI1OTVhMjE1ZThhNDU4YjcyNTkvMC04MDAt" title="25 Entrepreneurs on the Celebrities Who Inspire Them" >}}

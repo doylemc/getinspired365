@@ -3,7 +3,7 @@ date: 2019-11-26T11:56:00.520Z
 source: "Blush" 
 title: "13 Inspiring Celebrity Female Role Models | Blush Online Life Coaching" 
 link: "https://joinblush.com/12-inspiring-celebrity-female-role-models/" 
-tags: "celebrity" 
+tags: ["celebrity"]
 image: "https://joinblush.com/wp-content/uploads/2015/11/Tina_Fey_Muppets_Most_Wanted_Premiere.jpg"
 ---
 {{< figure src="https://joinblush.com/wp-content/uploads/2015/11/Tina_Fey_Muppets_Most_Wanted_Premiere.jpg" title="13 Inspiring Celebrity Female Role Models | Blush Online Life Coaching" >}}

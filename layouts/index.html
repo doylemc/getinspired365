@@ -1,178 +1,121 @@
 {{ define "content" }}
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
 
-    <!-- VIDEO OF THE DAY -->
-    <div class="section bb">
-        <div class="container">
-            <div class="row">
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
 
-                <div class="col s12">
-                    <h2 class="title videos-gradient-text"><span class="gradient-text">Featured:</span> A GOOD LIFE, TOO: Alonzo Clemons</h2>
-                </div>
-
-                <div class="col s12 m8">
-                    <div style="padding:56.25% 0 0 0;position:relative; border-radius: 0.5em" class=""><iframe
-                            src="https://player.vimeo.com/video/68863716?autoplay=0&color=ffffff&title=0&byline=0&portrait=0"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 0.5em;" frameborder="0" allow="autoplay; fullscreen"
-                            allowfullscreen></iframe></div>
-                    <script src="https://player.vimeo.com/api/player.js"></script>
-                </div>
-                <div class="col s12 m4">
-                    <h3>Alonzo Clemons</h3>
-                    <p>
-                        When he was a toddler, Alonzo Clemons suffered a brain injury. It forever changed the way he learns and
-                        communicates but
-                        also the way he interprets the world around him. Very early it became clear to Alonzo that he had to sculpt. He
-                        was
-                        institutionalized for ten years in a state hospital which wasn't a pleasant experience, but he continued to find
-                        ways to
-                        make delicate figures with his hands. When they wouldn't give him clay, he would scrape warm tar from the
-                        parking lot.
-                    </p>
-                    <a href="/inspirational-videos" class="btn video">> More Inspirational Videos</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- NEWS -->
-    <div class="section var-2a">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2><a class="news-gradient-text" href="/news/celebrity">Celebrity Inspiration ></a></h2>
-                </div>
-                {{ range first 8 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "celebrity") }}
-                <div class="col s6 m6 l3">
-                    {{ partial "card-news.html" . }}
-                </div>
-                {{ end }}
-            </div>
-        </div>
-    </div>
-
-    <!-- REAL LIFE HEROS -->
-    <div class="section var-1">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2><a class="news-gradient-text" href="/news/real-life">Real Life Heroes ></a></h2>
-                </div>
-                {{ range first 5 (where (where .Site.Pages "Type" "news") ".Params.tags" "==" "real-life") }}
-                <div class="col s6 l3">
-                    {{ partial "card-news.html" . }}
-                </div>
-                {{ end }}
-
-            </div>
-        </div>
-    </div>
-
-    <!-- ARTICLES -->
-    <div class="section">
-        <div class="container">
-            <h2><a class="articles-gradient-text" href="/articles">Original Articles ></a></h2>
-            <div class="row">
-                {{- range first 4 (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") -}}
-                <div class="col s6 l3">
-                    {{ partial "card-article.html" . }}
-                </div>
-                {{- end -}}
-            </div>
-        </div>
-    </div>
-
-    <!-- QUOTES -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2><a class="quotes-gradient-text" href="/quotes/topics">Quotes By Topic ></a></h2>
-                </div>
-                {{ range shuffle (where .Site.Pages "Section" "quotes") | first 5 }}
-                    {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
-                        {{ if ne .Title "Quotes By Topic" }}
-                            <div class="col s4 m3 l2">
-                                {{ partial "card-quotes-by-topic.html" . }}
-                            </div>
-                        {{ end }}
+                    <!-- News -->
+                    <!-- <div class="grid-item extra-padding">
+                        <div class="card fluid bg-news-300 center1">
+                            <h2><a class="c-news-200" href="/news">NEWS</a></h2>
+                        </div>
+                    </div> -->
+                    {{- range (where .Site.Pages "Type" "news") | first 10 -}}
+                    <div class="grid-item">
+                        {{- partial "card-news.html" . -}}
+                    </div>
                     {{ end }}
-                {{ end }}
-            </div>
-        </div>
-    </div>
 
-    <!-- AUTHORS -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col s9">
-                    <h2><a class="quotes-gradient-text" href="/quotes/authors"> Famous Authors ></a></h2>
-                    {{ range where .Site.Pages "Section" "quotes" }}
-                        {{ if .IsDescendant ($.Site.GetPage "/quotes/authors") }}
-                            {{ if ne .Title "Quotes By Author" }}
-                                <div class="col s4 m3 l2">
-                                    <h3>{{ partial "card-quotes-by-author.html" . }}</h3>
-                                </div>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                </div>
-                <div class="col s3">
-                    <h2 class="quotes">Today we like</h2>
-                    <!-- 5 Random Quotes -->
-                    {{- $url := "/data/quotes.csv" -}}
-                    {{- $sep := "," -}}
-                    {{- range $i, $r := getCSV $sep $url | shuffle | first 5 -}}
-                    <h6>{{ index $r 8 }}</h6>
-                    <h6>{{ index $r 3 }}</h6>
+                    <!-- Articles -->
+                    <!-- <div class="grid-item extra-padding">
+                        <div class="card fluid bg-articles-gradient center1">
+                            <h2><a class="c-articles-300" href="/articles">ARTICLES</a></h2>
+                        </div>
+                    </div> -->
+                    {{- range first 4 (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") -}}
+                    <div class="grid-item">
+                        {{ partial "card-article.html" . }}
+                    </div>
                     {{- end -}}
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- VIDEOS -->
-    <div class="section var-2">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2><a class="videos-gradient-text" href="/videos">Handpicked Inspirational Videos ></a></h2>
-                </div>
-            </div>
-            <div class="row">
-                <!-- <i class="fas fa-video fas-background"></i> -->
-                {{ range where .Site.Pages "Type" "videos" | shuffle | first 8 }}
-                <div class="col s6 m6 l3">
-                    <div class="card video">
-                        <a href="{{ .Permalink }}"><img src="{{.Params.image}}" /></a>
-                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }} </a></h4>
-                        <a href="{{ .Permalink }}"><i class="far fa-play-circle"></i></a>
+                    <!-- Quotes by Topic -->
+                    <!-- <div class="grid-item extra-padding">
+                        <div class="card fluid bg-quotes-gradient center1">
+                            <h2><a class="c-quotes-300" href="/quotes/topics">QUOTES BY TOPIC</a></h2>
+                        </div>
+                    </div> -->
+                    {{ range where .Site.Pages "Section" "quotes" | first 10 }}
+                    {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
+                    {{ if ne .Title "Quotes By Topic" }}
+                    <div class="grid-item">
+                        {{ partial "card-quotes-by-topic.html" . }}
                     </div>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+
+                    <!-- Quotes By Author -->
+                    <!-- <div class="grid-item extra-padding">
+                        <div class="card fluid bg-quotes-gradient center1">
+                            <h2><a class="c-quotes-300" href="/quotes/authors">AUTHORS</a></h2>
+                        </div>
+                    </div> -->
+                    {{- range where .Site.Pages "Section" "quotes" -}}
+                    {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                    {{- if ne .Title "Quotes By Author" -}}
+                    <div class="grid-item">
+                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
+                    </div>
+                    {{- end -}}
+                    {{- end -}}
+                    {{- end -}}
+
+                    <!-- Videos -->
+                    <!-- <div class="grid-item extra-padding1">
+                        <div class="card fluid bg-videos-gradient center1">
+                            <h2><a class="c-videos-300" href="/videos">VIDEOS</a></h2>
+                        </div>
+                    </div> -->
+                    {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                    <div class="grid-item">
+                        {{ partial "card-video.html" . }}
+                    </div>
+                    {{- end -}}
+
+                    <!-- Motivational Quotes -->
+                    <!-- <div class="grid-item extra-padding">
+                        <div class="card fluid bg-quotes-gradient center1">
+                            <h2><a class="c-quotes-300" href="/quotes">MOTIVATIONAL QUOTES</a></h2>
+                        </div>
+                    </div> -->
+                    {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                    <div class="grid-item">
+                        <blockquote class="bg-quotes-500 z-depth-5">
+                            <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
+                        </blockquote>
+                    </div>
+                    {{- end -}}
+
                 </div>
-                {{ end }}
             </div>
         </div>
     </div>
+</div>
 
-    <!-- TAGS -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2 class="title"><a class="gradient-text" href="/tags">Most Popular Tags ></a></h2>
-                </div>
+<!-- TAGS -->
+<div class="section bg-angled-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="title"><a class="gradient-text" href="/tags">Top 10 Tags ></a></h2>
             </div>
-            <div class="row">
+        </div>
+        <div class="row">
+            <div class="col s12">
                 {{- $t := .Site.GetPage "/tags" -}}
-                {{- range first 12 $t.Data.Terms.ByCount -}}
-                <div class="col s6 m6 l2">
-                    <div class="card tag">
-                        <h4><a class="tag" href="{{ $.Site.BaseURL }}/tags/{{ .Page.Title | urlize }}">{{ upper .Page.Title }}</a></h4>
-                    </div>
-                </div>
+                {{- range first 10 $t.Data.Terms.ByCount -}}
+                <a href="{{ $.Site.BaseURL }}/tags/{{ .Page.Title }}" class="btn">{{ .Page.Title }}</a>
                 {{- end -}}
             </div>
         </div>
     </div>
+</div>
 
 {{ end }}

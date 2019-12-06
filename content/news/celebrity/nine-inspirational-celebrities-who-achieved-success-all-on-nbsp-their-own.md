@@ -3,7 +3,7 @@ date: 2019-11-26T11:54:31.129Z
 source: "Bright Side" 
 title: "Nine inspirational celebrities who achieved success all on&nbsp;their own" 
 link: "https://brightside.me/wonder-people/nine-inspirational-celebrities-who-achieved-success-all-on-their-own-143905/" 
-tags: "celebrity" 
+tags: ["celebrity"]
 image: "https://files.brightside.me/files/news/part_14/143905/1471255-GettyImages-152849185-650-39a6600f39-1484648695.jpg" 
 ---
 {{< figure src="https://files.brightside.me/files/news/part_14/143905/1471255-GettyImages-152849185-650-39a6600f39-1484648695.jpg" title="Nine inspirational celebrities who achieved success all on&nbsp;their own" >}}

@@ -3,7 +3,7 @@ date: 2019-11-25T19:56:54.069Z
 source: "BBC" 
 title: "How an autistic teenager’s passion for nature led to his first book deal - BBC Bitesize" 
 link: "https://www.bbc.co.uk/bitesize/articles/z4md47h" 
-tags: "real-life" 
+tags: ["real-life"]
 image: "https://ichef.bbci.co.uk/images/ic/480xn/p07ttqpw.png" 
 ---
 {{< figure src="https://ichef.bbci.co.uk/images/ic/480xn/p07ttqpw.png" title="How an autistic teenager’s passion for nature led to his first book deal - BBC Bitesize" >}}

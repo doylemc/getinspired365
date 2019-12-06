@@ -1,12 +1,16 @@
-<div class="card article z-depth-5 hoverable">
-    <article>
-        <a href="{{ .Permalink }}"><img src="{{ .Params.Image }}" alt="{{ .Title }}" /></a>
-        <div class="content">
-            <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-            {{ if isset .Params "summary" }}
-            <p class="clearfix">{{ .Summary }} <br><br> <i class="fas fa-clock"></i> {{ .ReadingTime }} min(s)</p>
-
-            {{ end }}
+<div class="card image-50 z-depth-5 bg-articles-400">
+    <a href="{{ .Permalink }}"><img src="{{ .Params.Image }}" alt="{{ .Title }}" /></a>
+    <div class="content">
+        <h6 class="caption bg-articles-300">ARTICLE</h6>
+        <h3 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{- if isset .Params "summary" -}}
+        <p class="summary">{{ .Summary }} <br><br> <i class="fas fa-clock"></i> {{ .ReadingTime }} min(s)</p>
+        {{- end -}}
+    </div>
+    <div class="attribution">
+        <a class="attribution-icon" href="/"><i class="fas fa-camera"></i></a>
+        <div class="details">
+            <h6>Photo By <a href="/" target="_blank">Fernando</a></h6>
         </div>
-    </article>
+    </div>
 </div>

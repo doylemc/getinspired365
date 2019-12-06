@@ -1,19 +1,42 @@
 {{ define "content" }}
 
-<div class="section no-pad var-2a">
+<div class="section">
     <div class="container">
         <div class="row">
-            {{- range .Pages -}}
-            <div class="col s6 m6 l3">
-                {{- partial "card-article.html" . -}}
+            <div class="col s12">
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+            
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+            
+                    <!-- Random Quotes taken from the video section -->
+                    {{- range .Pages | shuffle -}}
+                    <div class="grid-item">
+                        {{- if eq .Type "news" -}}
+                        {{- partial "card-news.html" . -}}
+                        {{- else if eq .Type "articles" -}}
+                        {{- partial "card-article.html" . -}}
+                        {{- else if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
+                        {{- partial "card-quotes-by-topic.html" . -}}
+                        {{- else if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
+                        {{- partial "card-quotes-by-topic.html" . -}}
+                        {{- else if (.IsDescendant ($.Site.GetPage "/videos")) -}}
+                        {{- partial "card-video.html" . -}}
+                        {{- end -}}
+                    </div>
+                    {{- end -}}
+            
+                </div>
             </div>
-            {{- end -}}
         </div>
     </div>
 </div>
 
 <!-- COUNT THE DIFFERENT TYPES OF RESULT AND ONLY DISPLAY IF > 0 -->
-{{- $.Scratch.Set "news" 0 -}}
+<!-- {{- $.Scratch.Set "news" 0 -}}
 {{- $.Scratch.Set "articles" 0 -}}
 {{- $.Scratch.Set "quotes_by_topic" 0 -}}
 {{- $.Scratch.Set "quotes_by_author" 0 -}}
@@ -28,10 +51,10 @@
     {{- else if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
         {{- $.Scratch.Set "quotes_by_author" (add ($.Scratch.Get "quotes_by_author") 1 ) -}}
     {{- end -}}
-{{- end -}}
+{{- end -}} -->
 
 <!-- NEWS -->
-{{- if gt ($.Scratch.Get "news") 0 -}}
+<!-- {{- if gt ($.Scratch.Get "news") 0 -}}
 <div class="section no-pad var-2a">
     <div class="container">
         <div class="row">
@@ -50,10 +73,10 @@
     </div>
 </div>  
 
-{{- end -}}
+{{- end -}} -->
 
 <!-- ARTICLES -->
-<div class="section no-pad">
+<!-- <div class="section no-pad">
     <div class="container">
         <div class="row">
             {{- if gt ($.Scratch.Get "articles") 0 -}}
@@ -70,10 +93,10 @@
             {{- end -}}
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- QUOTES BY TOPIC -->
-<div class="section no-pad">
+<!-- <div class="section no-pad">
     <div class="container">
         <div class="row">
             {{- if gt ($.Scratch.Get "quotes_by_topic") 0 -}}
@@ -90,10 +113,10 @@
             {{- end -}}
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- QUOTES BY AUTHOR -->
-<div class="section no-pad">
+<!-- <div class="section no-pad">
     <div class="container">
         <div class="row">
             {{- if gt ($.Scratch.Get "quotes_by_author") 0 -}}
@@ -110,6 +133,6 @@
             {{- end -}}
         </div>
     </div>
-</div>
+</div> -->
 
 {{ end }}

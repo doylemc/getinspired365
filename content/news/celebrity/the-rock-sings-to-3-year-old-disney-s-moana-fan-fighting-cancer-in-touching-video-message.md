@@ -3,7 +3,7 @@ date: 2019-11-24T19:51:28.098Z
 source: "BBC" 
 title: "The Rock Sings to 3-Year-Old Disney’s ‘Moana’ Fan Fighting Cancer in Touching Video Message" 
 link: "https://www.theepochtimes.com/the-rock-sings-to-3-year-old-disneys-moana-fan-fighting-cancer-in-touching-video-message_3151854.html" 
-tags: "celebrity" 
+tags: ["celebrity"]
 image: "https://img.theepochtimes.com/assets/uploads/2019/11/23/The-Rock-Sings-i-700x420.jpg" 
 type: "news"
 ---

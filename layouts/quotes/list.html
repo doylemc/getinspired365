@@ -3,18 +3,11 @@
 <div class="section">
     <div class="container">
         <div class="row">
-
-            {{ range .Pages }}
-            <div class="col s6 m6 l2">
-                <div class="card {{ .Type }}">
-                    <article>
-                        <a href="{{ .Permalink }}"><img src="{{.Params.image}}" /></a>
-                        <h4 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                    </article>
-                </div>
+            {{- range .Pages -}}
+            <div class="col s12 m6 l4">
+                {{ partial "card-quotes-by-topic.html" . }}
             </div>
-            {{ end }}
-
+            {{- end -}}
         </div>
     </div>
 </div>

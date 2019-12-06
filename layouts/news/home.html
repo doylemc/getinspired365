@@ -1,0 +1,33 @@
+{{ define "content" }}
+
+<!-- NEWS HOME -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+
+                    <!-- News -->
+                    {{- range (where .Site.Pages "Type" "news") -}}
+                    <div class="grid-item">
+                        {{- partial "card-news.html" . -}}
+                    </div>
+                    {{ end }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- {{- if (.IsDescendant ($.Site.GetPage "/news/celebrity")) -}}
+<h3>{{.Params.Title}}</h3>
+{{ end }} -->
+
+{{ end }}

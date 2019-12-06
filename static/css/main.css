@@ -4,16 +4,16 @@
 :root {
     --news-color: #1dbaf8;
     --news-color-darken: #116d91;
-    --news-color-darken-more: #073242;
+    --news-color-300: #073242;
     --articles-color: #165bcc;
     --articles-color-darken: #0e3e8a;
-    --articles-color-darken-more: #051836;
+    --articles-color-300: #051836;
     --quotes-color: #8b639c;
     --quotes-color-darken: #5a3f66;
-    --quotes-color-darken-more: #2f2136;
+    --quotes-color-300: #2f2136;
     --videos-color: #cf3c6f;
     --videos-color-darken: #7d2443;
-    --videos-color-darken-more: #3d1120;
+    --videos-color-300: #3d1120;
     --tags-color: #161616;
 }
 
@@ -58,13 +58,13 @@ body {
 .bg-news-darken {
     background: var(--news-color-darken);
 }
-.bg-news-darken-more {
-    background: var(--news-color-darken-more);
+.bg-news-300 {
+    background: var(--news-color-300);
 }
 .bg-news-gradient {
-    background: var(--news-color-darken-more); /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--news-color), var(--news-color-darken-more)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--news-color), var(--news-color-darken-more)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--news-color-300); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--news-color), var(--news-color-300)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--news-color), var(--news-color-300)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-articles {
@@ -73,13 +73,13 @@ body {
 .bg-articles-darken {
     background: var(--articles-color-darken);
 }
-.bg-articles-darken-more {
-    background: var(--articles-color-darken-more);
+.bg-articles-300 {
+    background: var(--articles-color-300);
 }
 .bg-articles-gradient {
-    background: var(--articles-color-darken-more); /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--articles-color), var(--articles-color-darken-more)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--articles-color), var(--articles-color-darken-more)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--articles-color-300); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--articles-color), var(--articles-color-300)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--articles-color), var(--articles-color-300)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-quotes {
@@ -88,13 +88,13 @@ body {
 .bg-quotes-darken {
     background: var(--quotes-color-darken);
 }
-.bg-quotes-darken-more {
-    background: var(--quotes-color-darken-more);
+.bg-quotes-300 {
+    background: var(--quotes-color-300);
 }
 .bg-quotes-gradient {
-    background: var(--quotes-color-darken-more); /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--quotes-color), var(--quotes-color-darken-more)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--quotes-color), var(--quotes-color-darken-more)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--quotes-color-300); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--quotes-color), var(--quotes-color-300)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--quotes-color), var(--quotes-color-300)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-videos {
@@ -103,13 +103,13 @@ body {
 .bg-videos-darken {
     background: var(--videos-color-darken);
 }
-.bg-videos-darken-more {
-    background: var(--videos-color-darken-more);
+.bg-videos-300 {
+    background: var(--videos-color-300);
 }
 .bg-videos-gradient {
-    background: var(--videos-color-darken-more); /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--videos-color), var(--videos-color-darken-more)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--videos-color), var(--videos-color-darken-more)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--videos-color-300); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--videos-color), var(--videos-color-300)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--videos-color), var(--videos-color-300)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -131,8 +131,8 @@ body {
 .news-darken {
     color: var(--news-color-darken) !important;
 }
-.news-darken-more {
-    color: var(--news-color-darken-more) !important;
+.news-300 {
+    color: var(--news-color-300) !important;
 }
 .news-gradient-text {
     background: -webkit-linear-gradient(to right, var(--news-color), var(--news-color-darken)); /* Chrome 10-25, Safari 5.1-6 */
@@ -148,8 +148,8 @@ body {
 .articles-darken {
     color: var(--articles-color-darken) !important;
 }
-.articles-darken-more {
-    color: var(--articles-color-darken-more) !important;
+.articles-300 {
+    color: var(--articles-color-300) !important;
 }
 .articles-gradient-text {
     background: -webkit-linear-gradient(to right, var(--articles-color), var(--articles-color-darken)); /* Chrome 10-25, Safari 5.1-6 */
@@ -165,8 +165,8 @@ body {
 .quotes-darken {
     color: var(--quotes-color-darken) !important;
 }
-.quotes-darken-more {
-    color: var(--quotes-color-darken-more) !important;
+.quotes-300 {
+    color: var(--quotes-color-300) !important;
 }
 .quotes-gradient-text {
     background: -webkit-linear-gradient(to right, var(--quotes-color), var(--quotes-color-darken)); /* Chrome 10-25, Safari 5.1-6 */
@@ -189,8 +189,8 @@ body {
 .videos-darken {
     color: var(--videos-color-darken) !important;
 }
-.videos-darken-more {
-    color: var(--videos-color-darken-more) !important;
+.videos-300 {
+    color: var(--videos-color-300) !important;
 }
 .videos-gradient-text {
     background: -webkit-linear-gradient(to right, var(--videos-color), var(--videos-color-darken)); /* Chrome 10-25, Safari 5.1-6 */
@@ -229,21 +229,21 @@ body {
 
 .bb-news {
     border-bottom: 1px solid var(--news-color);
-    border-image: linear-gradient(to right, var(--news-color) 0%, var(--news-color-darken-more) 100%);
+    border-image: linear-gradient(to right, var(--news-color) 0%, var(--news-color-300) 100%);
     border-image-slice: 1;
 }
 .bb-article {
     border-bottom: 1px solid var(--articles-color);
-    border-image: linear-gradient(to right, var(--articles-color) 0%, var(--articles-color-darken-more) 100%);
+    border-image: linear-gradient(to right, var(--articles-color) 0%, var(--articles-color-300) 100%);
     border-image-slice: 1;
 }
 .bb-quote {
-    border-image: linear-gradient(to right, var(--quotes-color) 0%, var(--quotes-color-darken-more) 100%);
+    border-image: linear-gradient(to right, var(--quotes-color) 0%, var(--quotes-color-300) 100%);
     border-bottom: 1px solid var(--quotes-color);
     border-image-slice: 1;
 }
 .bb-video {
-    border-image: linear-gradient(to right, var(--videos-color) 0%, var(--videos-color-darken-more) 100%);
+    border-image: linear-gradient(to right, var(--videos-color) 0%, var(--videos-color-300) 100%);
     border-bottom: 1px solid var(--quotes-color);
     border-image-slice: 1;
 }
@@ -257,8 +257,8 @@ body {
 .bl-quote {
     border-left: 1px solid var(--quotes-color);
 }
-.bl-quote-darken-more {
-    border-left: 1px solid var(--quotes-color-darken-more);
+.bl-quote-300 {
+    border-left: 1px solid var(--quotes-color-300);
 }
 .bl-video {
     border-left: 1px solid var(--videos-color);
@@ -387,7 +387,7 @@ blockquote p {
 }
 
 blockquote::before {
-     color: var(--quotes-color-darken-more);
+     color: var(--quotes-color-300);
      font-family: FontAwesome; 
      font-weight: 900; 
      content: "\f10d"; 
@@ -439,7 +439,7 @@ a.btn:hover {
 }
 
 a.btn.article {
-    background: var(--articles-color-darken-more);
+    background: var(--articles-color-300);
     border-image: none;
     /* border-color: var(--articles-color); */
     border-radius: 0.2em;
@@ -450,7 +450,7 @@ a.btn.article:hover {
 }
 
 a.btn.quote {
-    background: var(--quotes-color-darken-more);
+    background: var(--quotes-color-300);
     border-image: none;
     /* border-color: var(--quotes-color); */
     border-radius: 0.2em;
@@ -461,7 +461,7 @@ a.btn.quote:hover {
 }
 
 a.btn.video {
-    background: var(--videos-color-darken-more);
+    background: var(--videos-color-300);
     border-image: none;
     /* border-color: var(--videos-color); */
     border-radius: 0.2em;
@@ -893,7 +893,7 @@ ul.section-nav.tags a:hover {
 
 
 .card.article {
-    /* background: var(--articles-color-darken-more); */
+    /* background: var(--articles-color-300); */
     min-height: 380px;
 }
 
@@ -934,7 +934,7 @@ ul.section-nav.tags a:hover {
 }
 
 .card.article .btn {
-    background: var(--articles-color-darken-more);
+    background: var(--articles-color-300);
     border: none;
     border-radius: 0.3em;
     box-shadow: 0px 0px;
@@ -946,7 +946,7 @@ ul.section-nav.tags a:hover {
 
 /* QUOTES BY TOPIC */
 .card.quotes-by-topic {
-    /* border: 3px solid var(--quotes-color-darken-more); */
+    /* border: 3px solid var(--quotes-color-300); */
     min-height: 270px;
 }
 
@@ -998,14 +998,14 @@ ul.section-nav.tags a:hover {
     border-bottom-right-radius: 0; */
     box-shadow: none;
     -webkit-box-shadow: none;
-    /* box-shadow: 10px 1px 20px var(--quotes-color-darken-more);
-    -webkit-box-shadow: 3px 1px 10px var(--quotes-color-darken-more); */
+    /* box-shadow: 10px 1px 20px var(--quotes-color-300);
+    -webkit-box-shadow: 3px 1px 10px var(--quotes-color-300); */
     float: left;
     position: relative;
 }
 
 .card.quotes .content {
-    background: var(--quotes-color-darken-more);
+    background: var(--quotes-color-300);
     float: left;
     position: relative;
     /* bottom: 0; */
@@ -1033,7 +1033,7 @@ ul.section-nav.tags a:hover {
 }
 
 .card.quotes .btn {
-    background: var(--quotes-color-darken-more);
+    background: var(--quotes-color-300);
     border: none;
     border-radius: 0.3em;
     box-shadow: 0px 0px;

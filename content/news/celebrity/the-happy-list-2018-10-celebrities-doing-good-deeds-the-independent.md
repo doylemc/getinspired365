@@ -3,7 +3,7 @@ date: 2019-11-24T19:54:34.172Z
 source: "Independent" 
 title: "The Happy List 2018: 10 celebrities doing good deeds | The Independent" 
 link: "https://www.independent.co.uk/life-style/the-happy-list-2018-10-celebrities-doing-good-deeds-a8503741.html" 
-tags: "celebrity" 
+tags: ["celebrity"]
 image: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/07/06/08/stormzy.jpg?w968" 
 type: "news"
 ---

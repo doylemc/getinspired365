@@ -32,8 +32,8 @@
                     <div class="grid-col grid-col--4"></div>
 
                     <div class="grid-item">
-                        <div class="quotes-gradient-text center">
-                            <h2>
+                        <div class="card bg-quotes-400 fluid center">
+                            <h2 class="c-quotes-gradient">
                                 {{- if isset .Params "image" -}}
                                 <!-- <img src="{{ .Params.image }}" alt="{{ .Title}}"
                                     style="width: 96px; height: 48px; float: left; border-radius: 4em;" /> -->
@@ -44,8 +44,8 @@
                     </div>
 
                     <div class="grid-item">
-                        <div class="center">
-                            <h3 class="quotes-gradient-text">PROFILE</h3>
+                        <div class="card fluid bg-quotes-400 center">
+                            <h2 class="c-quotes-gradient bb">PROFILE</h2>
                             <h4>{{ $thisauthor }}</h4>
                             <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
                             <h4>{{ $.Scratch.Get "nationality" }}</h4>
@@ -72,7 +72,7 @@
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
                     <div class="grid-item">
-                        <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}">
+                        <blockquote class="bg-quotes-400 z-depth-{{ index (seq 5 | shuffle) 0 }}">
                             <p>{{ $quote | humanize }}<cite>{{ $author }}</cite></p>
                         </blockquote>
                     </div>
@@ -81,19 +81,6 @@
 
                 </div>
                 
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section var-2">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h2>Tags</h2>
-                {{- range .Params.tags -}}
-                <a class="btn tag" href="/tags/{{- . -}}">{{- . -}}</a>
-                {{- end -}}
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ draft: false
 tags: ["relationships"]
 categories: ["relationships"]
 writers: ["Mike Doyle"]
-image: https://images.unsplash.com/photo-1490111718993-d98654ce6cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
+image: "https://images.unsplash.com/photo-1490111718993-d98654ce6cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
 featured: 1
 summary: "This is the brilliant love story of a 22 year old missionary serving in the slums in Kenya who happened across a picture of a 20 year old youth pastor on Instagram."
 ---

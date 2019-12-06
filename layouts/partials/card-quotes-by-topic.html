@@ -1,4 +1,7 @@
-<div class="card quotes-by-topic z-depth-3 hoverable">
+<div class="card horizontal z-depth-5 bg-quotes-400">
     <a href="{{ .Permalink }}"><img src="{{.Params.image}}" /></a>
-    <h3 class="caption"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <div class="content">
+        <h3 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="summary">{{ .Params.summary }}</p>
+    </div>
 </div>

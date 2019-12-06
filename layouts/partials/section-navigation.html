@@ -1,5 +1,5 @@
 {{ if eq .Section "news" }}
-<div class="section no-pad bb bg-news-darken-more var-2 z-depth-5">
+<div class="section no-pad bb bg-news-500 var-2 z-depth-5">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -15,7 +15,7 @@
 {{ end }}
 
 {{ if eq .Section "quotes" }}
-<div class="section no-pad bb z-depth-5">
+<div class="section no-pad bb bg-quotes-400 z-depth-5">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -32,14 +32,14 @@
 {{ end }}
 
 {{- if eq .Section "tags" -}}
-<div class="section no-pad bb bg-tags-darken-more">
+<div class="section no-pad bb bg-tags-400 bg-angled-dark z-depth-5">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
-                <ul class="section-nav tags gradient-text">
+                <ul class="section-nav tags c-gradient">
                     <li><a href="/tags">HOME</a></li>
                     {{- $t := .Site.GetPage "/tags" -}}
-                    {{- range first 11 $t.Data.Terms.ByCount -}}
+                    {{- range first 14 $t.Data.Terms.ByCount -}}
                         <li><a href="/tags/{{- .Page.Title | urlize -}}">{{ upper .Page.Title }}</a></li>
                     {{- end -}}
                 </ul>
