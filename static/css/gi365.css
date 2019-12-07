@@ -20,10 +20,10 @@
     --videos-color-100: #CE1A58;
     --videos-color-200: #9E1645;
     --videos-color-300: #701031;
-    --videos-color-400: #0e0206;
-    --videos-color-500: #0e0106;
+    --videos-color-400: #0F0206;
+    --videos-color-500: #0a0104;
     --tags-color: #161616;
-    --gutter-width: 1rem;
+    --gutter-width: 1.5rem;
 }
 
 * {
@@ -162,7 +162,7 @@ blockquote cite::before {
 -- BORDERS
 ************************************************************************/
 .bb {
-    border-bottom: 1px solid #100e17;
+    border-bottom: 1px solid #101010;
 }
 
 /************************************************************************
@@ -727,6 +727,10 @@ ul.section-nav.tags a:hover {
     text-align: right;
 }
 
+/* .card.horizontal .badge {
+    right: 64%;
+} */
+
 /* .card .badge {
     background: #000;
     border-radius: 0.25em;
@@ -839,7 +843,7 @@ ul.section-nav.tags a:hover {
     min-height: 175px;
 }
 
-.card.video img, .card.quote img {
+.card.video img, .card.quote img, .card.video.horizontal {
     object-position: center;
 }
 
@@ -855,6 +859,11 @@ ul.section-nav.tags a:hover {
     top: calc(60px - 24px);
 }
 
+.card.video.horizontal .play {
+    top: calc(50% - 24px);
+    left: calc(20% - 24px);
+}
+
 .card.video .play:hover {
     background: var(--videos-color-300);
     color: white;
@@ -863,13 +872,16 @@ ul.section-nav.tags a:hover {
 
 .card.video.embed {
     border-radius: 0.5em;
-    height: 350px;
+    min-height: 350px;
     width: 100%;
 }
 
 .card.video.embed iframe {
-    border: 5px solid #111;
+    /* border: 1px solid #111; */
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
     border-radius: 0.5em;
+    min-height: 350px;
 }
 
 .card.fluid {

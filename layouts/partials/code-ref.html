@@ -57,7 +57,7 @@
 } -->
 
 
-<!-- HOMEPAGE SECTION LAYOUT -->
+<!-- HOMEPAGE SECTION LAYOUT WITHOUT MASONRY -->
 
     <!-- VIDEO OF THE DAY -->
     <!-- <div class="section bb bg-quotes-4001">
@@ -214,3 +214,76 @@
             </div>
         </div>
     </div>
+
+<!-- HOMEPAGE LAYOUT WITH MASONRY -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2><a class="c-news-300" href="/news">In the News ></a></h2>
+                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+
+                    <!-- columns -->
+                    <div class="grid-col grid-col--1"></div>
+                    <div class="grid-col grid-col--2"></div>
+                    <div class="grid-col grid-col--3"></div>
+                    <div class="grid-col grid-col--4"></div>
+
+
+                    <!-- News -->
+                    {{- range (where .Site.Pages "Type" "news") | first 10 -}}
+                    <div class="grid-item">
+                        {{- partial "card-news.html" . -}}
+                    </div>
+                    {{ end }}
+
+                    <!-- Articles -->
+                    {{- range first 4 (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") -}}
+                    <div class="grid-item">
+                        {{ partial "card-article.html" . }}
+                    </div>
+                    {{- end -}}
+
+                    <!-- Quotes by Topic -->
+                    {{ range where .Site.Pages "Section" "quotes" | first 10 }}
+                    {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
+                    {{ if ne .Title "Quotes By Topic" }}
+                    <div class="grid-item">
+                        {{ partial "card-quotes-by-topic.html" . }}
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+
+                    <!-- Quotes By Author -->
+                    {{- range where .Site.Pages "Section" "quotes" -}}
+                    {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                    {{- if ne .Title "Quotes By Author" -}}
+                    <div class="grid-item">
+                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
+                    </div>
+                    {{- end -}}
+                    {{- end -}}
+                    {{- end -}}
+
+                    <!-- Videos -->
+                    {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                    <div class="grid-item">
+                        {{ partial "card-video.html" . }}
+                    </div>
+                    {{- end -}}
+
+                    <!-- Motivational Quotes -->
+                    {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
+                    <div class="grid-item">
+                        <blockquote class="bg-quotes-500 z-depth-5">
+                            <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
+                        </blockquote>
+                    </div>
+                    {{- end -}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
