@@ -1,5 +1,7 @@
-<div class="card fluid horizontal video bg-videos-300 z-depth-5">
-    <a href="{{ .Permalink }}"><img src="https://img.youtube.com/vi/{{ .Params.videoid }}/0.jpg" /></a>
+<div class="card video horizontal bg-videos-300 z-depth-5">
+    <div class="image-holder">
+        <a href="{{ .Permalink }}"><img src="https://img.youtube.com/vi/{{ .Params.videoid }}/0.jpg" /></a>
+    </div>
     <a href="{{ .Permalink }}" class="play"><i class="fas fa-play"></i></a>
     <div class="content">
         <h5 class="caption bg-videos-300">YOUTUBE</h6>

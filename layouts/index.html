@@ -6,23 +6,28 @@
                 <h2><a class="c-videos-100" href="/videos">Today's Featured Video ></a></h2>
                 <!-- Featured Video -->
                 {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
-                <div class="card video embed bg-videos-500">
+                <!-- <div class="card video embed bg-videos-500">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ .Params.videoid }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"></iframe>
                     <div class="content">
                         <h3 class="caption bg-videos-100">FEATURED</h3>
                         <h1 class="title">"{{ .Title }}"</h1>
                         <h4 class="">- {{ .Params.author }}</h4>
                     </div>
+                </div> -->
+                <div class="featured">
+                    {{- partial "card-video.html" . -}}
                 </div>
+                {{- $.Scratch.Set "about-the-video" .Params.summary }}
                 {{- end -}}
             </div>
             <div class="col s12 l4">
+                <h2><a class="c-videos-100" href="/news">About the Video</a></h2>
+                <p>{{- $.Scratch.Get "about-the-video" -}}</p>
+                <br>
                 <h2><a class="c-videos-200" href="/news">Up Next</a></h2>
-                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 3 -}}
+                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 2 -}}
                     {{ partial "card-video-horizontal.html" . }}
                 {{- end -}}
-            </div>
-            <div class="col s12 l8">
             </div>
         </div>
     </div>
@@ -31,34 +36,33 @@
 <div class="section bg-news-500">
     <div class="container">
         <div class="row">
-            <div class="col s12">
-                <h2><a class="c-news-300" href="/news">In the News ></a></h2>
-            </div>
-            <div class="col s12">
-                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
-
-                    <!-- columns -->
-                <div class="grid-col grid-col--1"></div>
-                <div class="grid-col grid-col--2"></div>
-                <div class="grid-col grid-col--3"></div>
-                <div class="grid-col grid-col--4"></div>
-
-                {{- range (where .Site.Pages "Type" "news") | first 12 -}}
-                <div class="grid-item">
+            <div class="col s12 l6">
+                <h2><a class="c-news-100" href="/news/celebrity">Celebrity Inspiration ></a></h2>
+                <div class="card-w-50">
+                    {{- range (where .Site.Pages "Type" "news") | first 9 -}}
+                    {{- if in .Params.tags "celebrity" -}}
                     {{- partial "card-news.html" . -}}
+                    {{- end -}}
+                    {{- end -}}
                 </div>
-                {{ end }}
-
+            </div>
+            <div class="col s12 l6">
+                <h2><a class="c-news-100" href="/news/real-life">Real-Life Heroes ></a></h2>
+                {{- range (where .Site.Pages "Type" "news") | first 12 -}}
+                {{- if in .Params.tags "real-life" -}}
+                {{- partial "card-news.html" . -}}
+                {{- end -}}
+                {{- end -}}
             </div>
         </div>
     </div>
-</div>
+</div>  
 
 <div class="section bg-articles-500">
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h2><a class="c-articles-300" href="/articles">Original Articles ></a></h2>
+                <h2><a class="c-articles-100" href="/articles">Original Articles ></a></h2>
             </div>
             <div class="col s12">
                 <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
@@ -80,41 +84,18 @@
     </div>
 </div>
 
-<div class="section bg-quotes-500">
+<div class="section bt-gradient bb-gradient bg-quotes-500">
     <div class="container">
         <div class="row">
-            <div class="col s12">
-                <h2><a class="c-quotes-300" href="/quotes">Topical Quotes and Famous Authors ></a></h2>
-            </div>
-            <div class="col s12">
-                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
-
-                    <!-- columns -->
-                    <div class="grid-col grid-col--1"></div>
-                    <div class="grid-col grid-col--2"></div>
-                    <div class="grid-col grid-col--3"></div>
-                    <div class="grid-col grid-col--4"></div>
-
-                    {{ range where .Site.Pages "Section" "quotes" | first 10 }}
-                    {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
-                    {{ if ne .Title "Quotes By Topic" }}
-                    <div class="grid-item">
-                        {{ partial "card-quotes-by-topic.html" . }}
-                    </div>
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-
-                    {{- range where .Site.Pages "Section" "quotes" | first 10 -}}
-                    {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
-                    {{- if ne .Title "Quotes By Author" -}}
-                    <div class="grid-item">
-                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
-                    </div>
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
-
+            <div class="col s8 offset-s2">
+                <div class="center">
+                    <h2 class="c-gradient">Find me something to inspire me ... today I'm feeling ... </h2>
+                    <ul style="display: flex; justify-content: center;">
+                        <li><h3><a href="/tags/hmmm"><i class="fas fa-flushed color-news"></i> Hmmm</a></h3></li>
+                        <li><h3><a href="/tags/sad"><i class="fas fa-surprise color-article"></i> Happy</a></h3></li>
+                        <li><h3><a href="/tags/happy"><i class="fas fa-sad-tear color-category"></i> Sad</a></h3></li>
+                        <li><h3><a href="/tags/comedy"><i class="fas fa-laugh-beam color-video"></i> Funny</a></h3></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -124,8 +105,37 @@
 <div class="section bg-quotes-500">
     <div class="container">
         <div class="row">
+            <div class="col s12 l8">
+                <h2><a class="c-quotes-100" href="/quotes/authors">Famous Authors ></a></h2>
+                <div class="card-w-50">
+                    {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                    {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                    {{- if ne .Title "Quotes By Author" -}}
+                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
+                    {{- end -}}
+                    {{- end -}}
+                    {{- end -}}
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <h2><a class="c-quotes-100" href="/quotes/topics">Topics ></a></h2>
+                {{ range where .Site.Pages "Section" "quotes" | first 13 }}
+                {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
+                {{ if ne .Title "Quotes By Topic" }}
+                    {{ partial "card-quotes-by-topic.html" . }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-quotes-500">
+    <div class="container">
+        <div class="row  bg-trianglify">
             <div class="col s12">
-                <h2><a class="c-quotes-200" href="/quotes">Today's Motivational Quotes ></a></h2>
+                <h2><a class="c-quotes-100" href="/quotes">Today's Motivational Quotes ></a></h2>
             </div>
             <div class="col s12">
                 <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
@@ -178,7 +188,7 @@
 </div>
 
 <!-- TAGS -->
-<div class="section bg-angled-dark">
+<div class="section bg-angled-dark bt-gradient">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -189,7 +199,7 @@
             <div class="col s12">
                 {{- $t := .Site.GetPage "/tags" -}}
                 {{- range first 10 $t.Data.Terms.ByCount -}}
-                <a href="{{ $.Site.BaseURL }}/tags/{{ .Page.Title }}" class="btn">{{ .Page.Title }}</a>
+                <a href="{{ .Page.Permalink }}" class="btn">{{ .Page.Title }}</a>
                 {{- end -}}
             </div>
         </div>
