@@ -5,7 +5,11 @@
         <div class="row">
             {{- range .Pages -}}
             <div class="col s12 m6 l4">
-                {{ partial "card-quotes-by-topic.html" . }}
+                {{- if isset .Params "author" -}}
+                {{- partial "card-quotes-by-author.html" . -}}
+                {{- else -}}
+                {{- partial "card-quotes-by-topic.html" . -}}
+                {{- end -}}
             </div>
             {{- end -}}
         </div>

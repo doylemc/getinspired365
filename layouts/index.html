@@ -1,19 +1,71 @@
 {{ define "content" }}
-<div class="section bg-angled-dark">
+<div class="section bg-angled-dark no-pad">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h2><a class="c-videos-100" href="/videos">Today's Featured Video ></a></h2>
+                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
+                <div class="card video bg-videos-300" >
+                    <div class="plyr__video-embed" id="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/{{ .Params.videoid }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                    <div class="content">
+                        <br>
+                        <!-- <h3 class="caption bg-videos-100">FEATURED</h3> -->
+                        <h2 class="title">"{{ .Title }}"</h2>
+                        <h4 class="">- {{ .Params.author }}</h4>
+                    </div>
+                </div>
+                {{- $.Scratch.Set "about-the-video" .Params.summary }}
+                {{- end -}}
+            </div>
+            {{- if ne ($.Scratch.Get "about-the-video") "" -}}
+            <div class="col s12 l4">
+                <h2><a class="c-videos-100" href="#">About the Video</a></h2>
+                <p>{{- $.Scratch.Get "about-the-video" -}}</p>
+                <br>
+            </div>
+            {{- end -}}
+            <div class="col s12 l4">
+                <h2><a class="c-videos-100" href="#">Up Next</a></h2>
+            </div>
+            {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
+            <div class="col s12 l4">
+                {{ partial "card-video-horizontal.html" . }}
+            </div>
+            {{- end -}}
+            <div class="col s12 l4">
+                <br>
+                <h2 class="c-videos-200">Want to watch all the videos on continuous playback?</h2>
+                <h3><a class="bg-videos-400 btn video" href="/videos">> Play All Videos</a></h3>
+            </div>
+
+        </div>
+        <div class="row bg-angled-videos br">
+            <div class="col s8 l9">
+                <h2><a class="c-videos-1100" href="/news">Related</a></h2>
+            </div>
+            <div class="col s4 l3">
+                <h3 class="right"><a href="/videos">View All</a></h3>
+            </div>
+            {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 3 -}}
+                <div class="col s12 l4">
+                    {{ partial "card-video-horizontal.html" . }}
+                </div>
+            {{- end -}}
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="section bg-angled-dark">
     <div class="container">
         <div class="row">
             <div class="col s12 l8">
                 <h2><a class="c-videos-100" href="/videos">Today's Featured Video ></a></h2>
-                <!-- Featured Video -->
                 {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
-                <!-- <div class="card video embed bg-videos-500">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{ .Params.videoid }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"></iframe>
-                    <div class="content">
-                        <h3 class="caption bg-videos-100">FEATURED</h3>
-                        <h1 class="title">"{{ .Title }}"</h1>
-                        <h4 class="">- {{ .Params.author }}</h4>
-                    </div>
-                </div> -->
                 <div class="featured">
                     {{- partial "card-video.html" . -}}
                 </div>
@@ -31,7 +83,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="section bg-news-500">
     <div class="container">
@@ -39,18 +91,26 @@
             <div class="col s12 l6">
                 <h2><a class="c-news-100" href="/news/celebrity">Celebrity Inspiration ></a></h2>
                 <div class="card-w-50">
-                    {{- range (where .Site.Pages "Type" "news") | first 9 -}}
+                    {{- $.Scratch.Set "g-card-counter" 0 -}}
+                    {{- range (where .Site.Pages "Section" "news") }}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
                     {{- if in .Params.tags "celebrity" -}}
                     {{- partial "card-news.html" . -}}
+                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                    {{- end -}}
                     {{- end -}}
                     {{- end -}}
                 </div>
             </div>
             <div class="col s12 l6">
                 <h2><a class="c-news-100" href="/news/real-life">Real-Life Heroes ></a></h2>
-                {{- range (where .Site.Pages "Type" "news") | first 12 -}}
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range (where .Site.Pages "Type" "news") -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
                 {{- if in .Params.tags "real-life" -}}
-                {{- partial "card-news.html" . -}}
+                {{- partial "card-news-horizontal.html" . -}}
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
                 {{- end -}}
                 {{- end -}}
             </div>
@@ -78,24 +138,6 @@
                         {{ partial "card-article.html" . }}
                     </div>
                     {{- end -}}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section bt-gradient bb-gradient bg-quotes-500">
-    <div class="container">
-        <div class="row">
-            <div class="col s8 offset-s2">
-                <div class="center">
-                    <h2 class="c-gradient">Find me something to inspire me ... today I'm feeling ... </h2>
-                    <ul style="display: flex; justify-content: center;">
-                        <li><h3><a href="/tags/hmmm"><i class="fas fa-flushed color-news"></i> Hmmm</a></h3></li>
-                        <li><h3><a href="/tags/sad"><i class="fas fa-surprise color-article"></i> Happy</a></h3></li>
-                        <li><h3><a href="/tags/happy"><i class="fas fa-sad-tear color-category"></i> Sad</a></h3></li>
-                        <li><h3><a href="/tags/comedy"><i class="fas fa-laugh-beam color-video"></i> Funny</a></h3></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -133,9 +175,9 @@
 
 <div class="section bg-quotes-500">
     <div class="container">
-        <div class="row  bg-trianglify">
+        <div class="row bg-angled-quotes br">
             <div class="col s12">
-                <h2><a class="c-quotes-100" href="/quotes">Today's Motivational Quotes ></a></h2>
+                <h2><a class="c-quotes-100" href="/quotes">Today's Motivational Quotes></a></h2>
             </div>
             <div class="col s12">
                 <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
@@ -147,10 +189,12 @@
                     <div class="grid-col grid-col--4"></div>
 
                     {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 12 -}}
-                    <div class="grid-item">
-                        <blockquote class="bg-quotes-400 z-depth-5">
-                            <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
-                        </blockquote>
+                    <div class="randomize-blockquote-positions">
+                        <div class="grid-item">
+                            <blockquote class="bg-quotes-400 z-depth-5">
+                                <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
+                            </blockquote>
+                        </div>
                     </div>
                     {{- end -}}
 
@@ -160,11 +204,11 @@
     </div>
 </div>
 
-<div class="section bg-videos-500">
+<div class="section bg-videos-500 bb-videos-gradient bw2">
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h2><a class="c-videos-300" href="/videos">Playing Today ></a></h2>
+                <h2><a class="c-videos-100" href="/videos">Playing Today ></a></h2>
             </div>
             <div class="col s12">
                 <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
@@ -205,5 +249,32 @@
         </div>
     </div>
 </div>
+
+<!-- <div class="section bt-gradient bb-gradient bg-angled-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div class="center">
+                    <h2 class="c-gradient">"Find me something to INSPIRE ME"</h2>
+                    <h3>We Got You, how are you feeling?</h3>
+                    <ul style="display: flex; justify-content: center;">
+                        <li>
+                            <h3><a href="/tags/hmmm"><i class="fas fa-flushed c-articles-100"></i> Hmmm</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="/tags/sad"><i class="fas fa-surprise c-quotes-100"></i> Happy</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="/tags/happy"><i class="fas fa-sad-tear c-news-100"></i> Sad</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="/tags/comedy"><i class="fas fa-laugh-beam c-videos-100"></i> Funny</a></h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 {{ end }}

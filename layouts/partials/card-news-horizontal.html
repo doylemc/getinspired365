@@ -1,0 +1,42 @@
+{{- if isset .Params "source" -}}
+    
+    {{- $rand:= index (seq 20 | shuffle) 0 -}}
+    {{- $cardtype:= "card"}}
+    {{- if lt $rand 10}}
+        <div class="card horizontal bg-news-400 z-depth-5">
+    {{- else -}}
+        <div class="card horizontal bg-news-400 z-depth-5">
+    {{- end -}}
+
+        <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
+        {{- $source:= replace .Params.source " " "-" -}}
+        {{- $source:= lower $source -}}
+
+        {{- $t := (time .Params.date) -}}
+        {{- $n := (time now) -}}
+        {{- $delta := $t.Sub ($n) -}}
+        {{- $delta := int (mul $delta.Minutes -1) -}}
+
+        {{- if in .Params.tags "real-life" -}}
+        <!-- <div class="badge">
+            <span class="badge c-news-100"><i class="fas fa-vr-cardboard"></i> LEGEND</span>
+        </div> -->
+        {{- end -}}
+
+        <div class="content">
+            <h6 class="caption bg-news-300">{{ .Params.source }}</h6>
+            {{- if lt $rand 10}}
+                    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+            {{- else -}}
+                    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+            {{- end -}}
+            {{- if lt $delta 60 -}}
+            <h6 class="age">{{ $delta }}m ago</h6>
+            {{- else if lt $delta 1440 -}}
+            <h6 class="age">{{ div $delta 60 }}h ago</h6>
+            {{- else -}}
+            <h6 class="age">{{ div $delta 1440 }}d ago</h6>
+            {{- end -}}
+        </div>
+    </div>
+{{- end -}}

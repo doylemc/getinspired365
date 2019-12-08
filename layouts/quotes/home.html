@@ -17,7 +17,11 @@
                     {{- range (where .Site.Pages "Type" "quotes") -}}
                     {{- if and (ne .Title "Quotes") (ne .Title "Quotes By Author") (ne .Title "Quotes By Topic") (ne .Title "Top Lists") -}}
                     <div class="grid-item">
-                        {{- partial "card-quotes-by-topic.html" . -}}
+                        {{- if isset .Params "author" -}}
+                            {{- partial "card-quotes-by-author.html" . -}}
+                        {{- else -}}
+                            {{- partial "card-quotes-by-topic.html" . -}}
+                        {{- end -}}
                     </div>
                     {{ end }}
                     {{ end }}

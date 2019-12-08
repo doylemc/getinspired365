@@ -16,7 +16,11 @@
                     <!-- News -->
                     {{- range (where .Site.Pages "Type" "news") -}}
                     <div class="grid-item">
-                        {{- partial "card-news.html" . -}}
+                        {{- if gt (.Params.title | countwords) 9 -}}
+                            {{- partial "card-news.html" . -}}
+                        {{- else -}}
+                            {{- partial "card-news-horizontal.html" . -}}
+                        {{- end -}}
                     </div>
                     {{ end }}
 
