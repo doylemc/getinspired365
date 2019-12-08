@@ -4,7 +4,7 @@
 {{- $thisauthor := .Params.author -}}
 
 <!-- Get the details from the authors csv -->
-{{- $url := "/data/authors.csv" -}}
+{{- $url := "/csv/authors.csv" -}}
 {{- $sep := "," -}}
 {{- range $i, $r := getCSV $sep $url -}}
     {{- $author := index $r 8 -}}
@@ -65,7 +65,7 @@
                         </div>
                     </div> -->
 
-                {{- $url := "/data/quotes.csv" -}}
+                {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
                     {{- range $i, $r := getCSV $sep $url -}}
                     {{- $author := index $r 3 -}}

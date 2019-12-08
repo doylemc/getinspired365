@@ -1,5 +1,5 @@
 <!-- GET RANDOM DATA FROM A CSV -->
-{{- $url := "/data/quotes_motivation.csv" -}}
+{{- $url := "/csv/quotes_motivation.csv" -}}
 {{- $sep := "," -}}
 {{- range $i, $r := getCSV $sep $url | shuffle | first 8 -}}
 <div class="grid-item">
