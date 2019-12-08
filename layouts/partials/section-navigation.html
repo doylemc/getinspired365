@@ -39,7 +39,7 @@
                 <ul class="section-nav tags c-gradient">
                     <li><a href="/tags">HOME</a></li>
                     {{- range first 15 .Site.Taxonomies.tags.ByCount -}}
-                        <li><a href="/tags/{{- .Page.Title | urlize -}}">{{ upper .Page.Title }}</a></li>
+                        <li><a href="/tags/{{- .Name | urlize -}}">{{ upper .Name }}</a></li>
                     {{- end -}}
                 </ul>
             </div>

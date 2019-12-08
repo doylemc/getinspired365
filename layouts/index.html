@@ -242,7 +242,7 @@
         <div class="row">
             <div class="col s12">
                 {{- range first 10 .Site.Taxonomies.tags.ByCount -}}
-                <a href="{{ .Page.Permalink }}" class="btn">{{ .Page.Title }}</a>
+                <a href="/tags/{{ .Name | urlize -}}" class="btn">{{ upper .Name }}</a>
                 {{- end -}}
             </div>
         </div>
