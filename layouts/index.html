@@ -241,8 +241,7 @@
         </div>
         <div class="row">
             <div class="col s12">
-                {{- $t := .Site.GetPage "/tags" -}}
-                {{- range first 10 $t.Data.Terms.ByCount -}}
+                {{- range first 10 .Site.Taxonomies.tags.ByCount -}}
                 <a href="{{ .Page.Permalink }}" class="btn">{{ .Page.Title }}</a>
                 {{- end -}}
             </div>

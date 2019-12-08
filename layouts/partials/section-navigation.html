@@ -38,8 +38,7 @@
             <div class="col s12">
                 <ul class="section-nav tags c-gradient">
                     <li><a href="/tags">HOME</a></li>
-                    {{- $t := .Site.GetPage "/tags" -}}
-                    {{- range first 14 $t.Data.Terms.ByCount -}}
+                    {{- range first 15 .Site.Taxonomies.tags.ByCount -}}
                         <li><a href="/tags/{{- .Page.Title | urlize -}}">{{ upper .Page.Title }}</a></li>
                     {{- end -}}
                 </ul>
