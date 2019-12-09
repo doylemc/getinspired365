@@ -21,15 +21,23 @@
                         <h3 class="date">{{ dateFormat "Monday 2 January 2006" now }}</h3>
                     </div>
                     <div class="hide-on-med-and-up right">
-                        <a href="#"><i class="fas fa-bars"></i></a>
+                        <br>
+                        <a href="#" style="font-size: 2em;"><i class="fas fa-bars c-gradient"></i></a>
                     </div>
                 </div>
                 
-                <!-- <div class="col s12 m5 offset-m2" style="text-align:right">
+                <div class="col s12 m5 offset-m2" style="text-align:right">
                     <div class="right">
-                        <h2><a href="#" class=".gitv"><i class="fas fa-tv  c-videos-100"></i></a></h2>
+                        {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
+                            <div class="hide-on-med-and-up center">
+                                <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                            </div>
+                            <div class="hide-on-med-and-down right">
+                                <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                            </div>
+                        {{- end -}}
                     </div>
-                </div> -->
+                </div>
 
             </header>
         </div>

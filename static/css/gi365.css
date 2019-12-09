@@ -24,7 +24,7 @@
     --videos-color-500: #0d0105;
     --tags-color: #161616;
     --gutter-width: 1.5rem;
-    --card-unit-height: 200px;
+    --card-unit-height: 240px;
 }
 
 * {
@@ -655,7 +655,7 @@ header .logo h3.date {
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 1em;
-    padding: 0;
+    padding: 0 0.5em 0 0;
     position: relative;
 }
 

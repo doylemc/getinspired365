@@ -22,24 +22,19 @@
                 {{- end -}}
             </div>
             {{- if ne ($.Scratch.Get "about-the-video") "" -}}
-            <div class="col s12 l4">
+            <div class="col s12 l3">
                 <h2><a class="c-videos-100" href="#">About the Video</a></h2>
                 <p>{{- $.Scratch.Get "about-the-video" -}}</p>
                 <br>
             </div>
             {{- end -}}
-            <div class="col s12 l4">
+            <div class="col s12 l3">
                 <h2><a class="c-videos-100" href="#">Up Next</a></h2>
             </div>
-            {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
-            <div class="col s12 l4">
+            <div class="col s12 l3">
+            {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 2 -}}
                 {{ partial "card-video-horizontal.html" . }}
-            </div>
             {{- end -}}
-            <div class="col s12 l4">
-                <br>
-                <h2 class="c-videos-200">Want to watch all the videos on continuous playback?</h2>
-                <h3><a class="bg-videos-400 btn video" href="/videos">> Play All Videos</a></h3>
             </div>
 
         </div>
