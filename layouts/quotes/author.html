@@ -35,20 +35,25 @@
                     <div class="grid-col grid-col--3"></div>
                     <div class="grid-col grid-col--4"></div>
 
+                    <!-- <div class="grid-item">
+                        <div class="card fluid">
+                            {{- if isset .Params "image" -}}
+                            <img src="{{ .Params.image }}" alt="{{ .Title}}" />
+                            {{ end }}
+                        </div>
+                    </div>
+                    -->
+                    
                     <div class="grid-item">
-                        <div class="card bg-quotes-400 fluid center">
+                        <div class="card fluid center">
                             <h2 class="c-quotes-gradient">
-                                {{- if isset .Params "image" -}}
-                                <!-- <img src="{{ .Params.image }}" alt="{{ .Title}}"
-                                    style="width: 96px; height: 48px; float: left; border-radius: 4em;" /> -->
-                                {{ end }}
                                 {{- .Params.Author -}}
                             </h2>
                         </div>
                     </div>
 
                     <div class="grid-item">
-                        <div class="card fluid bg-quotes-400 center">
+                        <div class="card fluid center">
                             <h2 class="c-quotes-gradient bb">PROFILE</h2>
                             <h4>{{ $thisauthor }}</h4>
                             <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->

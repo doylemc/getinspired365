@@ -205,6 +205,11 @@ blockquote cite::before {
     font-size: 1.4em;
 }
 
+.grid-item:nth-child(7n) blockquote p {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
 .grid-item:nth-child(5n) blockquote::before {
     color: var(--quotes-color-100);
     font-size: 1.4em;
@@ -243,7 +248,7 @@ blockquote cite::before {
     var(--quotes-color-400),
     var(--quotes-color-400) 1px,
     var(--quotes-color-300) 1px,
-    var(--quotes-color-300) 5px);
+    var(--quotes-color-300) 5px) !important;
 }
 
 .bg-angled-videos {
