@@ -18,10 +18,14 @@
     {{- end -}}
 {{- end -}}
 
+{{- if isset .Params "background" -}}
+<img src="{{ .Params.background }}" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.6;" />
+{{- end -}}
+
 <div class="section bb">
     <div class="container">
         <div class="row">
-            <div class="col1 s12 l12">
+            <div class="col1 s12">
                 
                 <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
 
@@ -65,14 +69,15 @@
                         </div>
                     </div> -->
 
-                {{- $url := "/csv/quotes.csv" -}}
+                    {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
                     {{- range $i, $r := getCSV $sep $url -}}
                     {{- $author := index $r 3 -}}
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
                     <div class="grid-item">
-                        <blockquote class="bg-quotes-400 z-depth-{{ index (seq 5 | shuffle) 0 }}">
+                        <!-- <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}"> -->
+                        <blockquote class="z-depth-5">
                             <p>{{ $quote | humanize }}<cite>{{ $author }}</cite></p>
                         </blockquote>
                     </div>
@@ -82,6 +87,7 @@
                 </div>
                 
             </div>
+
         </div>
     </div>
 </div>
