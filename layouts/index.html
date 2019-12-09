@@ -88,7 +88,7 @@
                 <div class="card-w-50">
                     {{- $.Scratch.Set "g-card-counter" 0 -}}
                     {{- range (where .Site.Pages "Section" "news") }}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
                     {{- if in .Params.tags "celebrity" -}}
                     {{- partial "card-news.html" . -}}
                     {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
@@ -101,7 +101,7 @@
                 <h2><a class="c-news-100" href="/news/real-life">Real-Life Heroes ></a></h2>
                 {{- $.Scratch.Set "g-card-counter" 0 -}}
                 {{- range (where .Site.Pages "Type" "news") -}}
-                {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
                 {{- if in .Params.tags "real-life" -}}
                 {{- partial "card-news-horizontal.html" . -}}
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
@@ -145,10 +145,14 @@
             <div class="col s12 l8">
                 <h2><a class="c-quotes-100" href="/quotes/authors">Famous Authors ></a></h2>
                 <div class="card-w-50">
+                    {{- $.Scratch.Set "g-card-counter" 0 -}}
                     {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
                     {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
                     {{- if ne .Title "Quotes By Author" -}}
-                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
+                    {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
+                        {{- partial "card-quotes-by-author.html" . -}}
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
                     {{- end -}}
                     {{- end -}}
                     {{- end -}}
@@ -156,10 +160,14 @@
             </div>
             <div class="col s12 l4">
                 <h2><a class="c-quotes-100" href="/quotes/topics">Topics ></a></h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
                 {{ range where .Site.Pages "Section" "quotes" | first 13 }}
                 {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
                 {{ if ne .Title "Quotes By Topic" }}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
                     {{ partial "card-quotes-by-topic.html" . }}
+                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                    {{- end -}}
                 {{ end }}
                 {{ end }}
                 {{ end }}
