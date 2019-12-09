@@ -183,7 +183,7 @@
                     <div class="grid-col grid-col--3"></div>
                     <div class="grid-col grid-col--4"></div>
 
-                    {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 12 -}}
+                    {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 4 -}}
                     <div class="randomize-blockquote-positions">
                         <div class="grid-item">
                             <blockquote class="bg-quotes-400 z-depth-5">
@@ -214,7 +214,7 @@
                     <div class="grid-col grid-col--3"></div>
                     <div class="grid-col grid-col--4"></div>
 
-                    {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 12 -}}
+                    {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 4 -}}
                     <div class="grid-item">
                         {{ partial "card-video.html" . }}
                     </div>
