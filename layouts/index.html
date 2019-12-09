@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col s12 l6">
                 <h2><a class="c-videos-100" href="/videos">Today's Featured Video ></a></h2>
-                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
+                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "=" "May your adventures bring you closer together, even as they take you far away from home." | shuffle | first 1 -}}
                 <div class="card video bg-videos-300" >
                     <div class="plyr__video-embed" id="player">
                         <iframe
