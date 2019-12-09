@@ -1,6 +1,6 @@
 ---
 date: 2019-12-09T14:23:57.477Z 
-source: "https://www.bbc.co.uk/news/newsbeat-50712666" 
+source: "BBC" 
 title: "Miss Universe 2019: 'May every little girl see their faces reflected in mine'" 
 link: "https://www.bbc.co.uk/news/newsbeat-50712666" 
 tags: ["celebrity"] 
