@@ -101,7 +101,7 @@ p {
 /************************************************************************
 -- BLOCK QUOTES
 ************************************************************************/
-blockquote {
+figure {
     background: #090909;
     border-radius: 0.25em;
     display: inline-block;
@@ -121,7 +121,7 @@ blockquote {
     z-index: 1;
 }
 
-blockquote:hover {
+figure:hover {
     transform: scale(1.2);
     transition: transform 0.1s ease-out;
     z-index: 99 !important;
@@ -133,14 +133,14 @@ blockquote:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 } */
 
-blockquote p {
+figure blockquote {
     color: #eee;
     letter-spacing: 0px;
     margin-top: -0.2em;
     text-align: center;
 }
 
-blockquote::before {
+figure blockquote::before {
      color: var(--quotes-color-100);
      font-family: FontAwesome; 
      font-weight: 900; 
@@ -153,17 +153,19 @@ blockquote::before {
      width: 100%;
 }
 
-blockquote cite {
+figure figcaption {
     color: var(--quotes-color-200);
     display: block;
     font-size: 0.8em;
     font-style: normal;
+    margin-bottom: 1em;
     margin-top: 3.5em;
     position: relative;
+    text-align: center;
     width: 100%;
 }
 
-blockquote cite::before {
+figure figcaption::before {
     background: var(--quotes-color-300);
     border-right: 1px #aaa;
     content: '';
@@ -176,8 +178,11 @@ blockquote cite::before {
     width: 20px;
 }
 
+figure img {
+    display: none;
+}
 
-.grid-item:nth-child(3n) blockquote {
+.grid-item:nth-child(3n) figure {
     background: repeating-linear-gradient(-55deg,
     var(--quotes-color-400),
     var(--quotes-color-400) 1px,
@@ -185,32 +190,19 @@ blockquote cite::before {
     var(--quotes-color-500) 4px);
 }
 
-.grid-item:nth-child(4n) blockquote {
+.grid-item:nth-child(4n) figure {
     background: var(--quotes-color-400);
 }
 
-.grid-item:nth-child(5n) blockquote {
+.grid-item:nth-child(5n) figure {
     background: var(--quotes-color-500);
 }
 
-
-.grid-item:nth-child(5n) blockquote p {
-    /* font-famsily: 'Montserrat'; */
+.grid-item:nth-child(5n) figure blockquote {
     text-align: left;
-    z-index: 10;
 }
 
-.grid-item:nth-child(6n) blockquote p {
-    /* font-famsily: 'Montserrat'; */
-    font-size: 1.4em;
-}
-
-.grid-item:nth-child(7n) blockquote p {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-}
-
-.grid-item:nth-child(5n) blockquote::before {
+.grid-item:nth-child(5n) figure blockquote::before {
     color: var(--quotes-color-100);
     font-size: 1.4em;
     margin-bottom: 0.25em;
@@ -219,14 +211,47 @@ blockquote cite::before {
     z-index: 1;
 }
 
-.grid-item:nth-child(5n) blockquote cite {
+.grid-item:nth-child(5n) figure figcaption {
     color: var(--quotes-color-300);
-    margin: 1.5em 0 1em 0;
+    margin: 1.5em 0 1em 3em;
+    text-align: left;
 }
 
-.grid-item:nth-child(5n) blockquote cite::before {
+.grid-item:nth-child(5n) figure figcaption::before {
     display: none;
 }
+
+.grid-item:nth-child(5n) figure {
+    /* font-famsily: 'Montserrat'; */
+    text-align: left;
+    z-index: 10;
+}
+
+.grid-item:nth-child(6n) figure {
+    /* font-famsily: 'Montserrat'; */
+    font-size: 1.4em;
+}
+
+.grid-item:nth-child(7n) figure {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.grid-item:nth-child(8n) figure {
+    border-radius: 0;
+    border-left: 4px solid var(--quotes-color-300);
+}
+
+.grid-item:nth-child(9n) figure img {
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    right: 16px;
+    position: absolute;
+    bottom: 16px;
+    width: 48px;
+}
+
 
 /************************************************************************
 -- BACKGROUNDS

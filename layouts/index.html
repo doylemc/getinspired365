@@ -194,9 +194,10 @@
                     {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 4 -}}
                     <div class="randomize-blockquote-positions">
                         <div class="grid-item">
-                            <blockquote class="bg-quotes-400 z-depth-5">
-                                <p>{{- .Params.title -}}<cite>{{- .Params.author -}}</cite></p>
-                            </blockquote>
+                            <figure class="z-depth-5">
+                                <blockquote>{{ .Params.title }}</blockquote>
+                                <figcaption>{{ .Params.author }}</figcaption>
+                            </figure>
                         </div>
                     </div>
                     {{- end -}}

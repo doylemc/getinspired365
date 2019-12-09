@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     -->
-                    
+
                     <div class="grid-item">
                         <div class="card fluid center">
                             <h2 class="c-quotes-gradient">
@@ -54,7 +54,7 @@
 
                     <div class="grid-item">
                         <div class="card fluid center">
-                            <h2 class="c-quotes-gradient bb">PROFILE</h2>
+                            <h2 class="c-quotes-gradient">PROFILE</h2>
                             <h4>{{ $thisauthor }}</h4>
                             <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
                             <h4>{{ $.Scratch.Get "nationality" }}</h4>
@@ -73,7 +73,7 @@
                             <p>{{- $.Scratch.Get "briefbio" -}}</p>
                         </div>
                     </div> -->
-
+                    {{ $.Scratch.Set "image" .Params.image }}
                     {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
                     {{- range $i, $r := getCSV $sep $url -}}
@@ -81,10 +81,12 @@
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
                     <div class="grid-item">
+                        <figure class="z-depth-5">
+                            <img src="{{ $.Scratch.Get "image" }}" />
+                            <blockquote>{{ $quote | humanize }}</blockquote>
+                            <figcaption>{{ $author }}</figcaption>
+                        </figure>
                         <!-- <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}"> -->
-                        <blockquote class="z-depth-5">
-                            <p>{{ $quote | humanize }}<cite>{{ $author }}</cite></p>
-                        </blockquote>
                     </div>
                     {{- end -}}
                     {{ end }}
