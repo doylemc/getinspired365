@@ -1,4 +1,4 @@
-<div class="section no-pad bb bg-{{ .Section }}-500">
+<div class="section no-pad bb bg-{{ .Section }}-400">
     <div class="container">
         <div class="row no-margin-bottom">
             <header>
@@ -29,11 +29,14 @@
                 <div class="col s12 m5 offset-m2" style="text-align:right">
                     <div class="right">
                         {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
+                            {{- if .IsHome -}}
                             <div class="hide-on-med-and-up center">
                                 <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                                <br/>
                             </div>
+                            {{- end -}}
                             <div class="hide-on-med-and-down right">
-                                <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                                <h6 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h6>
                             </div>
                         {{- end -}}
                     </div>

@@ -36,15 +36,15 @@
 /************************************************************************
 -- BODY
 ************************************************************************/
-body { 
+body {
     /* background: #100e17;  */
-    background: #060606; 
+    background: #060606;
     /* background: -webkit-linear-gradient(to bottom, var(--news-color-400), var(--videos-color-400));
     background: linear-gradient(to bottom, var(--news-color-400), var(--videos-color-400));  */
     /* background: #090909; */
-    color: #aaa; 
+    color: #aaa;
     font-family: 'Raleway';
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     margin: 0;
     padding: 0;
 }
@@ -142,9 +142,9 @@ figure blockquote {
 
 figure blockquote::before {
      color: var(--quotes-color-100);
-     font-family: FontAwesome; 
-     font-weight: 900; 
-     content: "\f10d"; 
+     font-family: FontAwesome;
+     font-weight: 900;
+     content: "\f10d";
      float: left;
      margin-bottom: 1em;
      margin-top: 1em;
@@ -265,7 +265,7 @@ figure img {
 /************************************************************************
 -- BACKGROUNDS
 ************************************************************************/
-.bg-black { 
+.bg-black {
     background: #000 !important;
 }
 
@@ -294,7 +294,7 @@ figure img {
 }
 
 .bg-gradient {
-    background: #aaa !important; 
+    background: #aaa !important;
     background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)) !important;
     background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)) !important;
 }
@@ -397,7 +397,7 @@ figure img {
 /************************************************************************
 -- COLORS
 ************************************************************************/
-.c-gradient {     
+.c-gradient {
     background: #aaa; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -608,7 +608,7 @@ a.btn.video:hover {
 }
 
 /************************************************************************
--- SITE NAVIGATION 
+-- SITE NAVIGATION
 ************************************************************************/
 nav ul.site-nav {
     float: left;
@@ -704,7 +704,7 @@ header .logo h3 {
     letter-spacing: -2px;
     margin-bottom: 0;
     margin-top: 0.5em;
-    padding-bottom: 0;  
+    padding-bottom: 0;
     padding-right: 1em;
     position: relative;
 }
@@ -819,7 +819,7 @@ ul.section-nav.tags a:hover {
 -- GRID FOR MASONRY LAYOUT
 ************************************************************************/
 .grid {
-    margin-left: calc(var(--gutter-width) / 2 * -1); 
+    margin-left: calc(var(--gutter-width) / 2 * -1);
     margin-right: calc(var(--gutter-width) / 2 * -1);
 }
 
@@ -883,10 +883,12 @@ ul.section-nav.tags a:hover {
 }
 
 .card-w-50 {
-    margin-left: calc(var(--gutter-width) / 2 * -1); 
+    margin-left: calc(var(--gutter-width) / 2 * -1);
     margin-right: calc(var(--gutter-width) / 2 * -1);
 }
 .card-w-50 .card {
+    float: left;
+    position: relative;
     width: calc(50% - var(--gutter-width));
     margin-left: calc(var(--gutter-width) / 2);
     margin-right: calc(var(--gutter-width) / 2);
@@ -985,7 +987,7 @@ ul.section-nav.tags a:hover {
     position: absolute;
     right: 0.5em;
     text-align: center;
-    top:  0.5em; 
+    top:  0.5em;
     transition: opacity 0.4s ease-in;
     width: 80px;
 }
@@ -995,8 +997,8 @@ ul.section-nav.tags a:hover {
 }
 
 .card.horizontal {
-    height: var(--card-unit-height);
-    min-height: var(--card-unit-height);
+    height: calc( var(--card-unit-height) / 2 - (var(--gutter-width) / 2) );
+    min-height: calc( var(--card-unit-height) / 2 - (var(--gutter-width) / 2) );
 }
 
 .card.horizontal img {
@@ -1005,8 +1007,9 @@ ul.section-nav.tags a:hover {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     float: left;
-    height: var(--card-unit-height) !important;
-    object-position: center;
+    height: 100%;
+    object-position: top;
+    position: relative;
     width: 40%;
 }
 
@@ -1029,8 +1032,9 @@ ul.section-nav.tags a:hover {
     height: var(--card-unit-height) !important;
 }
 
-.card.video {
-    min-height: var(--card-unit-height);
+.card.video.horizontal {
+    height: 115px;
+    min-height: 115px;
 }
 
 .card.video.horizontal .image-holder {
@@ -1051,8 +1055,17 @@ ul.section-nav.tags a:hover {
     margin: -40% 0;
 }
 
+.card.video.horizontal .content .summary {
+    margin-top: 1em;
+    padding-top: 0;
+}
+
 .card.video img, .card.quote img, .card.video.horizontal {
     object-position: center;
+}
+
+.card.video {
+    min-height: 340px;
 }
 
 .card.video .play {
@@ -1063,7 +1076,7 @@ ul.section-nav.tags a:hover {
     left: calc(50% - 24px);
     opacity: 0.95;
     padding: 8px 8px 8px 12px;
-    position: absolute; 
+    position: absolute;
     top: calc(60px - 24px);
 }
 
@@ -1094,7 +1107,7 @@ ul.section-nav.tags a:hover {
 }
 
 .card.fluid {
-    min-height: 0;
+    min-height: 0 !important;
 }
 
 /* .col.l4 img {
@@ -1105,7 +1118,7 @@ ul.section-nav.tags a:hover {
 } */
 
 /************************************************************************
--- FEATURED 
+-- FEATURED
 ************************************************************************/
 .featured {
     float: left;
@@ -1160,7 +1173,7 @@ footer h5 {
     padding-bottom: 0;
 }
 
-footer h3 { 
+footer h3 {
     float: left;
     margin-right: 1em;
     position: relative;

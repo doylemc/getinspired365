@@ -1,5 +1,5 @@
 {{ if eq .Section "news" }}
-<div class="section no-pad bb bg-news-400 var-2 z-depth-5">
+<div class="section no-pad bb bg-news-400 var-2 z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -14,8 +14,25 @@
 </div>
 {{ end }}
 
+{{ if eq .Section "articles" }}
+<div class="section no-pad bb bg-articles-400 var-2 z-depth-1">
+    <div class="container">
+        <div class="row no-margin-bottom">
+            <div class="col s12">
+                <ul class="section-nav articles">
+                    <li{{ if eq .Section (path.Base .File.Dir)}} class="selected" {{ end }}><a href="/articles">HOME</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/articles/stories"))}} class="selected" {{ end }}><a href="/articles/stories">STORIES</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/articles/interviews"))}} class="selected" {{ end }}><a href="/articles/interviews">INTERVIEWS</a></li>
+                    <li{{ if (.IsDescendant ($.Site.GetPage "/articles/opinion"))}} class="selected" {{ end }}><a href="/articles/opinion">OPINION</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
 {{ if eq .Section "quotes" }}
-<div class="section no-pad bb bg-quotes-400 z-depth-5">
+<div class="section no-pad bg-quotes-400 z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -32,7 +49,7 @@
 {{ end }}
 
 {{- if eq .Section "tags" -}}
-<div class="section no-pad bb bg-tags-300 bg-angled-dark z-depth-5">
+<div class="section no-pad bb bg-tags-300 bg-angled-dark z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">

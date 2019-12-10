@@ -7,7 +7,7 @@
     {{- else -}}
         <div class="card horizontal bg-news-400 z-depth-5">
     {{- end -}} -->
-    <div class="card image-50 bg-news-400 z-depth-5">
+    <div class="card image-50 bg-news-400 z-depth-0">
 
         <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
         {{- $source:= replace .Params.source " " "-" -}}
