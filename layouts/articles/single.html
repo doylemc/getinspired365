@@ -3,8 +3,7 @@
 <div class="section border-bottom">
     <div class="container">
         <div class="row">
-            
-            <div class="col s12 l8">
+            <div class="col s12 l7 offset-l2">
             
                 {{- range .Params.writers }}
                 {{- with $.Site.GetPage "writers" (printf "writers/%s" (urlize .)) -}}
@@ -13,54 +12,53 @@
                 {{ $.Scratch.Set "writerphoto" .Params.photo }}
                 {{ end }}
                 {{ end }}
+               
+
+                <h1 class="c-gradient">{{ .Title }}</h1>
+                <h3 class="c-gradient">{{ .Params.summary }}</h3>
                 
-                <h1 id="title">{{ .Title }}</h1>
-                <h5 id="meta"> {{ .Date.Format "2 Jan 2006" }} / <i class="fas fa-clock"></i> {{ div .WordCount 200 }} min / {{ $.Scratch.Get "writername" }}</h5>
+                <!-- Writer -->
+                {{- if ne .Title "About GetInspired365" -}}
+                <figure class="writer">
+                    <img src="{{ .Scratch.Get "writerphoto" }}" alt="" />
+                    <figcaption>
+                        <a class="c-articles-300" href="{{ .Scratch.Get "writerurl" }}">{{ .Scratch.Get "writername" }}</a>
+                        <h5 class="date">{{ .Date.Format "2 Jan 2006" }}</h5>
+                        <h5 class="readingtime"><i class="fas fa-clock"></i> {{ .ReadingTime }} min(s) read </h5>
+                    </figcaption>
+                </figure>
+                {{- end -}}
+
 
                 <!-- The Article  -->
-                <article id="content">
+                <article>
                     {{ .Content }}
                 </article>
                 
-                <!-- Writer -->
-                <figure>
-                    <img src="{{ .Params.photo }}" alt="" />
-                    <figcaption>
-                        <a href="{{ .Scratch.Get "writerurl" }}">{{ .Scratch.Get "writername" }}</a>
-                    </figcaption>
-                </figure>
-
             </div>
-
         </div>
-    </div>
-</div>
-
-<div class="section">
-    <div class="container">
-
+        
         <div class="row">
-    
-            <div class="col s12">
-                <h3><a href="/articles">RELATED ARTICLES</a></h3>
-            </div>
 
-            {{ with .PrevInSection }}
-            <div class="col s6 m6 l3">
+            {{- if and (ne .Title "About GetInspired365") (isset .Params "writers") -}}
+            <div class="col s12 l10 offset-l2">
+            <h2 class="c-gradient">See Also</h2>
+            </div>
+            {{- with .PrevInSection -}}
+                <div class="col s12 l3 offset-l2">
                 {{ partial "card-article.html" . }}
-            </div>
-            {{ end }}
-
-            {{ with .NextInSection }}
-            <div class="col s6 m6 l3">
+                </div>
+            {{- end -}}
+            {{- with .NextInSection -}}
+                <div class="col s12 l3">
                 {{ partial "card-article.html" . }}
-            </div>
-            {{ end }}
-
+                </div>
+            {{- end -}}
+            {{- end -}}
         </div>
 
     </div>
-</div>
 
+</div>
 
 {{ end }}

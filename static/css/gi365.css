@@ -87,6 +87,10 @@ a:visited {
 /************************************************************************
 -- TYPOGRAPHY
 ************************************************************************/
+h1 {
+    font-weight: 900;
+}
+
 h2 {
     font-size: 1.6em;
     font-weight: 900;
@@ -99,9 +103,65 @@ p {
 }
 
 /************************************************************************
--- BLOCK QUOTES
+-- FIGURE ARTICLE
 ************************************************************************/
-figure {
+figure.article {
+    margin: 2em 0;
+}
+
+figure.article img {
+    border-radius: 0.25em;
+    float: left;
+    height: auto;
+    padding: 0;
+    width: 100% !important;
+}
+
+figure.article figcaption p {
+    float: left;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0 0 2em 0;
+    width: 100%;
+}
+
+/************************************************************************
+-- FIGURE WRITER
+************************************************************************/
+figure.writer {
+    float: left;
+    margin: 1em 0 3em 0;
+    width: 100%;
+}
+
+figure.writer img {
+    border-radius: 50%;
+    float: left;
+    height: 48px;
+    margin: 0 1em 0 0;
+    width: 48px;
+}
+
+figure.writer figcaption a {
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+figure.writer figcaption .date {
+    margin: 0.25em;
+    padding: 0;
+}
+
+figure.writer figcaption .readingtime {
+    margin: 0;
+    padding: 0;
+}
+
+/************************************************************************
+-- FIGURE WITHIN A GRID
+************************************************************************/
+.grid-item figure {
     background: #090909;
     border-radius: 0.25em;
     display: inline-block;
@@ -121,7 +181,7 @@ figure {
     z-index: 1;
 }
 
-figure:hover {
+.grid-item figure:hover {
     transform: scale(1.2);
     transition: transform 0.1s ease-out;
     z-index: 99 !important;
@@ -133,14 +193,14 @@ figure:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
 } */
 
-figure blockquote {
+.grid-item figure blockquote {
     color: #eee;
     letter-spacing: 0px;
     margin-top: -0.2em;
     text-align: center;
 }
 
-figure blockquote::before {
+.grid-item figure blockquote::before {
      color: var(--quotes-color-100);
      font-family: FontAwesome;
      font-weight: 900;
@@ -153,7 +213,7 @@ figure blockquote::before {
      width: 100%;
 }
 
-figure figcaption {
+.grid-item figure figcaption {
     color: var(--quotes-color-200);
     display: block;
     font-size: 0.8em;
@@ -165,7 +225,7 @@ figure figcaption {
     width: 100%;
 }
 
-figure figcaption::before {
+.grid-item figure figcaption::before {
     background: var(--quotes-color-300);
     border-right: 1px #aaa;
     content: '';
@@ -178,7 +238,7 @@ figure figcaption::before {
     width: 20px;
 }
 
-figure img {
+.grid-item figure img {
     display: none;
 }
 
@@ -260,7 +320,6 @@ figure img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 /************************************************************************
 -- BACKGROUNDS
@@ -867,8 +926,6 @@ ul.section-nav.tags a:hover {
 /************************************************************************
 -- CARD
 ************************************************************************/
-
-
 .card {
     background: #090909;
     border-radius: 0.25em;
@@ -951,7 +1008,7 @@ ul.section-nav.tags a:hover {
 
 .card .caption {
     display: inline-block;
-    margin: 1em 0;
+    margin: 1em 0 0.5em 0;
     padding: 0.25em 0.25em 0.15em 0.25em;
     text-transform: uppercase;
 }
@@ -1194,4 +1251,29 @@ footer h3 {
 
 #player .plyr__menu__container .plyr__control {
     color: var(--videos-color-300);
+}
+
+/************************************************************************
+-- ARTICLE
+************************************************************************/
+article p {
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+article blockquote {
+    border-left: 5px solid #aaa;
+    font-size: 1.4em;
+    margin: 2em 0;
+    padding-left: 1em;
+}
+
+article p a, article h2 {
+    background: #aaa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
