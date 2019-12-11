@@ -28,13 +28,15 @@
     {{- partial "site-navigation.html" . -}}
     {{- partial "page-header.html" . -}}
     {{- partial "section-navigation.html" . -}}
-    {{- block "content" . -}}
-    {{- end -}}
-    {{- block "content-footer" . -}}
-    {{- end -}}
+    
+    <div id="page-content">
+        {{- block "content" . -}}
+        {{- end -}}
+    </div>
+
     {{- partial "section-tags.html" . -}}
     {{- partial "page-footer.html" . -}}
-    {{- partial "prevnext-page.html" . -}}
+    {{- partial "section-page-navigation.html" . -}}
 
     <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/6dd30041ec.js" crossorigin="anonymous"></script>

@@ -97,6 +97,10 @@ h2 {
     letter-spacing: -1px;
 }
 
+h6 {
+    font-weight: 900 !important;
+}
+
 p {
     letter-spacing: 0;
     line-height: 1.4;
@@ -106,7 +110,7 @@ p {
 -- FIGURE ARTICLE
 ************************************************************************/
 figure.article {
-    margin: 2em 0;
+    margin: 2em 0 2em 0;
 }
 
 figure.article img {
@@ -121,7 +125,7 @@ figure.article figcaption p {
     float: left;
     font-size: 0.7em;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding: 0 0 2em 0;
     width: 100%;
 }
@@ -749,7 +753,9 @@ nav ul.contact li {
 ************************************************************************/
 header {
     height: 60px;
+    z-index: 1;
 }
+
 header .logo {
     float: left;
     margin-top: 0;
@@ -804,6 +810,7 @@ ul.section-nav {
     float: left;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 ul.section-nav li {
@@ -871,6 +878,90 @@ ul.section-nav.tags a:hover {
     border-image: linear-gradient(to right, var(--news-color-100) 0%, var(--videos-color-100) 100%);
     border-image-slice: 1;
     border-width: 3px;
+}
+
+/************************************************************************
+-- SECTION NAVIGATION
+************************************************************************/
+.section-page-nav {
+    height: 300px;
+    position: fixed;
+    top: calc(50% - 0.7em);
+    width: 100px;
+    z-index: 100;
+}
+.section-page-nav.prev {
+    left: 1em;
+}
+.section-page-nav.next {
+    right: 1em;
+    text-align: right;
+}
+
+.section-page-nav .navigate {
+    font-size: 1.4em;
+    opacity: 0.2;
+}
+
+.section-page-nav:hover a.navigate {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.section-page-nav .details {
+    opacity: 0;
+    position: fixed;
+    top: calc(50% - 50px);
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+}
+
+.section-page-nav.prev .details {
+    left: -200px;
+}
+
+.section-page-nav.next .details {
+    right: -200px;
+}
+
+.section-page-nav:hover .details {
+    opacity: 1;
+}
+
+.section-page-nav.prev:hover .details {
+    transform: translateX(180px);
+}
+
+.section-page-nav.next:hover .details {
+    transform: translateX(-180px);
+}
+
+.section-page-nav .details img {
+    border-radius: 0.25em;
+    display: block;
+    float: left;
+    height: 100px;
+    width: auto;
+}
+
+.section-page-nav .details a.title {
+    background: #000;
+    bottom: 20px;
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: -2em !important;
+    opacity: 0.8;
+    padding: 0.1em 0.3em;
+    position: absolute;
+    text-align: left;
+    width: 70%;
+}
+
+.section-page-nav.prev .details a.title {
+    right: 20px;
+}
+
+.section-page-nav.next .details a.title {
+    left: 0;
 }
 
 
@@ -1148,23 +1239,29 @@ ul.section-nav.tags a:hover {
     opacity: 1;
 }
 
-.card.video.embed {
-    border-radius: 0.5em;
-    height: 350px ;
-    min-height: 350px ;
-    width: 100%;
+.card.video.fullscreen {
+    margin-bottom: -2em;
+    margin-left: calc(var(--gutter-width) * -2);
+    margin-right: -4em;
+    width: calc( 100% + (var(--gutter-width) * 4));
 }
 
-.card.video.embed iframe {
-    /* border: 1px solid #111; */
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-radius: 0.5em;
-    min-height: 350px;
+.card.video.fullscreen .content {
+    padding-left: calc( var(--gutter-width) * 2 );
+    padding-right: calc( var(--gutter-width) * 2 );
 }
 
 .card.fluid {
     min-height: 0 !important;
+}
+
+.card.article {
+    height: 340px;
+    min-height: 340px;
+}
+
+.card.article img {
+    height: 150px;
 }
 
 /* .col.l4 img {
@@ -1214,6 +1311,7 @@ footer {
     padding: 0.05em 0;
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 footer h2 {
@@ -1263,13 +1361,8 @@ article p {
 }
 
 article blockquote {
-    background: #aaa; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     border-left: 5px solid #aaa;
+    color: #ddd;
     font-size: 1.4em;
     margin: 2em 0;
     padding-left: 1em;

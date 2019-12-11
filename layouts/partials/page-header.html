@@ -1,4 +1,4 @@
-<div class="section no-pad bb bg-{{ .Section }}-400">
+<div id="page-header" class="section no-pad bb bg-{{ .Section }}-400 z-depth-5">
     <div class="container">
         <div class="row no-margin-bottom">
             <header>
@@ -28,6 +28,9 @@
                 
                 <div class="col s12 m5 offset-m2" style="text-align:right">
                     <div class="right">
+                        {{- $.Scratch.Set "section" .Section -}}
+                        {{- $.Scratch.Set "pagetitle" .Title -}}
+                        {{- $.Scratch.Set "pageauthor" .Params.author -}}
                         {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
                             {{- if .IsHome -}}
                             <div class="hide-on-med-and-up center">
@@ -36,7 +39,11 @@
                             </div>
                             {{- end -}}
                             <div class="hide-on-med-and-down right">
-                                <h6 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h6>
+                                {{- if and (eq ($.Scratch.Get "section") "videos") (ne ($.Scratch.Get "pagetitle") "Inspirational Videos") -}}
+                                    <h6 class="c-gradient">"{{ $.Scratch.Get "pagetitle" }}"<br>{{ $.Scratch.Get "pageauthor" }}</h6>
+                                {{- else -}}
+                                    <h6 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h6>
+                                {{- end -}}
                             </div>
                         {{- end -}}
                     </div>

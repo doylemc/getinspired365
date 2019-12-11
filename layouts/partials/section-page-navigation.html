@@ -1,0 +1,19 @@
+{{- with .NextInSection -}}
+<div id="navigate_prev" class="section-page-nav prev">
+    <a class="navigate prev" href="{{ .Permalink }}"><i class="fas fa-chevron-left"></i></a>
+    <div class="details">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.image }}"></a>
+        <a class="title" href="{{ .Permalink }}">Previous:<br/>{{ .Title | safeHTML | truncate 30 }}</a>
+    </div>
+</div>
+{{- end -}}
+
+{{- with .PrevInSection -}}
+<div class="section-page-nav next">
+    <a id="navigate_next" class="navigate next" href="{{ .Permalink }}"><i class="fas fa-chevron-right"></i></a>
+    <div class="details">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.image }}"></a>
+        <a class="title" href="{{ .Permalink }}">Next:<br/>{{ .Title | safeHTML | truncate 30 }}</a>
+    </div>
+</div>
+{{- end -}}

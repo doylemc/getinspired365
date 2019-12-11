@@ -1,13 +1,19 @@
 {{ define "content" }}
 
-<div class="section">
+<div class="section no-pad">
     <div class="container">
         <div class="row">
             <div class="col s12">
-                <h3>{{ .Title | humanize }}</h3>
-            </div>
-            <div class="col s12">
-                {{ .Content }}
+                <div class="card video fullscreen bg-videos-300">
+                    <div class="plyr__video-embed" id="player">
+                        <iframe src="https://www.youtube.com/embed/{{ .Params.videoid }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" autoplay allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                    <div class="content bg-angled-videos">
+                        <br>
+                        <h2 class="title">"{{ .Title }}"</h2>
+                        <h4 class="">- {{ .Params.author }}</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
