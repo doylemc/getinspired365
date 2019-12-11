@@ -22,8 +22,8 @@ We'd love for you to get in touch and let us know if there are features or conte
 
 For now, we'll leave you with our favourite quote:
 
-<blockquote class="c-gradient">
-<p>
+<blockquote>
+<h3>
     "Everyone has inside of him a piece of good news. The good news is that you don't know how great you can be! How much you can love! What you can accomplish! And what your potential is!" <br>- Anne Frank
-</p>
+</h3>
 </blockquote>

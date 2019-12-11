@@ -48,7 +48,7 @@ As I say we've found a great doctor now that we have complete trust in and the d
 
 Pills definitely work for some people and can absolutely put you back onto a level footing, but they don't have to be the only answer and a doctor's role isn't limited to just prescribing medication.
 
-<blockquote class="c-gradient">
+<blockquote>
 <h3>
 A doctor's role isn't limited to just prescribing medication.
 </h3>
@@ -106,7 +106,7 @@ I think the important thing is to feel like you are taking some action. I apprec
 
 Oh, and my final bit of advice - tell the person who is suffering that you love them. You can never tell them that enough. And if you are suffering yourself, then tell your partner - who is probably doing their very best - that you love them because chances are, they'll need to hear that.
 
-<blockquote class="c-gradient">
+<blockquote>
 <h3>
 My final bit of advice - tell the person who is suffering that you love them. You can never tell them that enough.
 </h3>

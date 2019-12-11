@@ -1263,6 +1263,12 @@ article p {
 }
 
 article blockquote {
+    background: #aaa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-left: 5px solid #aaa;
     font-size: 1.4em;
     margin: 2em 0;
