@@ -6,7 +6,7 @@ link: "https://www.celebsnow.co.uk/latest-celebrity-news/amanda-holden-celebrate
 tags: ["celebrity"] 
 image: "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/30/2019/11/GettyImages-1185851468_360685811_630916972_0001-630x420.jpg" 
 ---
-{{< figure src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/30/2019/11/GettyImages-1185851468_360685811_630916972_0001-630x420.jpg" title="Amanda Holden celebrates with inspirational message as she qualifies as a doctor" >}}
+{{< figure class="article" src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/30/2019/11/GettyImages-1185851468_360685811_630916972_0001-630x420.jpg" title="Amanda Holden celebrates with inspirational message as she qualifies as a doctor" >}}
 The telly star was awarded an Honorary Doctorate of Letters by her former drama school, where she studied nearly 30 years ago.
 
 Sharing a photograph of herself proudly holding her certificate and grinning in her graduation gown and hat, Heart breakfast host Amanda penned some words of inspiration for her followers.

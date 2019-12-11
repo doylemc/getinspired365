@@ -18,7 +18,7 @@ player.on('ready', event => {
     //     behavior: 'smooth'
     // });
     const instance = event.detail.plyr;
-    player.play(); // Start playback
+    // player.play(); // Start playback
     //player.fullscreen.enter();
 });
 

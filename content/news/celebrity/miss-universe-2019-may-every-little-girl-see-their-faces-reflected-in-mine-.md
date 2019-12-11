@@ -6,7 +6,7 @@ link: "https://www.bbc.co.uk/news/newsbeat-50712666"
 tags: ["celebrity"] 
 image: "https://ichef.bbci.co.uk/news/660/cpsprodpb/7C97/production/_110059813_gettyimages-1192819288.jpg" 
 ---
-{{< figure src="https://ichef.bbci.co.uk/news/660/cpsprodpb/7C97/production/_110059813_gettyimages-1192819288.jpg" title="Miss Universe 2019: 'May every little girl see their faces reflected in mine'" >}}
+{{< figure class="article" src="https://ichef.bbci.co.uk/news/660/cpsprodpb/7C97/production/_110059813_gettyimages-1192819288.jpg" title="Miss Universe 2019: 'May every little girl see their faces reflected in mine'" >}}
 
 <br/><br/><br/>
 <a href='https://www.bbc.co.uk/news/newsbeat-50712666' class='btn' target='_blank'>View Full Article</a>

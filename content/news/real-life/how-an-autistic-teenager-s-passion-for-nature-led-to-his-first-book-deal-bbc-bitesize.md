@@ -6,7 +6,7 @@ link: "https://www.bbc.co.uk/bitesize/articles/z4md47h"
 tags: ["real-life"]
 image: "https://ichef.bbci.co.uk/images/ic/480xn/p07ttqpw.png" 
 ---
-{{< figure src="https://ichef.bbci.co.uk/images/ic/480xn/p07ttqpw.png" title="How an autistic teenager’s passion for nature led to his first book deal - BBC Bitesize" >}}
+{{< figure class="article" src="https://ichef.bbci.co.uk/images/ic/480xn/p07ttqpw.png" title="How an autistic teenager’s passion for nature led to his first book deal - BBC Bitesize" >}}
 How an autistic teenager’s passion for nature led to his first book deal
 <br/><br/><br/>
 <a href='https://www.bbc.co.uk/bitesize/articles/z4md47h' class='btn' target='_blank'>View Full Article</a>
