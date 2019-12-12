@@ -118,7 +118,7 @@
             return d.toISOString()
         }
 
-        var API_NEW_POST = 'https://api.github.com/repos/doylemc/getinspired365/contents/content/news/' + $('#p_tags').val();
+        var API_NEW_POST = 'https://api.github.com/repos/doylemc/getinspired365/contents/content/news/';
         $("#go").click(function () {
             var user = $('#username').val();
             var password = $('#password').val();
@@ -148,7 +148,7 @@
             $.ajax({
                 dataType: "json",
                 contentType: 'application/json; charset=UTF-8',
-                url: API_NEW_POST + post_file(title) + '.md',
+                url: API_NEW_POST + tags + '/' + post_file(title) + '.md',
                 type: "PUT",
                 data: JSON.stringify({
                     content: btoa(unescape(encodeURIComponent(p_body))),
