@@ -118,7 +118,7 @@
             return d.toISOString()
         }
 
-        var API_NEW_POST = 'https://api.github.com/repos/doylemc/getinspired365/contents/content/news/';
+        var API_NEW_POST = 'https://api.github.com/repos/doylemc/getinspired365/contents/content/news/' + $('#p_tags').val();
         $("#go").click(function () {
             var user = $('#username').val();
             var password = $('#password').val();
