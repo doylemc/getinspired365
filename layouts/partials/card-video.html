@@ -1,6 +1,6 @@
-<div class="card video bg-videos-400 z-depth-5">
+<!-- <div class="card video bg-videos-400 z-depth-5"> -->
     <a href="{{ .Permalink }}"><img src="https://img.youtube.com/vi/{{ .Params.videoid }}/0.jpg" /></a>
-    <a href="{{ .Permalink }}" class="play"><i class="fas fa-play"></i></a>
+    <a href="{{ .Permalink }}" class="play"><i class="fas fa-play bg-videos-300"></i></a>
     <div class="content">
         <h6 class="caption bg-videos-300">YOUTUBE</h6>
         {{- if gt ( .Params.Title | countwords) 20 -}}
@@ -10,4 +10,4 @@
         {{- end -}}
         <h5>- {{ .Params.author }}</h5>
     </div>
-</div>
+<!-- </div> -->

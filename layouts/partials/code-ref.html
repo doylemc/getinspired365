@@ -287,3 +287,7 @@
         </div>
     </div>
 </div>
+
+
+{{- range where (where .Site.Pages "Type" "videos") ".Params.title" "=" "May your adventures bring you closer together, even as they take you far away from home." | shuffle | first 1 -}}
+{{- end -}}

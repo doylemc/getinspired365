@@ -7,7 +7,7 @@
     {{- else -}}
         <div class="card horizontal bg-news-400 z-depth-5">
     {{- end -}} -->
-    <div class="card image-50 bg-news-400 z-depth-0">
+    <!-- <div class="c bg-news-400 z-depth-0"> -->
 
         <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
         {{- $source:= replace .Params.source " " "-" -}}
@@ -28,9 +28,9 @@
         <div class="content">
             <h6 class="caption bg-news-300">{{ .Params.source }}</h6>
             {{- if lt $rand 10}}
-                    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+                <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
             {{- else -}}
-                    <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+                <h3 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
             {{- end -}}
             {{- if lt $delta 60 -}}
             <h6 class="age">{{ $delta }}m ago</h6>
@@ -40,5 +40,5 @@
             <h6 class="age">{{ div $delta 1440 }}d ago</h6>
             {{- end -}}
         </div>
-    </div>
+    <!-- </div> -->
 {{- end -}}

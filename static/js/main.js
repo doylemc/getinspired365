@@ -11,6 +11,18 @@ const player = new Plyr('#player', {
     title: 'GetInspired365',
 });
 
+const player1 = new Plyr('#player1', {
+    title: 'GetInspired365',
+});
+
+const player2 = new Plyr('#player2', {
+    title: 'GetInspired365',
+});
+
+const player3 = new Plyr('#player3', {
+    title: 'GetInspired365',
+});
+
 player.on('ready', event => {
     // window.scroll({
     //     top: 250,
@@ -42,4 +54,13 @@ player.on('ended', event => {
     // document.getElementById("page-header").style.visibility = "visible";
     // document.getElementById("section-tags").style.visibility = "visible";
     // document.getElementById("page-footer").style.visibility = "visible";
+});
+
+var elem = document.querySelector('.grid');
+var pckry = new Packery(elem, {
+    // options
+    columnWidth: '.grid-sizer',
+    itemSelector: '.gi',
+    gutter: '.gutter-sizer',
+    // percentPosition: trues
 });

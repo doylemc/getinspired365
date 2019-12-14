@@ -1,4 +1,4 @@
-{{ define "content" }}
+{{- define "content" -}}
 <div class="section">
     <div class="container">
         <div class="row">
@@ -8,17 +8,16 @@
             </div>
             <div class="col s12 l4">
                 <h2 class="c-news-200">Also in the News</h2>
-                {{- $related := .Site.RegularPages.Related . | first 8 -}}
+                {{- $related := .Site.RegularPages.Related . | first 4 | shuffle -}}
                 {{- with $related -}}
                 {{- range . -}}
+                <div class="card wide h2 bg-news-500">
                     {{- partial "card-news-horizontal.html" . -}}
+                </div>
                 {{- end -}}
                 {{- end -}}
-
-    
-
             </div>
         </div>
     </div>
 </div>
-{{ end }}
+{{- end -}}

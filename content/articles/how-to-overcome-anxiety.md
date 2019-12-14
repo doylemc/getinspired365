@@ -4,6 +4,7 @@ date: 2019-11-16T11:36:02Z
 tags: ["anxiety"]
 writers: ["Steve Whyley"]
 image: "https://images.unsplash.com/photo-1523495338267-31cbca7759e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"
+attributionlink: "https://unsplash.com/@dearferdo"
 summary: "Married to an anxiety sufferer, Steve takes a look at things you and your partner can do to help improve it and even eventually overcome it."
 ---
 

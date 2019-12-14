@@ -7,7 +7,7 @@ referenceurl: ""
 tags: ["Adventure","Fun","Life","Living","Travel",]
 source: "youtube"
 videoid: "wTcNtgA6gHs"
-image: "https://img.youtube.com/vi/wTcNtgA6gHs/0.jpg"
+image: "    "
 ---
 
 {{< youtube wTcNtgA6gHs >}}

@@ -25,34 +25,22 @@
 <div class="section bb">
     <div class="container">
         <div class="row">
-            <div class="col1 s12">
-                
-                <div class="grid" data-colcade="columns: .grid-col, items: .grid-item">
+            <div class="col s12 m9 l9">
+                <h2>{{ .Params.author }}</h2>
+                <div class="grid">
 
-                    <!-- columns -->
-                    <div class="grid-col grid-col--1"></div>
-                    <div class="grid-col grid-col--2"></div>
-                    <div class="grid-col grid-col--3"></div>
-                    <div class="grid-col grid-col--4"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-sizer"></div>
 
-                    <!-- <div class="grid-item">
-                        <div class="card fluid">
-                            {{- if isset .Params "image" -}}
-                            <img src="{{ .Params.image }}" alt="{{ .Title}}" />
-                            {{ end }}
-                        </div>
-                    </div>
-                    -->
-
-                    <div class="grid-item">
+                    <!-- <div class="gi s12 m12 l4">
                         <div class="card fluid center">
                             <h2 class="c-quotes-gradient">
                                 {{- .Params.Author -}}
                             </h2>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="grid-item">
+                    <div class="gi s12 m6 l3">
                         <div class="card fluid center">
                             <h2 class="c-quotes-gradient">PROFILE</h2>
                             <h4>{{ $thisauthor }}</h4>
@@ -73,6 +61,7 @@
                             <p>{{- $.Scratch.Get "briefbio" -}}</p>
                         </div>
                     </div> -->
+
                     {{ $.Scratch.Set "image" .Params.image }}
                     {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
@@ -80,7 +69,13 @@
                     {{- $author := index $r 3 -}}
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
-                    <div class="grid-item">
+                    {{- if lt ($quote | countwords) 10 -}}
+                        <div class="gi s12 m6 l3">
+                    {{- else if lt ($quote | countwords) 20 -}}
+                        <div class="gi s12 m6 l4">
+                    {{- else -}}
+                        <div class="gi s12 m6 l6">
+                    {{- end -}}
                         <figure class="z-depth-5">
                             <img src="{{ $.Scratch.Get "image" }}" />
                             <blockquote>{{ $quote | humanize }}</blockquote>
@@ -95,11 +90,19 @@
                 
             </div>
 
+            <div class="col s12 m3 l3">
+                <h2>Related</h2>
+                {{ $related := .Site.RegularPages.Related . | first 5 }}
+                {{ with $related }}
+                    {{ range . }}
+                        {{ partial "card-quotes-by-author-horizontal.html" .}} 
+                    {{ end }}
+                {{ end }}
+
+            </div>
+
         </div>
     </div>
 </div>
-
-<script src="https://unpkg.com/colcade@0/colcade.js"></script>
-<script src="/js/colcade.js"></script>
 
 {{ end }}

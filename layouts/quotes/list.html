@@ -3,15 +3,21 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            {{- range .Pages -}}
-            <div class="col s12 m6 l4">
-                {{- if isset .Params "author" -}}
-                {{- partial "card-quotes-by-author.html" . -}}
-                {{- else -}}
-                {{- partial "card-quotes-by-topic.html" . -}}
-                {{- end -}}
+            <div class="col s12">
+                <div class="card-grid">
+                    {{- range .Pages -}}
+                    {{- if isset .Params "author" -}}
+                    <div class="card h5 s6 m6 l3">
+                    {{- partial "card-quotes-by-author.html" . -}}
+                    </div>
+                    {{- else -}}
+                    <div class="card h5 s6 m6 l3">
+                    {{- partial "card-quotes-by-topic.html" . -}}
+                    </div>
+                    {{- end -}}
+                    {{- end -}}
+                </div>
             </div>
-            {{- end -}}
         </div>
     </div>
 </div>

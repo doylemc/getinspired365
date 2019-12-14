@@ -2,11 +2,11 @@
     
     {{- $rand:= index (seq 20 | shuffle) 0 -}}
     {{- $cardtype:= "card"}}
-    {{- if lt $rand 10}}
+    <!-- {{- if lt $rand 10}}
         <div class="card horizontal bg-news-400 z-depth-1">
     {{- else -}}
         <div class="card horizontal bg-news-400 z-depth-1">
-    {{- end -}}
+    {{- end -}} -->
 
         <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
         {{- $source:= replace .Params.source " " "-" -}}
@@ -38,5 +38,5 @@
             <!-- <h6 class="age">{{ div $delta 1440 }}d ago</h6> -->
             {{- end -}}
         </div>
-    </div>
+    <!-- </div> -->
 {{- end -}}

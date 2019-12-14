@@ -3,15 +3,17 @@
 <div class="section">
     <div class="container">
         <div class="row">
-
-            {{ range .Pages }}
-            {{ if isset .Params "image" }}
+            {{- range .Pages -}}
+            {{- if isset .Params "image" -}}
+            {{- if isset .Params "title" -}}
             <div class="col s6 m6 l3">
-                {{ partial "card-article.html" . }}
+                <div class="card h6 img-33 bg-articles-500">
+                    {{ partial "card-article.html" . }}
+                </div>
             </div>
-            {{ end }}
-            {{ end }}
-
+            {{- end -}}
+            {{- end -}}
+            {{- end -}}
         </div>
     </div>
 </div>
