@@ -1,14 +1,17 @@
 {{ define "content" }}
-<div class="section bg-angled-gradient">
-    <div class="container1">
+<div class="section bg-angled-dark">
+    <div class="container">
         <div class="row">
             <div class="col s12">
                 <!-- <h2 class="c-gradient display-inline-block">Today's Mashup</h2> -->
+                <div class="hide-on-med-and-up">
+                    <h2 class="c-videos-100">Today's Featured Video</h2>
+                </div>
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
                     <div class="gi s12 m6 l6">
-                        <div class="card h8 bg-videos-5010 z-depth-5">
+                        <div class="card h8 bg-videos-500 z-depth-5">
                             {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "=" "May your adventures bring you closer together, even as they take you far away from home." | shuffle | first 1 -}}
                             <div class="plyr__video-embed" id="player1">
                                 <iframe
@@ -24,90 +27,93 @@
                         </div>
                     </div>
 
-                    {{- $.Scratch.Set "g-card-counter" 0 -}}
-                    {{- range (where .Site.Pages "Type" "news") | shuffle -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
-                    {{- if in .Params.tags "celebrity" -}}
-                    <div class="gi s6 m6 l2">
-                        <div class="card h4 bg-news-5010 z-depth-3">
-                            {{- partial "card-news.html" . -}}                
-                        </div>
-                    </div>
-                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
+                    <div class="hide-on-small-only">
 
-                    {{- $.Scratch.Set "g-card-counter" 0 -}}
-                    {{- range (where .Site.Pages "Type" "news") | shuffle -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
-                    {{- if in .Params.tags "real-life" -}}
-                    <div class="gi s6 m6 l2">
-                        <div class="card h4 bg-news-5010 z-depth-1">
-                            {{- partial "card-news.html" . -}}
+                        {{- $.Scratch.Set "g-card-counter" 0 -}}
+                        {{- range (where .Site.Pages "Type" "news") | shuffle -}}
+                        {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
+                        {{- if in .Params.tags "celebrity" -}}
+                        <div class="gi s6 m6 l2">
+                            <div class="card h4 bg-news-500 z-depth-5">
+                                {{- partial "card-news.html" . -}}                
+                            </div>
                         </div>
-                    </div>
-                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
 
-                    {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 1 -}}
-                    <div class="gi s6 m6 l2">
-                        <div class="card h4 bg-articles-5100 z-depth-5">
-                            {{ partial "card-article.html" . }}
+                        {{- $.Scratch.Set "g-card-counter" 0 -}}
+                        {{- range (where .Site.Pages "Type" "news") | shuffle -}}
+                        {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
+                        {{- if in .Params.tags "real-life" -}}
+                        <div class="gi s6 m6 l2">
+                            <div class="card h4 bg-news-500 z-depth-5">
+                                {{- partial "card-news.html" . -}}
+                            </div>
                         </div>
-                    </div>
-                    {{- end -}}
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
 
-                    {{- $.Scratch.Set "g-card-counter" 0 -}}
-                    {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
-                    {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
-                    {{- if ne .Title "Quotes By Author" -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
-                    <div class="gi s6 m6 l3">
-                        <div class="card h4 bg-quotes-5100 z-depth-3">
-                            {{- partial "card-quotes-by-author.html" . -}}                
+                        {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 1 -}}
+                        <div class="gi s6 m6 l2">
+                            <div class="card h4 bg-articles-500 z-depth-5">
+                                {{ partial "card-article.html" . }}
+                            </div>
                         </div>
-                    </div>
-                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
+                        {{- end -}}
 
-                    {{- $.Scratch.Set "g-card-counter" 0 -}}
-                    {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 20 -}}
-                    {{- if lt (.Params.Title | countwords) 10 -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
-                    <div class="gi s12 m6 l3">
-                        <div class="card h3 bg-quotes-5010 z-depth-3">
-                            <figure>
-                                <blockquote>{{ .Params.title }}</blockquote>
-                                <figcaption>{{ .Params.author }}</figcaption>
-                                </figur>
+                        {{- $.Scratch.Set "g-card-counter" 0 -}}
+                        {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 20 -}}
+                        {{- if lt (.Params.Title | countwords) 10 -}}
+                        {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
+                        <div class="gi s12 m6 l2">
+                            <div class="card h3 bg-quotes-400 z-depth-5 font-small">
+                                <figure>
+                                    <blockquote>{{ .Params.title }}</blockquote>
+                                    <figcaption>{{ .Params.author }}</figcaption>
+                                    </figur>
+                            </div>
                         </div>
-                    </div>
-                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
 
-                    {{- $.Scratch.Set "g-card-counter" 0 -}}
-                    {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
-                    {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
-                    {{- if ne .Title "Quotes By Topic" -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
-                    <div class="gi s12 m12 l3">
-                        <div class="card wide h1 bg-quotes-5100 z-depth-2">
-                            {{- partial "card-quotes-by-topic.html" . -}}                
+                        {{- $.Scratch.Set "g-card-counter" 0 -}}
+                        {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                        {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                        {{- if ne .Title "Quotes By Author" -}}
+                        {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
+                        <div class="gi s6 m6 l2">
+                            <div class="card h3 bg-quotes-400 z-depth-5">
+                                {{- partial "card-quotes-by-author.html" . -}}
+                            </div>
                         </div>
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
+
+                        {{- $.Scratch.Set "g-card-counter" 0 -}}
+                        {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                        {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
+                        {{- if ne .Title "Quotes By Topic" -}}
+                        {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
+                        <div class="gi s12 m12 l2">
+                            <div class="card wide h1 bg-quotes-400 z-depth-5 font-medium">
+                                {{- partial "card-quotes-by-topic.html" . -}}                
+                            </div>
+                        </div>
+                        {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
+                        {{- end -}}
                     </div>
-                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
-                    {{- end -}}
 
                 </div> 
             </div>  
@@ -148,9 +154,13 @@
                 <div class="card-grid">
                     {{- $.Scratch.Set "g-card-counter" 0 -}}
                     {{- range (where .Site.Pages "Section" "news") }}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 3 -}}
                     {{- if in .Params.tags "celebrity" -}}
-                    <div class="card s6 m6 l3 h6 bg-news-400">
+                    {{- if eq ($.Scratch.Get "g-card-counter") 0 }}
+                        <div class="card s6 m6 l6 h6 bg-news-400">
+                    {{- else -}}
+                        <div class="card s6 m6 l3 h6 bg-news-400 font-medium">
+                    {{- end -}}
                     {{- partial "card-news.html" . -}}
                     </div>
                     {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
@@ -165,7 +175,7 @@
                 {{- range (where .Site.Pages "Type" "news") -}}
                 {{- if lt ($.Scratch.Get "g-card-counter") 3 -}}
                 {{- if in .Params.tags "real-life" -}}
-                <div class="card h2 wide bg-news-400">
+                <div class="card h2 wide bg-news-400 font-medium">
                 {{- partial "card-news-horizontal.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}

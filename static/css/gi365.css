@@ -64,6 +64,18 @@ body {
 .no-margin {
     margin: 0;
 }
+.font-large {
+    font-size: 1.1em;
+}
+.font-medium {
+    font-size: 0.9em;
+}
+.font-small {
+    font-size: 0.75em;
+}
+.font-tiny {
+    font-size: 0.65em;
+}
 
 /************************************************************************
 -- LISTS
@@ -185,7 +197,6 @@ figure.writer figcaption .readingtime {
     background: #090909;
     border-radius: 0.25em;
     display: inline-block;
-    /* font-family: 'Montserrat'; */
     font-size: 1em;
     font-weight: bold;
     margin: 0 0.5em var(--gutter-width) 0;
@@ -207,12 +218,6 @@ figure.writer figcaption .readingtime {
     transition: transform 0.1s ease-out;
     z-index: 99 !important;
 }
-
-/* blockquote:nth-child(2n+1) {
-    background: #111111;
-    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
-} */
 
 .gi figure blockquote {
     color: #eee;
@@ -263,7 +268,7 @@ figure.writer figcaption .readingtime {
     display: none;
 }
 
-.gi:nth-child(3n) figure {
+/* .gi:nth-child(3n) figure {
     background: repeating-linear-gradient(-55deg,
     var(--quotes-color-400),
     var(--quotes-color-400) 1px,
@@ -321,7 +326,6 @@ figure.writer figcaption .readingtime {
 .gi:nth-child(8n) figure {
     background: none;
     border-radius: 0;
-    /* border-left: 4px solid var(--quotes-color-300); */
 }
 
 .gi:nth-child(9n) figure img {
@@ -335,12 +339,11 @@ figure.writer figcaption .readingtime {
 }
 
 .gi:nth-child(10n) blockquote {
-    /* background: var(--quotes-color-500) !important;  */
     background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 /************************************************************************
@@ -353,9 +356,9 @@ figure.writer figcaption .readingtime {
 .bg-angled-gradient {
     background: repeating-linear-gradient(-55deg,
     var(--quotes-color-400),
-    var(--news-color-500) 10px,
-    var(--articles-color-500) 1px,
-    var(--videos-color-500) 2px);
+    var(--news-color-400) 10px,
+    var(--articles-color-300) 1px,
+    var(--videos-color-300) 2px);
 }
 
 .bg-angled-dark {
@@ -1177,8 +1180,12 @@ ul.section-nav.tags a:hover {
 .card.h1 .content p { display: none; }
 .card.h1 .content .title { font-size: 0.9em; }
 .card.h2 .content .title { font-size: 0.9em; }
-.card.h3 .content .title { font-size: 0.7em; }
+
+.card.h3 .content .caption { display: none; }
+.card.h3 .content .title { font-size: 1.1em; text-align: center; margin-top: 0.75em; }
 .card.h3 .content .age { display: none;}
+.card.h3 .content p { display: none; }
+
 .card.h4 .content .title { font-size: 0.9em; }
 .card.h4 .content .age { display: none;}
 .card.h4 .content p { display: none; }
