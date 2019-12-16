@@ -64,3 +64,11 @@ var pckry = new Packery(elem, {
     gutter: '.gutter-sizer',
     // percentPosition: trues
 });
+
+document.getElementById('burger').addEventListener("click", event => {
+    if (document.getElementById('burger_menu').style.display == 'block') {
+        document.getElementById('burger_menu').style.display = "none";
+    } else {
+        document.getElementById('burger_menu').style.display = "block";
+    }
+})

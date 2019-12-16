@@ -3,7 +3,8 @@
         <div class="row no-margin-bottom">
             <div class="col s12 m8">
                 <nav>
-                    <ul class="site-nav">
+                    <ul class="site-nav" id="burger_menu">
+                        <li {{if eq .IsHome false}}class="c-gradient" {{end}}}}><a class="" href="{{ site.BaseURL }}"><span>HOME</span></a></li>
                         <li {{if eq .IsHome false}}class="c-gradient"{{end}}}}><a class="" href="{{ site.BaseURL }}"><span>GETINSPIRED365</span></a></li>
                         <li class="news"><a href="{{ site.BaseURL }}news"><span>NEWS</span></a></li>
                         <li class="articles"><a href="{{ site.BaseURL }}articles"><span>ARTICLES</span></a></li>
@@ -13,7 +14,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col s12 m4">
+            <div class="col s12 m4 nav-contact">
                 <nav>
                     <ul class="contact">
                         <li><a href="/sitemap.xml"><i class="fas fa-rss"></i></a></li>
