@@ -24,9 +24,8 @@
     --videos-color-500: #0d0105;
     --tags-color: #161616;
     --gutter-width: 1.5rem; 
-    --card-unit-height: 240px;
     --border-radius: 0.25em;
-    --unit-height: 40px;
+    --card-unit-height: 40px;
 }
 
 * {
@@ -76,6 +75,13 @@ body {
 .font-tiny {
     font-size: 0.65em;
 }
+.rtl {
+    transform: rotate(1deg);
+}
+.rtr {
+    transform: rotate(-1deg);
+}
+
 
 /************************************************************************
 -- LISTS
@@ -371,10 +377,10 @@ figure.writer figcaption .readingtime {
 
 .bg-angled-quotes {
     background: repeating-linear-gradient(-55deg,
-    var(--quotes-color-400),
-    var(--quotes-color-400) 1px,
-    var(--quotes-color-300) 1px,
-    var(--quotes-color-300) 5px) !important;
+    var(--quotes-color-500),
+    var(--quotes-color-400) 10px,
+    var(--quotes-color-400) 10px,
+    var(--quotes-color-400) 10px) !important;
 }
 
 .bg-angled-videos {
@@ -1128,16 +1134,16 @@ ul.section-nav.tags a:hover {
     .card.l12 { width: calc(100% - var(--gutter-width)); }
 }
 
-.card.h1 { height: var(--unit-height); }
-.card.h2 { height: calc( var(--unit-height) * 2 + (var(--gutter-width))); }
-.card.h3 { height: calc( var(--unit-height) * 3 + (var(--gutter-width) * 2)); }
-.card.h4 { height: calc( var(--unit-height) * 4 + (var(--gutter-width) * 3)); }
-.card.h5 { height: calc( var(--unit-height) * 5 + (var(--gutter-width) * 4)); }
-.card.h6 { height: calc( var(--unit-height) * 6 + (var(--gutter-width) * 5)); }
-.card.h7 { height: calc( var(--unit-height) * 7 + (var(--gutter-width) * 6)); }
-.card.h8 { height: calc( var(--unit-height) * 8 + (var(--gutter-width) * 7)); }
+.card.h1 { height: var(--card-unit-height); }
+.card.h2 { height: calc( var(--card-unit-height) * 2 + (var(--gutter-width))); }
+.card.h3 { height: calc( var(--card-unit-height) * 3 + (var(--gutter-width) * 2)); }
+.card.h4 { height: calc( var(--card-unit-height) * 4 + (var(--gutter-width) * 3)); }
+.card.h5 { height: calc( var(--card-unit-height) * 5 + (var(--gutter-width) * 4)); }
+.card.h6 { height: calc( var(--card-unit-height) * 6 + (var(--gutter-width) * 5)); }
+.card.h7 { height: calc( var(--card-unit-height) * 7 + (var(--gutter-width) * 6)); }
+.card.h8 { height: calc( var(--card-unit-height) * 8 + (var(--gutter-width) * 7)); }
 
-.card img { height: 50%; object-fit: cover; object-position: center; width: 100%; }
+.card img { height: 50%; object-fit: cover; object-position: center; overflow: hidden; position: relative; transition: all 0.2s ease-in-out; width: 100%; }
 .card.img-25 img { height: 25%; }
 .card.img-33 img { height: 33%; }
 .card.img-50 img { height: 50%; }
@@ -1145,13 +1151,13 @@ ul.section-nav.tags a:hover {
 .card.img-75 img { height: 75%; }
 .card.img-100 img { height: 100%; }
 .card.img-full-border-radius img { border-radius: var(--border-radius); }
-
 .card.wide img { float: left; height: 100%; margin-right: 0.5em; position: relative; width: 33%; }
 .card.wide.img-oversize-and-constrain img { height: calc(100% + 60px); left: -30px; position: absolute; top: -30px; width: calc(40% + 10px); }
 
 .card .content {
     margin-bottom: var(--gutter-width);
     padding: 0.25em 0.5em;
+    z-index: 1 !important;
 }
 
 .card .content.no-pad {
@@ -1208,15 +1214,6 @@ ul.section-nav.tags a:hover {
     margin-left: 35%;
 }
 
-.card a i.fas.fa-play { border-radius: 50%; font-size: 16px; height: 32px; opacity: 0.95; padding: 0.5em 0.5em 0.5em 0.65em; position: absolute; right: calc(50% - 16px); top: calc(25% - 16px); width: 32px; }
-.card.img-25 a i.fas.fa-play { top: calc(12% - 16px); }
-.card.img-33 a i.fas.fa-play { top: calc(16% - 16px); }
-.card.img-50 a i.fas.fa-play { top: calc(25% - 16px); }
-.card.img-66 a i.fas.fa-play { top: calc(33% - 16px); }
-.card.img-75 a i.fas.fa-play { top: calc(37% - 16px); }
-.card.img-100 a i.fas.fa-play { top: calc(50% - 16px); }
-.card.wide a i.fas.fa-play { left: calc(16% - 16px); top: calc(50% - 16px); }
-
 .card a.attribution { left: 0.5em; position: absolute; top: 0.5em; }
 
 .card .badge {
@@ -1230,6 +1227,56 @@ ul.section-nav.tags a:hover {
     text-align: right;
 }
 
+.card.fluid {
+    min-height: 0 !important;
+}
+
+
+/************************************************************************
+-- CARDS - OVERLAYS
+************************************************************************/
+.card.overlay img { opacity: 0.8; position: absolute; height: 100%; width: 100%; z-index: 0; }
+.card.overlay:hover img { opacity: 1;transform: scale(1.2); }
+.card.overlay:hover .content { opacity: 1; }
+
+.card.overlay .content {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    font-size: 0.89em;
+    height: 50%;
+    left: -0.75rem; 
+    opacity: 0.9;
+    padding: 0.25rem 0 0 1.25rem;
+    position: absolute; 
+    bottom: -10%; 
+    width: 106%;
+}
+.card.overlay .content .caption {
+    display: inline-block;
+}
+.card.overlay .content h3 a {
+    display: block;
+    color: #eee !important; 
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: -1px;
+    opacity: 0.9;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.card.overlay.article .content {
+    background: var(--articles-color-500);
+}
+.card.overlay.article .content p.summary span {
+    display: none;
+    font-size: 0.5em;
+}
+
+/************************************************************************
+-- CARDS - VIDEOS 
+************************************************************************/
 .card.video.fullscreen {
     margin-bottom: -2em;
     margin-left: calc(var(--gutter-width) * -2);
@@ -1242,9 +1289,15 @@ ul.section-nav.tags a:hover {
     padding-right: calc( var(--gutter-width) * 2 );
 }
 
-.card.fluid {
-    min-height: 0 !important;
-}
+.card a i.fas.fa-play { border-radius: 50%; font-size: 16px; height: 32px; opacity: 0.95; padding: 0.5em 0.5em 0.5em 0.65em; position: absolute; right: calc(50% - 16px); top: calc(25% - 16px); width: 32px; }
+.card.img-25 a i.fas.fa-play { top: calc(12% - 16px); }
+.card.img-33 a i.fas.fa-play { top: calc(16% - 16px); }
+.card.img-50 a i.fas.fa-play { top: calc(25% - 16px); }
+.card.img-66 a i.fas.fa-play { top: calc(33% - 16px); }
+.card.img-75 a i.fas.fa-play { top: calc(37% - 16px); }
+.card.img-100 a i.fas.fa-play { top: calc(50% - 16px); }
+.card.wide a i.fas.fa-play { left: calc(16% - 16px); top: calc(50% - 16px); }
+
 
 /************************************************************************
 -- FOOTER

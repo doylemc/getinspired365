@@ -3,7 +3,7 @@
     <h6 class="caption bg-articles-300">ARTICLE</h6>
     <h3 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     {{- if isset .Params "summary" -}}
-    <p class="summary">{{ .Params.summary }} <br><br> <i class="fas fa-clock"></i> {{ .ReadingTime }} min(s)</p>
+    <p class="summary"><span>{{ .Params.summary }} <br><br></span> <i class="fas fa-clock"></i> {{ .ReadingTime }} min(s)</p>
     {{- end -}}
 </div>
 {{- partial "attribution.html" . -}}

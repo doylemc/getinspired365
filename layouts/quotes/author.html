@@ -19,14 +19,14 @@
 {{- end -}}
 
 {{- if isset .Params "background" -}}
-<img src="{{ .Params.background }}" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.6;" />
+<img src="{{ .Params.background }}" style="position: fixed; right: 0; top: 170px; width: 100%; height: auto; z-index: -1; opacity: 0.6;" />
 {{- end -}}
 
 <div class="section bb">
     <div class="container">
         <div class="row">
             <div class="col s12 m9 l9">
-                <h2>{{ .Params.author }}</h2>
+                <h2 class="bb-gradient bw1">{{ .Params.author }}</h2>
                 <div class="grid">
 
                     <div class="gutter-sizer"></div>
@@ -39,21 +39,6 @@
                             </h2>
                         </div>
                     </div> -->
-
-                    <div class="gi s12 m6 l3">
-                        <div class="card fluid center">
-                            <h2 class="c-quotes-gradient">PROFILE</h2>
-                            <h4>{{ $thisauthor }}</h4>
-                            <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
-                            <h4>{{ $.Scratch.Get "nationality" }}</h4>
-                            <!-- <h3 class="quotes-gradient-text">Profession</h3> -->
-                            <h4>{{ $.Scratch.Get "profession" }}</h4>
-                            <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
-                            <h4>DOB {{ $.Scratch.Get "dob" }}</h4>
-                            <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
-                            <h4><a target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
-                        </div>
-                    </div>
 
                     <!-- <div class="grid-item">
                         <div class="card">
@@ -74,7 +59,7 @@
                     {{- else if lt ($quote | countwords) 20 -}}
                         <div class="gi s12 m6 l4">
                     {{- else -}}
-                        <div class="gi s12 m6 l6">
+                        <div class="gi s12 m6 l4">
                     {{- end -}}
                         <figure class="z-depth-5">
                             <img src="{{ $.Scratch.Get "image" }}" />
@@ -91,12 +76,34 @@
             </div>
 
             <div class="col s12 m3 l3">
-                <h2>Related</h2>
+                <div class="card fluid">
+                    <h2 class="bb-gradient">Profile</h2>
+                    <h4>{{ $thisauthor }}</h4>
+                    <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
+                    <h4>{{ $.Scratch.Get "nationality" }}</h4>
+                    <!-- <h3 class="quotes-gradient-text">Profession</h3> -->
+                    <h4>{{ $.Scratch.Get "profession" }}</h4>
+                    <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
+                    <h4>DOB {{ $.Scratch.Get "dob" }}</h4>
+                    <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
+                    <h4><a target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
+                </div>
+                
+                <h2 class="bb-gradient">Other Autors</h2>
                 {{ $related := .Site.RegularPages.Related . | first 5 }}
                 {{ with $related }}
                     {{ range . }}
                         {{ partial "card-quotes-by-author-horizontal.html" .}} 
                     {{ end }}
+                {{ end }}
+
+                <br/><br />
+                <h2 class="bb-gradient">Also See</h2>
+                {{ $related := .Site.RegularPages.Related . | first 5 }}
+                {{ with $related }}
+                {{ range . }}
+                {{ partial "card-quotes-by-author-horizontal.html" .}}
+                {{ end }}
                 {{ end }}
 
             </div>

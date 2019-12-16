@@ -2,7 +2,7 @@
     <a href="{{ .Permalink }}"><img src="https://img.youtube.com/vi/{{ .Params.videoid }}/0.jpg" /></a>
     <a href="{{ .Permalink }}" class="play"><i class="fas fa-play bg-videos-300"></i></a>
     <div class="content">
-        <h6 class="caption bg-videos-300">YOUTUBE</h6>
+        <!-- <h6 class="caption bg-videos-300">YOUTUBE</h6> -->
         {{- if gt ( .Params.Title | countwords) 20 -}}
             <h4 class="title"><a href="{{ .Permalink }}">"{{ substr .Params.title 0 100 }}...</a></h4>
         {{- else -}}

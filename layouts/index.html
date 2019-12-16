@@ -1,5 +1,5 @@
 {{ define "content" }}
-<div class="section bg-angled-dark">
+<div class="section bg-angled-dark" style="background: #111111;">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -11,7 +11,7 @@
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
                     <div class="gi s12 m6 l6">
-                        <div class="card h8 bg-videos-500 z-depth-5">
+                        <div class="card h8 bg-videos-300 z-depth-5">
                             {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "=" "May your adventures bring you closer together, even as they take you far away from home." | shuffle | first 1 -}}
                             <div class="plyr__video-embed" id="player1">
                                 <iframe
@@ -20,8 +20,8 @@
                             </div>
                             <div class="content">
                                 <!-- <h2 class="caption bg-videos-300">YOUTUBE</h2> -->
-                                <h2 class="c-gradient title">"{{ .Title }}"</h2>
-                                <h4 class="c-gradient">- {{ .Params.author }}</h4>
+                                <h2 class="title">"{{ .Title }}"</h2>
+                                <h4 class="">- {{ .Params.author }}</h4>
                             </div>
                             {{- end }}
                         </div>
@@ -34,7 +34,7 @@
                         {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
                         {{- if in .Params.tags "celebrity" -}}
                         <div class="gi s6 m6 l2">
-                            <div class="card h4 bg-news-500 z-depth-5">
+                            <div class="card h4 bg-news-400 z-depth-5">
                                 {{- partial "card-news.html" . -}}                
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                         {{- if lt ($.Scratch.Get "g-card-counter") 1 -}}
                         {{- if in .Params.tags "real-life" -}}
                         <div class="gi s6 m6 l2">
-                            <div class="card h4 bg-news-500 z-depth-5">
+                            <div class="card h4 bg-news-400 z-depth-5">
                                 {{- partial "card-news.html" . -}}
                             </div>
                         </div>
@@ -59,7 +59,7 @@
 
                         {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 1 -}}
                         <div class="gi s6 m6 l2">
-                            <div class="card h4 bg-articles-500 z-depth-5">
+                            <div class="card h4 bg-articles-400 z-depth-5">
                                 {{ partial "card-article.html" . }}
                             </div>
                         </div>
@@ -187,25 +187,25 @@
     </div>
 </div>  
 
-<div class="section bg-articles-400">
+<div class="section extra-pad bg-articles-500">
     <div class="container">
         <div class="hide-on-small-only"><div class="row"></div><div class="row"></div></div>
         <div class="row">
             <div class="col s12 l3">
                 <div class="well1">
                     <br><br>
-                    <h2 class="c-articles-gradient display-inline-block bb-gradient bw2 no-pad no-margin" >ORIGINAL ARTICLES</h2>
+                    <h2 class="c-articles-300 display-inline-block no-pad no-margin" >ORIGINAL ARTICLES</h2>
                     <h3>Real-life Stories, Interviews and Opinion to inspire you</h3>
                     <br>
                     <div class="hide-on-med-and-down center">
-                        <a class="btn" href="articles">MORE ARTICLES</a>
+                        <a class="btn c-articles-100" href="articles">More Articles ></a>
                     </div>
                 </div>
             </div>
             <div class="col s12 l9">
                 <div class="card-grid">
-                    {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 3 -}}
-                    <div class="card s12 m6 l4 h6 img-50 bg-articles-500">
+                    {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 4 -}}
+                    <div class="card overlay article h5 s6 m6 l3 z-depth-5">
                         {{ partial "card-article.html" . }}
                     </div>
                     {{- end -}}
@@ -215,7 +215,7 @@
     </div>
 </div>
 
-<div class="section bg-quotes-500">
+<div class="section bg-quotes-400">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -227,7 +227,7 @@
             {{- if ne .Title "Quotes By Author" -}}
             {{- if lt ($.Scratch.Get "g-card-counter") 3 -}}
             <div class="col s12 m6 l3">
-                <div class="card h6 bg-quotes-400">
+                <div class="card h6 bg-quotes-500">
                     {{- partial "card-quotes-by-author.html" . -}}
                 </div>
             </div>
@@ -284,17 +284,26 @@
     </div>
 </div>
 
-<div class="section bg-videos-500">
+<div class="section bg-videos-400">
     <div class="container">
         <div class="row">
-            <div class="col s12">
-                <h2><a class="c-videos-gradient display-inline-block" href="/videos">Playing Today ></a></h2>
+            <div class="col s6 m6 l6">
+                <h2><a class="c-videos-gradient display-inline-block" href="/videos">Latest Videos ></a></h2>
+            </div>
+            <div class="col s6 m6 l6">
+                <h4><a class="right" href="/videos">View All</a></h4>
             </div>
             <div class="col s12">
                 <div class="card-grid">
-                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 4 -}}
-                <div class="card h6 s6 m6 l3 img-50 bg-videos-400">
+                {{- $.Scratch.Set "counter" 0 -}}
+                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 5 -}}
+                {{- if eq ($.Scratch.Get "counter") 0 -}}
+                <div class="card h8 s6 m6 l6 img-75">
+                {{- else -}}
+                <div class="card h4 s6 m6 l3 img-50">
+                {{- end -}}
                     {{ partial "card-video.html" . }}
+                {{- $.Scratch.Set "counter" 1 -}}
                 </div>
                 {{- end -}}
                 </div>
