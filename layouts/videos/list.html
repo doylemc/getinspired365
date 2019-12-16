@@ -23,17 +23,15 @@
                         {{ partial "card-video.html" . }}
                     </div>
                     {{- end -}}
+                    <h2 class="c-videos-100 display-inline-block">GetInspired Favourites</h2>
+                    {{- $p := slice "_fav" -}}
+                    {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
+                    <div class="card wide h2 bg-videos-gradient">
+                        {{ partial "card-video.html" . }}
+                    </div>
+                    {{- end -}}
             </div>
 
-            <div class="col s12 m6 l3">
-                <h2 class="c-videos-100 display-inline-block">GetInspired Favourites</h2>
-                {{- $p := slice "_fav" -}}
-                {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
-                <div class="card wide h2 bg-videos-gradient">
-                    {{ partial "card-video.html" . }}
-                </div>
-                {{- end -}}
-            </div>
         </div>
         <div class="row">
             <div class="col s12">
