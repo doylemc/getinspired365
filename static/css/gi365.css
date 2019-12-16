@@ -403,11 +403,6 @@ figure.writer figcaption .readingtime {
     background: linear-gradient(to bottom, #000000, #090909); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg-trianglify {
-    background: url('/img/background/trianglify-lowres.png') !important;
-    background-size: cover !important;
-}
-
 .bg-news-100 {
     background: var(--news-color-100) !important;
 }
@@ -425,8 +420,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-news-gradient {
     background: var(--news-color-300) !important;
-    background: -webkit-linear-gradient(to left, var(--news-color-400), var(--news-color-500)) !important;
-    background: linear-gradient(to left, var(--news-color-400), var(--news-color-500)) !important;
+    background: -webkit-linear-gradient(to bottom, var(--news-color-400), var(--news-color-500)) !important;
+    background: linear-gradient(to bottom, var(--news-color-400), var(--news-color-500)) !important;
 }
 
 .bg-articles-100 {
@@ -446,8 +441,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-articles-gradient {
     background: var(--articles-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--articles-color-400), var(--articles-color-500)) !important;
-    background: linear-gradient(to right, var(--articles-color-400), var(--articles-color-500)) !important;
+    background: -webkit-linear-gradient(to bottom, var(--articles-color-400), var(--articles-color-500)) !important;
+    background: linear-gradient(to bottom, var(--articles-color-400), var(--articles-color-500)) !important;
 }
 
 .bg-quotes-100 {
@@ -467,8 +462,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-quotes-gradient {
     background: var(--quotes-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--quotes-color-400), var(--quotes-color-500)) !important;
-    background: linear-gradient(to right, var(--quotes-color-400), var(--quotes-color-500)) !important;
+    background: -webkit-linear-gradient(to bottom, var(--quotes-color-400), var(--quotes-color-500)) !important;
+    background: linear-gradient(to bottom, var(--quotes-color-400), var(--quotes-color-500)) !important;
 }
 
 .bg-videos-100 {
@@ -488,8 +483,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-videos-gradient {
     background: var(--videos-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--videos-color-400), var(--videos-color-500)) !important;
-    background: linear-gradient(to right, var(--videos-color-400), var(--videos-color-500)) !important;
+    background: -webkit-linear-gradient(to bottom, var(--videos-color-400), var(--videos-color-500)) !important;
+    background: linear-gradient(to bottom, var(--videos-color-400), var(--videos-color-500)) !important;
 }
 
 /************************************************************************
@@ -1235,7 +1230,7 @@ ul.section-nav.tags a:hover {
 /************************************************************************
 -- CARDS - OVERLAYS
 ************************************************************************/
-.card.overlay img { opacity: 0.8; position: absolute; height: 100%; width: 100%; z-index: 0; }
+.card.overlay img { opacity: 0.8; position: absolute; height: 60%; width: 100%; z-index: 0; }
 .card.overlay:hover img { opacity: 1;transform: scale(1.2); }
 .card.overlay:hover .content { opacity: 1; }
 
