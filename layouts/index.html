@@ -258,9 +258,9 @@
 
 <div class="section">
     <div class="container">
-        <div class="row br bg-homepage">
+        <div class="row br2 bg-homepage">
             <div class="col s12">
-                <h2><a class="c-quotes-gradient display-inline-block" href="/quotes">Today's Motivational Quotes></a></h2>
+                <h2><a class="c-quotes-gradient display-inline-block" href="/quotes">Today's Motivational Quotes ></a></h2>
             </div>
             <div class="col s12">
                 <div class="card-grid">
@@ -268,7 +268,7 @@
                     {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 20 -}}
                     {{- if lt (.Params.Title | countwords) 16 -}}
                     {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
-                    <div class="gi card h4 s12 m6 l3 bg-quotes-500">
+                    <div class="gi card h4 s12 m6 l3 bg-quotes-500 z-depth-5">
                         <figure>
                             <blockquote>{{ .Params.title }}</blockquote>
                             <figcaption>{{ .Params.author }}</figcaption>
@@ -284,7 +284,7 @@
     </div>
 </div>
 
-<div class="section bg-vide1os-400">
+<div class="section bg-videos-gradient">
     <div class="container">
         <div class="row">
             <div class="col s8 m6 l6">

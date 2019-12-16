@@ -399,8 +399,8 @@ figure.writer figcaption .readingtime {
 
 .bg-homepage {
     background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #000000, #090909); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000000, #090909); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #030303, #161616); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #030303, #161616); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-news-100 {
@@ -624,6 +624,9 @@ figure.writer figcaption .readingtime {
 }
 .br {
     border-radius: 0.25em;
+}
+.br2 {
+    border-radius: 0.5em;
 }
 
 .b-videos-gradient {
