@@ -1,20 +1,45 @@
-{{ define "content" }}
-
-<!-- VIDEOS -->
+{{- define "content" -}}
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col s12">
+            
+            <div class="col s12 m6 l9">
+                <h2 class="c-videos-100 display-inline-block">Handpicked Videos</h2>
                 <div class="card-grid">
-                    <!-- Random Quotes taken from the video section -->
-                    {{- range .Pages -}}
-                    <div class="card h6 s6 m4 l3">
+                {{ $paginator := .Paginate (where .Pages "Type" "videos") }}
+                {{ range $paginator.Pages }}
+                    <div class="card video img-33 h5 s12 m4 l3 bg-videos-400">
+                        {{ partial "card-video.html" . }}
+                    </div>
+                {{ end }}
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                    <h2 class="c-videos-100 display-inline-block">Hall of Fame</h2>
+                    {{- $p := slice "_hof" -}}
+                    {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
+                    <div class="card wide h2 bg-videos-gradient">
                         {{ partial "card-video.html" . }}
                     </div>
                     {{- end -}}
+            </div>
+
+            <div class="col s12 m6 l3">
+                <h2 class="c-videos-100 display-inline-block">GetInspired Favourites</h2>
+                {{- $p := slice "_fav" -}}
+                {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
+                <div class="card wide h2 bg-videos-gradient">
+                    {{ partial "card-video.html" . }}
                 </div>
+                {{- end -}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                {{ template "_internal/pagination.html" . }}
             </div>
         </div>
     </div>
 </div>
-{{ end }}
+{{- end -}}

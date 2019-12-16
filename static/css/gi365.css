@@ -81,7 +81,9 @@ body {
 .rtr {
     transform: rotate(-1deg);
 }
-
+.well1 {
+    padding: var(--gutter-width);
+}
 
 /************************************************************************
 -- LISTS
@@ -1097,6 +1099,7 @@ ul.section-nav.tags a:hover {
 .card-grid {
     margin-left: calc(var(--gutter-width) * -1);
 }
+
 .card-grid .card {
     margin-left: calc(var(--gutter-width)) !important;
 }
@@ -1153,7 +1156,7 @@ ul.section-nav.tags a:hover {
 .card.h7 { height: calc( var(--card-unit-height) * 7 + (var(--gutter-width) * 6)); }
 .card.h8 { height: calc( var(--card-unit-height) * 8 + (var(--gutter-width) * 7)); }
 
-.card img { height: 50%; object-fit: cover; object-position: center; overflow: hidden; position: relative; transition: all 0.2s ease-in-out; width: 100%; }
+.card img { height: 50%; object-fit: cover; object-position: center; overflow: hidden; position: relative; transition: transform 0.3s ease-in-out; width: 100%; }
 .card.img-25 img { height: 25%; }
 .card.img-33 img { height: 33%; }
 .card.img-50 img { height: 50%; }
@@ -1161,8 +1164,19 @@ ul.section-nav.tags a:hover {
 .card.img-75 img { height: 75%; }
 .card.img-100 img { height: 100%; }
 .card.img-full-border-radius img { border-radius: var(--border-radius); }
-.card.wide img { float: left; height: 100%; margin-right: 0.5em; position: relative; width: 33%; }
-.card.wide.img-oversize-and-constrain img { height: calc(100% + 60px); left: -30px; position: absolute; top: -30px; width: calc(40% + 10px); }
+.card.wide img { height: 100%; width: 33%; float: left; }
+
+.card .img-container { float: left; height: 50%; margin-bottom: 0.5em; overflow: hidden; position: relative; width: 100%; }
+.card.img-25 .img-container { height: 25%; }
+.card.img-33 .img-container { height: 33%; }
+.card.img-50 .img-container { height: 50%; }
+.card.img-66 .img-container { height: 66%; }
+.card.img-75 .img-container { height: 75%; }
+.card.img-100 .img-container { height: 100%; }
+.card .img-container img { height: calc(100% + 60px); left: -60px; position: absolute; top: -30px; width: calc(100% + 120px); }
+.card.wide .img-container { height: 100%; width: 33%; }
+
+.card:hover .img-container img { transform: scale(0.8); transform-origin: center; transition: transform 0.3s ease-out; }
 
 .card .content {
     margin-bottom: var(--gutter-width);
@@ -1245,9 +1259,17 @@ ul.section-nav.tags a:hover {
 /************************************************************************
 -- CARDS - OVERLAYS
 ************************************************************************/
-.card.overlay img { opacity: 0.8; position: absolute; height: 60%; width: 100%; z-index: 0; }
-.card.overlay:hover img { opacity: 1;transform: scale(1.2); }
-.card.overlay:hover .content { opacity: 1; }
+.card.overlay img { 
+    height: 60%; 
+    opacity: 0.8; 
+    position: absolute; 
+    width: 100%; 
+    z-index: 0; 
+}
+
+.card.overlay:hover .content { 
+    opacity: 1; 
+}
 
 .card.overlay .content {
     border-top-right-radius: var(--border-radius);
@@ -1261,9 +1283,11 @@ ul.section-nav.tags a:hover {
     bottom: -10%; 
     width: 106%;
 }
+
 .card.overlay .content .caption {
     display: inline-block;
 }
+
 .card.overlay .content h3 a {
     display: block;
     color: #eee !important; 
@@ -1278,8 +1302,8 @@ ul.section-nav.tags a:hover {
 .card.overlay.article .content {
     background: var(--articles-color-400);
 }
+
 .card.overlay.article .content p.summary {
-    /* display: none; */
     font-size: 0.8em;
     margin-top: -0.5em;
 }
@@ -1386,4 +1410,38 @@ article p a, article h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/************************************************************************
+-- PAGINATION
+************************************************************************/
+ul.pagination {
+    display: block;
+    margin-left: 1em;
+    margin-top: -5em;
+    padding-left: 0;
+    padding-top: 5em;
+}
+
+ul.pagination:hover li {
+    transform: scale(1.6);
+    transition: all 0.1s ease-in-out;
+}
+
+ul.pagination li {
+    background: #060606;
+    font-weight: 900;
+    opacity: 0.8;
+    padding: 0.25em;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    width: 1.2em;
+}
+
+ul.pagination li a {
+    color: #ddd !important;
+}
+
+ul.pagination li:hover {
+    background: #161616;
 }

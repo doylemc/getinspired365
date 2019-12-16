@@ -158,6 +158,8 @@
                     {{- if in .Params.tags "celebrity" -}}
                     {{- if eq ($.Scratch.Get "g-card-counter") 0 }}
                         <div class="card s12 m6 l6 h6 bg-news-400 z-depth-5">
+                    {{- else if eq ($.Scratch.Get "g-card-counter") 1 }}
+                        <div class="card s12 m6 l3 h6 bg-news-400 z-depth-5">
                     {{- else -}}
                         <div class="card s6 m6 l3 h6 bg-news-400 z-depth-4 font-medium">
                     {{- end -}}
@@ -205,7 +207,7 @@
             <div class="col s12 l9">
                 <div class="card-grid">
                     {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 4 -}}
-                    <div class="card overlay article h5 s6 m6 l3 z-depth-5">
+                    <div class="card article h5 s6 m6 l3 z-depth-5">
                         {{ partial "card-article.html" . }}
                     </div>
                     {{- end -}}
