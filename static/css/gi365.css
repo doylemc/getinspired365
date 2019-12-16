@@ -393,8 +393,8 @@ figure.writer figcaption .readingtime {
 
 .bg-gradient {
     background: #aaa !important;
-    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)) !important;
-    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)) !important;
+    background: -webkit-linear-gradient(to bottom, var(--news-color-400), var(--videos-color-500)) !important;
+    background: linear-gradient(to bottom, var(--news-color-400), var(--videos-color-500)) !important;
 }
 
 .bg-homepage {
@@ -404,7 +404,7 @@ figure.writer figcaption .readingtime {
 }
 
 .bg-trianglify {
-    background: url('/img/background/trianglify-black.png') !important;
+    background: url('/img/background/trianglify-lowres.png') !important;
     background-size: cover !important;
 }
 
@@ -425,8 +425,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-news-gradient {
     background: var(--news-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--news-color-300)) !important;
-    background: linear-gradient(to right, var(--news-color-100), var(--news-color-300)) !important;
+    background: -webkit-linear-gradient(to left, var(--news-color-400), var(--news-color-500)) !important;
+    background: linear-gradient(to left, var(--news-color-400), var(--news-color-500)) !important;
 }
 
 .bg-articles-100 {
@@ -446,8 +446,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-articles-gradient {
     background: var(--articles-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--articles-color), var(--articles-color-300)) !important;
-    background: linear-gradient(to right, var(--articles-color), var(--articles-color-300)) !important;
+    background: -webkit-linear-gradient(to right, var(--articles-color-400), var(--articles-color-500)) !important;
+    background: linear-gradient(to right, var(--articles-color-400), var(--articles-color-500)) !important;
 }
 
 .bg-quotes-100 {
@@ -467,8 +467,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-quotes-gradient {
     background: var(--quotes-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--quotes-color-100), var(--quotes-color-300)) !important;
-    background: linear-gradient(to right, var(--quotes-color-100), var(--quotes-color-300)) !important;
+    background: -webkit-linear-gradient(to right, var(--quotes-color-400), var(--quotes-color-500)) !important;
+    background: linear-gradient(to right, var(--quotes-color-400), var(--quotes-color-500)) !important;
 }
 
 .bg-videos-100 {
@@ -488,8 +488,8 @@ figure.writer figcaption .readingtime {
 }
 .bg-videos-gradient {
     background: var(--videos-color-300) !important;
-    background: -webkit-linear-gradient(to right, var(--videos-color-100), var(--videos-color-300)) !important;
-    background: linear-gradient(to right, var(--videos-color-100), var(--videos-color-300)) !important;
+    background: -webkit-linear-gradient(to right, var(--videos-color-400), var(--videos-color-500)) !important;
+    background: linear-gradient(to right, var(--videos-color-400), var(--videos-color-500)) !important;
 }
 
 /************************************************************************
@@ -1245,7 +1245,7 @@ ul.section-nav.tags a:hover {
     font-size: 0.89em;
     height: 50%;
     left: -0.75rem; 
-    opacity: 0.9;
+    opacity: 0.95;
     padding: 0.25rem 0 0 1.25rem;
     position: absolute; 
     bottom: -10%; 
@@ -1257,21 +1257,24 @@ ul.section-nav.tags a:hover {
 .card.overlay .content h3 a {
     display: block;
     color: #eee !important; 
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 900;
     letter-spacing: -1px;
-    opacity: 0.9;
     text-align: left;
     text-transform: uppercase;
     width: 100%;
 }
 
 .card.overlay.article .content {
-    background: var(--articles-color-500);
+    background: var(--articles-color-400);
 }
-.card.overlay.article .content p.summary span {
+.card.overlay.article .content p.summary {
+    /* display: none; */
+    font-size: 0.8em;
+    margin-top: -0.5em;
+}
+.card.overlay.article .content p.summary span.reading-time {
     display: none;
-    font-size: 0.5em;
 }
 
 /************************************************************************

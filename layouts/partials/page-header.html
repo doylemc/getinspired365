@@ -1,4 +1,8 @@
+{{- if .IsHome -}}
+<div id="page-header" class="section no-pad bb bg-homepage z-depth-5">
+{{- else -}}
 <div id="page-header" class="section no-pad bb bg-{{ .Section }}-400 z-depth-5">
+{{- end -}}
     <div class="container">
         <div class="row no-margin-bottom">
             <header>

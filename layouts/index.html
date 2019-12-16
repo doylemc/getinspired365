@@ -1,5 +1,5 @@
 {{ define "content" }}
-<div class="section bg-angled-dark" style="background: #111111;">
+<div class="section bg-homepage">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -146,7 +146,7 @@
     </div>
 </div> -->
 
-<div class="section bg-news-500">
+<div class="section bg-news-gradie1nt">
     <div class="container">
         <div class="row">
             <div class="col s12 l9">
@@ -157,9 +157,9 @@
                     {{- if lt ($.Scratch.Get "g-card-counter") 3 -}}
                     {{- if in .Params.tags "celebrity" -}}
                     {{- if eq ($.Scratch.Get "g-card-counter") 0 }}
-                        <div class="card s12 m6 l6 h6 bg-news-400">
+                        <div class="card s12 m6 l6 h6 bg-news-400 z-depth-5">
                     {{- else -}}
-                        <div class="card s6 m6 l3 h6 bg-news-400 font-medium">
+                        <div class="card s6 m6 l3 h6 bg-news-400 z-depth-4 font-medium">
                     {{- end -}}
                     {{- partial "card-news.html" . -}}
                     </div>
@@ -187,14 +187,14 @@
     </div>
 </div>  
 
-<div class="section extra-pad bg-articles-500">
+<div class="section extra-pad bg-arti1cles-gradient">
     <div class="container">
         <div class="hide-on-small-only"><div class="row"></div><div class="row"></div></div>
         <div class="row">
             <div class="col s12 l3">
                 <div class="well1">
                     <br><br>
-                    <h2 class="c-articles-300 display-inline-block no-pad no-margin" >ORIGINAL ARTICLES</h2>
+                    <h2 class="c-articles-200 display-inline-block no-pad no-margin" >ORIGINAL ARTICLES</h2>
                     <h3>Real-life Stories, Interviews and Opinion to inspire you</h3>
                     <br>
                     <div class="hide-on-med-and-down center">
@@ -215,7 +215,7 @@
     </div>
 </div>
 
-<div class="section bg-quotes-400">
+<div class="section bg-q1uotes-400">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -258,7 +258,7 @@
 
 <div class="section">
     <div class="container">
-        <div class="row br bg-angled-quotes">
+        <div class="row br bg-ang1led-quotes">
             <div class="col s12">
                 <h2><a class="c-quotes-gradient display-inline-block" href="/quotes">Today's Motivational Quotes></a></h2>
             </div>
@@ -284,7 +284,7 @@
     </div>
 </div>
 
-<div class="section bg-videos-400">
+<div class="section bg-vide1os-400">
     <div class="container">
         <div class="row">
             <div class="col s6 m6 l6">
@@ -296,11 +296,11 @@
             <div class="col s12">
                 <div class="card-grid">
                 {{- $.Scratch.Set "counter" 0 -}}
-                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 5 -}}
+                {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 7 -}}
                 {{- if eq ($.Scratch.Get "counter") 0 -}}
-                <div class="card h8 s6 m6 l6 img-75">
+                <div class="card h4 s12 m6 l6 img-75">
                 {{- else -}}
-                <div class="card h4 s6 m6 l3 img-50">
+                <div class="card h4 s12 m6 l3 img-50">
                 {{- end -}}
                     {{ partial "card-video.html" . }}
                 {{- $.Scratch.Set "counter" 1 -}}
