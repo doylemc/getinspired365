@@ -791,14 +791,13 @@ nav ul.contact li {
     padding: 1em 0;
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 992px) {
     .nav-contact { display: none; }
     nav ul.site-nav { display: none ;}
     nav ul.site-nav { width: 100%; }
     nav ul.site-nav li { margin-right: 0; width: 100%; text-align: center; }
     nav ul.site-nav li:first-child { display: block; }
     nav ul.site-nav li:nth-child(2) { display: none; }
-    nav ul.site-nav li:last-child {display: none; }
 }
 
 /************************************************************************
@@ -854,6 +853,10 @@ header .logo h3.date {
     margin-bottom: 1em;
     padding: 0 0.5em 0 0;
     position: relative;
+}
+
+a.burger i {
+    font-size: 2em;
 }
 
 /************************************************************************

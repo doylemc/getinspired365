@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row no-margin-bottom">
             <header>
-                <div class="col s12 m5">
+                <div class="col s9 m6">
                     <!-- LOGO -->
                     <div class="logo">
                         {{- if eq .Title "getinspired365" -}}
@@ -24,13 +24,9 @@
                         {{- end -}}
                         <h3 class="date">{{ dateFormat "Monday 2 January 2006" now }}</h3>
                     </div>
-                    <div class="hide-on-med-and-up right">
-                        <br>
-                        <a id="burger" href="#" style="font-size: 2em;"><i class="fas fa-bars c-gradient"></i></a>
-                    </div>
                 </div>
                 
-                <div class="col s12 m5 offset-m2" style="text-align:right">
+                <div class="col s3 m6" style="text-align:right">
                     <div class="right">
                         {{- $.Scratch.Set "section" .Section -}}
                         {{- $.Scratch.Set "pagetitle" .Title -}}
@@ -50,6 +46,10 @@
                                 {{- end -}}
                             </div>
                         {{- end -}}
+                        <div class="hide-on-large-only right">
+                            <br>
+                            <a id="burger" class="burger" href="#"><i class="fas fa-bars c-gradient"></i></a>
+                        </div>
                     </div>
                 </div>
 

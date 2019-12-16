@@ -103,7 +103,7 @@
                         {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
                         {{- if ne .Title "Quotes By Topic" -}}
                         {{- if lt ($.Scratch.Get "g-card-counter") 2 -}}
-                        <div class="gi s12 m12 l2">
+                        <div class="gi s12 m6 l2">
                             <div class="card wide h1 bg-quotes-400 z-depth-5 font-medium">
                                 {{- partial "card-quotes-by-topic.html" . -}}                
                             </div>
@@ -187,7 +187,7 @@
     </div>
 </div>  
 
-<div class="section extra-pad bg-arti1cles-gradient">
+<div class="section extra-pad bg-articles-500">
     <div class="container">
         <div class="hide-on-small-only"><div class="row"></div><div class="row"></div></div>
         <div class="row">
@@ -215,7 +215,7 @@
     </div>
 </div>
 
-<div class="section bg-q1uotes-400">
+<div class="section">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -258,7 +258,7 @@
 
 <div class="section">
     <div class="container">
-        <div class="row br bg-ang1led-quotes">
+        <div class="row br bg-homepage">
             <div class="col s12">
                 <h2><a class="c-quotes-gradient display-inline-block" href="/quotes">Today's Motivational Quotes></a></h2>
             </div>

@@ -16,7 +16,7 @@
                             {{- partial "card-news.html" . -}}
                         </div>
                         {{- else if eq .Type "articles" -}}
-                        <div class="card h6 bg-articles-500">
+                        <div class="card overlay article h6 bg-articles-500">
                             {{- partial "card-article.html" . -}}
                         </div> 
                         {{- else if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
