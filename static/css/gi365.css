@@ -842,14 +842,14 @@ header .logo h3 a {
     color: #aaa;
 }
 
-header .logo h3:hover {
-    background: #aaa; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #05759e, #d11b5a); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #05759e, #d11b5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* header .logo h3:hover {
+    background: #aaa;
+    background: -webkit-linear-gradient(to right, #05759e, #d11b5a);
+    background: linear-gradient(to right, #05759e, #d11b5a);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 header .logo h3.date {
     background: #aaa; /* fallback for old browsers */
