@@ -1,0 +1,106 @@
+{{ define "content" }}
+
+{{- $.Scratch.Set "thistitle" .Title -}}
+
+{{- if isset .Params "background" -}}
+<img src="{{ .Params.background }}" style="position: fixed; right: 0; top: 0; width: 100%; height: auto; z-index: -1; opacity: 0.6;" />
+{{- end -}}
+
+<div class="section bg-homepage">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9 l9">
+                <h2>{{ .Title }}</h2>
+                <div class="grid">
+
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-sizer"></div>
+                    
+                    {{- if ne .Params.intro "" -}}
+                    <div class="gi s12 m4 l12">
+                        <div class="card fluid">
+                            <p class="medium c-gradient">{{ .Params.intro }}</p>
+                        </div>
+                    </div>
+                    {{- end -}}
+
+                    
+                    {{- $.Scratch.Set "image" .Params.image -}}
+                    {{- $url := .Params.file -}}
+                    {{- $sep := "," -}}
+                    {{- range $i, $r := getCSV $sep $url -}}
+                    {{- $quote := index $r 0 -}}
+                    {{- $author := index $r 1 -}}
+                    {{- $video := index $r 2 -}}
+                    {{- $image := index $r 3 -}}
+                    {{- $imageauthor := index $r 4 -}}
+
+                    {{- if lt ($quote | countwords) 10 -}}
+                    <div class="gi s12 m6 l4">
+                    {{- else if lt ($quote | countwords) 20 -}}
+                    <div class="gi s12 m6 l4">
+                    {{- else -}}
+                    <div class="gi s12 m6 l4">
+                    {{- end -}}
+                            {{- if ne $video "" -}}
+                                <div class="card h5 bg-videos-500 z-depth-5">
+                                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/{{ $video }}" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            {{- else -}}
+                                <div class="card h4 bg-quotes-500 z-depth-4">
+                                <div class="img-container">
+                                    <img src="{{ $image }}" />
+                                </div>
+                            {{- end -}}
+                            <div class="content">
+                                <h4 class="title">"{{ $quote }}"</h4>
+                                <h5>{{ $author }}</h5>
+                                {{- if ne $image "" -}}
+                                    <a target="_blank" class="attribution" href="{{ $imageauthor }}" alt="Attribution"><i class="fas fa-camera"></i></a>
+                                {{- end -}}
+                            </div>
+                        </div>
+                    </div>
+                    {{- end -}}
+                </div>
+            </div>
+
+            <div class="col s12 m3 l3">
+                
+                <h2>Other Topics</h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
+                {{- if and (ne .Title "Quotes By Topic") (ne .Title ($.Scratch.Get "thistitle")) -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 5 -}}
+                <div class="card wide h2 bg-quotes-400 z-depth-5 font-medium">
+                    {{- partial "card-quotes-by-topic.html" . -}}
+                </div>
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+
+                <h2>More Authors</h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                {{- if ne .Title "Quotes By Author" -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
+                <div class="card wide h2 bg-quotes-400 z-depth-5">
+                    {{- partial "card-quotes-by-author.html" . -}}
+                </div>
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{{ end }}

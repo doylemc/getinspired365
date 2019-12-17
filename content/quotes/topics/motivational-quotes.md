@@ -1,5 +1,6 @@
 ---
 topic: "motivation"
+file: "/csv/topics/longboarding_quotes.csv"
 title: Motivational Quotes
 description: "Find the perfect motivational quotes, videos and images hand-picked by our the team at GetInspired365 - Your Daily Dose of Inspiration."
 image: "https://images.unsplash.com/photo-1558614437-9b27440a7680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=100"

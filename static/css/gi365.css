@@ -142,6 +142,13 @@ p {
     line-height: 1.4;
 }
 
+p.small {
+    font-size: 0.8em;
+}
+p.medium {
+    font-size: 0.9em;
+}
+
 /************************************************************************
 -- FIGURE ARTICLE
 ************************************************************************/
@@ -1199,6 +1206,7 @@ ul.section-nav.tags a:hover {
 }
 
 .card .content .title {
+    color: #ddd !important;
     margin: 0.25em 0 0.5em 0;
     padding: 0;
 }
@@ -1207,7 +1215,7 @@ ul.section-nav.tags a:hover {
     margin: 0;
 }
 
-.card.h1 .content p { display: none; }
+/* .card.h1 .content p { display: none; }
 .card.h1 .content .title { font-size: 0.9em; }
 .card.h2 .content .title { font-size: 0.9em; }
 
@@ -1218,7 +1226,7 @@ ul.section-nav.tags a:hover {
 
 .card.h4 .content .title { font-size: 0.9em; }
 .card.h4 .content .age { display: none;}
-.card.h4 .content p { display: none; }
+.card.h4 .content p { display: none; } */
 
 .card .content h3 a, .c .content h4 a, .c .content h5 a, .c .content h6 a {
     color: #ddd !important;

@@ -1,5 +1,6 @@
 ---
 topic: "Work Hard"
+file: "/csv/topics/longboarding_quotes.csv"
 title: Work Hard Quotes
 description: "Find the perfect work hard quotes, videos and images hand-picked by our the team at GetInspired365 -
 Your Daily Dose of Inspiration."
