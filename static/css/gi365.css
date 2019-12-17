@@ -646,6 +646,10 @@ figure.writer figcaption .readingtime {
 
 }
 
+.bb-videos {
+    border-bottom: 1px solid var(--videos-color-300);
+}
+
 .bb-videos-gradient {
     border-bottom: 1px solid var(--videos-color-300);
     border-image: linear-gradient(to right, var(--videos-color-100) 0%, var(--videos-color-400) 100%);

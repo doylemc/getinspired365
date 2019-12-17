@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="col s12 m6 l9">
-                <h2 class="c-videos-100 bb-videos-gradient bw2">NEXT UP IN VIDEOS</h2>
+                <h2 class="c-videos-100 bb-videos bw2">NEXT UP IN VIDEOS</h2>
                 {{- $related := .Site.RegularPages.Related . | first 5 | shuffle -}}
                 {{- with $related -}}
                 {{- range . -}}
@@ -44,7 +44,7 @@
         </div>
         <div class="row">
             <div class="col s12 m6 l9">
-                <h2 class="c-videos-100 bb-videos-gradient bw2">THE LATEST</h2>
+                <h2 class="c-videos-100 bb-videos bw2">THE LATEST</h2>
                 <div class="card-grid">
                     {{- $related := .Site.RegularPages.Related . | first 8 | shuffle -}}
                     {{- with $related -}}
