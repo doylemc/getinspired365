@@ -16,8 +16,12 @@
                 </div>
             </div>
             <div class="col s12 m6 l3">
+                {{- if ne .Params.summary "" -}}
+                    <h2 class="c-videos-100">About the Video</h2>
+                    <p>{{- .Params.summary -}}</p>
+                {{- end -}}
                 <h2 class="c-videos-100">Related</h2>
-                {{- $related := .Site.RegularPages.Related . | first 5 | shuffle -}}
+                {{- $related := .Site.RegularPages.Related . | first 3 | shuffle -}}
                 {{- with $related -}}
                 {{- range . -}}
                 <div class="card wide h2 fluid bg-videos-500">
