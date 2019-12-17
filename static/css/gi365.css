@@ -1175,8 +1175,8 @@ ul.section-nav.tags a:hover {
 .card.img-100 .img-container { height: 100%; }
 .card .img-container img { height: calc(100% + 60px); left: -60px; position: absolute; top: -30px; width: calc(100% + 120px); }
 .card.wide .img-container { height: 100%; width: 33%; }
-
-.card:hover .img-container img { transform: scale(0.8); transform-origin: center; transition: transform 0.3s ease-out; }
+.card .img-container.tag img { opacity: 0.95; -webkit-filter: grayscale(50%); filter: grayscale(50%) }
+.card:hover .img-container img { transform: scale(0.8); transform-origin: center; transition: transform 0.3s ease-out; opacity: 1; -webkit-filter: grayscale(0%); filter: grayscale(0%) }
 
 .card .content {
     margin-bottom: var(--gutter-width);
@@ -1309,6 +1309,29 @@ ul.section-nav.tags a:hover {
 }
 .card.overlay.article .content p.summary span.reading-time {
     display: none;
+}
+
+/************************************************************************
+-- TAG TITLE
+************************************************************************/
+.card .tag-title {
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    font-size: 1.4em; 
+    font-weight: 900; 
+    letter-spacing: 2px;
+    padding: 0;
+    position: absolute; 
+    margin: 0;
+    text-align: center;
+    /* -webkit-text-stroke: 1px var(--videos-color-100); */
+    width: 100%;
+    z-index: 99; 
+}
+
+.card .tag-title a {
+    color: #ddd !important;
+    padding: 0 0.5em;
 }
 
 /************************************************************************

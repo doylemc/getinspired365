@@ -1,21 +1,46 @@
 {{ define "content" }}
 
 <!-- LIST ALL TAGS -->
-<div class="section bg-angled-dark">
+<div class="section bg-gradient">
     <div class="container">
         <div class="row">
-            {{- range .Pages -}}
-            {{- if ne (substr .Title 0 1) "_" -}}
-            <div class="col s6 m6 l2">
-                <div class="card fluid z-depth-5">
-                    <div class="content center bg-angled-dark">
-                        <br>
-                        <h4 class="c-gradient"><a href="/tags/{{ .Title | urlize }}">{{ .Title | upper }}</a></h4>
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+                {{ $paginator := .Paginate .Pages }}
+                {{- range $paginator.Pages -}}
+                {{- if and  (ne (substr .Title 0 1) "_") (ne .Title "") -}}
+                    {{- $rand:= index (seq 20 | shuffle) 0 -}}
+                    {{- if lt $rand 10 -}}
+                    <div class="gi s6 m6 l3">
+                    {{- else -}}
+                    <div class="gi s6 m6 l3">
+                    {{- end -}}
+                    {{- $.Scratch.Set "tag-title" .Title -}}
+                        {{- if lt $rand 10 -}}
+                        <div class="card h3 img-100 z-depth-5 center bg-angled-dark">
+                        {{- else if lt $rand 15 -}}
+                        <div class="card h3 img-100 z-depth-5 center bg-angled-dark">
+                        {{- else -}}
+                        <div class="card h3 img-100 z-depth-5 center bg-angled-dark">
+                        {{- end -}}
+                            <div class="img-container tag">
+                                <h4 class="tag-title"><a class="c-gradient" href="/tags/{{ .Title | urlize }}">{{ $.Scratch.Get "tag-title" | upper }}</a></h4>
+                                {{- $p := slice .Title -}}
+                                {{- range where .Pages "Params.tags" "intersect" $p | shuffle | first 1 -}}
+                                    <a href="/tags/{{ $.Scratch.Get "tag-title" | urlize }}"><img src="{{ .Params.image }}" /></a>
+                                {{- end -}}
+                            </div>
+                        </div>
                     </div>
-                </div>
+                {{- end -}}
+                {{- end -}}
             </div>
-            {{- end -}}
-            {{- end -}}
+        </div>
+        <div class="row">
+            <div class="col s12">
+                {{ template "_internal/pagination.html" . }}
+            </div>
         </div>
     </div>
 </div>
