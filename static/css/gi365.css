@@ -130,7 +130,7 @@ h1 {
 h2 {
     font-size: 1.6em;
     font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
 }
 
 h6 {
@@ -828,9 +828,9 @@ header .logo {
 
 header .logo h3 {
     float: left;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 900;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
     margin-bottom: 0;
     margin-top: 0.5em;
     padding-bottom: 0;
