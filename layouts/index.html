@@ -74,7 +74,7 @@
                                 <figure>
                                     <blockquote>{{ .Params.title }}</blockquote>
                                     <figcaption>{{ .Params.author }}</figcaption>
-                                    </figur>
+                                </figure>
                             </div>
                         </div>
                         {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
@@ -207,7 +207,7 @@
             <div class="col s12 l9">
                 <div class="card-grid">
                     {{- range (where (where (where .Site.Pages "Type" "articles") ".Title" "!=" nil) ".Title" "!=" "Original Articles") | shuffle | first 4 -}}
-                    <div class="card article h5 s6 m6 l3 z-depth-5">
+                    <div class="card article-special h5 s6 m6 l3 z-depth-5">
                         {{ partial "card-article.html" . }}
                     </div>
                     {{- end -}}

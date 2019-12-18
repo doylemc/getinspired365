@@ -1347,6 +1347,22 @@ ul.section-nav.tags a:hover {
 }
 
 /************************************************************************
+-- CARDS ARTICLE
+************************************************************************/
+.card.article-special img:before {
+    background: var(--quotes-color-300);
+    border-right: 5px #aaa;
+    content: 'xxx';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 20%;
+    z-index: 9999;
+}
+
+/************************************************************************
 -- CARDS - VIDEOS 
 ************************************************************************/
 .card.video.fullscreen {
