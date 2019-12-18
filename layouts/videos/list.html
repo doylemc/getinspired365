@@ -4,7 +4,7 @@
         <div class="row">
             
             <div class="col s12 m6 l9">
-                <h2 class="c-videos-100 display-inline-block">Handpicked Videos</h2>
+                <h2 class="c-videos-100">Latest Videos</h2>
                 <div class="card-grid">
                 {{ $paginator := .Paginate (where .Pages "Type" "videos") }}
                 {{ range $paginator.Pages }}
@@ -16,14 +16,14 @@
             </div>
 
             <div class="col s12 m6 l3">
-                    <h2 class="c-videos-100 display-inline-block">Hall of Fame</h2>
+                    <h2 class="c-videos-100">Hall of Fame</h2>
                     {{- $p := slice "_hof" -}}
                     {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
                     <div class="card wide h2 bg-videos-gradient">
                         {{ partial "card-video.html" . }}
                     </div>
                     {{- end -}}
-                    <h2 class="c-videos-100 display-inline-block">GetInspired Favourites</h2>
+                    <h2 class="c-videos-100">Staff Picks</h2>
                     {{- $p := slice "_fav" -}}
                     {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
                     <div class="card wide h2 bg-videos-gradient">
