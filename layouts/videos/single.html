@@ -24,7 +24,7 @@
                 {{- $related := .Site.RegularPages.Related . | first 4 | shuffle -}}
                 {{- with $related -}}
                 {{- range . -}}
-                <div class="card wide h2 fluid bg-videos-500">
+                <div class="card font-2 wide h2 fluid bg-videos-500">
                     {{- partial "card-video.html" . -}}
                 </div>
                 {{- end -}}
@@ -33,13 +33,13 @@
         </div>
         <div class="row">
             <div class="col s12 m6 l9">
-                <div class="row bg-articles-500 br2">
+                <div class="row br2">
                     <div class="col s12">
                         <h2 class="c-videos-100 bb-videos bw2">NEXT UP IN VIDEOS</h2>
                         {{- $related := .Site.RegularPages.Related . | first 5 | shuffle -}}
                         {{- with $related -}}
                         {{- range . -}}
-                        <h4><a class="c-videos-200" href="{{ .Permalink }}">"{{ .Title }}" - {{ .Params.author }}</a></h4>
+                        <h4><a href="{{ .Permalink }}">"{{ .Title }}" - {{ .Params.author }}</a></h4>
                         {{- end -}}
                         {{- end -}}
                     </div>
@@ -55,14 +55,14 @@
                 <h2 class="c-videos-100">Hall of Fame</h2>
                 {{- $p := slice "_hof" -}}
                 {{- range where .Site.Pages "Params.tags" "intersect" $p | first 3 -}}
-                <div class="card wide h2 bg-videos-gradient">
+                <div class="card font-2 wide h2 bg-videos-gradient">
                     {{ partial "card-video.html" . }}
                 </div>
                 {{- end -}}
                 <h2 class="c-videos-100">Staff Picks</h2>
                 {{- $p := slice "_fav" -}}
                 {{- range where .Site.Pages "Params.tags" "intersect" $p | first 3 -}}
-                <div class="card wide h2 bg-videos-gradient">
+                <div class="card font-2 wide h2 bg-videos-gradient">
                     {{ partial "card-video.html" . }}
                 </div>
                 {{- end -}}

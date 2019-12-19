@@ -8,7 +8,9 @@
         <div class="card horizontal bg-news-400 z-depth-1">
     {{- end -}} -->
 
-        <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
+        <div class="img-container">
+            <a href="{{ .Permalink }}"><img src="{{ .Params.image}}" /></a>
+        </div>
         {{- $source:= replace .Params.source " " "-" -}}
         {{- $source:= lower $source -}}
 
@@ -26,9 +28,9 @@
         <div class="content">
             <h6 class="caption bg-news-300">{{ .Params.source }}</h6>
             {{- if lt $rand 10}}
-                    <h5 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h5>
+                    <h2 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
             {{- else -}}
-                    <h5 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h5>
+                    <h2 class="title"><a href="{{ .Permalink }}">{{ .Params.title }}</a></h2>
             {{- end -}}
             {{- if lt $delta 60 -}}
             <!-- <h6 class="age">{{ $delta }}m ago</h6> -->

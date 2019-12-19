@@ -43,11 +43,11 @@
                     <div class="gi s12 m6 l4">
                     {{- end -}}
                             {{- if ne $video "" -}}
-                                <div class="card h4 bg-videos-500 z-depth-5">
+                                <div class="card font-3 h4 bg-videos-500 z-depth-5">
                                 <iframe width="100%" height="50%" src="https://www.youtube.com/embed/{{ $video }}" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             {{- else -}}
-                                <div class="card h4 bg-quotes-500 z-depth-4">
+                                <div class="card font-3 h4 bg-quotes-500 z-depth-4">
                                 <div class="img-container">
                                     <img src="{{ $image }}" />
                                 </div>
@@ -73,7 +73,7 @@
                 {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
                 {{- if and (ne .Title "Quotes By Topic") (ne .Title ($.Scratch.Get "thistitle")) -}}
                 {{- if lt ($.Scratch.Get "g-card-counter") 5 -}}
-                <div class="card wide h2 bg-quotes-400 z-depth-5 font-medium">
+                <div class="card font-3 wide h2 bg-quotes-400 z-depth-5 font-medium">
                     {{- partial "card-quotes-by-topic.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
@@ -88,7 +88,7 @@
                 {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
                 {{- if ne .Title "Quotes By Author" -}}
                 {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
-                <div class="card wide h2 bg-quotes-400 z-depth-5">
+                <div class="card font-3 wide h2 bg-quotes-400 z-depth-5">
                     {{- partial "card-quotes-by-author.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}

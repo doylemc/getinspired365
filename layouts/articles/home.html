@@ -1,0 +1,52 @@
+{{- define "content" -}}
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l8">
+                <h2><a href="stories" class="c-articles-100">Stories ></a></h2>
+                <div class="card-grid">
+                    {{- $.Scratch.Set "g-card-counter" 0 -}}
+                    {{- range (where .Site.Pages "Type" "articles") -}}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 16 -}}
+                    {{- if in .Params.tags "_article_story" -}}
+                    <div class="card font-3 s6 m4 l4 h6 bg-articles-500">
+                        {{- partial "card-article.html" . -}}
+                    </div>
+                    {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                    {{- end -}}
+                    {{- end -}}
+                    {{- end -}}
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <h2><a href="opinion" class="c-articles-100">Opinion ></a></h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range (where .Site.Pages "Type" "articles") -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 5 -}}
+                {{- if in .Params.tags "_article_opinion" -}}
+                <div class="card font-2 h2 wide bg-articles-500">
+                    {{- partial "card-article.html" . -}}
+                </div>
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+
+                <div class="clearfix"></div>
+                <h2><a href="interviews" class="c-articles-100">Interviews ></a></h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range (where .Site.Pages "Type" "articles") -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 5 -}}
+                {{- if in .Params.tags "_article_interview" -}}
+                <div class="card font-2 h2 wide bg-articles-500">
+                    {{- partial "card-article.html" . -}}
+                </div>
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+</div>
+{{- end -}}

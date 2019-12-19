@@ -63,6 +63,9 @@ body {
 .no-margin {
     margin: 0;
 }
+.font-xl {
+    font-size: 1.4em;
+}
 .font-large {
     font-size: 1.1em;
 }
@@ -80,6 +83,21 @@ body {
 }
 .rtr {
     transform: rotate(-1deg);
+}
+.trx {
+    transform: translateX(1em);
+}
+.trxm {
+    transform: translate(-1em);
+}
+.try {
+    transform: translateY(1em);
+}
+.trym {
+    transform: translateY(-1em);
+}
+.rtl.trym {
+    transform: rotate(2deg) translateY(-1em);
 }
 .well1 {
     padding: var(--gutter-width);
@@ -208,8 +226,8 @@ figure.writer figcaption .readingtime {
 /************************************************************************
 -- FIGURE WITHIN A GRID
 ************************************************************************/
-.gi figure {
-    background: #090909;
+figure {
+    /* background: #090909; */
     border-radius: 0.25em;
     display: inline-block;
     font-size: 1em;
@@ -228,20 +246,20 @@ figure.writer figcaption .readingtime {
     z-index: 1;
 }
 
-.gi figure:hover {
+.card figure:hover {
     transform: scale(1.2);
     transition: transform 0.1s ease-out;
     z-index: 99 !important;
 }
 
-.gi figure blockquote {
+figure blockquote {
     color: #eee;
     letter-spacing: 0px;
     margin-top: -0.2em;
     text-align: center;
 }
 
-.gi figure blockquote::before {
+figure blockquote::before {
      color: var(--quotes-color-100);
      font-family: FontAwesome;
      font-weight: 900;
@@ -254,7 +272,7 @@ figure.writer figcaption .readingtime {
      width: 100%;
 }
 
-.gi figure figcaption {
+figure figcaption {
     color: var(--quotes-color-200);
     display: block;
     font-size: 0.8em;
@@ -266,7 +284,7 @@ figure.writer figcaption .readingtime {
     width: 100%;
 }
 
-.gi figure figcaption::before {
+figure figcaption::before {
     background: var(--quotes-color-300);
     border-right: 1px #aaa;
     content: '';
@@ -279,7 +297,7 @@ figure.writer figcaption .readingtime {
     width: 20px;
 }
 
-.gi figure img {
+figure img {
     display: none;
 }
 
@@ -323,10 +341,10 @@ figure.writer figcaption .readingtime {
 }
 
 .gi:nth-child(5n) figure {
-    /* font-famsily: 'Montserrat'; */
+    /* font-famsily: 'Montserrat'; 
     text-align: left;
     z-index: 10;
-}
+} */
 
 .gi:nth-child(6n) figure {
     /* font-famsily: 'Montserrat'; */
@@ -382,6 +400,14 @@ figure.writer figcaption .readingtime {
     #060606 10px,
     #090909 10px,
     #090909 20px);
+}
+
+.bg-angled-articles {
+    background: repeating-linear-gradient(-55deg,
+    var(--articles-color-400),
+    var(--articles-color-400) 4px,
+    var(--articles-color-500) 1px,
+    var(--articles-color-500) 400px);
 }
 
 .bg-angled-quotes {
@@ -638,6 +664,13 @@ figure.writer figcaption .readingtime {
     border-radius: 0.5em;
 }
 
+.bb-articles-gradient {
+    border-bottom: 1px solid var(--articles-color-300);
+    border-image: linear-gradient(to right, var(--articles-color-100) 0%, var(--articles-color-300) 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+}
+
 .b-videos-gradient {
     border: 1px solid var(--videos-color-300);
     border-image: linear-gradient(to right, var(--videos-color-200) 0%, var(--videos-color-500) 100%);
@@ -745,7 +778,7 @@ nav ul.site-nav li {
     float: left;
     font-size: 0.8em;
     font-weight: 900;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     padding: 1em 0 1em 0;
     margin-right: 1.75em;
     position: relative;
@@ -1166,6 +1199,7 @@ ul.section-nav.tags a:hover {
 .card.h6 { height: calc( var(--card-unit-height) * 6 + (var(--gutter-width) * 5)); }
 .card.h7 { height: calc( var(--card-unit-height) * 7 + (var(--gutter-width) * 6)); }
 .card.h8 { height: calc( var(--card-unit-height) * 8 + (var(--gutter-width) * 7)); }
+.card.fluid { min-height: 0 !important; }
 
 .card img { height: 50%; object-fit: cover; object-position: center; overflow: hidden; position: relative; transition: transform 0.3s ease-in-out; width: 100%; }
 .card.img-25 img { height: 25%; }
@@ -1189,9 +1223,12 @@ ul.section-nav.tags a:hover {
 .card .img-container.tag img { opacity: 0.95; -webkit-filter: grayscale(50%); filter: grayscale(50%) }
 .card:hover .img-container img { transform: scale(0.8); transform-origin: center; transition: transform 0.3s ease-out; opacity: 1; -webkit-filter: grayscale(0%); filter: grayscale(0%) }
 
+/************************************************************************
+-- CARD CONTENT
+************************************************************************/
 .card .content {
     margin-bottom: var(--gutter-width);
-    padding: 0.25em 0.5em;
+    padding: 0.5em 0.5em;
     z-index: 1 !important;
 }
 
@@ -1201,8 +1238,10 @@ ul.section-nav.tags a:hover {
 
 .card .content .caption {
     /* background: #000 !important;         */
+    color: #fff;
     display: inline-block;
     font-size: 0.6em;
+    letter-spacing: 1px;
     margin: 0.25em 0;
     opacity: 1;
     padding: 0.1em 0.25em;
@@ -1210,29 +1249,22 @@ ul.section-nav.tags a:hover {
 }
 
 .card .content .title {
-    color: #ddd !important;
-    margin: 0.25em 0 0.5em 0;
+    margin: 0.25em 0;
     padding: 0;
 }
 
 .card .content .title.no-pad {
     margin: 0;
+    padding: 0;
 }
 
-/* .card.h1 .content p { display: none; }
-.card.h1 .content .title { font-size: 0.9em; }
-.card.h2 .content .title { font-size: 0.9em; }
+.card .content .age {
+    margin: 1em 0;
+    opacity: 0.8;
+    padding: 0;
+}
 
-.card.h3 .content .caption { display: none; }
-.card.h3 .content .title { font-size: 1.1em; text-align: center; margin-top: 0.75em; }
-.card.h3 .content .age { display: none;}
-.card.h3 .content p { display: none; }
-
-.card.h4 .content .title { font-size: 0.9em; }
-.card.h4 .content .age { display: none;}
-.card.h4 .content p { display: none; } */
-
-.card .content h3 a, .c .content h4 a, .c .content h5 a, .c .content h6 a {
+.card .content .title a, .card .content h3 a, .c .content h4 a, .c .content h5 a, .c .content h6 a {
     color: #ddd !important;
 }
 
@@ -1243,14 +1275,19 @@ ul.section-nav.tags a:hover {
 .card .content p {
     font-size: 0.75em;
     font-weight: 400;
+    margin: 0.5em 0;
     opacity: 0.5;
 }
 
 .card.wide .content {
-    margin-left: 35%;
+    margin-left: 36%;
 }
 
-.card a.attribution { left: 0.5em; position: absolute; top: 0.5em; }
+.card a.attribution { 
+    left: 0.5em; 
+    position: absolute; 
+    top: 0.5em; 
+}
 
 .card .badge {
     border-radius: 0.25em;
@@ -1263,10 +1300,62 @@ ul.section-nav.tags a:hover {
     text-align: right;
 }
 
-.card.fluid {
-    min-height: 0 !important;
+/************************************************************************
+-- CARDS - OPTIONS
+************************************************************************/
+.card.hide-caption .content .caption {
+    display: none;
 }
 
+.card.hide-summary .content p {
+    display: none;
+}
+
+.card.no-bg .img-container {
+    border-radius: var(--border-radius);
+}
+
+.card.no-bg .content {
+    padding: 0;
+}
+
+.card.wide.no-bg .content {
+    margin-top: 0 ;
+    padding-top: 0;
+}
+
+.card.h1 .content .title {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+/************************************************************************
+-- CARDS - FONT SIZES
+************************************************************************/
+.card.font-1 .title {
+    font-size: 0.6em;
+}
+.card.font-2 .title {
+    font-size: 0.75em;
+}
+.card.font-3 .title {
+    font-size: 0.9em;
+}
+.card.font-4 .title {
+    font-size: 1.1em;
+}
+.card.font-5 .title {
+    font-size: 1.2em;
+}
+.card.font-6 .title {
+    font-size: 1.3em;
+}
+.card.font-7 .title {
+    font-size: 1.4em;
+}
+.card.font-8 .title {
+    font-size: 1.5em;
+}
 
 /************************************************************************
 -- CARDS - OVERLAYS
@@ -1344,22 +1433,6 @@ ul.section-nav.tags a:hover {
 .card .tag-title a {
     color: #ddd !important;
     padding: 0 0.5em;
-}
-
-/************************************************************************
--- CARDS ARTICLE
-************************************************************************/
-.card.article-special img:before {
-    background: var(--quotes-color-300);
-    border-right: 5px #aaa;
-    content: 'xxx';
-    height: 5px;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    bottom: 0px;
-    width: 20%;
-    z-index: 9999;
 }
 
 /************************************************************************

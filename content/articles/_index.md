@@ -1,3 +1,4 @@
 ---
-title: "Original Articles"
+title: 'Original Articles'
+layout: "home"
 ---
