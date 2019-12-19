@@ -664,6 +664,10 @@ figure img {
     border-radius: 0.5em;
 }
 
+.bb-articles {
+    border-bottom: 1px solid var(--articles-color-300);
+}
+
 .bb-articles-gradient {
     border-bottom: 1px solid var(--articles-color-300);
     border-image: linear-gradient(to right, var(--articles-color-100) 0%, var(--articles-color-300) 100%);
