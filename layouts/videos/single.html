@@ -33,20 +33,22 @@
         </div>
         <div class="row">
             <div class="col s12 m6 l9">
-                <div class="row br2">
+                <div class="row br2 bg-videos-500">
                     <div class="col s12">
-                        <h2 class="c-videos-100 bb-videos bw2">NEXT UP IN VIDEOS</h2>
+                        <h2 class="c-videos-100">NEXT UP IN VIDEOS</h2>
+                        <ul class="numbered videos">
                         {{- $related := .Site.RegularPages.Related . | first 5 | shuffle -}}
                         {{- with $related -}}
                         {{- range . -}}
-                        <h4><a href="{{ .Permalink }}">"{{ .Title }}" - {{ .Params.author }}</a></h4>
+                        <li><a href="{{ .Permalink }}">"{{ .Title }}"</a></li>
                         {{- end -}}
                         {{- end -}}
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <h2 class="c-videos-100 bb-videos bw2">THE LATEST</h2>
+                        <h2 class="c-gradient display-inline-block">THE LATEST</h2>
                         {{- partial "latest.html" . -}}
                     </div>
                 </div>
@@ -59,6 +61,7 @@
                     {{ partial "card-video.html" . }}
                 </div>
                 {{- end -}}
+                <div class="clearfix"></div>
                 <h2 class="c-videos-100">Staff Picks</h2>
                 {{- $p := slice "_fav" -}}
                 {{- range where .Site.Pages "Params.tags" "intersect" $p | first 3 -}}

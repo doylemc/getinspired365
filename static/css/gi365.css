@@ -123,7 +123,7 @@ ul li a:hover {
 -- HYPERLINKS
 ************************************************************************/
 a, a.btn {
-    color: #aaa !important;
+    color: #ddd !important;
     text-decoration: none;
     transition: color 0.2s ease-out;
 }
@@ -135,7 +135,7 @@ a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 }
 
 a:visited {
-    color: #aaa;
+    color: #ddd;
 }
 
 /************************************************************************
@@ -924,11 +924,12 @@ ul.section-nav {
 
 ul.section-nav li {
     border-bottom: 3px solid transparent;
-    /* border-right: 40px solid #212121; */
+    border-right: 1px solid #191919;
     float: left;
     font-size: 0.8em;
-    font-weight: bold;
+    font-weight: 900;
     height: 100%;
+    letter-spacing: 1px;
     margin: 0;
     padding: 0.75em 1em 0.4em 1em;
     width: auto;
@@ -1573,3 +1574,58 @@ ul.pagination li a {
 ul.pagination li:hover {
     background: #161616;
 }
+
+/************************************************************************
+-- NUMBERED LIST
+************************************************************************/
+ul.numbered {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.numbered li {
+    float: left;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+ul.numbered li::before {
+    border-radius: 50%;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 1.4em;
+    height: 32px;
+    margin-right: 0.5em;
+    text-align: center;
+    width: 32px;
+}
+
+ul.numbered li:nth-child(1)::before {
+    content: "1";
+}
+
+ul.numbered li:nth-child(2)::before {
+    content: "2";
+}
+
+ul.numbered li:nth-child(3)::before {
+    content: "3";
+}
+
+ul.numbered li:nth-child(4)::before {
+    content: "4";
+}
+
+ul.numbered li:nth-child(5)::before {
+    content: "5";
+}
+
+ul.numbered.videos li::before {
+    border: 1px solid var(--videos-color-300);
+    color: var(--videos-color-100);
+}
+
+
