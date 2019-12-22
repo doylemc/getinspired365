@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140512"]
 title: "Travel brings power and love back into your life."
 author: "Rumi"
 description: "Travel brings power and love back into your life. - Rumi quotes from GetInspired365.com"

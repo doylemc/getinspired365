@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130327"]
 title: "Life has no meaning. Each of us has meaning and we bring it to life. It is a waste to be asking the question when you are the answer."
 author: "Joseph Campbell"
 description: "Life has no meaning. Each of us has meaning and we bring it to life. It is a waste to be asking the question when you are the answer. - Joseph Campbell quotes from GetInspired365.com"

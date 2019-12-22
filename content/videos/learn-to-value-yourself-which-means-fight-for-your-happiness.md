@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130422"]
 title: "Learn to value yourself, which means: fight for your happiness."
 author: "Amy Rand"
 description: "Learn to value yourself, which means: fight for your happiness. - Amy Rand quotes from GetInspired365.com"

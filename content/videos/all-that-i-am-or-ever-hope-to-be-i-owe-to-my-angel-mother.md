@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150509"]
 title: "All that I am or ever hope to be, I owe to my angel mother."
 author: "Abraham Lincoln"
 description: "All that I am or ever hope to be, I owe to my angel mother. - Abraham Lincoln quotes from GetInspired365.com"

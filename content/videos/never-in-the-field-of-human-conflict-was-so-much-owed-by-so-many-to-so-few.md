@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150710"]
 title: "Never in the field of human conflict was so much owed by so many to so few."
 author: "Winston Churchill"
 description: "Never in the field of human conflict was so much owed by so many to so few. - Winston Churchill quotes from GetInspired365.com"

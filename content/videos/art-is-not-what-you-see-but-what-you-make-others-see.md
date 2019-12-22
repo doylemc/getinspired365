@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130805"]
 title: "Art is not what you see, but what you make others see."
 author: "Edgar Degas"
 description: "Art is not what you see, but what you make others see. - Edgar Degas quotes from GetInspired365.com"

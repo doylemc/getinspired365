@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150428"]
 title: "Just because it isn't happening here, doesn't meaning it isn't happening."
 author: "Author Unknown"
 description: "Just because it isn't happening here, doesn't meaning it isn't happening. - Author Unknown quotes from GetInspired365.com"

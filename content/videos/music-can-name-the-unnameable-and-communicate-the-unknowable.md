@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130707"]
 title: "Music . . . can name the unnameable and communicate the unknowable."
 author: "Leonard Bernstein"
 description: "Music . . . can name the unnameable and communicate the unknowable. - Leonard Bernstein quotes from GetInspired365.com"

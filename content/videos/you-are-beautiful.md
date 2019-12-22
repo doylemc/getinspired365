@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140228"]
 title: "You are beautiful"
 author: "Shane Koyczan"
 description: "You are beautiful - Shane Koyczan quotes from GetInspired365.com"

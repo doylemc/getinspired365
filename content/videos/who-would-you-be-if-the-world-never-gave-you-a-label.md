@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150422"]
 title: "Who would you be if the world never gave you a label?"
 author: "Prince EA"
 description: "Who would you be if the world never gave you a label? - Prince EA quotes from GetInspired365.com"

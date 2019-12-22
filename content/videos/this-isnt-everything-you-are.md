@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130904"]
 title: "This isn't everything you are"
 author: "Gary Lightbody"
 description: "This isn't everything you are - Gary Lightbody quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130507"]
 title: "The true soldier fights not because he hates what is in front of him, but because he loves what is behind him."
 author: "Gilbert K. Chesterton"
 description: "The true soldier fights not because he hates what is in front of him, but because he loves what is behind him. - Gilbert K. Chesterton quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150411"]
 title: "Education is our passport to the future, for tomorrow belongs to the people who prepare for it today."
 author: "Malcolm X"
 description: "Education is our passport to the future, for tomorrow belongs to the people who prepare for it today. - Malcolm X quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141226"]
 title: "Never was anything great achieved without danger."
 author: "Niccolò Machiavelli"
 description: "Never was anything great achieved without danger. - Niccolò Machiavelli quotes from GetInspired365.com"

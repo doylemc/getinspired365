@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131006"]
 title: "There is only one sensible thing to do with this empty existence and that is to fill it.  And in my opinion (until I change it), life is best filled by learning as much as you can about as much as you can, taking pride in whatever you’re doing, having compassion, sharing ideas..."
 author: "Tim Minchin"
 description: "There is only one sensible thing to do with this empty existence and that is to fill it.  And in my opinion (until I change it), life is best filled by learning as much as you can about as much as you can, taking pride in whatever you’re doing, having compassion, sharing ideas... - Tim Minchin quotes from GetInspired365.com"

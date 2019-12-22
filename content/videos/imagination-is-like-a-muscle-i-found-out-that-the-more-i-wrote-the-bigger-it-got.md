@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140430"]
 title: "Imagination is like a muscle. I found out that the more I wrote, the bigger it got."
 author: "Philip José Farmer"
 description: "Imagination is like a muscle. I found out that the more I wrote, the bigger it got. - Philip José Farmer quotes from GetInspired365.com"

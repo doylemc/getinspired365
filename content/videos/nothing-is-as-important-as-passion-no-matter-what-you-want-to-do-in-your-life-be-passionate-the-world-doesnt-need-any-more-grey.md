@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140127"]
 title: "Nothing is as important as passion. No matter what you want to do in your life, be passionate. The world doesn't need any more grey."
 author: "Jon Bon Jovi"
 description: "Nothing is as important as passion. No matter what you want to do in your life, be passionate. The world doesn't need any more grey. - Jon Bon Jovi quotes from GetInspired365.com"

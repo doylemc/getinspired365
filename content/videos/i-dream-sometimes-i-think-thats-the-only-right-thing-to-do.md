@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131117"]
 title: "I dream. Sometimes I think that's the only right thing to do."
 author: "Haruki Murakami"
 description: "I dream. Sometimes I think that's the only right thing to do. - Haruki Murakami quotes from GetInspired365.com"

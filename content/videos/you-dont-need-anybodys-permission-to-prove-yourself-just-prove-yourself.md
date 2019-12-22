@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140802"]
 title: "You don't need anybody's permission to prove yourself, just prove yourself."
 author: "Amit Kalantri"
 description: "You don't need anybody's permission to prove yourself, just prove yourself. - Amit Kalantri quotes from GetInspired365.com"

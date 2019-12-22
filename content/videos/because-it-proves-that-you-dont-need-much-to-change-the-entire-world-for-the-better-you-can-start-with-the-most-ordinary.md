@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131202"]
 title: "Because it proves that you don't need much to change the entire world for the better. You can start with the most ordinary ingredients. You can start with the world you've got."
 author: "Catherine Ryan Hyde"
 description: "Because it proves that you don't need much to change the entire world for the better. You can start with the most ordinary ingredients. You can start with the world you've got. - Catherine Ryan Hyde quotes from GetInspired365.com"

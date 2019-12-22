@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150403"]
 title: "Life is a game, play it; Life is a challenge, Meet it; Life is an opportunity, Capture it."
 author: "Unknown"
 description: "Life is a game, play it; Life is a challenge, Meet it; Life is an opportunity, Capture it. - Unknown quotes from GetInspired365.com"

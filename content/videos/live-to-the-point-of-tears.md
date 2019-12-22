@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150525"]
 title: "Live to the point of tears"
 author: "Albert Camus"
 description: "Live to the point of tears - Albert Camus quotes from GetInspired365.com"

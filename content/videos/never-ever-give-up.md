@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140112"]
 title: "Never, ever Give up."
 author: "Arthur Boorman"
 description: "Never, ever Give up. - Arthur Boorman quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140305"]
 title: "Luckily I'm not educated, he tells students. If you act like an illiterate man, your learning will never stop... Being uneducated, you have no fear of the future."
 author: "Arunachalam Muruganantham"
 description: "Luckily I'm not educated, he tells students. If you act like an illiterate man, your learning will never stop... Being uneducated, you have no fear of the future. - Arunachalam Muruganantham quotes from GetInspired365.com"

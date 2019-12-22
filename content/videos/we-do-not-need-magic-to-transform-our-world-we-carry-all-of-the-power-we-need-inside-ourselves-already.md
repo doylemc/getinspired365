@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140106"]
 title: "We do not need magic to transform our world. We carry all of the power we need inside ourselves already."
 author: "J.K. Rowling"
 description: "We do not need magic to transform our world. We carry all of the power we need inside ourselves already. - J.K. Rowling quotes from GetInspired365.com"

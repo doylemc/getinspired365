@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140606"]
 title: "Circumstances cause us to act the way we do. We should always bear this in mind before judging the actions of others. I realized this from the start during World War II."
 author: "Thor Heyerdahl"
 description: "Circumstances cause us to act the way we do. We should always bear this in mind before judging the actions of others. I realized this from the start during World War II. - Thor Heyerdahl quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150306"]
 title: "If we had no winter, the spring would not be so pleasant: if we did not sometimes taste of adversity, prosperity would not be so welcome."
 author: "Anne Bradstreet"
 description: "If we had no winter, the spring would not be so pleasant: if we did not sometimes taste of adversity, prosperity would not be so welcome. - Anne Bradstreet quotes from GetInspired365.com"

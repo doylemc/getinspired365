@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141004"]
 title: "He who has a why to live for can bear almost any how."
 author: "Friedrich Nietzsche"
 description: "He who has a why to live for can bear almost any how. - Friedrich Nietzsche quotes from GetInspired365.com"

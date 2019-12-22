@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130122"]
 title: "Never tell me the sky's the limit when there are footprints on the moon"
 author: "Unknown"
 description: "Never tell me the sky's the limit when there are footprints on the moon - Unknown quotes from GetInspired365.com"

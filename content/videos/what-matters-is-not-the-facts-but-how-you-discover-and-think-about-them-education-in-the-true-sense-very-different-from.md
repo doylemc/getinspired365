@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130519"]
 title: "What matters is not the facts but how you discover and think about them: education in the true sense, very different from today's assessment-mad exam culture."
 author: "Richard Dawkins"
 description: "What matters is not the facts but how you discover and think about them: education in the true sense, very different from today's assessment-mad exam culture. - Richard Dawkins quotes from GetInspired365.com"

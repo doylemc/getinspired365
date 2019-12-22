@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141008"]
 title: "There is no failure except in no longer trying."
 author: "Elbert Hubbard"
 description: "There is no failure except in no longer trying. - Elbert Hubbard quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150604"]
 title: "Of all the words of mice and men, the saddest are, It might have been."
 author: "Kurt Vonnegut"
 description: "Of all the words of mice and men, the saddest are, It might have been. - Kurt Vonnegut quotes from GetInspired365.com"

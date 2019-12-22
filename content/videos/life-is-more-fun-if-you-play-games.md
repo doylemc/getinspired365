@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140620"]
 title: "Life is more fun if you play games."
 author: "Roald Dahl"
 description: "Life is more fun if you play games. - Roald Dahl quotes from GetInspired365.com"

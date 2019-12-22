@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131223"]
 title: "Mother’s dying wishes granted at Christmas, two years after her death"
 author: "Brenda Schmitz"
 description: "Mother’s dying wishes granted at Christmas, two years after her death - Brenda Schmitz quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150405"]
 title: "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage."
 author: "Lao Tzu"
 description: "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage. - Lao Tzu quotes from GetInspired365.com"

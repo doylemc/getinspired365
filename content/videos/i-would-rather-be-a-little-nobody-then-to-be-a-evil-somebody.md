@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150711"]
 title: "I would rather be a little nobody, then to be a evil somebody."
 author: "Abraham Lincoln"
 description: "I would rather be a little nobody, then to be a evil somebody. - Abraham Lincoln quotes from GetInspired365.com"

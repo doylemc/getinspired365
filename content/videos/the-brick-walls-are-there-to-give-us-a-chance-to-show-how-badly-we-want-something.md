@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150211"]
 title: "The brick walls are there to give us a chance to show how badly we want something."
 author: "Randy Pausch"
 description: "The brick walls are there to give us a chance to show how badly we want something. - Randy Pausch quotes from GetInspired365.com"

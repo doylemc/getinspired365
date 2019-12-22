@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140302"]
 title: "The present changes the past. Looking back you do not find what you left behind."
 author: "Kiran Desai"
 description: "The present changes the past. Looking back you do not find what you left behind. - Kiran Desai quotes from GetInspired365.com"

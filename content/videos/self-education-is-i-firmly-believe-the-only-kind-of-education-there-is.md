@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130127"]
 title: "Self-education is, I firmly believe, the only kind of education there is."
 author: "Isaac Asimov"
 description: "Self-education is, I firmly believe, the only kind of education there is. - Isaac Asimov quotes from GetInspired365.com"

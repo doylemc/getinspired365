@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150708"]
 title: "Our lives begin to end the day we become silent about things that matter."
 author: "Martin Luther King, Jr."
 description: "Our lives begin to end the day we become silent about things that matter. - Martin Luther King, Jr. quotes from GetInspired365.com"

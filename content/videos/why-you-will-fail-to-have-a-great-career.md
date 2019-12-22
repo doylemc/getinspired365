@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130908"]
 title: "Why you will fail to have a great career."
 author: "Larry Smith"
 description: "Why you will fail to have a great career. - Larry Smith quotes from GetInspired365.com"

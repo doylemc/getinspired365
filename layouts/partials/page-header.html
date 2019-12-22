@@ -1,7 +1,7 @@
 {{- if .IsHome -}}
-<div id="page-header" class="section no-pad bb bg-homepage z-depth-5">
+<div id="page-header" class="section no-pad b1b b1t b1g-dark z-depth-5">
 {{- else -}}
-<div id="page-header" class="section no-pad bb bg-{{ .Section }}-4100 z-depth-5">
+<div id="page-header" class="section no-pad b1b bt bg-an1gled-{{ .Section }} z-depth-5">
 {{- end -}}
     <div class="container">
         <div class="row no-margin-bottom">
@@ -40,9 +40,9 @@
                             {{- end -}}
                             <div class="hide-on-med-and-down right">
                                 {{- if and (eq ($.Scratch.Get "section") "videos") (ne ($.Scratch.Get "pagetitle") "Inspirational Videos") -}}
-                                    <h6 class="c-gradient">"{{ $.Scratch.Get "pagetitle" }}"<br>{{ $.Scratch.Get "pageauthor" }}</h6>
+                                    <h5 class="c-gradient">"{{ $.Scratch.Get "pagetitle" }}"<br>{{ $.Scratch.Get "pageauthor" }}</h5>
                                 {{- else -}}
-                                    <h6 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h6>
+                                    <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
                                 {{- end -}}
                             </div>
                         {{- end -}}

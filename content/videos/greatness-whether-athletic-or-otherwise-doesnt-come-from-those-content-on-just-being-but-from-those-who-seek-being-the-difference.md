@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130426"]
 title: "Greatness, whether athletic or otherwise, doesn’t come from those content on just being but from those who seek being the difference."
 author: "Kirk Mango"
 description: "Greatness, whether athletic or otherwise, doesn’t come from those content on just being but from those who seek being the difference. - Kirk Mango quotes from GetInspired365.com"

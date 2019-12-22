@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140207"]
 title: "We do have a lot in common. The same air, the same Earth, the same sky. Maybe if we started looking at  what's the same instead of  always looking at what's different,  ...well, who knows?"
 author: "Meowth"
 description: "We do have a lot in common. The same air, the same Earth, the same sky. Maybe if we started looking at  what's the same instead of  always looking at what's different,  ...well, who knows? - Meowth quotes from GetInspired365.com"

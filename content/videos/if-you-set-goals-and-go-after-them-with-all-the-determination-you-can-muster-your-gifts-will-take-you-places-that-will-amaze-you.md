@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131014"]
 title: "If you set goals and go after them with all the determination you can muster, your gifts will take you places that will amaze you."
 author: "Les Brown"
 description: "If you set goals and go after them with all the determination you can muster, your gifts will take you places that will amaze you. - Les Brown quotes from GetInspired365.com"

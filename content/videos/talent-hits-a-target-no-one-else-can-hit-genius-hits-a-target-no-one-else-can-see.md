@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130417"]
 title: "Talent hits a target no one else can hit. Genius hits a target no one else can see."
 author: "Arthur Schopenhauer"
 description: "Talent hits a target no one else can hit. Genius hits a target no one else can see. - Arthur Schopenhauer quotes from GetInspired365.com"

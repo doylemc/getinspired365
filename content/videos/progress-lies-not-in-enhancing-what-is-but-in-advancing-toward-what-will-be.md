@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140625"]
 title: "Progress lies not in enhancing what is, but in advancing toward what will be."
 author: "Khalil Gibran"
 description: "Progress lies not in enhancing what is, but in advancing toward what will be. - Khalil Gibran quotes from GetInspired365.com"

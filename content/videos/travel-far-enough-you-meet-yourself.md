@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141007"]
 title: "Travel far enough, you meet yourself."
 author: "David Mitchell"
 description: "Travel far enough, you meet yourself. - David Mitchell quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150219"]
 title: "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.!"
 author: "Mother Teresa"
 description: "Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.! - Mother Teresa quotes from GetInspired365.com"

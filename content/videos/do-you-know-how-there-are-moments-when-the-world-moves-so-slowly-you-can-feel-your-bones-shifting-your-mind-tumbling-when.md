@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130606"]
 title: "Do you know how there are moments when the world moves so slowly you can feel your bones shifting, your mind tumbling? When you think that no matter what happens to you for the rest of your life, you will remember every last detail of that one minute forever?"
 author: "Jodi Picoult"
 description: "Do you know how there are moments when the world moves so slowly you can feel your bones shifting, your mind tumbling? When you think that no matter what happens to you for the rest of your life, you will remember every last detail of that one minute forever? - Jodi Picoult quotes from GetInspired365.com"

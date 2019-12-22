@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141205"]
 title: "Life is like riding a bicycle. To keep your balance, you must keep moving."
 author: "Albert Einstein"
 description: "Life is like riding a bicycle. To keep your balance, you must keep moving. - Albert Einstein quotes from GetInspired365.com"

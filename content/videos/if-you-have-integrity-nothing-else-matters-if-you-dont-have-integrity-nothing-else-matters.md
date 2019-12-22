@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131017"]
 title: "If you have integrity, nothing else matters.  If you don't have integrity, nothing else matters."
 author: "Alan K. Simpson"
 description: "If you have integrity, nothing else matters.  If you don't have integrity, nothing else matters. - Alan K. Simpson quotes from GetInspired365.com"

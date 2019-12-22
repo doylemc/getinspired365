@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141215"]
 title: "I am a slow walker, but I never walk back."
 author: "Abraham Lincoln"
 description: "I am a slow walker, but I never walk back. - Abraham Lincoln quotes from GetInspired365.com"

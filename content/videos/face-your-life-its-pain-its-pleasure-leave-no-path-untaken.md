@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150106"]
 title: "Face your life, its pain, its pleasure, leave no path untaken."
 author: "Neil Gaiman"
 description: "Face your life, its pain, its pleasure, leave no path untaken. - Neil Gaiman quotes from GetInspired365.com"

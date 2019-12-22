@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141107"]
 title: "Carve your name on hearts, not tombstones. A legacy is etched into the minds of others and the stories they share about you."
 author: "Shannon. L. Arder"
 description: "Carve your name on hearts, not tombstones. A legacy is etched into the minds of others and the stories they share about you. - Shannon. L. Arder quotes from GetInspired365.com"

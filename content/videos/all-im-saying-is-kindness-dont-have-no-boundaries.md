@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131116"]
 title: "All I'm saying is, kindness don't have no boundaries."
 author: "Kathryn Stockett"
 description: "All I'm saying is, kindness don't have no boundaries. - Kathryn Stockett quotes from GetInspired365.com"

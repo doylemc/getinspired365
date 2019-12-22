@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130824"]
 title: "To dance is to be out of yourself.  Larger, more beautiful, more powerful."
 author: "Agnes De Mille"
 description: "To dance is to be out of yourself.  Larger, more beautiful, more powerful. - Agnes De Mille quotes from GetInspired365.com"

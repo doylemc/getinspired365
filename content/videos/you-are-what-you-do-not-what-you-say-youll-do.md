@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130627"]
 title: "You are what you do, not what you say you'll do."
 author: "Carl Jung"
 description: "You are what you do, not what you say you'll do. - Carl Jung quotes from GetInspired365.com"

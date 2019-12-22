@@ -8,7 +8,7 @@
                 <div class="card-grid">
                 {{ $paginator := .Paginate (where .Pages "Type" "videos") }}
                 {{ range $paginator.Pages }}
-                    <div class="card video font-3 no-bg img-33 h4 s6 m4 l3">
+                    <div class="card video font-3 bg-videos-500 img-50 h4 s6 m4 l3">
                         {{ partial "card-video.html" . }}
                     </div>
                 {{ end }}
@@ -19,14 +19,15 @@
                     <h2 class="c-videos-100">Hall of Fame</h2>
                     {{- $p := slice "_hof" -}}
                     {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
-                    <div class="card wide font-3 h2 bg-videos-gradient">
+                    <div class="card wide font-3 h2 bg-videos-500">
                         {{ partial "card-video.html" . }}
                     </div>
                     {{- end -}}
+                    <div class="clearfix"></div>
                     <h2 class="c-videos-100">Staff Picks</h2>
                     {{- $p := slice "_fav" -}}
                     {{- range where .Pages "Params.tags" "intersect" $p | first 5 -}}
-                    <div class="card wide h2 font-3 bg-videos-gradient">
+                    <div class="card wide h2 font-3 bg-videos-500">
                         {{ partial "card-video.html" . }}
                     </div>
                     {{- end -}}

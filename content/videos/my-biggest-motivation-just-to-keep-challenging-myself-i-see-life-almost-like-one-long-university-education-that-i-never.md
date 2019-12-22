@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140707"]
 title: "My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had — everyday I’m learning something new."
 author: "Richard Branson"
 description: "My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had — everyday I’m learning something new. - Richard Branson quotes from GetInspired365.com"

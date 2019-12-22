@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150217"]
 title: "Rock bottom became the solid foundation on which I rebuilt my life."
 author: "J.K. Rowling"
 description: "Rock bottom became the solid foundation on which I rebuilt my life. - J.K. Rowling quotes from GetInspired365.com"

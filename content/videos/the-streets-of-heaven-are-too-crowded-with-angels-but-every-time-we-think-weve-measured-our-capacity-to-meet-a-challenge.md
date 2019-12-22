@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130406"]
 title: "The streets of heaven are too crowded with angels but every time we think we've measured our capacity to meet a challenge we look up and we're reminded that that capacity may well be limitless."
 author: "Aaron Sorkin"
 description: "The streets of heaven are too crowded with angels but every time we think we've measured our capacity to meet a challenge we look up and we're reminded that that capacity may well be limitless. - Aaron Sorkin quotes from GetInspired365.com"

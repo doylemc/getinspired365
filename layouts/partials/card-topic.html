@@ -1,0 +1,7 @@
+{{- partial "card-x-clickable.html" . -}}
+{{- partial "card-x-image.html" . -}}
+<div class="content">
+    <h6 class="caption bg-quotes-300">TOPIC</h6>
+    <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p class="summary">{{ .Params.summary }}</p>
+</div>

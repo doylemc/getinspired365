@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150305"]
 title: "Every day is a journey, and the journey itself is home."
 author: "Matsuo Basho"
 description: "Every day is a journey, and the journey itself is home. - Matsuo Basho quotes from GetInspired365.com"

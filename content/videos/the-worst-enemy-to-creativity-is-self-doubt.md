@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141202"]
 title: "The worst enemy to creativity is self-doubt."
 author: "Sylvia Plath"
 description: "The worst enemy to creativity is self-doubt. - Sylvia Plath quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141231"]
 title: "Here's to 2014"
 author: "Google"
 description: "Here's to 2014 - Google quotes from GetInspired365.com"

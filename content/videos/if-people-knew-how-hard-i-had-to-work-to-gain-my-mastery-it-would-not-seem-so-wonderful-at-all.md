@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141104"]
 title: "If people knew how hard I had to work to gain my mastery, it would not seem so wonderful at all."
 author: "Michaelangelo"
 description: "If people knew how hard I had to work to gain my mastery, it would not seem so wonderful at all. - Michaelangelo quotes from GetInspired365.com"

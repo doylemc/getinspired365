@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131209"]
 title: "Whatever the mind can conceive and believe, it can achieve."
 author: "Napoleon Hill"
 description: "Whatever the mind can conceive and believe, it can achieve. - Napoleon Hill quotes from GetInspired365.com"

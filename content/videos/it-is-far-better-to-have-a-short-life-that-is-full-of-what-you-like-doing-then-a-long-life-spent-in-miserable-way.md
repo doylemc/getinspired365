@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150520"]
 title: "It is far better to have a short life that is full of what you like doing then a long life spent in miserable way"
 author: "Alan Watts"
 description: "It is far better to have a short life that is full of what you like doing then a long life spent in miserable way - Alan Watts quotes from GetInspired365.com"

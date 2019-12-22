@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140321"]
 title: "The most wasted of all days is one without laughter."
 author: "e. e. cummings"
 description: "The most wasted of all days is one without laughter. - e. e. cummings quotes from GetInspired365.com"

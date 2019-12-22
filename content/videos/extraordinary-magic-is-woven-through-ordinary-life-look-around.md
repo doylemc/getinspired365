@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130725"]
 title: "Extraordinary magic is woven through ordinary life. Look around!"
 author: "Amy Leigh Mercree"
 description: "Extraordinary magic is woven through ordinary life. Look around! - Amy Leigh Mercree quotes from GetInspired365.com"

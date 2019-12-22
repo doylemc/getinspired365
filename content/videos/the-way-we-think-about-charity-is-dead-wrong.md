@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130407"]
 title: "The way we think about charity is dead wrong"
 author: "Dan Pallotta"
 description: "The way we think about charity is dead wrong - Dan Pallotta quotes from GetInspired365.com"

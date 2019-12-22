@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150526"]
 title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples."
 author: "Mother Teresa"
 description: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples. - Mother Teresa quotes from GetInspired365.com"

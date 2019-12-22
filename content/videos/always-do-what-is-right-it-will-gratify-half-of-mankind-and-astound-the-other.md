@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130920"]
 title: "Always do what is right. It will gratify half of mankind and astound the other."
 author: "Mark Twain"
 description: "Always do what is right. It will gratify half of mankind and astound the other. - Mark Twain quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150715"]
 title: "The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference."
 author: "Elie Wiesel"
 description: "The opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference. - Elie Wiesel quotes from GetInspired365.com"

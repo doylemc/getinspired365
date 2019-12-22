@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140726"]
 title: "Embrace your inner lunatic. Fun times guaranteed."
 author: "Derek Landy"
 description: "Embrace your inner lunatic. Fun times guaranteed. - Derek Landy quotes from GetInspired365.com"

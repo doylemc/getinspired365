@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140831"]
 title: "One must be poor to know the luxury of giving."
 author: "George Eliot"
 description: "One must be poor to know the luxury of giving. - George Eliot quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130615"]
 title: "We have forty million reasons for failure, but not a single excuse."
 author: "Rudyard Kipling"
 description: "We have forty million reasons for failure, but not a single excuse. - Rudyard Kipling quotes from GetInspired365.com"

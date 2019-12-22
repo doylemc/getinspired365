@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130818"]
 title: "Never to suffer would never to have been blessed."
 author: "Edgar Allan Poe"
 description: "Never to suffer would never to have been blessed. - Edgar Allan Poe quotes from GetInspired365.com"

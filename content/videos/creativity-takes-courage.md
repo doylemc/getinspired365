@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140916"]
 title: "Creativity takes courage."
 author: "Henri Matisse"
 description: "Creativity takes courage. - Henri Matisse quotes from GetInspired365.com"

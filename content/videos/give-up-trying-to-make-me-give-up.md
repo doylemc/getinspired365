@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130203"]
 title: "Give up trying to make me give up"
 author: "Masashi Kishimoto"
 description: "Give up trying to make me give up - Masashi Kishimoto quotes from GetInspired365.com"

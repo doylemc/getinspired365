@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131214"]
 title: "It is not in the stars to hold our destiny but in ourselves."
 author: "William Shakespeare"
 description: "It is not in the stars to hold our destiny but in ourselves. - William Shakespeare quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140914"]
 title: "Hold fast to dreams, For if dreams die Life is a broken-winged bird, That cannot fly."
 author: "Langston Hughes"
 description: "Hold fast to dreams, For if dreams die Life is a broken-winged bird, That cannot fly. - Langston Hughes quotes from GetInspired365.com"

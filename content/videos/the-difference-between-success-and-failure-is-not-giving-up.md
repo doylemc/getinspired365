@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130126"]
 title: "The difference between Success and failure is not giving up."
 author: "Steven Redhead"
 description: "The difference between Success and failure is not giving up. - Steven Redhead quotes from GetInspired365.com"

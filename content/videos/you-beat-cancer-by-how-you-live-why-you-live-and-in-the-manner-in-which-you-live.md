@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150104"]
 title: "You beat cancer by how you live, why you live, and in the manner in which you live."
 author: "Stuart Scott"
 description: "You beat cancer by how you live, why you live, and in the manner in which you live. - Stuart Scott quotes from GetInspired365.com"

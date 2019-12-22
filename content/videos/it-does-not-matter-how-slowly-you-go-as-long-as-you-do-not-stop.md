@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140727"]
 title: "It does not matter how slowly you go as long as you do not stop."
 author: "Confucius"
 description: "It does not matter how slowly you go as long as you do not stop. - Confucius quotes from GetInspired365.com"

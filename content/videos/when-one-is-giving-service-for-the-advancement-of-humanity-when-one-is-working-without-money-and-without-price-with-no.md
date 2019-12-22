@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150410"]
 title: "When one is giving service for the advancement of humanity, when one is working without money and without price, with no hope of earthly reward, there comes a real, genuine joy into the human heart."
 author: "Heber J. Grant"
 description: "When one is giving service for the advancement of humanity, when one is working without money and without price, with no hope of earthly reward, there comes a real, genuine joy into the human heart. - Heber J. Grant quotes from GetInspired365.com"

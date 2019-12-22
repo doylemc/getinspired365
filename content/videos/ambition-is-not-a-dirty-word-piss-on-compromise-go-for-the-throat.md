@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140322"]
 title: "Ambition is not a dirty word. Piss on compromise. Go for the throat."
 author: "Steven Erikson"
 description: "Ambition is not a dirty word. Piss on compromise. Go for the throat. - Steven Erikson quotes from GetInspired365.com"

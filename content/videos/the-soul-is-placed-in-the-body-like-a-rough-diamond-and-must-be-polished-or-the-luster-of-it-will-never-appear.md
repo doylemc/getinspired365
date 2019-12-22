@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130506"]
 title: "The soul is placed in the body like a rough diamond, and must be polished, or the luster of it will never appear."
 author: "Daniel Defoe"
 description: "The soul is placed in the body like a rough diamond, and must be polished, or the luster of it will never appear. - Daniel Defoe quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150513"]
 title: "For the things we have to learn before we can do them, we learn by doing them."
 author: "Aristotle"
 description: "For the things we have to learn before we can do them, we learn by doing them. - Aristotle quotes from GetInspired365.com"

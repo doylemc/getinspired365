@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130217"]
 title: "If you want something bad enough, you can get it, you just have to want it."
 author: "Roger Wright"
 description: "If you want something bad enough, you can get it, you just have to want it. - Roger Wright quotes from GetInspired365.com"

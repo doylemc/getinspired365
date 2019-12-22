@@ -1,13 +1,13 @@
 {{ define "content" }}
 
 <!-- LIST ALL TAGS -->
-<div class="section bg-gradient">
+<div class="section bg-angled-dark-wide">
     <div class="container">
         <div class="row">
             <div class="grid">
                 <div class="grid-sizer"></div>
                 <div class="gutter-sizer"></div>
-                {{ $paginator := .Paginate .Pages }}
+                {{ $paginator := .Paginate (.Pages.ByParam "title") }}
                 {{- range $paginator.Pages -}}
                 {{- if and  (ne (substr .Title 0 1) "_") (ne .Title "") -}}
                     {{- $rand:= index (seq 20 | shuffle) 0 -}}
@@ -25,7 +25,7 @@
                         <div class="card h3 img-100 z-depth-5 center bg-angled-dark">
                         {{- end -}}
                             <div class="img-container tag">
-                                <h4 class="tag-title"><a class="c-gradient" href="/tags/{{ .Title | urlize }}">{{ $.Scratch.Get "tag-title" | upper }}</a></h4>
+                                <h4 class="tag-title"><a class="c-gr1adient" href="/tags/{{ .Title | urlize }}">{{ $.Scratch.Get "tag-title" | upper }}</a></h4>
                                 {{- $p := slice .Title -}}
                                 {{- range where .Pages "Params.tags" "intersect" $p | shuffle | first 1 -}}
                                     <a href="/tags/{{ $.Scratch.Get "tag-title" | urlize }}"><img src="{{ .Params.image }}" /></a>

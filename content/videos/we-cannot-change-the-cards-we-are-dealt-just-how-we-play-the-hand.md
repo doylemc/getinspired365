@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140325"]
 title: "We cannot change the cards we are dealt, just how we play the hand."
 author: "Randy Pausch"
 description: "We cannot change the cards we are dealt, just how we play the hand. - Randy Pausch quotes from GetInspired365.com"

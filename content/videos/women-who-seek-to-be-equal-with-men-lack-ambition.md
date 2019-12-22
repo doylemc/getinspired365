@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140629"]
 title: "Women who seek to be equal with men lack ambition."
 author: "Timothy Leary"
 description: "Women who seek to be equal with men lack ambition. - Timothy Leary quotes from GetInspired365.com"

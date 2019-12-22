@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150323"]
 title: "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty… I have never in my life envied a human being who led an easy life. I have envied a great many people who led difficult lives and led them well."
 author: "Theodore Roosevelt"
 description: "Nothing in the world is worth having or worth doing unless it means effort, pain, difficulty… I have never in my life envied a human being who led an easy life. I have envied a great many people who led difficult lives and led them well. - Theodore Roosevelt quotes from GetInspired365.com"

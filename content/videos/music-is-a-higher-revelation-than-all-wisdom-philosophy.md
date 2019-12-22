@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131015"]
 title: "Music is ... A higher revelation than all Wisdom & Philosophy"
 author: "Ludwig van Beethoven"
 description: "Music is ... A higher revelation than all Wisdom & Philosophy - Ludwig van Beethoven quotes from GetInspired365.com"

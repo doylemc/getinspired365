@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130215"]
 title: "Because brothers don’t let each other wander in the dark alone."
 author: "Jolene Perry"
 description: "Because brothers don’t let each other wander in the dark alone. - Jolene Perry quotes from GetInspired365.com"

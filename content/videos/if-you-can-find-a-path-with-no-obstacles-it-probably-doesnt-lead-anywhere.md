@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140227"]
 title: "If you can find a path with no obstacles, it probably doesn't lead anywhere."
 author: "Frank A. Clark"
 description: "If you can find a path with no obstacles, it probably doesn't lead anywhere. - Frank A. Clark quotes from GetInspired365.com"

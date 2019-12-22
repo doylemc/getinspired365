@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130204"]
 title: "Life is full of screwups. You're supposed to fail sometimes. It's a required part of the human existance."
 author: "Sarah Dessen"
 description: "Life is full of screwups. You're supposed to fail sometimes. It's a required part of the human existance. - Sarah Dessen quotes from GetInspired365.com"

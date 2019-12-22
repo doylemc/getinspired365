@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150331"]
 title: "But in the end one needs more courage to live than to kill himself."
 author: "Albert Camus"
 description: "But in the end one needs more courage to live than to kill himself. - Albert Camus quotes from GetInspired365.com"

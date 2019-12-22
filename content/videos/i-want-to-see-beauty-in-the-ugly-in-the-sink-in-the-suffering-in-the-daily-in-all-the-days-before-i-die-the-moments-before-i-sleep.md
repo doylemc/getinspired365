@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150226"]
 title: "I want to see beauty. In the ugly, in the sink, in the suffering, in the daily, in all the days before I die, the moments before I sleep."
 author: "Ann Voskamp"
 description: "I want to see beauty. In the ugly, in the sink, in the suffering, in the daily, in all the days before I die, the moments before I sleep. - Ann Voskamp quotes from GetInspired365.com"

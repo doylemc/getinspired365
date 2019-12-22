@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131019"]
 title: "If you send out goodness from yourself, or if you share that which is happy or good within you, it will all come back to you multiplied ten thousand times.  The more love you give away, the more love you will have."
 author: "John O'Donohue"
 description: "If you send out goodness from yourself, or if you share that which is happy or good within you, it will all come back to you multiplied ten thousand times.  The more love you give away, the more love you will have. - John O'Donohue quotes from GetInspired365.com"

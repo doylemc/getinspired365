@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140929"]
 title: "I think that the best thing we can do for our children is to allow them to do things for themselves, allow them to be strong, allow them to experience life on their own terms, allow them to take the subway... let them be better people, let them believe more in themselves."
 author: "C. JoyBell C."
 description: "I think that the best thing we can do for our children is to allow them to do things for themselves, allow them to be strong, allow them to experience life on their own terms, allow them to take the subway... let them be better people, let them believe more in themselves. - C. JoyBell C. quotes from GetInspired365.com"

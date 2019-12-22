@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130101"]
 title: "Never lose the childlike wonder. Show gratitude... Don't complain; just work harder... Never give up."
 author: "Randy Pausch"
 description: "Never lose the childlike wonder. Show gratitude... Don't complain; just work harder... Never give up. - Randy Pausch quotes from GetInspired365.com"

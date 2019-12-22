@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150627"]
 title: "Be kind, for everyone you meet is fighting a harder battle."
 author: "Plato"
 description: "Be kind, for everyone you meet is fighting a harder battle. - Plato quotes from GetInspired365.com"

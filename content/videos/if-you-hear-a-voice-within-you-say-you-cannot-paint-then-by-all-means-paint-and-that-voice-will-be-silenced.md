@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140816"]
 title: "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced."
 author: "Vincent Van Gogh"
 description: "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced. - Vincent Van Gogh quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150528"]
 title: "I like this place and could willingly waste my time in it."
 author: "William Shakespeare"
 description: "I like this place and could willingly waste my time in it. - William Shakespeare quotes from GetInspired365.com"

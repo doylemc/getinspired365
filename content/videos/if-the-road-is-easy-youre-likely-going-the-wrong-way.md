@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141118"]
 title: "If the road is easy, you’re likely going the wrong way."
 author: "Terry Goodkind"
 description: "If the road is easy, you’re likely going the wrong way. - Terry Goodkind quotes from GetInspired365.com"

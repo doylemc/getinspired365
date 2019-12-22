@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141228"]
 title: "Don't Gain The World & Lose Your Soul, Wisdom Is Better Than Silver Or Gold."
 author: "Bob Marley"
 description: "Don't Gain The World & Lose Your Soul, Wisdom Is Better Than Silver Or Gold. - Bob Marley quotes from GetInspired365.com"

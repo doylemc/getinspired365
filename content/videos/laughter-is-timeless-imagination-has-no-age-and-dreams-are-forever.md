@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140729"]
 title: "Laughter is timeless, imagination has no age and dreams are forever."
 author: "Unknown"
 description: "Laughter is timeless, imagination has no age and dreams are forever. - Unknown quotes from GetInspired365.com"

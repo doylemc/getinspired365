@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140329"]
 title: "Success consists of getting up just one more time than you fall."
 author: "Oliver Goldsmith"
 description: "Success consists of getting up just one more time than you fall. - Oliver Goldsmith quotes from GetInspired365.com"

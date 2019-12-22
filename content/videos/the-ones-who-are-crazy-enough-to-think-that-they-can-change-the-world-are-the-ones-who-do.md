@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130310"]
 title: "The ones who are crazy enough to think that they can change the world, are the ones who do."
 author: "Apple"
 description: "The ones who are crazy enough to think that they can change the world, are the ones who do. - Apple quotes from GetInspired365.com"

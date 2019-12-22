@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140214"]
 title: "I am a person who is unhappy with things as they stand. We cannot accept the world as it is. Each day we should wake up foaming at the mouth because of the injustice of things."
 author: "Hugo Claus"
 description: "I am a person who is unhappy with things as they stand. We cannot accept the world as it is. Each day we should wake up foaming at the mouth because of the injustice of things. - Hugo Claus quotes from GetInspired365.com"

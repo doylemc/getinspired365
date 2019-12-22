@@ -10,8 +10,8 @@
                 {{- range (where .Site.Pages "Type" "quotes") -}}
                 {{- if lt ($.Scratch.Get "g-card-counter") 8 -}}
                 {{- if isset .Params "author" -}}
-                <div class="card font-6 h6 s6 m4 l4">
-                    {{- partial "card-quotes-by-author.html" . -}}
+                <div class="card wide bg-dark-to-right font-6 h3 s12 m6 l6">
+                    {{- partial "card-author.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
                 {{- end -}}
@@ -27,8 +27,8 @@
                 {{- range (where .Site.Pages "Type" "quotes") -}}
                 {{- if lt ($.Scratch.Get "g-card-counter") 16 -}}
                 {{- if isset .Params "topic" -}}
-                <div class="card font-3 wide h2 s12">
-                    {{- partial "card-quotes-by-topic.html" . -}}
+                <div class="card bg-dark-to-right font-3 wide h2 s12">
+                    {{- partial "card-topic.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
                 {{- end -}}

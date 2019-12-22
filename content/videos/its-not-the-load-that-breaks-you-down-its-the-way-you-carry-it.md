@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141029"]
 title: "It's not the load that breaks you down, it's the way you carry it."
 author: "Lou Holtz"
 description: "It's not the load that breaks you down, it's the way you carry it. - Lou Holtz quotes from GetInspired365.com"

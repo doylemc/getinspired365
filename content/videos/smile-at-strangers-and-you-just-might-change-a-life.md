@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150613"]
 title: "Smile at strangers and you just might change a life."
 author: "Steve Maraboli"
 description: "Smile at strangers and you just might change a life. - Steve Maraboli quotes from GetInspired365.com"

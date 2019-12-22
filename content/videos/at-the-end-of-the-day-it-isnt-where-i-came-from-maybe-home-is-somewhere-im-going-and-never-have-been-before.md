@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150122"]
 title: "At the end of the day, it isn’t where I came from. Maybe home is somewhere I’m going and never have been before."
 author: "Warsan Shire"
 description: "At the end of the day, it isn’t where I came from. Maybe home is somewhere I’m going and never have been before. - Warsan Shire quotes from GetInspired365.com"

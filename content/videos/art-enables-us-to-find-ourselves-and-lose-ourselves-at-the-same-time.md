@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131112"]
 title: "ART ENABLES US TO FIND OURSELVES AND LOSE OURSELVES AT THE SAME TIME."
 author: "Thomas Merton"
 description: "ART ENABLES US TO FIND OURSELVES AND LOSE OURSELVES AT THE SAME TIME. - Thomas Merton quotes from GetInspired365.com"

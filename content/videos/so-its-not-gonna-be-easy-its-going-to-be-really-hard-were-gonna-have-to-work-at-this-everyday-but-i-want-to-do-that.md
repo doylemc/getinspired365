@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130131"]
 title: "So it's not gonna be easy. It's going to be really hard; we're gonna have to work at this everyday, but I want to do that because I want you. I want all of you, forever, everyday. You and me... everyday."
 author: "Nicholas Sparks"
 description: "So it's not gonna be easy. It's going to be really hard; we're gonna have to work at this everyday, but I want to do that because I want you. I want all of you, forever, everyday. You and me... everyday. - Nicholas Sparks quotes from GetInspired365.com"

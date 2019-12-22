@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130523"]
 title: "True teachers are those who use themselves as bridges over which they invite their students to cross; then, having facilitated their crossing, joyfully collapse, encouraging them to create their own."
 author: "Nikos Kazantzakis"
 description: "True teachers are those who use themselves as bridges over which they invite their students to cross; then, having facilitated their crossing, joyfully collapse, encouraging them to create their own. - Nikos Kazantzakis quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140928"]
 title: "Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude."
 author: "Ralph Waldo Emerson"
 description: "Cultivate the habit of being grateful for every good thing that comes to you, and to give thanks continuously. And because all things have contributed to your advancement, you should include all things in your gratitude. - Ralph Waldo Emerson quotes from GetInspired365.com"

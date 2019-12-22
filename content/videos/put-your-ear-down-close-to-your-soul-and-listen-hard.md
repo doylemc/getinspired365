@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141102"]
 title: "Put your ear down close to your soul and listen hard."
 author: "Anne Sexton"
 description: "Put your ear down close to your soul and listen hard. - Anne Sexton quotes from GetInspired365.com"

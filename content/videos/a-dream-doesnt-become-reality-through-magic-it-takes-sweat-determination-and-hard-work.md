@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130901"]
 title: "A dream doesn't become reality through magic; it takes sweat, determination and hard work."
 author: "Colin Powell"
 description: "A dream doesn't become reality through magic; it takes sweat, determination and hard work. - Colin Powell quotes from GetInspired365.com"

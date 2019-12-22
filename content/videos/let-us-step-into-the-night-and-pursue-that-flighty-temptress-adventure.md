@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150220"]
 title: "Let us step into the night and pursue that flighty temptress, adventure."
 author: "J.K. Rowling"
 description: "Let us step into the night and pursue that flighty temptress, adventure. - J.K. Rowling quotes from GetInspired365.com"

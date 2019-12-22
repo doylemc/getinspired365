@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130213"]
 title: "I try not to be surprised. Surprise is the public face of a mind that has been closed."
 author: "Bernard Beckett"
 description: "I try not to be surprised. Surprise is the public face of a mind that has been closed. - Bernard Beckett quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130524"]
 title: "I like to finish what I start doing. I like to see it through to the end, to the best of my ability."
 author: "Cliff Young"
 description: "I like to finish what I start doing. I like to see it through to the end, to the best of my ability. - Cliff Young quotes from GetInspired365.com"

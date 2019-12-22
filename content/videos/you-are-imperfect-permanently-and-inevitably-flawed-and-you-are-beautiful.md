@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130706"]
 title: "You are imperfect, permanently and inevitably flawed. And you are beautiful."
 author: "Amy Bloom"
 description: "You are imperfect, permanently and inevitably flawed. And you are beautiful. - Amy Bloom quotes from GetInspired365.com"

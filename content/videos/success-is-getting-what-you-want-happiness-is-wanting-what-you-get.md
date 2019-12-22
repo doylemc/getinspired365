@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150313"]
 title: "Success is getting what you want, happiness is wanting what you get"
 author: "W.P. Kinsella"
 description: "Success is getting what you want, happiness is wanting what you get - W.P. Kinsella quotes from GetInspired365.com"

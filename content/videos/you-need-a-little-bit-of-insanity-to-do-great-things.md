@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130318"]
 title: "You need a little bit of insanity to do great things."
 author: "Henry Rollings"
 description: "You need a little bit of insanity to do great things. - Henry Rollings quotes from GetInspired365.com"

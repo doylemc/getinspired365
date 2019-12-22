@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150415"]
 title: "All men make mistakes, but a good man yields when he knows his course is wrong, and repairs the evil. The only crime is pride."
 author: "Sophocles"
 description: "All men make mistakes, but a good man yields when he knows his course is wrong, and repairs the evil. The only crime is pride. - Sophocles quotes from GetInspired365.com"

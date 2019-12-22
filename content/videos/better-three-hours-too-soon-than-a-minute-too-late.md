@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140213"]
 title: "Better three hours too soon than a minute too late."
 author: "William Shakespeare"
 description: "Better three hours too soon than a minute too late. - William Shakespeare quotes from GetInspired365.com"

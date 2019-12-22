@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140725"]
 title: "Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts. There is something infinitely healing in the repeated refrains of nature -- the assurance that dawn comes after night, and spring after winter."
 author: "Rachel Carson"
 description: "Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts. There is something infinitely healing in the repeated refrains of nature -- the assurance that dawn comes after night, and spring after winter. - Rachel Carson quotes from GetInspired365.com"

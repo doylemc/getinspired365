@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140109"]
 title: "If you see someone in trouble, you should help them. Experiment or not."
 author: "Veronica Roth"
 description: "If you see someone in trouble, you should help them. Experiment or not. - Veronica Roth quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130205"]
 title: "Great men are not born great, they grow great . . ."
 author: "Mario Puzo"
 description: "Great men are not born great, they grow great . . . - Mario Puzo quotes from GetInspired365.com"

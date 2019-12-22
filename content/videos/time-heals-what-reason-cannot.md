@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140911"]
 title: "Time heals what reason cannot."
 author: "Seneca"
 description: "Time heals what reason cannot. - Seneca quotes from GetInspired365.com"

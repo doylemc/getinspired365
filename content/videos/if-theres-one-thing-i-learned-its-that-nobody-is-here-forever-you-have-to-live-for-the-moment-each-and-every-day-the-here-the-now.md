@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140708"]
 title: "If there's one thing I learned, it's that nobody is here forever. You have to live for the moment, each and every day . . . the here, the now."
 author: "Simone Elkeles"
 description: "If there's one thing I learned, it's that nobody is here forever. You have to live for the moment, each and every day . . . the here, the now. - Simone Elkeles quotes from GetInspired365.com"

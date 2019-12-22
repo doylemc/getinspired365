@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150304"]
 title: "No one who cooks, cooks alone. Even at their most solitary, a cook in the kitchen is surrounded by generations of cooks past, the advice and menus of cooks present, the wisdom of cookbook writers."
 author: "Laurie Colwin"
 description: "No one who cooks, cooks alone. Even at their most solitary, a cook in the kitchen is surrounded by generations of cooks past, the advice and menus of cooks present, the wisdom of cookbook writers. - Laurie Colwin quotes from GetInspired365.com"

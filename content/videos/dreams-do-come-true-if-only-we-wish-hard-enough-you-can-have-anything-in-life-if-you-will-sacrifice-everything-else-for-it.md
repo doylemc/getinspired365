@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140713"]
 title: "Dreams do come true, if only we wish hard enough. You can have anything in life if you will sacrifice everything else for it."
 author: "J.M. Barrie, Peter Pan"
 description: "Dreams do come true, if only we wish hard enough. You can have anything in life if you will sacrifice everything else for it. - J.M. Barrie, Peter Pan quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130723"]
 title: "Being optimistic is like a muscle that gets stronger with use. Makes it easier when the tough times arrive. You have to change the way you think in order to change the way you feel."
 author: "Robin Roberts"
 description: "Being optimistic is like a muscle that gets stronger with use. Makes it easier when the tough times arrive. You have to change the way you think in order to change the way you feel. - Robin Roberts quotes from GetInspired365.com"

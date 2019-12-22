@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141021"]
 title: "How we spend our days is, of course, how we spend our lives."
 author: "Annie Dillard"
 description: "How we spend our days is, of course, how we spend our lives. - Annie Dillard quotes from GetInspired365.com"

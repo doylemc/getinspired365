@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140123"]
 title: "I have decided to stick with love. Hate is too great a burden to bear."
 author: "Martin Luther King, Jr."
 description: "I have decided to stick with love. Hate is too great a burden to bear. - Martin Luther King, Jr. quotes from GetInspired365.com"

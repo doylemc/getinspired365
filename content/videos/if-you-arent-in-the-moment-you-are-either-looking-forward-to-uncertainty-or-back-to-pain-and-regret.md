@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140904"]
 title: "If you aren't in the moment, you are either looking forward to uncertainty, or back to pain and regret."
 author: "Jim Carrey"
 description: "If you aren't in the moment, you are either looking forward to uncertainty, or back to pain and regret. - Jim Carrey quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141001"]
 title: "May your adventures bring you closer together, even as they take you far away from home."
 author: "Trenton Lee Stewart"
 description: "May your adventures bring you closer together, even as they take you far away from home. - Trenton Lee Stewart quotes from GetInspired365.com"
@@ -7,7 +8,7 @@ referenceurl: ""
 tags: ["Adventure","Fun","Life","Living","Travel",]
 source: "youtube"
 videoid: "wTcNtgA6gHs"
-image: "    "
+image: "https://img.youtube.com/vi/wTcNtgA6gHs/0.jpg"
 ---
 
 {{< youtube wTcNtgA6gHs >}}

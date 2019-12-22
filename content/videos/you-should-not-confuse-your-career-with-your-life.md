@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140509"]
 title: "You should not confuse your career with your life."
 author: "Dave Barry"
 description: "You should not confuse your career with your life. - Dave Barry quotes from GetInspired365.com"

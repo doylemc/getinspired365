@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140901"]
 title: "Trees that are slow to grow bear the best fruit."
 author: "Molière"
 description: "Trees that are slow to grow bear the best fruit. - Molière quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131128"]
 title: "Not knowing when the dawn will come I open every door."
 author: "Emily Dickinson"
 description: "Not knowing when the dawn will come I open every door. - Emily Dickinson quotes from GetInspired365.com"

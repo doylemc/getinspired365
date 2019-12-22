@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140711"]
 title: "I think that we are like stars. Something happens to burst us open; but when we burst open and think we are dying; we’re actually turning into a supernova. And then when we look at ourselves again, we see that we’re suddenly more beautiful than we ever were before!"
 author: "C. JoyBell C."
 description: "I think that we are like stars. Something happens to burst us open; but when we burst open and think we are dying; we’re actually turning into a supernova. And then when we look at ourselves again, we see that we’re suddenly more beautiful than we ever were before! - C. JoyBell C. quotes from GetInspired365.com"

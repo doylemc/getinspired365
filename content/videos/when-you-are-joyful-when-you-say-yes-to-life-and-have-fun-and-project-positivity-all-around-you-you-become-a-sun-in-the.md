@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130224"]
 title: "When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you."
 author: "Shannon L. Alder"
 description: "When you are joyful, when you say yes to life and have fun and project positivity all around you, you become a sun in the center of every constellation, and people want to be near you. - Shannon L. Alder quotes from GetInspired365.com"

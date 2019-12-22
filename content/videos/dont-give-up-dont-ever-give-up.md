@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140728"]
 title: "Don't give up. Don't ever give up."
 author: "Jimmy Valvano"
 description: "Don't give up. Don't ever give up. - Jimmy Valvano quotes from GetInspired365.com"

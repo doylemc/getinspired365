@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130825"]
 title: "Each of us has a fire in our hearts for something. It’s our goal in life to find it and keep it lit."
 author: "Mary Lou Retton"
 description: "Each of us has a fire in our hearts for something. It’s our goal in life to find it and keep it lit. - Mary Lou Retton quotes from GetInspired365.com"

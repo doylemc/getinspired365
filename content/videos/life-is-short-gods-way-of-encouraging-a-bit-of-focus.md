@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141115"]
 title: "Life is short, God's way of encouraging a bit of focus."
 author: "Robert Brault"
 description: "Life is short, God's way of encouraging a bit of focus. - Robert Brault quotes from GetInspired365.com"

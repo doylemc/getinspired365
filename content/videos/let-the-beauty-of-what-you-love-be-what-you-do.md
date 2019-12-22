@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140714"]
 title: "Let the beauty of what you love be what you do."
 author: "Rumi"
 description: "Let the beauty of what you love be what you do. - Rumi quotes from GetInspired365.com"

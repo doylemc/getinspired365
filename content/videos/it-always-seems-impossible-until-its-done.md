@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140703"]
 title: "It always seems impossible until it's done."
 author: "Nelson Mandela"
 description: "It always seems impossible until it's done. - Nelson Mandela quotes from GetInspired365.com"

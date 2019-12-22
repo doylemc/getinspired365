@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141206"]
 title: "Didn't they realize that the only way to change things was to act?"
 author: "Tamora Pierce"
 description: "Didn't they realize that the only way to change things was to act? - Tamora Pierce quotes from GetInspired365.com"

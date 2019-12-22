@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140522"]
 title: "5 things that make Summer awesome"
 author: "Kid President"
 description: "5 things that make Summer awesome - Kid President quotes from GetInspired365.com"

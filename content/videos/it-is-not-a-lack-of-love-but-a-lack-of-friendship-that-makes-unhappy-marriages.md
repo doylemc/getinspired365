@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140103"]
 title: "It is not a lack of love, but a lack of friendship that makes unhappy marriages."
 author: "Friedrich Nietzsche"
 description: "It is not a lack of love, but a lack of friendship that makes unhappy marriages. - Friedrich Nietzsche quotes from GetInspired365.com"

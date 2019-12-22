@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140923"]
 title: "For most of history, Anonymous was a woman."
 author: "Virginia Woolf"
 description: "For most of history, Anonymous was a woman. - Virginia Woolf quotes from GetInspired365.com"

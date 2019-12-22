@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150207"]
 title: "You might be poor, your shoes might be broken, but your mind is a palace."
 author: "Frank McCourt"
 description: "You might be poor, your shoes might be broken, but your mind is a palace. - Frank McCourt quotes from GetInspired365.com"

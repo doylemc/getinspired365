@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130427"]
 title: "No matter what people think about me, I know I'm a human first."
 author: "Ronald Davis"
 description: "No matter what people think about me, I know I'm a human first. - Ronald Davis quotes from GetInspired365.com"

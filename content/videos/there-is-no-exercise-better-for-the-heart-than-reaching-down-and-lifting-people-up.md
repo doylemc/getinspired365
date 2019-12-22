@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131110"]
 title: "There is no exercise better for the heart than reaching down and lifting people up."
 author: "John Holmes"
 description: "There is no exercise better for the heart than reaching down and lifting people up. - John Holmes quotes from GetInspired365.com"

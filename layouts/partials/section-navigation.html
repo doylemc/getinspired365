@@ -1,5 +1,5 @@
 {{ if eq .Section "news" }}
-<div id="section-nav" class="section no-pad bg-angled-dark">
+<div id="section-nav" class="section no-pad bg-1black">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -15,7 +15,7 @@
 {{ end }}
 
 {{ if eq .Section "articles" }}
-<div id="section-nav" class="section no-pad bb bg-articles-500 var-2 z-depth-1">
+<div id="section-nav" class="section no-pad bb bg1-black z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -32,7 +32,7 @@
 {{ end }}
 
 {{ if eq .Section "quotes" }}
-<div id="section-nav" class="section no-pad bg-quotes-500 z-depth-1">
+<div id="section-nav" class="section no-pad bg-b1lack z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
@@ -49,13 +49,13 @@
 {{ end }}
 
 {{- if eq .Section "tags" -}}
-<div id="section-nav" class="section no-pad bb bg-tags-500 bg-angled-dark z-depth-1">
+<div id="section-nav" class="section no-pad bb bg-b1lack z-depth-1">
     <div class="container">
         <div class="row no-margin-bottom">
             <div class="col s12">
                 <ul class="section-nav tags c-gradient">
                     <li><a href="/tags">HOME</a></li>
-                    {{- range first 15 .Site.Taxonomies.tags.ByCount -}}
+                    {{- range first 13 .Site.Taxonomies.tags.ByCount -}}
                         <li><a href="/tags/{{- .Name | urlize -}}">{{ upper .Name }}</a></li>
                     {{- end -}}
                 </ul>

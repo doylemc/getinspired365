@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140212"]
 title: "You can do it, you can do anything."
 author: "Henry David Thoreau"
 description: "You can do it, you can do anything. - Henry David Thoreau quotes from GetInspired365.com"

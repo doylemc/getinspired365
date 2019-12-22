@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140930"]
 title: "The purpose of life is to contribute in some way to making things better."
 author: "Robert Kennedy"
 description: "The purpose of life is to contribute in some way to making things better. - Robert Kennedy quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141002"]
 title: "Each morning in Africa, a gazelle wakes up & knows it must outrun the fastest lion or it'll be killed. A lion wakes up & knows it must run faster than the gazelle, or it'll starve. It doesn't matter whether you're the lion or a gazelle-when the sun comes up, you'd better be running."
 author: "Christopher McDougall"
 description: "Each morning in Africa, a gazelle wakes up & knows it must outrun the fastest lion or it'll be killed. A lion wakes up & knows it must run faster than the gazelle, or it'll starve. It doesn't matter whether you're the lion or a gazelle-when the sun comes up, you'd better be running. - Christopher McDougall quotes from GetInspired365.com"

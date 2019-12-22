@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140126"]
 title: "Dance, when you're broken open. Dance, if you've torn the bandage off. Dance in the middle of the fighting. Dance in your blood. Dance when you're perfectly free."
 author: "Rumi"
 description: "Dance, when you're broken open. Dance, if you've torn the bandage off. Dance in the middle of the fighting. Dance in your blood. Dance when you're perfectly free. - Rumi quotes from GetInspired365.com"

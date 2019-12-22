@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141013"]
 title: "The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time."
 author: "Jack London"
 description: "The proper function of man is to live, not to exist. I shall not waste my days in trying to prolong them. I shall use my time. - Jack London quotes from GetInspired365.com"

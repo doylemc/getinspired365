@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130714"]
 title: "The key to success? Grit"
 author: "Angela Lee Duckworth"
 description: "The key to success? Grit - Angela Lee Duckworth quotes from GetInspired365.com"

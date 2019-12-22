@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140116"]
 title: "Bad days come sometimes just to remind you that you have plenty of good ones to look forward to."
 author: "Unknown"
 description: "Bad days come sometimes just to remind you that you have plenty of good ones to look forward to. - Unknown quotes from GetInspired365.com"

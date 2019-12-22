@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150605"]
 title: "You can’t live a perfect day until you do something for someone who will never be able to repay you."
 author: "John Wooden"
 description: "You can’t live a perfect day until you do something for someone who will never be able to repay you. - John Wooden quotes from GetInspired365.com"

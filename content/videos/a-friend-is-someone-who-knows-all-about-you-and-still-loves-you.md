@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130221"]
 title: "A friend is someone who knows all about you and still loves you."
 author: "Elbert Hubbard"
 description: "A friend is someone who knows all about you and still loves you. - Elbert Hubbard quotes from GetInspired365.com"

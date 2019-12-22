@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150524"]
 title: "You will never do anything in this world without courage. It is the greatest quality of the mind next to honor."
 author: "Aristotle"
 description: "You will never do anything in this world without courage. It is the greatest quality of the mind next to honor. - Aristotle quotes from GetInspired365.com"

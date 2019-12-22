@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140722"]
 title: "No matter how plain a woman may be, if truth and honesty are written across her face, she will be beautiful."
 author: "Eleanor Roosevelt"
 description: "No matter how plain a woman may be, if truth and honesty are written across her face, she will be beautiful. - Eleanor Roosevelt quotes from GetInspired365.com"

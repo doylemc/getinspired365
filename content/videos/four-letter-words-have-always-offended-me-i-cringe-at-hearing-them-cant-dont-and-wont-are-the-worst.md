@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141015"]
 title: "Four-letter words have always offended me. I cringe at hearing them. Can't, don't, and won't are the worst."
 author: "Richelle E. Goodrich"
 description: "Four-letter words have always offended me. I cringe at hearing them. Can't, don't, and won't are the worst. - Richelle E. Goodrich quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130331"]
 title: "Happiness comes from within."
 author: "Metroamv"
 description: "Happiness comes from within. - Metroamv quotes from GetInspired365.com"

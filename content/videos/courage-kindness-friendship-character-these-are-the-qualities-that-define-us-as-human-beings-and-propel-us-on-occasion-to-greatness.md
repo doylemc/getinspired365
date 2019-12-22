@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150109"]
 title: "Courage. Kindness. Friendship. Character. These are the qualities that define us as human beings, and propel us, on occasion, to greatness."
 author: "R.J. Palacio"
 description: "Courage. Kindness. Friendship. Character. These are the qualities that define us as human beings, and propel us, on occasion, to greatness. - R.J. Palacio quotes from GetInspired365.com"

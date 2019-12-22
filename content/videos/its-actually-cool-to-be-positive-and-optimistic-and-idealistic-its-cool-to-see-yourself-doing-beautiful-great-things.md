@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130315"]
 title: "It's actually cool to be positive and optimistic and idealistic. It's cool to see yourself doing beautiful, great things"
 author: "Tom DeLonge"
 description: "It's actually cool to be positive and optimistic and idealistic. It's cool to see yourself doing beautiful, great things - Tom DeLonge quotes from GetInspired365.com"

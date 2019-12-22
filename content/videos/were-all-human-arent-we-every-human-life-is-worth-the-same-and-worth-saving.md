@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150318"]
 title: "We're all human, aren't we? Every human life is worth the same, and worth saving."
 author: "J.K.Rowling"
 description: "We're all human, aren't we? Every human life is worth the same, and worth saving. - J.K.Rowling quotes from GetInspired365.com"

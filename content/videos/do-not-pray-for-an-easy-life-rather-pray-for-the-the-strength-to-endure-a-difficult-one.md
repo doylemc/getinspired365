@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131222"]
 title: "Do not pray for an easy life. Rather, pray for the the strength to endure a difficult one"
 author: "Bruce Lee"
 description: "Do not pray for an easy life. Rather, pray for the the strength to endure a difficult one - Bruce Lee quotes from GetInspired365.com"

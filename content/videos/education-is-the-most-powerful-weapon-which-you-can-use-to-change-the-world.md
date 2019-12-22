@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140801"]
 title: "Education is the most powerful weapon which you can use to change the world."
 author: "Nelson Mandela"
 description: "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela quotes from GetInspired365.com"

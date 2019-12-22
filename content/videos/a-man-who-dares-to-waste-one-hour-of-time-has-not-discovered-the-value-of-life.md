@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150420"]
 title: "A man who dares to waste one hour of time has not discovered the value of life."
 author: "Charles Darwin"
 description: "A man who dares to waste one hour of time has not discovered the value of life. - Charles Darwin quotes from GetInspired365.com"

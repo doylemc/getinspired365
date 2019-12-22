@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141009"]
 title: "Hardships make or break people."
 author: "Margaret Mitchell"
 description: "Hardships make or break people. - Margaret Mitchell quotes from GetInspired365.com"

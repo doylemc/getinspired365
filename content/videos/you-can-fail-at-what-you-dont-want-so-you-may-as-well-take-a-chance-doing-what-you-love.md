@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140526"]
 title: "You can fail at what you don't want, so you may as well take a chance doing what you love"
 author: "Jim Carey"
 description: "You can fail at what you don't want, so you may as well take a chance doing what you love - Jim Carey quotes from GetInspired365.com"

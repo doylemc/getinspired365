@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150406"]
 title: "Practice doesn't make perfect."
 author: "Toba Beta"
 description: "Practice doesn't make perfect. - Toba Beta quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130301"]
 title: "He took his pain and turned it into something beautiful. Into something that people connect to. And that's what good music does. It speaks to you. It changes you."
 author: "Hannah Harrington"
 description: "He took his pain and turned it into something beautiful. Into something that people connect to. And that's what good music does. It speaks to you. It changes you. - Hannah Harrington quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140323"]
 title: "Being rich is not how much you have, but about how much you can give"
 author: "Author Unknown"
 description: "Being rich is not how much you have, but about how much you can give - Author Unknown quotes from GetInspired365.com"

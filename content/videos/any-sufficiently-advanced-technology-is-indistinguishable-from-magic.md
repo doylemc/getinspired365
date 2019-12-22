@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141219"]
 title: "Any sufficiently advanced technology is indistinguishable from magic."
 author: "Arthur C. Clarke"
 description: "Any sufficiently advanced technology is indistinguishable from magic. - Arthur C. Clarke quotes from GetInspired365.com"

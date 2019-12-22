@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150303"]
 title: "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
 author: "Albert Einstein"
 description: "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. - Albert Einstein quotes from GetInspired365.com"

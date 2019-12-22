@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150325"]
 title: "I am nothing special, of this I am sure. I am a common man with common thoughts and I've led a common life. There are no monuments dedicated to me and my name will soon be forgotten, but I've loved another with all my heart and soul, and to me, this has always been enough.."
 author: "Nicholas Sparks"
 description: "I am nothing special, of this I am sure. I am a common man with common thoughts and I've led a common life. There are no monuments dedicated to me and my name will soon be forgotten, but I've loved another with all my heart and soul, and to me, this has always been enough.. - Nicholas Sparks quotes from GetInspired365.com"

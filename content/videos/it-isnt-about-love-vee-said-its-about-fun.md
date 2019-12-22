@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140403"]
 title: "It isn't about love, Vee said. It's about fun."
 author: "Becca Fitzpatrick"
 description: "It isn't about love, Vee said. It's about fun. - Becca Fitzpatrick quotes from GetInspired365.com"

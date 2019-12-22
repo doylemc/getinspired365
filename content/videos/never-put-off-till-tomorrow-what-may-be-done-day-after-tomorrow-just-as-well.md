@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130708"]
 title: "Never put off till tomorrow what may be done day after tomorrow just as well."
 author: "Mark Twain"
 description: "Never put off till tomorrow what may be done day after tomorrow just as well. - Mark Twain quotes from GetInspired365.com"

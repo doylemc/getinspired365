@@ -19,7 +19,7 @@
 {{- end -}}
 
 {{- if isset .Params "background" -}}
-<img src="{{ .Params.background }}" style="position: fixed; right: 0; top: 0; width: 100%; height: auto; z-index: -1; opacity: 0.6;" />
+<!-- <img src="{{ .Params.background }}" style="position: fixed; right: 0; top: 0; width: 100%; height: auto; z-index: -1; opacity: 0.6;" /> -->
 {{- end -}}
 
 <div class="section bb">
@@ -55,17 +55,19 @@
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
                     {{- if lt ($quote | countwords) 10 -}}
-                        <div class="gi s12 m6 l3">
+                    <div class="gi s12 m6 l3">
                     {{- else if lt ($quote | countwords) 20 -}}
-                        <div class="gi s12 m6 l4">
+                    <div class="gi s12 m6 l4">
                     {{- else -}}
-                        <div class="gi s12 m6 l4">
+                    <div class="gi s12 m6 l5">
                     {{- end -}}
-                        <figure class="z-depth-5">
-                            <img src="{{ $.Scratch.Get "image" }}" />
-                            <blockquote>{{ $quote | humanize }}</blockquote>
-                            <figcaption>{{ $author }}</figcaption>
-                        </figure>
+                        <div class="card quote bg-dark-to-right">
+                            <figure class="z-depth-5">
+                                <img src="{{ $.Scratch.Get "image" }}" />
+                                <blockquote>{{ $quote | humanize }}</blockquote>
+                                <figcaption>{{ $author }}</figcaption>
+                            </figure>
+                        </div>
                         <!-- <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}"> -->
                     </div>
                     {{- end -}}
@@ -89,11 +91,13 @@
                     <h4><a target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
                 </div>
                 
-                <h2>Other Autors</h2>
+                <h2>Other Authors</h2>
                 {{ $related := .Site.RegularPages.Related . | first 5 }}
                 {{ with $related }}
                     {{ range . }}
-                        {{ partial "card-quotes-by-author-horizontal.html" .}} 
+                    <div class="card wide s12 m12 l12 h2 bg-dark-to-right font-4">
+                        {{ partial "card-author.html" .}} 
+                    </div>  
                     {{ end }}
                 {{ end }}
 
@@ -102,7 +106,9 @@
                 {{ $related := .Site.RegularPages.Related . | first 5 }}
                 {{ with $related }}
                 {{ range . }}
-                {{ partial "card-quotes-by-author-horizontal.html" .}}
+                <div class="card wide s12 m12 l12 h2 bg-dark-to-right">
+                    {{ partial "card-author.html" .}}
+                </div>
                 {{ end }}
                 {{ end }}
 

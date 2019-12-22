@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141220"]
 title: "When you have lost hope, you have lost everything. And when you think all is lost, when all is dire and bleak, there is always hope."
 author: "Pittacus Lore"
 description: "When you have lost hope, you have lost everything. And when you think all is lost, when all is dire and bleak, there is always hope. - Pittacus Lore quotes from GetInspired365.com"

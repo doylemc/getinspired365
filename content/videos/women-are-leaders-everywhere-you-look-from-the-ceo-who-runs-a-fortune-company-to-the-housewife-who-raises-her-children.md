@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130308"]
 title: "Women are leaders everywhere you look -- from the CEO who runs a Fortune 500 company to the housewife who raises her children and heads her household. Our country was built by strong women and we will continue to break down walls and defy stereotypes."
 author: "Nancy Pelosi"
 description: "Women are leaders everywhere you look -- from the CEO who runs a Fortune 500 company to the housewife who raises her children and heads her household. Our country was built by strong women and we will continue to break down walls and defy stereotypes. - Nancy Pelosi quotes from GetInspired365.com"

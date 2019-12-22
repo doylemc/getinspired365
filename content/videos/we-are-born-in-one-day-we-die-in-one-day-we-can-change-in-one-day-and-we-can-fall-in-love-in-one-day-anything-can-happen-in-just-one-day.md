@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130425"]
 title: "We are born in one day. We die in one day. We can change in one day. And we can fall in love in one day. Anything can happen in just one day."
 author: "Gayle Forman"
 description: "We are born in one day. We die in one day. We can change in one day. And we can fall in love in one day. Anything can happen in just one day. - Gayle Forman quotes from GetInspired365.com"

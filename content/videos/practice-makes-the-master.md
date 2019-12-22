@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150514"]
 title: "Practice makes the master."
 author: "Patrick Rothfuss"
 description: "Practice makes the master. - Patrick Rothfuss quotes from GetInspired365.com"

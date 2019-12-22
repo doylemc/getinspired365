@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150413"]
 title: "As we work to create light for others, we naturally light our own way."
 author: "Mary Anne Radmacher"
 description: "As we work to create light for others, we naturally light our own way. - Mary Anne Radmacher quotes from GetInspired365.com"

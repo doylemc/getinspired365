@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131016"]
 title: "Every single time you help somebody stand up you are helping humanity rise."
 author: "Steve Maraboli"
 description: "Every single time you help somebody stand up you are helping humanity rise. - Steve Maraboli quotes from GetInspired365.com"

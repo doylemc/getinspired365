@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141216"]
 title: "First step in solving any problem is recognizing there is one."
 author: "Aaron Sorkin"
 description: "First step in solving any problem is recognizing there is one. - Aaron Sorkin quotes from GetInspired365.com"

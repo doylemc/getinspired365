@@ -20,9 +20,9 @@
     {{- if .Data.Singular -}}<meta name="robots" content="noindex">{{- end -}}
 </head>
 {{- if .IsHome -}}
-<body class="bg-gradient">
+<body class="bg-angled-dark-wide">
 {{- else -}}
-<body class="bg-{{- .Section -}}-g1radient">
+<body class="bg-angled-{{- .Section -}}">
 {{- end -}}
 
     {{- partial "site-navigation.html" . -}}

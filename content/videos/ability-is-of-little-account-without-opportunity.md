@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130924"]
 title: "Ability is of little account without opportunity."
 author: "Napoleon"
 description: "Ability is of little account without opportunity. - Napoleon quotes from GetInspired365.com"

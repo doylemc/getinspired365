@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130912"]
 title: "That which is dreamed can never be lost, can never be undreamed."
 author: "Neil Gaiman"
 description: "That which is dreamed can never be lost, can never be undreamed. - Neil Gaiman quotes from GetInspired365.com"

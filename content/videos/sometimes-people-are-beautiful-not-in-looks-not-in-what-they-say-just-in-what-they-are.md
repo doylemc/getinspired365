@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150302"]
 title: "Sometimes people are beautiful. Not in looks. Not in what they say. Just in what they are."
 author: "Markus Zusak"
 description: "Sometimes people are beautiful. Not in looks. Not in what they say. Just in what they are. - Markus Zusak quotes from GetInspired365.com"

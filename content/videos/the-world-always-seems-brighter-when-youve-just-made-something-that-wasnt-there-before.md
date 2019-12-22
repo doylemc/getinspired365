@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130114"]
 title: "The world always seems brighter when you've just made something that wasn't there before."
 author: "Neil Gaiman"
 description: "The world always seems brighter when you've just made something that wasn't there before. - Neil Gaiman quotes from GetInspired365.com"

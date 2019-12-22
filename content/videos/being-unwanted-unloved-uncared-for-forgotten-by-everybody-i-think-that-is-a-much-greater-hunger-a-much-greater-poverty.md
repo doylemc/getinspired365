@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130804"]
 title: "Being unwanted, unloved, uncared for, forgotten by everybody, I think that is a much greater hunger, a much greater poverty than the person who has nothing to eat."
 author: "Mother Teresa"
 description: "Being unwanted, unloved, uncared for, forgotten by everybody, I think that is a much greater hunger, a much greater poverty than the person who has nothing to eat. - Mother Teresa quotes from GetInspired365.com"

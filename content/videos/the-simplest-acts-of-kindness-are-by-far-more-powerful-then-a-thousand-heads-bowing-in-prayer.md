@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140327"]
 title: "The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer."
 author: "Mahatma Gandhi"
 description: "The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer. - Mahatma Gandhi quotes from GetInspired365.com"

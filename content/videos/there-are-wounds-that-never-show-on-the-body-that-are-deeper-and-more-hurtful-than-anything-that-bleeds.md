@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150703"]
 title: "There are wounds that never show on the body that are deeper and more hurtful than anything that bleeds."
 author: "Laurell K. Hamilton"
 description: "There are wounds that never show on the body that are deeper and more hurtful than anything that bleeds. - Laurell K. Hamilton quotes from GetInspired365.com"

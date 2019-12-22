@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131022"]
 title: "It's all a matter of paying attention, being awake in the present moment, and not expecting a huge payoff. The magic in this world seems to work in whispers and small kindnesses."
 author: "Charles de Lint"
 description: "It's all a matter of paying attention, being awake in the present moment, and not expecting a huge payoff. The magic in this world seems to work in whispers and small kindnesses. - Charles de Lint quotes from GetInspired365.com"

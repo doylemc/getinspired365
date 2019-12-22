@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150625"]
 title: "To be fully seen by somebody, then, and be loved anyhow - this is a human offering that can border on miraculous."
 author: "Elizabeth Gilbert"
 description: "To be fully seen by somebody, then, and be loved anyhow - this is a human offering that can border on miraculous. - Elizabeth Gilbert quotes from GetInspired365.com"

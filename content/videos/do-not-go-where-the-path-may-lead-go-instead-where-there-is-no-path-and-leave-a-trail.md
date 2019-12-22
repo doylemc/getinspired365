@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150326"]
 title: "Do not go where the path may lead, go instead where there is no path and leave a trail."
 author: "Ralph Waldo Emerson"
 description: "Do not go where the path may lead, go instead where there is no path and leave a trail. - Ralph Waldo Emerson quotes from GetInspired365.com"

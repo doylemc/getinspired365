@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130402"]
 title: "War is not the answer, for only love can conquer hate"
 author: "Marvin Gaye"
 description: "War is not the answer, for only love can conquer hate - Marvin Gaye quotes from GetInspired365.com"

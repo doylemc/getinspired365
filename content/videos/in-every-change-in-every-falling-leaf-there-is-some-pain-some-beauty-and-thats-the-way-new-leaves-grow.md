@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130608"]
 title: "In every change, in every falling leaf there is some pain, some beauty. And that's the way new leaves grow."
 author: "Amit Ray"
 description: "In every change, in every falling leaf there is some pain, some beauty. And that's the way new leaves grow. - Amit Ray quotes from GetInspired365.com"

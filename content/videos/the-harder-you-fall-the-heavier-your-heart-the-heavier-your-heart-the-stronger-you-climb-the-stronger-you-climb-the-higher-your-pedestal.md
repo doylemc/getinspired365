@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150225"]
 title: "The harder you fall, the heavier your heart; the heavier your heart, the stronger you climb; the stronger you climb, the higher your pedestal."
 author: "Criss Jami"
 description: "The harder you fall, the heavier your heart; the heavier your heart, the stronger you climb; the stronger you climb, the higher your pedestal. - Criss Jami quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141218"]
 title: "Follow your bliss and the universe will open doors for you where there were only walls."
 author: "Joseph Campbell"
 description: "Follow your bliss and the universe will open doors for you where there were only walls. - Joseph Campbell quotes from GetInspired365.com"

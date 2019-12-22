@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140409"]
 title: "Love, I've come to understand is more than three words mumbled before bedtime."
 author: "Nicholas Sparks"
 description: "Love, I've come to understand is more than three words mumbled before bedtime. - Nicholas Sparks quotes from GetInspired365.com"

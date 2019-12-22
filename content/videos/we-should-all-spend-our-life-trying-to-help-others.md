@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131010"]
 title: "We should all spend our life trying to help others."
 author: "Harry Moseley"
 description: "We should all spend our life trying to help others. - Harry Moseley quotes from GetInspired365.com"

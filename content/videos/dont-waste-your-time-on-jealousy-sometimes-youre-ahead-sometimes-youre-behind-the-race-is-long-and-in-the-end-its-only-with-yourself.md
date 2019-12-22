@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130128"]
 title: "Don't waste your time on jealousy. Sometimes you're ahead, sometimes you're behind. The race is long, and in the end, it's only with yourself"
 author: "Baz Luhrmann"
 description: "Don't waste your time on jealousy. Sometimes you're ahead, sometimes you're behind. The race is long, and in the end, it's only with yourself - Baz Luhrmann quotes from GetInspired365.com"

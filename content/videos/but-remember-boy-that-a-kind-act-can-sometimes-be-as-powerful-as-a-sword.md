@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141101"]
 title: "But remember, boy, that a kind act can sometimes be as powerful as a sword."
 author: "Rick Riordan"
 description: "But remember, boy, that a kind act can sometimes be as powerful as a sword. - Rick Riordan quotes from GetInspired365.com"

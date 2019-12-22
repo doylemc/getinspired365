@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150307"]
 title: "The present moment is filled with joy and happiness. If you are attentive, you will see it."
 author: "Thich Nhat Hanh"
 description: "The present moment is filled with joy and happiness. If you are attentive, you will see it. - Thich Nhat Hanh quotes from GetInspired365.com"

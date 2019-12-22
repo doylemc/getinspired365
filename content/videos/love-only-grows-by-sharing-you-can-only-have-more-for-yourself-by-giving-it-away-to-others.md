@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140630"]
 title: "Love only grows by sharing. You can only have more for yourself by giving it away to others."
 author: "Brian Tracy"
 description: "Love only grows by sharing. You can only have more for yourself by giving it away to others. - Brian Tracy quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130623"]
 title: "The world is like a ride in an amusement park. And when you choose to go on it you think it's real because that's how powerful our minds are."
 author: "Bill Hicks"
 description: "The world is like a ride in an amusement park. And when you choose to go on it you think it's real because that's how powerful our minds are. - Bill Hicks quotes from GetInspired365.com"

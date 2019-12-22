@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150218"]
 title: "The magic in this world seems to work in whispers and small kindnesses."
 author: "Charles de Lint"
 description: "The magic in this world seems to work in whispers and small kindnesses. - Charles de Lint quotes from GetInspired365.com"

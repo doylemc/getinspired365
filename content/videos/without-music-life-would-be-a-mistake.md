@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130517"]
 title: "Without music, life would be a mistake."
 author: "Friedrich Nietzsche"
 description: "Without music, life would be a mistake. - Friedrich Nietzsche quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141105"]
 title: "Travel makes one modest. You see what a tiny place you occupy in the world."
 author: "Gustave Flaubert"
 description: "Travel makes one modest. You see what a tiny place you occupy in the world. - Gustave Flaubert quotes from GetInspired365.com"

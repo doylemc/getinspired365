@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130527"]
 title: "Grief does not change you, Hazel. It reveals you."
 author: "John Green"
 description: "Grief does not change you, Hazel. It reveals you. - John Green quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130803"]
 title: "Your fantasies define you, so dream carefully. A man with no imagination is a man with no future in today’s world—and no past in tomorrow’s."
 author: "Jarod Kintz"
 description: "Your fantasies define you, so dream carefully. A man with no imagination is a man with no future in today’s world—and no past in tomorrow’s. - Jarod Kintz quotes from GetInspired365.com"

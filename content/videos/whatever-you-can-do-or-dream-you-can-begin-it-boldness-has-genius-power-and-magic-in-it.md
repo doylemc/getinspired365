@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140201"]
 title: "Whatever you can do or dream you can, begin it. Boldness has genius, power and magic in it!"
 author: "Johann Wolfgang von Goethe"
 description: "Whatever you can do or dream you can, begin it. Boldness has genius, power and magic in it! - Johann Wolfgang von Goethe quotes from GetInspired365.com"

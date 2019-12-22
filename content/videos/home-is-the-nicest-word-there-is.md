@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130717"]
 title: "Home is the nicest word there is."
 author: "Laura Ingalls Wilder"
 description: "Home is the nicest word there is. - Laura Ingalls Wilder quotes from GetInspired365.com"

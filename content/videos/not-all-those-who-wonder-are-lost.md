@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141026"]
 title: "Not all those who wonder are lost."
 author: "J.R.R. Tolkien"
 description: "Not all those who wonder are lost. - J.R.R. Tolkien quotes from GetInspired365.com"

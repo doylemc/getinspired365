@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140718"]
 title: "If you have good thoughts they will shine out of your face like sunbeams and you will always look lovely."
 author: "Roald Dahl"
 description: "If you have good thoughts they will shine out of your face like sunbeams and you will always look lovely. - Roald Dahl quotes from GetInspired365.com"

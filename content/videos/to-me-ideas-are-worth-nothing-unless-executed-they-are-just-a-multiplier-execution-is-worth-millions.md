@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131025"]
 title: "To me, ideas are worth nothing unless executed. They are just a multiplier. Execution is worth millions."
 author: "Steve Jobs"
 description: "To me, ideas are worth nothing unless executed. They are just a multiplier. Execution is worth millions. - Steve Jobs quotes from GetInspired365.com"

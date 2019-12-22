@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140819"]
 title: "Failure is the condiment that gives success its flavor."
 author: "Truman Capote"
 description: "Failure is the condiment that gives success its flavor. - Truman Capote quotes from GetInspired365.com"

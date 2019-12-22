@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130704"]
 title: "The real you"
 author: "Alan Watts"
 description: "The real you - Alan Watts quotes from GetInspired365.com"

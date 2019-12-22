@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140906"]
 title: "I'm a success today because I had a friend who believed in me and I didn't have the heart to let him down."
 author: "Abraham Lincoln"
 description: "I'm a success today because I had a friend who believed in me and I didn't have the heart to let him down. - Abraham Lincoln quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130604"]
 title: "Make the world your dancefloor"
 author: "Author Unknown"
 description: "Make the world your dancefloor - Author Unknown quotes from GetInspired365.com"

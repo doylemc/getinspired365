@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131003"]
 title: "Sometimes I feel like if you just watch things, just sit still and let the world exist in front of you - sometimes I swear that just for a second time freezes and the world pauses in its tilt. Just for a second. And if you somehow found a way to live in that second, then you would live forever."
 author: "Lauren Oliver"
 description: "Sometimes I feel like if you just watch things, just sit still and let the world exist in front of you - sometimes I swear that just for a second time freezes and the world pauses in its tilt. Just for a second. And if you somehow found a way to live in that second, then you would live forever. - Lauren Oliver quotes from GetInspired365.com"

@@ -1,6 +1,6 @@
 {{ define "content" }}
 
-<div class="section bg-angled-dark">
+<div class="section bg-angled-dark-wide">
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -12,23 +12,23 @@
                     {{- range .Pages | shuffle -}}
                     <div class="gi s6 m6 l3">
                         {{- if eq .Type "news" -}}
-                        <div class="card h4 bg-news-500">
+                        <div class="card fluid font-4 bg-dark-to-right z-depth-5">
                             {{- partial "card-news.html" . -}}
                         </div>
                         {{- else if eq .Type "articles" -}}
-                        <div class="card article h6 bg-articles-500">
+                        <div class="card fluid font-5 bg-dark-to-right z-depth-4">
                             {{- partial "card-article.html" . -}}
                         </div> 
                         {{- else if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
-                        <div class="card h3 bg-quotes-500">
-                            {{- partial "card-quotes-by-topic.html" . -}}
+                        <div class="card fluid font-3 bg-dark-to-right z-depth-3">
+                            {{- partial "card-topic.html" . -}}
                         </div>
                         {{- else if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
-                        <div class="card h6 bg-quotes-500">
-                            {{- partial "card-quotes-by-author.html" . -}}
+                        <div class="card fluid font-6 bg-dark-to-right z-depth-3">
+                            {{- partial "card-author.html" . -}}
                         </div>  
                         {{- else if (.IsDescendant ($.Site.GetPage "/videos")) -}}
-                        <div class="card h3 bg-videos-500">
+                        <div class="card h4 font-3 bg-dark-to-right z-depth-2">
                         {{- partial "card-video.html" . -}}
                         </div>
                         {{- end -}}
@@ -112,7 +112,7 @@
                 {{- range .Pages -}}
                     {{- if (.IsDescendant ($.Site.GetPage "/quotes/topics")) -}}
                         <div class="col s6 m6 l3">
-                            {{- partial "card-quotes-by-topic.html" . -}}
+                            {{- partial "card-topic.html" . -}}
                         </div>
                     {{- end -}}
                 {{- end -}}
@@ -132,7 +132,7 @@
                 {{- range .Pages -}}
                     {{- if (.IsDescendant ($.Site.GetPage "/quotes/authors")) -}}
                         <div class="col s6 m3 l2">
-                            {{- partial "card-quotes-by-author.html" . -}}
+                            {{- partial "card-author.html" . -}}
                         </div>
                     {{- end -}}
                 {{- end -}}

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150720"]
 title: "Always Rememeber. Never Forget. Choose Love Manchester"
 author: "Tony Walsh"
 description: "Always Rememeber. Never Forget. Choose Love Manchester - Tony Walsh quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130505"]
 title: "Life's not about how hard of a hit you can give...it's about how many you can take, and still keep moving forward."
 author: "Rocky Balboa"
 description: "Life's not about how hard of a hit you can give...it's about how many you can take, and still keep moving forward. - Rocky Balboa quotes from GetInspired365.com"

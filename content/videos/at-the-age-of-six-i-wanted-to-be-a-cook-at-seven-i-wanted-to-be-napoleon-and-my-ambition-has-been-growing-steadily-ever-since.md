@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150216"]
 title: "At the age of six I wanted to be a cook. At seven I wanted to be Napoleon. And my ambition has been growing steadily ever since."
 author: "Salvador Dali"
 description: "At the age of six I wanted to be a cook. At seven I wanted to be Napoleon. And my ambition has been growing steadily ever since. - Salvador Dali quotes from GetInspired365.com"

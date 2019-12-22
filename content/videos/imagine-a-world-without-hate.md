@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140328"]
 title: "Imagine a World Without Hate"
 author: "ADL National"
 description: "Imagine a World Without Hate - ADL National quotes from GetInspired365.com"

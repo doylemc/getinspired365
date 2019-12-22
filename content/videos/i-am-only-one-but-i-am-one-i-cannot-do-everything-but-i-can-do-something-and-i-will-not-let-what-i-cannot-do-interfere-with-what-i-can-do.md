@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131009"]
 title: "I am only one, but I am one.  I cannot do everything, but I can do something.  And I will not let what I cannot do interfere with what I can do."
 author: "Helen Keller"
 description: "I am only one, but I am one.  I cannot do everything, but I can do something.  And I will not let what I cannot do interfere with what I can do. - Helen Keller quotes from GetInspired365.com"

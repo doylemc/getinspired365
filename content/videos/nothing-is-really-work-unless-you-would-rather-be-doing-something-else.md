@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150214"]
 title: "Nothing is really work unless you would rather be doing something else."
 author: "J.M. Barrie"
 description: "Nothing is really work unless you would rather be doing something else. - J.M. Barrie quotes from GetInspired365.com"

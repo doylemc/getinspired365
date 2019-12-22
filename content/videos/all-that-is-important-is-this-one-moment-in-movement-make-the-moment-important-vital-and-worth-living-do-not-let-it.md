@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150119"]
 title: "All that is important is this one moment in movement. Make the moment important, vital, and worth living. Do not let it slip away unnoticed and unused."
 author: "Martha Graham"
 description: "All that is important is this one moment in movement. Make the moment important, vital, and worth living. Do not let it slip away unnoticed and unused. - Martha Graham quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150205"]
 title: "You don't learn to walk by following rules. You learn by doing, and by falling over."
 author: "Richard Branson"
 description: "You don't learn to walk by following rules. You learn by doing, and by falling over. - Richard Branson quotes from GetInspired365.com"

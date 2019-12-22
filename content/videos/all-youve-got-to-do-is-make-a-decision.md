@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140531"]
 title: "All you've got to do is make a decision"
 author: "Eric Thomas"
 description: "All you've got to do is make a decision - Eric Thomas quotes from GetInspired365.com"

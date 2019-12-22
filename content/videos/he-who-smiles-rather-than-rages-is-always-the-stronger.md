@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131031"]
 title: "He who smiles rather than rages is always the stronger."
 author: "Japanese Wisdom"
 description: "He who smiles rather than rages is always the stronger. - Japanese Wisdom quotes from GetInspired365.com"

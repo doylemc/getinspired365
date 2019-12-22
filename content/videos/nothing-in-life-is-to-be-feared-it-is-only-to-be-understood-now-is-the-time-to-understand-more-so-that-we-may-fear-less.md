@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141207"]
 title: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."
 author: "Marie Curie"
 description: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie quotes from GetInspired365.com"

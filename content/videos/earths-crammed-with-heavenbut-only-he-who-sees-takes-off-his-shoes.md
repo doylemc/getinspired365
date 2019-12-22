@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130710"]
 title: "Earth's crammed with heaven...But only he who sees, takes off his shoes."
 author: "Elizabeth Barrett Browning"
 description: "Earth's crammed with heaven...But only he who sees, takes off his shoes. - Elizabeth Barrett Browning quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150716"]
 title: "A kind gesture can reach a wound that only compassion can heal."
 author: "Steve Maraboli"
 description: "A kind gesture can reach a wound that only compassion can heal. - Steve Maraboli quotes from GetInspired365.com"

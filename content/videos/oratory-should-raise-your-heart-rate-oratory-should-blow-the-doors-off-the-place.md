@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130418"]
 title: "Oratory should raise your heart rate. Oratory should blow the doors off the place."
 author: "Aaron Sorkin"
 description: "Oratory should raise your heart rate. Oratory should blow the doors off the place. - Aaron Sorkin quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131125"]
 title: "Logic will get you from A to Z; imagination will get you everywhere."
 author: "Albert Einstein"
 description: "Logic will get you from A to Z; imagination will get you everywhere. - Albert Einstein quotes from GetInspired365.com"

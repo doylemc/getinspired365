@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130501"]
 title: "We didn't come to the world just to entertain, we came to play remarkable roles, and our reward is to see you doing more than us."
 author: "Michael Bassey Johnson"
 description: "We didn't come to the world just to entertain, we came to play remarkable roles, and our reward is to see you doing more than us. - Michael Bassey Johnson quotes from GetInspired365.com"

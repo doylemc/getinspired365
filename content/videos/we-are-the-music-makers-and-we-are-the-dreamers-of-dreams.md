@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150316"]
 title: "We are the music makers, and we are the dreamers of dreams."
 author: "Arthur O'Shaughnessy"
 description: "We are the music makers, and we are the dreamers of dreams. - Arthur O'Shaughnessy quotes from GetInspired365.com"

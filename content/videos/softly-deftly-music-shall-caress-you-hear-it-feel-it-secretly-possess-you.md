@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141103"]
 title: "Softly, deftly, music shall caress you. Hear it, feel it, Secretly possess you."
 author: "Andrew Lloyd Webber"
 description: "Softly, deftly, music shall caress you. Hear it, feel it, Secretly possess you. - Andrew Lloyd Webber quotes from GetInspired365.com"

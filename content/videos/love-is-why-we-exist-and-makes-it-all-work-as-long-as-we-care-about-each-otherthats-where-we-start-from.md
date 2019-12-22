@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150328"]
 title: "Love is why we exist and makes it all work. As long as we care about each other,that’s where we start from"
 author: "Jeffrey Wright"
 description: "Love is why we exist and makes it all work. As long as we care about each other,that’s where we start from - Jeffrey Wright quotes from GetInspired365.com"

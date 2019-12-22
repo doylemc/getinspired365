@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130515"]
 title: "The true entrepreneur is a doer, not a dreamer."
 author: "Nolan Bushnell"
 description: "The true entrepreneur is a doer, not a dreamer. - Nolan Bushnell quotes from GetInspired365.com"

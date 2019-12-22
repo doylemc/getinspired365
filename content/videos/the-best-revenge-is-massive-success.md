@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131212"]
 title: "The best revenge is massive success."
 author: "Frank Sinatra"
 description: "The best revenge is massive success. - Frank Sinatra quotes from GetInspired365.com"

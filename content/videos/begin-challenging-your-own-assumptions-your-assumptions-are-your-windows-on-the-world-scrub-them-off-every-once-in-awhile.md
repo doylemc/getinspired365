@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141027"]
 title: "Begin challenging your own assumptions. Your assumptions are your windows on the world. Scrub them off every once in awhile, or the light won't come in."
 author: "Alan Alda"
 description: "Begin challenging your own assumptions. Your assumptions are your windows on the world. Scrub them off every once in awhile, or the light won't come in. - Alan Alda quotes from GetInspired365.com"

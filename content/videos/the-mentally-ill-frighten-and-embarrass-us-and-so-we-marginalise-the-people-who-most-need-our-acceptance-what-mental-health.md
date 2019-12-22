@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140731"]
 title: "The mentally ill frighten and embarrass us. And so we marginalise the people who most need our acceptance. What mental health needs is more sunlight, more candor, more unashamed conversation."
 author: "Glenn Close"
 description: "The mentally ill frighten and embarrass us. And so we marginalise the people who most need our acceptance. What mental health needs is more sunlight, more candor, more unashamed conversation. - Glenn Close quotes from GetInspired365.com"

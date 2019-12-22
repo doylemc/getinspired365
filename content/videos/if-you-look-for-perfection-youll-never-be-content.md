@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150120"]
 title: "If you look for perfection, you'll never be content."
 author: "Leo Tolstoy"
 description: "If you look for perfection, you'll never be content. - Leo Tolstoy quotes from GetInspired365.com"

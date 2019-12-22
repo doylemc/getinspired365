@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140520"]
 title: "People are like stained-glass windows. They sparkle and shine when the sun is out, but when the darkness sets in, their true beauty is revealed only if there is a light from within."
 author: "Elisabeth Kubler-Ross"
 description: "People are like stained-glass windows. They sparkle and shine when the sun is out, but when the darkness sets in, their true beauty is revealed only if there is a light from within. - Elisabeth Kubler-Ross quotes from GetInspired365.com"

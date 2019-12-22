@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150118"]
 title: "Every time you do a good deed you shine the light a little farther into the dark. And the thing is, when you're gone that light is going to keep shining on, pushing the shadows back."
 author: "Charles de Lint"
 description: "Every time you do a good deed you shine the light a little farther into the dark. And the thing is, when you're gone that light is going to keep shining on, pushing the shadows back. - Charles de Lint quotes from GetInspired365.com"

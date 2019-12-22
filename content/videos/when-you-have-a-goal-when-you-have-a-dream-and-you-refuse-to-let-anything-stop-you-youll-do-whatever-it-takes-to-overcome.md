@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130823"]
 title: "When you have a goal, when you have a dream, and you refuse to let anything stop you, you’ll do whatever it takes to overcome whatever obstacles are in your way."
 author: "Pete Gustin"
 description: "When you have a goal, when you have a dream, and you refuse to let anything stop you, you’ll do whatever it takes to overcome whatever obstacles are in your way. - Pete Gustin quotes from GetInspired365.com"

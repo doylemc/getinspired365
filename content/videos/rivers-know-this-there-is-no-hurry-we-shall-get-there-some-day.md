@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150127"]
 title: "Rivers know this: there is no hurry. We shall get there some day."
 author: "A. A. Milne"
 description: "Rivers know this: there is no hurry. We shall get there some day. - A. A. Milne quotes from GetInspired365.com"

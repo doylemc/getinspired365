@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131229"]
 title: "I am more than my scars."
 author: "Andrew Davidson"
 description: "I am more than my scars. - Andrew Davidson quotes from GetInspired365.com"

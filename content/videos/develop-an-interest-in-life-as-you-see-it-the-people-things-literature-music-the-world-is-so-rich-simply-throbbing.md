@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140828"]
 title: "Develop an interest in life as you see it; the people, things, literature, music - the world is so rich, simply throbbing with rich treasures, beautiful souls and interesting people. Forget yourself."
 author: "Henry Miller"
 description: "Develop an interest in life as you see it; the people, things, literature, music - the world is so rich, simply throbbing with rich treasures, beautiful souls and interesting people. Forget yourself. - Henry Miller quotes from GetInspired365.com"

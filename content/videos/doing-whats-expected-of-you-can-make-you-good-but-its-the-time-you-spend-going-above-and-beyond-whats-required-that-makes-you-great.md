@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141122"]
 title: "Doing what’s expected of you can make you good, but it’s the time you spend going above and beyond what’s required that makes you great!"
 author: "Josh S.Hinds"
 description: "Doing what’s expected of you can make you good, but it’s the time you spend going above and beyond what’s required that makes you great! - Josh S.Hinds quotes from GetInspired365.com"

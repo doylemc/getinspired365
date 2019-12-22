@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130622"]
 title: "Life is just a game of Inches"
 author: "Al Pacino"
 description: "Life is just a game of Inches - Al Pacino quotes from GetInspired365.com"

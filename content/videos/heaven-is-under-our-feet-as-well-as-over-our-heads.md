@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150609"]
 title: "Heaven is under our feet as well as over our heads."
 author: "Henry David Thoreau"
 description: "Heaven is under our feet as well as over our heads. - Henry David Thoreau quotes from GetInspired365.com"

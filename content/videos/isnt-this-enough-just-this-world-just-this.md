@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141023"]
 title: "Isn't this enough? Just this world? Just THIS?"
 author: "Tim Minchin"
 description: "Isn't this enough? Just this world? Just THIS? - Tim Minchin quotes from GetInspired365.com"

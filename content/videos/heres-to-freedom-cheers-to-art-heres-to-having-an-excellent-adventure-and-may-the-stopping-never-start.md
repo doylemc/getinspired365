@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141214"]
 title: "Here’s to freedom, cheers to art. Here’s to having an excellent adventure and may the stopping never start."
 author: "Jason Mraz"
 description: "Here’s to freedom, cheers to art. Here’s to having an excellent adventure and may the stopping never start. - Jason Mraz quotes from GetInspired365.com"

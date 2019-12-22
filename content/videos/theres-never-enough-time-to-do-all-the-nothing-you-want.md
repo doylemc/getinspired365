@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140628"]
 title: "There's never enough time to do all the nothing you want."
 author: "Bill Watterson"
 description: "There's never enough time to do all the nothing you want. - Bill Watterson quotes from GetInspired365.com"

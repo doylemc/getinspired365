@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130509"]
 title: "People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing you are the beholder."
 author: "Salma Hayek"
 description: "People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing you are the beholder. - Salma Hayek quotes from GetInspired365.com"

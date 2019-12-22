@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130620"]
 title: "Once in one's life, for one mortal moment, one must make a grab for immortality"
 author: "James Tarantin"
 description: "Once in one's life, for one mortal moment, one must make a grab for immortality - James Tarantin quotes from GetInspired365.com"

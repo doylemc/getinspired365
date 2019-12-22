@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131013"]
 title: "We realize the importance of our voices only when we are silenced"
 author: "Malala Yousafzai"
 description: "We realize the importance of our voices only when we are silenced - Malala Yousafzai quotes from GetInspired365.com"

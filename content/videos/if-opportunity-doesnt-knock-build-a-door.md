@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131220"]
 title: "If opportunity doesn't knock, build a door"
 author: "Milton Berle"
 description: "If opportunity doesn't knock, build a door - Milton Berle quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150224"]
 title: "We can choose to accept the fact that a challenge may be quite impossible, or we can choose to challenge the impossible."
 author: "Andre Bramble"
 description: "We can choose to accept the fact that a challenge may be quite impossible, or we can choose to challenge the impossible. - Andre Bramble quotes from GetInspired365.com"

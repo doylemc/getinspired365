@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150312"]
 title: "Tenderness and kindness are not signs of weakness and despair, but manifestations of strength and resolution."
 author: "Kahlil Gibran"
 description: "Tenderness and kindness are not signs of weakness and despair, but manifestations of strength and resolution. - Kahlil Gibran quotes from GetInspired365.com"

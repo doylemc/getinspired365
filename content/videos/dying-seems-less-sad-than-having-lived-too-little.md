@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141213"]
 title: "Dying seems less sad than having lived too little."
 author: "Gloria Steinem"
 description: "Dying seems less sad than having lived too little. - Gloria Steinem quotes from GetInspired365.com"

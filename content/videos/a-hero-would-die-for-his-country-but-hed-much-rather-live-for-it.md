@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130401"]
 title: "A hero would die for his country, but he'd much rather live for it."
 author: "Aaron Sorkin"
 description: "A hero would die for his country, but he'd much rather live for it. - Aaron Sorkin quotes from GetInspired365.com"

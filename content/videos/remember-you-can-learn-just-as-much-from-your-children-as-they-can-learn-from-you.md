@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130906"]
 title: "Remember, you can learn just as much from your children as they can learn from you."
 author: "Suli Breaks"
 description: "Remember, you can learn just as much from your children as they can learn from you. - Suli Breaks quotes from GetInspired365.com"

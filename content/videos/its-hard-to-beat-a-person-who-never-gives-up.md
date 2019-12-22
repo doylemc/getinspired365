@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150310"]
 title: "It's hard to beat a person who never gives up."
 author: "Babe Ruth"
 description: "It's hard to beat a person who never gives up. - Babe Ruth quotes from GetInspired365.com"

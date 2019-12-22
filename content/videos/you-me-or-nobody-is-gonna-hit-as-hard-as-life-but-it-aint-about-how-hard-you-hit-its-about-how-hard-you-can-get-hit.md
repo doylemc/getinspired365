@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140805"]
 title: "You, me, or nobody is gonna hit as hard as life. But it ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done"
 author: "Rocky Balboa"
 description: "You, me, or nobody is gonna hit as hard as life. But it ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. How much you can take and keep moving forward. That's how winning is done - Rocky Balboa quotes from GetInspired365.com"

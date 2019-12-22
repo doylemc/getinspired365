@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140607"]
 title: "Only the very weak-minded refuse to be influenced by literature and poetry."
 author: "Cassandra Clare"
 description: "Only the very weak-minded refuse to be influenced by literature and poetry. - Cassandra Clare quotes from GetInspired365.com"

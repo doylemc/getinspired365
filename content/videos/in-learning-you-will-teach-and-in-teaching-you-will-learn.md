@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140822"]
 title: "In learning you will teach, and in teaching you will learn."
 author: "Phil Collins"
 description: "In learning you will teach, and in teaching you will learn. - Phil Collins quotes from GetInspired365.com"

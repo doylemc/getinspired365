@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140128"]
 title: "A letter for a person's first day here on Earth."
 author: "Kid President"
 description: "A letter for a person's first day here on Earth. - Kid President quotes from GetInspired365.com"

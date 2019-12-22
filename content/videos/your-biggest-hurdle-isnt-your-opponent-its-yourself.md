@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130930"]
 title: "Your biggest hurdle isn't your opponent, it's yourself."
 author: "Brandon Todd"
 description: "Your biggest hurdle isn't your opponent, it's yourself. - Brandon Todd quotes from GetInspired365.com"

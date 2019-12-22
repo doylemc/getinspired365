@@ -54,8 +54,29 @@
 --videos-color-500: #0d0205;
 --tags-color: #161616;
 --gutter-width: 1rem;
-} -->
+}
 
+--news-color-100: #1dbaf8;
+--news-color-200: #1585B1;
+--news-color-300: #0E5B79;
+--news-color-400: #03141b;
+--news-color-500: #020F14;
+--articles-color-100: #165BCC;
+--articles-color-200: #124AA6;
+--articles-color-300: #0D3577;
+--articles-color-400: #030c1b;
+--articles-color-500: #02070e;
+--quotes-color-100: #8B639C;
+--quotes-color-200: #6B4D78;
+--quotes-color-300: #45324E;
+--quotes-color-400: #0f0b10;
+--quotes-color-500: #0D090F;
+--videos-color-100: #CE1A58;
+--videos-color-200: #9E1645;
+--videos-color-300: #701031;
+--videos-color-400: #1f040c;
+--videos-color-500: #0d0105;
+ -->
 
 <!-- HOMEPAGE SECTION LAYOUT WITHOUT MASONRY -->
 
@@ -132,7 +153,7 @@
                 {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
                 {{ if ne .Title "Quotes By Topic" }}
                 <div class="col s4 m3 l4">
-                    {{ partial "card-quotes-by-topic.html" . }}
+                    {{ partial "card-topic.html" . }}
                 </div>
                 {{ end }}
                 {{ end }}
@@ -150,7 +171,7 @@
                 {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
                 {{- if ne .Title "Quotes By Author" -}}
                 <div class="col s4 m3 l3">
-                    <h3>{{- partial "card-quotes-by-topic.html" . -}}</h3>
+                    <h3>{{- partial "card-topic.html" . -}}</h3>
                 </div>
                 {{- end -}}
                 {{- end -}}
@@ -249,7 +270,7 @@
                     {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
                     {{ if ne .Title "Quotes By Topic" }}
                     <div class="grid-item">
-                        {{ partial "card-quotes-by-topic.html" . }}
+                        {{ partial "card-topic.html" . }}
                     </div>
                     {{ end }}
                     {{ end }}
@@ -260,7 +281,7 @@
                     {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
                     {{- if ne .Title "Quotes By Author" -}}
                     <div class="grid-item">
-                        <h3>{{- partial "card-quotes-by-author.html" . -}}</h3>
+                        <h3>{{- partial "card-author.html" . -}}</h3>
                     </div>
                     {{- end -}}
                     {{- end -}}
@@ -291,3 +312,16 @@
 
 {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "=" "May your adventures bring you closer together, even as they take you far away from home." | shuffle | first 1 -}}
 {{- end -}}
+
+
+<div class="col s12 l3">
+    <div class="well1">
+        <br><br>
+        <h2 class="c-articles-200 display-inline-block no-pad no-margin font-8">ORIGINAL ARTICLES</h2>
+        <h4>Real-life Stories, Interviews and Opinion to inspire you</h4>
+        <br>
+        <div class="hide-on-med-and-down center">
+            <a class="btn c-articles-100" href="articles">More Articles ></a>
+        </div>
+    </div>
+</div>

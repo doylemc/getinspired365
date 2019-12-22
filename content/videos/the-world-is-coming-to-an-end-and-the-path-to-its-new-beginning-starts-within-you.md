@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150107"]
 title: "The world is coming to an end and the path to it's new beginning starts within you."
 author: "George Bernard Shaw"
 description: "The world is coming to an end and the path to it's new beginning starts within you. - George Bernard Shaw quotes from GetInspired365.com"

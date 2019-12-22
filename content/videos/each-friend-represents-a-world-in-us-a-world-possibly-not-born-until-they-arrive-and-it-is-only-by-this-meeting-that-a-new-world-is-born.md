@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150511"]
 title: "Each friend represents a world in us, a world possibly not born until they arrive, and it is only by this meeting that a new world is born."
 author: "Anais Nin"
 description: "Each friend represents a world in us, a world possibly not born until they arrive, and it is only by this meeting that a new world is born. - Anais Nin quotes from GetInspired365.com"

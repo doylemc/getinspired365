@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140702"]
 title: "Everyone has talent. What's rare is the courage to follow it to the dark places where it leads."
 author: "Erica Jong"
 description: "Everyone has talent. What's rare is the courage to follow it to the dark places where it leads. - Erica Jong quotes from GetInspired365.com"

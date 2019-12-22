@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150210"]
 title: "A friend is somebody who says the same things to your face that they would say if you're not in the room."
 author: "Aaron Sorkin"
 description: "A friend is somebody who says the same things to your face that they would say if you're not in the room. - Aaron Sorkin quotes from GetInspired365.com"

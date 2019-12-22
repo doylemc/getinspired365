@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150128"]
 title: "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default."
 author: "J.K. Rowling"
 description: "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default. - J.K. Rowling quotes from GetInspired365.com"

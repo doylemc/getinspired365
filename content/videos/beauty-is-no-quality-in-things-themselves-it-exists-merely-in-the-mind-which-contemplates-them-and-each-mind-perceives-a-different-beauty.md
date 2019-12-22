@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141222"]
 title: "Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty."
 author: "David Hume"
 description: "Beauty is no quality in things themselves: It exists merely in the mind which contemplates them; and each mind perceives a different beauty. - David Hume quotes from GetInspired365.com"

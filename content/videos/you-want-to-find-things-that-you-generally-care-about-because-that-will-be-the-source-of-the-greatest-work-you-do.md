@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140614"]
 title: "You want to find things that you generally care about, because that will be the source of the greatest work you do"
 author: "National Geographic Magazine"
 description: "You want to find things that you generally care about, because that will be the source of the greatest work you do - National Geographic Magazine quotes from GetInspired365.com"

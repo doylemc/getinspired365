@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141212"]
 title: "Got no checkbooks, got no banks. Still I'd like to express my thanks - I've got the sun in the mornin' and the moon at night."
 author: "Irving Berlin"
 description: "Got no checkbooks, got no banks. Still I'd like to express my thanks - I've got the sun in the mornin' and the moon at night. - Irving Berlin quotes from GetInspired365.com"

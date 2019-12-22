@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150102"]
 title: "The most important thing is to enjoy your life—to be happy—it's all that matters."
 author: "Audrey Hepburn"
 description: "The most important thing is to enjoy your life—to be happy—it's all that matters. - Audrey Hepburn quotes from GetInspired365.com"

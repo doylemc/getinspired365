@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140830"]
 title: "It is hard to fail, but it is worse never to have tried to succeed."
 author: "Theordore Roosevelt"
 description: "It is hard to fail, but it is worse never to have tried to succeed. - Theordore Roosevelt quotes from GetInspired365.com"

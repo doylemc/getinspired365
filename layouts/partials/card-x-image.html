@@ -1,0 +1,12 @@
+<div class="img-container">
+    <a href="{{ .Permalink }}" class="z-depth-5">
+        {{- if isset .Params "videoid" -}}
+        <img {{ if isset .Params "imagepositionclass" }} class="{{ .Params.imagepositionclass }}" {{ end }} src="https://img.youtube.com/vi/{{ .Params.videoid }}/0.jpg" />
+        {{- else -}}
+        <img {{ if isset .Params "imagepositionclass" }} class="{{ .Params.imagepositionclass }}" {{ end }} src="{{ .Params.image }}" />
+        {{- end -}}
+    </a>
+</div>
+{{- if isset .Params "videoid" -}}
+<a href="{{ .Permalink }}" class="play"><i class="fas fa-play bg-videos-300"></i></a>
+{{- end -}}

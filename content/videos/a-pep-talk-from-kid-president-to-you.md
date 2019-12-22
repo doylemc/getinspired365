@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130601"]
 title: "A Pep Talk from Kid President to You"
 author: "Kid President"
 description: "A Pep Talk from Kid President to You - Kid President quotes from GetInspired365.com"

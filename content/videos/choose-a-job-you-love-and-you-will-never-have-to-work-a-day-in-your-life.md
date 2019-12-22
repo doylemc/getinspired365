@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130809"]
 title: "Choose a job you love, and you will never have to work a day in your life."
 author: "Confucius"
 description: "Choose a job you love, and you will never have to work a day in your life. - Confucius quotes from GetInspired365.com"

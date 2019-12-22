@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150212"]
 title: "Our lives can't be measured by our final years, of this I am sure."
 author: "Nicholas Sparks"
 description: "Our lives can't be measured by our final years, of this I am sure. - Nicholas Sparks quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130701"]
 title: "How did it get so late so soon? It's night before it's afternoon. December is here before it's June. My goodness how the time has flewn. How did it get so late so soon?"
 author: "Dr. Seuss"
 description: "How did it get so late so soon? It's night before it's afternoon. December is here before it's June. My goodness how the time has flewn. How did it get so late so soon? - Dr. Seuss quotes from GetInspired365.com"

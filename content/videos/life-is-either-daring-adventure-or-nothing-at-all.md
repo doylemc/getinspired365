@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150612"]
 title: "Life is either daring adventure or nothing at all."
 author: "Helen Keller"
 description: "Life is either daring adventure or nothing at all. - Helen Keller quotes from GetInspired365.com"

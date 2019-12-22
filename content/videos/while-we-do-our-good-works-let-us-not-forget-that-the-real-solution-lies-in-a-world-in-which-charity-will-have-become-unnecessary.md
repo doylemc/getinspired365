@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140827"]
 title: "While we do our good works let us not forget that the real solution lies in a world in which charity will have become unnecessary."
 author: "Chinua Achebe"
 description: "While we do our good works let us not forget that the real solution lies in a world in which charity will have become unnecessary. - Chinua Achebe quotes from GetInspired365.com"

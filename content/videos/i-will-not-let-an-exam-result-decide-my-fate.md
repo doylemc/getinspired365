@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150131"]
 title: "I will not let an exam result decide my fate."
 author: "Suli Breaks"
 description: "I will not let an exam result decide my fate. - Suli Breaks quotes from GetInspired365.com"

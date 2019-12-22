@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140813"]
 title: "Count your age by friends, not years. Count your life by smiles, not tears."
 author: "John Lennon"
 description: "Count your age by friends, not years. Count your life by smiles, not tears. - John Lennon quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140324"]
 title: "For every minute you are angry you lose sixty seconds of happiness."
 author: "Ralph Waldo Emerson"
 description: "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson quotes from GetInspired365.com"

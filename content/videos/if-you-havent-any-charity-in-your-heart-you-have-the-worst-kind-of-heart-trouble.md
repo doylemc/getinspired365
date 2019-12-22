@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130724"]
 title: "If you haven't any charity in your heart, you have the worst kind of heart trouble."
 author: "Bob Hope"
 description: "If you haven't any charity in your heart, you have the worst kind of heart trouble. - Bob Hope quotes from GetInspired365.com"

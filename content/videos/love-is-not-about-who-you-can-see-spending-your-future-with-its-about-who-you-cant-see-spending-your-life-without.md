@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140613"]
 title: "Love is not about who you can see spending your future with, it's about who you can't see spending your life without"
 author: "Athena Orchard"
 description: "Love is not about who you can see spending your future with, it's about who you can't see spending your life without - Athena Orchard quotes from GetInspired365.com"

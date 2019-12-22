@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130821"]
 title: "For what it's worth: it's never too late or, in my case, too early to be whoever you want to be."
 author: "Benjamin Button"
 description: "For what it's worth: it's never too late or, in my case, too early to be whoever you want to be. - Benjamin Button quotes from GetInspired365.com"

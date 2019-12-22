@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130731"]
 title: "Excuses are the nails used to build a house of failure."
 author: "Don Wilder"
 description: "Excuses are the nails used to build a house of failure. - Don Wilder quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140730"]
 title: "I am only one, but I am one. I cannot do everything, but I can do something. And because I cannot do everything, I will not refuse to do the something that I can do."
 author: "Edward Everett Hale"
 description: "I am only one, but I am one. I cannot do everything, but I can do something. And because I cannot do everything, I will not refuse to do the something that I can do. - Edward Everett Hale quotes from GetInspired365.com"

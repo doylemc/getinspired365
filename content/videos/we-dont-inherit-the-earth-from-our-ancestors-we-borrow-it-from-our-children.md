@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150427"]
 title: "We don't inherit the earth from our ancestors, we borrow it from our children."
 author: "David R. Brower"
 description: "We don't inherit the earth from our ancestors, we borrow it from our children. - David R. Brower quotes from GetInspired365.com"

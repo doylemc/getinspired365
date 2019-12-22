@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140421"]
 title: "Nothing you do for children is ever wasted."
 author: "Garrison Keillor"
 description: "Nothing you do for children is ever wasted. - Garrison Keillor quotes from GetInspired365.com"

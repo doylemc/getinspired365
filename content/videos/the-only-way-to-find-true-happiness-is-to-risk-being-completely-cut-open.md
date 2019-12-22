@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141109"]
 title: "The only way to find true happiness is to risk being completely cut open."
 author: "Chuck Palahniuk"
 description: "The only way to find true happiness is to risk being completely cut open. - Chuck Palahniuk quotes from GetInspired365.com"

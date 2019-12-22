@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141125"]
 title: "Don’t ever forget that you’re a citizen of this world, and there are things you can do to lift the human spirit, things that are easy, things that are free, things that you can do every day. Civility, respect, kindness, character."
 author: "Aaron Sorkin"
 description: "Don’t ever forget that you’re a citizen of this world, and there are things you can do to lift the human spirit, things that are easy, things that are free, things that you can do every day. Civility, respect, kindness, character. - Aaron Sorkin quotes from GetInspired365.com"

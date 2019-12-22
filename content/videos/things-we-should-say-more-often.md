@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140108"]
 title: "20 Things We Should Say More Often"
 author: "Kid President"
 description: "20 Things We Should Say More Often - Kid President quotes from GetInspired365.com"

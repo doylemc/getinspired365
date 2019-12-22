@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130514"]
 title: "We should consider every day lost on which we have not danced at least once."
 author: "Friedrich Nietzsche"
 description: "We should consider every day lost on which we have not danced at least once. - Friedrich Nietzsche quotes from GetInspired365.com"

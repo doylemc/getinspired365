@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150619"]
 title: "Any man can be a father, but it takes someone special to be a dad"
 author: "Anne Geddes"
 description: "Any man can be a father, but it takes someone special to be a dad - Anne Geddes quotes from GetInspired365.com"

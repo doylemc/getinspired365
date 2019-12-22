@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150614"]
 title: "We must return optimism to our parenting. To focus on the joys, not the hassles; the love, not the disappointments; the common sense, not the complexities."
 author: "Fred G. Gosman"
 description: "We must return optimism to our parenting. To focus on the joys, not the hassles; the love, not the disappointments; the common sense, not the complexities. - Fred G. Gosman quotes from GetInspired365.com"

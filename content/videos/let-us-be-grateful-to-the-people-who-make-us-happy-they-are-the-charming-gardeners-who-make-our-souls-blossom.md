@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131119"]
 title: "Let us be grateful to the people who make us happy; they are the charming gardeners who make our souls blossom."
 author: "Marcel Proust"
 description: "Let us be grateful to the people who make us happy; they are the charming gardeners who make our souls blossom. - Marcel Proust quotes from GetInspired365.com"

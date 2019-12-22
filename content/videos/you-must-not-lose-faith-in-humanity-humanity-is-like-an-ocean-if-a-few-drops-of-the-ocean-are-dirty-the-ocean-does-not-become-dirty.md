@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131227"]
 title: "You must not lose faith in humanity. Humanity is like an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty."
 author: "Mahatma Gandhi"
 description: "You must not lose faith in humanity. Humanity is like an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty. - Mahatma Gandhi quotes from GetInspired365.com"

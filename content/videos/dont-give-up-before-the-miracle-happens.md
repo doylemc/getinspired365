@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150503"]
 title: "Don't give up before the miracle happens."
 author: "Fannie Flagg"
 description: "Don't give up before the miracle happens. - Fannie Flagg quotes from GetInspired365.com"

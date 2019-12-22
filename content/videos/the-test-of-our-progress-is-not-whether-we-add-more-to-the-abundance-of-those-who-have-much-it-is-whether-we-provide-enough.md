@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131127"]
 title: "The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little."
 author: "Franklin D. Roosevelt"
 description: "The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little. - Franklin D. Roosevelt quotes from GetInspired365.com"

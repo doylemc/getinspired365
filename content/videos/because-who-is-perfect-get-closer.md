@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140210"]
 title: "Because who is perfect? Get closer."
 author: "Alain Gsponer"
 description: "Because who is perfect? Get closer. - Alain Gsponer quotes from GetInspired365.com"

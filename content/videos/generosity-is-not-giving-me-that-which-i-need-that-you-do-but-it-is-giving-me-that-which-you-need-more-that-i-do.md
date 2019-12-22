@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150124"]
 title: "Generosity is not giving me that which I need that you do, but it is giving me that which you need more that I do."
 author: "Kahlil Gibran"
 description: "Generosity is not giving me that which I need that you do, but it is giving me that which you need more that I do. - Kahlil Gibran quotes from GetInspired365.com"

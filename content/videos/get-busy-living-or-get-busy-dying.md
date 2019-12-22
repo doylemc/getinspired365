@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130921"]
 title: "Get busy living or get busy dying."
 author: "Stephen King"
 description: "Get busy living or get busy dying. - Stephen King quotes from GetInspired365.com"

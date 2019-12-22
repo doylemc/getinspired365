@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141124"]
 title: "A ship is safe in harbor, but that's not what ships are for."
 author: "William G.T. Shedd"
 description: "A ship is safe in harbor, but that's not what ships are for. - William G.T. Shedd quotes from GetInspired365.com"

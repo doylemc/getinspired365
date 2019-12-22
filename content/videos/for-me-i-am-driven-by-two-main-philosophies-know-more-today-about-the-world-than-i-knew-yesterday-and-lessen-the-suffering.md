@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130816"]
 title: "For me, I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you."
 author: "Neil DeGrasse Tyson"
 description: "For me, I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you. - Neil DeGrasse Tyson quotes from GetInspired365.com"

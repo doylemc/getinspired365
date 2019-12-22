@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140204"]
 title: "Do it now. Sometimes ‘later’ becomes ‘never.’"
 author: "Unknown"
 description: "Do it now. Sometimes ‘later’ becomes ‘never.’ - Unknown quotes from GetInspired365.com"

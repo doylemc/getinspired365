@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130513"]
 title: "Don't ever quit"
 author: "Ryan Dungey"
 description: "Don't ever quit - Ryan Dungey quotes from GetInspired365.com"

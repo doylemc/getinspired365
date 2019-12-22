@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150506"]
 title: "The doubters said, Man can not fly, The doers said, Maybe, but we'll try, And finally soared In the morning glow While non-believers Watched from below."
 author: "Bruce Lee"
 description: "The doubters said, Man can not fly, The doers said, Maybe, but we'll try, And finally soared In the morning glow While non-believers Watched from below. - Bruce Lee quotes from GetInspired365.com"

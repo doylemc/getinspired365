@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141130"]
 title: "Poor is the man who thinks money makes him wealthy. Love is the true treasure, and the more you give away, the more you have."
 author: "Jarod Kintz"
 description: "Poor is the man who thinks money makes him wealthy. Love is the true treasure, and the more you give away, the more you have. - Jarod Kintz quotes from GetInspired365.com"

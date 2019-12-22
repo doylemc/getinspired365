@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141108"]
 title: "Our wounds are often the openings into the best and most beautiful part of us."
 author: "David Richo"
 description: "Our wounds are often the openings into the best and most beautiful part of us. - David Richo quotes from GetInspired365.com"

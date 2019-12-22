@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150126"]
 title: "You must learn to let go. Release the stress. You were never in control anyway."
 author: "Steve Maraboli"
 description: "You must learn to let go. Release the stress. You were never in control anyway. - Steve Maraboli quotes from GetInspired365.com"

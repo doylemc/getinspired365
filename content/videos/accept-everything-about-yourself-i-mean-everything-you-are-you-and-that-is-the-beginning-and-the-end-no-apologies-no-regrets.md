@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141210"]
 title: "Accept everything about yourself - I mean everything, You are you and that is the beginning and the end - no apologies, no regrets."
 author: "Clark Moustakas"
 description: "Accept everything about yourself - I mean everything, You are you and that is the beginning and the end - no apologies, no regrets. - Clark Moustakas quotes from GetInspired365.com"

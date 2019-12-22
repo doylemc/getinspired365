@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140517"]
 title: "Man is a genius when he is dreaming."
 author: "Akira Kurosawa"
 description: "Man is a genius when he is dreaming. - Akira Kurosawa quotes from GetInspired365.com"

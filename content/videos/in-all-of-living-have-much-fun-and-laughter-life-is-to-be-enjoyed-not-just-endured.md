@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130917"]
 title: "In all of living, have much fun and laughter. Life is to be enjoyed, not just endured."
 author: "Gordon B. Hinckley"
 description: "In all of living, have much fun and laughter. Life is to be enjoyed, not just endured. - Gordon B. Hinckley quotes from GetInspired365.com"

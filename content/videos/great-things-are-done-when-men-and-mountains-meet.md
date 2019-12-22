@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130105"]
 title: "Great things are done when men and mountains meet."
 author: "William Blake"
 description: "Great things are done when men and mountains meet. - William Blake quotes from GetInspired365.com"

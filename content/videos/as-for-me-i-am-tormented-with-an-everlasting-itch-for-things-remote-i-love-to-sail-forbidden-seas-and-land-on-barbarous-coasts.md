@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140205"]
 title: "As for me, I am tormented with an everlasting itch for things remote. I love to sail forbidden seas, and land on barbarous coasts."
 author: "Herman Melville"
 description: "As for me, I am tormented with an everlasting itch for things remote. I love to sail forbidden seas, and land on barbarous coasts. - Herman Melville quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141201"]
 title: "Music brings a warm glow to my vision, thawing mind and muscle from their endless wintering."
 author: "Haruki Murakami"
 description: "Music brings a warm glow to my vision, thawing mind and muscle from their endless wintering. - Haruki Murakami quotes from GetInspired365.com"

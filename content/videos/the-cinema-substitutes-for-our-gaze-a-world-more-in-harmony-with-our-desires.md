@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130610"]
 title: "The cinema substitutes for our gaze a world more in harmony with our desires."
 author: "Andre Bazin"
 description: "The cinema substitutes for our gaze a world more in harmony with our desires. - Andre Bazin quotes from GetInspired365.com"

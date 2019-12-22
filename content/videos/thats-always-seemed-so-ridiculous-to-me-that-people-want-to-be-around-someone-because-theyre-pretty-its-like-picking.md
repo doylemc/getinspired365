@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150417"]
 title: "That's always seemed so ridiculous to me, that people want to be around someone because they're pretty. It's like picking your breakfeast cereals based on color instead of taste."
 author: "John Green"
 description: "That's always seemed so ridiculous to me, that people want to be around someone because they're pretty. It's like picking your breakfeast cereals based on color instead of taste. - John Green quotes from GetInspired365.com"

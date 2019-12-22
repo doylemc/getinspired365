@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130812"]
 title: "What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce."
 author: "Karl Lagerfeld"
 description: "What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce. - Karl Lagerfeld quotes from GetInspired365.com"

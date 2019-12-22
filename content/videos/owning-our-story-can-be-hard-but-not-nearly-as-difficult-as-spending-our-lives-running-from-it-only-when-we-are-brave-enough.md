@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150608"]
 title: "Owning our story can be hard but not nearly as difficult as spending our lives running from it. Only when we are brave enough to explore the darkness will we discover the infinite power of our light."
 author: "Brené Brown"
 description: "Owning our story can be hard but not nearly as difficult as spending our lives running from it. Only when we are brave enough to explore the darkness will we discover the infinite power of our light. - Brené Brown quotes from GetInspired365.com"

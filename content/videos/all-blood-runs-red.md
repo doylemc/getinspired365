@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140804"]
 title: "All blood runs red."
 author: "Author Unknown"
 description: "All blood runs red. - Author Unknown quotes from GetInspired365.com"

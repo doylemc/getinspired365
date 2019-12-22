@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130112"]
 title: "A year from now you may wish you had started today."
 author: "Karen Lamb"
 description: "A year from now you may wish you had started today. - Karen Lamb quotes from GetInspired365.com"

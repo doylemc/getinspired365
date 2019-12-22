@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140605"]
 title: "Why didn't I learn to treat everything like it was the last time. My greatest regret was how much I believed in the future."
 author: "Jonathan Safran Foer"
 description: "Why didn't I learn to treat everything like it was the last time. My greatest regret was how much I believed in the future. - Jonathan Safran Foer quotes from GetInspired365.com"

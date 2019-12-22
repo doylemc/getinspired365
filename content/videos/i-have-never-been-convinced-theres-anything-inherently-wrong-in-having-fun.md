@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150317"]
 title: "I have never been convinced there's anything inherently wrong in having fun."
 author: "George Plimpton"
 description: "I have never been convinced there's anything inherently wrong in having fun. - George Plimpton quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150507"]
 title: "The greatest wealth is health."
 author: "Virgil"
 description: "The greatest wealth is health. - Virgil quotes from GetInspired365.com"

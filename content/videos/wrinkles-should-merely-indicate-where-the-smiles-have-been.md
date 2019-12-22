@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150616"]
 title: "Wrinkles should merely indicate where the smiles have been."
 author: "Mark Twain"
 description: "Wrinkles should merely indicate where the smiles have been. - Mark Twain quotes from GetInspired365.com"

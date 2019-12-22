@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150315"]
 title: "Make the most of yourself....for that is all there is of you."
 author: "Ralph Waldo Emerson"
 description: "Make the most of yourself....for that is all there is of you. - Ralph Waldo Emerson quotes from GetInspired365.com"

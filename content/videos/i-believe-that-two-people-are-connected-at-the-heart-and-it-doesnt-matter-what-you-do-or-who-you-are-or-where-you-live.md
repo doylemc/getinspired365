@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150504"]
 title: "I believe that two people are connected at the heart, and it doesn't matter what you do, or who you are or where you live; there are no boundaries or barriers if two people are destined to be together."
 author: "Julia Roberts"
 description: "I believe that two people are connected at the heart, and it doesn't matter what you do, or who you are or where you live; there are no boundaries or barriers if two people are destined to be together. - Julia Roberts quotes from GetInspired365.com"

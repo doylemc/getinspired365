@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150607"]
 title: "Today we fight. Tomorrow we fight. The day after, we fight. And if this disease plans on whipping us, it better bring a lunch, 'cause it's gonna have a long day doing it."
 author: "Jim Beaver"
 description: "Today we fight. Tomorrow we fight. The day after, we fight. And if this disease plans on whipping us, it better bring a lunch, 'cause it's gonna have a long day doing it. - Jim Beaver quotes from GetInspired365.com"

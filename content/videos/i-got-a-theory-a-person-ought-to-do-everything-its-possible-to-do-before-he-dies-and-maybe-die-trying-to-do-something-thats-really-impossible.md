@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130913"]
 title: "I got a theory a person ought to do everything it’s possible to do before he dies, and maybe die trying to do something that’s really impossible."
 author: "Patricia Highsmith"
 description: "I got a theory a person ought to do everything it’s possible to do before he dies, and maybe die trying to do something that’s really impossible. - Patricia Highsmith quotes from GetInspired365.com"

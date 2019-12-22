@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150421"]
 title: "Honor to the soldier and sailor everywhere, who bravely bears his country's cause. Honor, also, to the citizen who cares for his brother in the field and serves, as he best can, the same cause."
 author: "Abraham Lincoln"
 description: "Honor to the soldier and sailor everywhere, who bravely bears his country's cause. Honor, also, to the citizen who cares for his brother in the field and serves, as he best can, the same cause. - Abraham Lincoln quotes from GetInspired365.com"

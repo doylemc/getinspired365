@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140219"]
 title: "18 months ago my hobbies included arguing with 13 year-olds in Call of Duty and watching Netflix. Life's too short for that rubbish... Get out there and grab life by the proverbial testicles!"
 author: "Ginnjoose, Reddit"
 description: "18 months ago my hobbies included arguing with 13 year-olds in Call of Duty and watching Netflix. Life's too short for that rubbish... Get out there and grab life by the proverbial testicles! - Ginnjoose, Reddit quotes from GetInspired365.com"

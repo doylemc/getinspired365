@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131126"]
 title: "My idea is that there is music in the air, music all around us; the world is full of it, and you simply take as much as you require."
 author: "Edward Elgar"
 description: "My idea is that there is music in the air, music all around us; the world is full of it, and you simply take as much as you require. - Edward Elgar quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131109"]
 title: "Now more than ever do I realize that I will never be content with a sedentary life, that I will always be haunted by thoughts of a sun-drenched elsewhere."
 author: "Augustine of Hippo"
 description: "Now more than ever do I realize that I will never be content with a sedentary life, that I will always be haunted by thoughts of a sun-drenched elsewhere. - Augustine of Hippo quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131020"]
 title: "The greatest weariness comes from work not done."
 author: "Eric hoffer"
 description: "The greatest weariness comes from work not done. - Eric hoffer quotes from GetInspired365.com"

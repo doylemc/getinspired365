@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130909"]
 title: "Once you make a decision, the universe conspires to make it happen."
 author: "Ralph Waldo Emerson"
 description: "Once you make a decision, the universe conspires to make it happen. - Ralph Waldo Emerson quotes from GetInspired365.com"

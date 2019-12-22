@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130305"]
 title: "My imagination functions much better when I don't have to speak to people."
 author: "Patricia Highsmith"
 description: "My imagination functions much better when I don't have to speak to people. - Patricia Highsmith quotes from GetInspired365.com"

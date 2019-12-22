@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150125"]
 title: "Just remember, when you’re over the hill, you begin to pick up speed."
 author: "Charles M. Schulz"
 description: "Just remember, when you’re over the hill, you begin to pick up speed. - Charles M. Schulz quotes from GetInspired365.com"

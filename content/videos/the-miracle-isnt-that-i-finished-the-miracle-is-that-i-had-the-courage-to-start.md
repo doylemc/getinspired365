@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150202"]
 title: "The miracle isn't that I finished. The miracle is that I had the courage to start."
 author: "John Bingham"
 description: "The miracle isn't that I finished. The miracle is that I had the courage to start. - John Bingham quotes from GetInspired365.com"

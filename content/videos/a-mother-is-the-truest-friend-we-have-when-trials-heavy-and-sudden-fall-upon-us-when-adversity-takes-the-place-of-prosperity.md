@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150204"]
 title: "A mother is the truest friend we have, when trials heavy and sudden fall upon us; when adversity takes the place of prosperity; when friends desert us; when trouble thickens around us, still will she cling to us, and endeavor by her kind precepts and counsels to dissipate the clouds of darkness, an"
 author: "Washington Irving"
 description: "A mother is the truest friend we have, when trials heavy and sudden fall upon us; when adversity takes the place of prosperity; when friends desert us; when trouble thickens around us, still will she cling to us, and endeavor by her kind precepts and counsels to dissipate the clouds of darkness, an - Washington Irving quotes from GetInspired365.com"

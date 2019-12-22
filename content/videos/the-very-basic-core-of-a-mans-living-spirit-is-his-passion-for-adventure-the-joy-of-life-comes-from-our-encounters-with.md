@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150121"]
 title: "The very basic core of a man's living spirit is his passion for adventure. The joy of life comes from our encounters with new experiences, and hence there is no greater joy than to have an endlessly changing horizon, for each day to have a new and different sun."
 author: "Christopher McCandless"
 description: "The very basic core of a man's living spirit is his passion for adventure. The joy of life comes from our encounters with new experiences, and hence there is no greater joy than to have an endlessly changing horizon, for each day to have a new and different sun. - Christopher McCandless quotes from GetInspired365.com"

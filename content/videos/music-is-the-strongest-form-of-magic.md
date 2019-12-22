@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150723"]
 title: "Music is the strongest form of magic."
 author: "Marilyn Manson"
 description: "Music is the strongest form of magic. - Marilyn Manson quotes from GetInspired365.com"

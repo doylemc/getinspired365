@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150502"]
 title: "You need to spend time crawling alone through shadows to truly appreciate what it is to stand in the sun."
 author: "Shaun Hick"
 description: "You need to spend time crawling alone through shadows to truly appreciate what it is to stand in the sun. - Shaun Hick quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130522"]
 title: "There is not one big cosmic meaning for all; there is only the meaning we each give to our life, an individual meaning, an individual plot, like an individual novel, a book for each person."
 author: "Anais Nin"
 description: "There is not one big cosmic meaning for all; there is only the meaning we each give to our life, an individual meaning, an individual plot, like an individual novel, a book for each person. - Anais Nin quotes from GetInspired365.com"

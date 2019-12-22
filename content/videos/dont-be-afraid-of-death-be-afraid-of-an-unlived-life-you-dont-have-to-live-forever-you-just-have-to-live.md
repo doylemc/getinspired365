@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140301"]
 title: "Don't be afraid of death; be afraid of an unlived life. You don't have to live forever, you just have to live."
 author: "Natalie Babbitt"
 description: "Don't be afraid of death; be afraid of an unlived life. You don't have to live forever, you just have to live. - Natalie Babbitt quotes from GetInspired365.com"

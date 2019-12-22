@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130420"]
 title: "If you're lonely when you're alone, you're in bad company."
 author: "Jean-Paul Sartre"
 description: "If you're lonely when you're alone, you're in bad company. - Jean-Paul Sartre quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150706"]
 title: "It's the little details that are vital. Little things make big things happen."
 author: "John Wooden"
 description: "It's the little details that are vital. Little things make big things happen. - John Wooden quotes from GetInspired365.com"

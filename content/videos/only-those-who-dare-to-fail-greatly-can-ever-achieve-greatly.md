@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130502"]
 title: "Only those who dare to fail greatly can ever achieve greatly."
 author: "Robert Kennedy"
 description: "Only those who dare to fail greatly can ever achieve greatly. - Robert Kennedy quotes from GetInspired365.com"

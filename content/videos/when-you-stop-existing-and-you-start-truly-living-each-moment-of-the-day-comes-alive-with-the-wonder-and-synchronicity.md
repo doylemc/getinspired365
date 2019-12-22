@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150423"]
 title: "When you stop existing and you start truly living, each moment of the day comes alive with the wonder and synchronicity."
 author: "Steve Maraboli"
 description: "When you stop existing and you start truly living, each moment of the day comes alive with the wonder and synchronicity. - Steve Maraboli quotes from GetInspired365.com"

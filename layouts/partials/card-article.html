@@ -1,11 +1,17 @@
-<div class="img-container bb-articles bw5">
-    <a href="{{ .Permalink }}"><img src="{{ .Params.Image }}" alt="{{ .Title }}" /></a>
-</div>
+{{- partial "card-x-clickable.html" -}}
+{{- partial "card-x-image.html" . -}}
 <div class="content">
-    <h6 class="caption bg-articles-300">ARTICLE</h6>
-    <h2 class="title"><a href="{{ .Permalink }}">{{ .Title | upper}}</a></h2>
-    {{- if isset .Params "summary" -}}
-    <p class="summary"><span>{{ .Params.summary }} <br><br></span> <span class="reading-time"><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</span></p>
-    {{- end -}}
+{{- if in .Params.Tags "_article_story" -}}
+<h6 class="caption bg-articles-300">STORY</h6>
+{{- else if in .Params.Tags "_article_interview" -}}
+<h6 class="caption bg-articles-300">INTERVIEW</h6>
+{{- else if in .Params.Tags "_article_opinion" -}}
+<h6 class="caption bg-articles-300">OPINION</h6>
+{{- end -}}
+<h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{- if isset .Params "summary" -}}
+<p class="summary"><span>{{ .Params.summary }}</span></p>
+{{- end -}}
+<h6 class="reading-time c-articles-300"><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</h6>
 </div>
-{{- partial "attribution.html" . -}}
+{{- partial "card-x-attribution.html" . -}}

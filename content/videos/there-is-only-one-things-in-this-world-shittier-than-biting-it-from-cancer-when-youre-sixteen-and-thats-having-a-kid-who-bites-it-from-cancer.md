@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141221"]
 title: "There is only one things in this world shittier than biting it from cancer when you're sixteen, and that's having a kid who bites it from cancer."
 author: "John Green"
 description: "There is only one things in this world shittier than biting it from cancer when you're sixteen, and that's having a kid who bites it from cancer. - John Green quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141217"]
 title: "I have never been especially impressed by the heroics of people convinced they are about to change the world. I am more awed by those who struggle to make one small difference."
 author: "Ellen Goodman"
 description: "I have never been especially impressed by the heroics of people convinced they are about to change the world. I am more awed by those who struggle to make one small difference. - Ellen Goodman quotes from GetInspired365.com"

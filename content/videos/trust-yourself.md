@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140609"]
 title: "Trust Yourself"
 author: "Arnold Schwarzenegger"
 description: "Trust Yourself - Arnold Schwarzenegger quotes from GetInspired365.com"

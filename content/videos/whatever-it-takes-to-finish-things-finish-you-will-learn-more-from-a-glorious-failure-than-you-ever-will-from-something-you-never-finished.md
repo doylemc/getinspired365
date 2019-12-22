@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140623"]
 title: "Whatever it takes to finish things, finish. You will learn more from a glorious failure than you ever will from something you never finished."
 author: "Neil Gaiman"
 description: "Whatever it takes to finish things, finish. You will learn more from a glorious failure than you ever will from something you never finished. - Neil Gaiman quotes from GetInspired365.com"

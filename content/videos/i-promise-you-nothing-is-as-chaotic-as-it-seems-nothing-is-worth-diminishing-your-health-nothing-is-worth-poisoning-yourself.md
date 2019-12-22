@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141106"]
 title: "I promise you nothing is as chaotic as it seems. Nothing is worth diminishing your health. Nothing is worth poisoning yourself into stress, anxiety, and fear."
 author: "Steve Maraboli"
 description: "I promise you nothing is as chaotic as it seems. Nothing is worth diminishing your health. Nothing is worth poisoning yourself into stress, anxiety, and fear. - Steve Maraboli quotes from GetInspired365.com"

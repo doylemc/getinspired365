@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150108"]
 title: "The world is a book and those who do not travel read only one page."
 author: "Augustine of Hippo"
 description: "The world is a book and those who do not travel read only one page. - Augustine of Hippo quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140122"]
 title: "Time is what keeps everything from happening at once."
 author: "Ray Cummings"
 description: "Time is what keeps everything from happening at once. - Ray Cummings quotes from GetInspired365.com"

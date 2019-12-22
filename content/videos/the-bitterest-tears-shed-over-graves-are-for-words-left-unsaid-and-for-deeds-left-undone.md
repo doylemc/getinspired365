@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130811"]
 title: "The bitterest tears shed over graves are for words left unsaid and for deeds left undone."
 author: "Harriet Beecher Stowe"
 description: "The bitterest tears shed over graves are for words left unsaid and for deeds left undone. - Harriet Beecher Stowe quotes from GetInspired365.com"

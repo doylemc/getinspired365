@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140611"]
 title: "A friend of mine once sent me a post card with a picture of the entire planet Earth taken from space. On the back it said, 'Wish you were here."
 author: "Steven Wright"
 description: "A friend of mine once sent me a post card with a picture of the entire planet Earth taken from space. On the back it said, 'Wish you were here. - Steven Wright quotes from GetInspired365.com"

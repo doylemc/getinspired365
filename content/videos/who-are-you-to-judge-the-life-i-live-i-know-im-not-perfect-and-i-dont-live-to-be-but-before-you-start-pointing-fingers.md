@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131101"]
 title: "Who are you to judge the life I live? I know I'm not perfect -and I don't live to be- but before you start pointing fingers... make sure your hands are clean!"
 author: "Bob Marley"
 description: "Who are you to judge the life I live? I know I'm not perfect -and I don't live to be- but before you start pointing fingers... make sure your hands are clean! - Bob Marley quotes from GetInspired365.com"

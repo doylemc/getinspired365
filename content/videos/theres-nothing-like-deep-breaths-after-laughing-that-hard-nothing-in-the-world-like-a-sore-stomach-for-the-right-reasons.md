@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140719"]
 title: "There's nothing like deep breaths after laughing that hard. Nothing in the world like a sore stomach for the right reasons."
 author: "Stephen Chbosky"
 description: "There's nothing like deep breaths after laughing that hard. Nothing in the world like a sore stomach for the right reasons. - Stephen Chbosky quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140404"]
 title: "Our actions are like ships which we may watch set out to sea, and not know when or with what cargo they will return to port."
 author: "Iris Murdoch, The Bell"
 description: "Our actions are like ships which we may watch set out to sea, and not know when or with what cargo they will return to port. - Iris Murdoch, The Bell quotes from GetInspired365.com"

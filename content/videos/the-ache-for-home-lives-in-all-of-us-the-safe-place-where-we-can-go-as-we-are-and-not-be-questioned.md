@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150713"]
 title: "The ache for home lives in all of us, the safe place where we can go as we are and not be questioned."
 author: "Maya Angelou"
 description: "The ache for home lives in all of us, the safe place where we can go as we are and not be questioned. - Maya Angelou quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131106"]
 title: "Remember, remember always, that all of us, and you and I especially, are descended from immigrants and revolutionists."
 author: "Franklin D. Roosevelt"
 description: "Remember, remember always, that all of us, and you and I especially, are descended from immigrants and revolutionists. - Franklin D. Roosevelt quotes from GetInspired365.com"

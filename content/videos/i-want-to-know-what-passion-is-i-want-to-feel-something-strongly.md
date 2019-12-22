@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130729"]
 title: "I want to know what passion is. I want to feel something strongly."
 author: "Aldous Huxley"
 description: "I want to know what passion is. I want to feel something strongly. - Aldous Huxley quotes from GetInspired365.com"

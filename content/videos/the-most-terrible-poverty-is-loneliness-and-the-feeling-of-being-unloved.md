@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131027"]
 title: "The most terrible poverty is loneliness and the feeling of being unloved."
 author: "Mother Teresa"
 description: "The most terrible poverty is loneliness and the feeling of being unloved. - Mother Teresa quotes from GetInspired365.com"

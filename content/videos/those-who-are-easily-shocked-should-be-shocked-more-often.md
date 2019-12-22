@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130410"]
 title: "Those who are easily shocked should be shocked more often."
 author: "Mae West"
 description: "Those who are easily shocked should be shocked more often. - Mae West quotes from GetInspired365.com"

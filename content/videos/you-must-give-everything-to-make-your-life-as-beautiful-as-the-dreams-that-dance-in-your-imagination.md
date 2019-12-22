@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150103"]
 title: "You must give everything to make your life as beautiful as the dreams that dance in your imagination."
 author: "Roman Payne"
 description: "You must give everything to make your life as beautiful as the dreams that dance in your imagination. - Roman Payne quotes from GetInspired365.com"

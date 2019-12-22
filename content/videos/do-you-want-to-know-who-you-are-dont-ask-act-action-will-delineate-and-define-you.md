@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141017"]
 title: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you."
 author: "Thomas Jefferson"
 description: "Do you want to know who you are? Don't ask. Act! Action will delineate and define you. - Thomas Jefferson quotes from GetInspired365.com"

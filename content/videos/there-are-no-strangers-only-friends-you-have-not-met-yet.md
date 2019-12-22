@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140523"]
 title: "There are no strangers, only friends you have not met yet"
 author: "William Butler Yeats"
 description: "There are no strangers, only friends you have not met yet - William Butler Yeats quotes from GetInspired365.com"

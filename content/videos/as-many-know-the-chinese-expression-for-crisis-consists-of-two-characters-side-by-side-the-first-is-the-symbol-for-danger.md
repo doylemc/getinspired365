@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130228"]
 title: "As many know, the Chinese expression for crisis consists of two characters side by side. The first is the symbol for danger, the second the symbol for opportunity."
 author: "Al Gore"
 description: "As many know, the Chinese expression for crisis consists of two characters side by side. The first is the symbol for danger, the second the symbol for opportunity. - Al Gore quotes from GetInspired365.com"

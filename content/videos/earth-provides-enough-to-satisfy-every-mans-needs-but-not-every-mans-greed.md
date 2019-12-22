@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150130"]
 title: "Earth provides enough to satisfy every man's needs, but not every man's greed."
 author: "Mahatma Gandhi"
 description: "Earth provides enough to satisfy every man's needs, but not every man's greed. - Mahatma Gandhi quotes from GetInspired365.com"

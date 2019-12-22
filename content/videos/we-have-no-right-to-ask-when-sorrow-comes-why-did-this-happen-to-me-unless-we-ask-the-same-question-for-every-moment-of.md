@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130813"]
 title: "We have no right to ask when sorrow comes, Why did this happen to me? unless we ask the same question for every moment of happiness that comes our way."
 author: "Author Unknown"
 description: "We have no right to ask when sorrow comes, Why did this happen to me? unless we ask the same question for every moment of happiness that comes our way. - Author Unknown quotes from GetInspired365.com"

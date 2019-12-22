@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150624"]
 title: "One who gains strength by overcoming obstacles possesses the only strength which can overcome adversity."
 author: "Albert Schweitzer"
 description: "One who gains strength by overcoming obstacles possesses the only strength which can overcome adversity. - Albert Schweitzer quotes from GetInspired365.com"

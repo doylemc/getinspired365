@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140423"]
 title: "Poverty is the worst form of violence"
 author: "Mahatma Gandhi"
 description: "Poverty is the worst form of violence - Mahatma Gandhi quotes from GetInspired365.com"

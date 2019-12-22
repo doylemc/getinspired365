@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131224"]
 title: "My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?"
 author: "Bob Hope"
 description: "My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that? - Bob Hope quotes from GetInspired365.com"

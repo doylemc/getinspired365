@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150322"]
 title: "People tell you that you cannot, because they do not."
 author: "Tim Fargo"
 description: "People tell you that you cannot, because they do not. - Tim Fargo quotes from GetInspired365.com"

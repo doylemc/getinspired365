@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140915"]
 title: "Patience is a conquering virtue."
 author: "Geoffrey Chaucer"
 description: "Patience is a conquering virtue. - Geoffrey Chaucer quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150610"]
 title: "Impossible is just a big word thrown around by small men who find it easier to live in the world they've been given than to explore the power they have to change it. Impossible is not a fact. It's an opinion. Impossible is potential. Impossible is nothing."
 author: "Muhammad Ali"
 description: "Impossible is just a big word thrown around by small men who find it easier to live in the world they've been given than to explore the power they have to change it. Impossible is not a fact. It's an opinion. Impossible is potential. Impossible is nothing. - Muhammad Ali quotes from GetInspired365.com"

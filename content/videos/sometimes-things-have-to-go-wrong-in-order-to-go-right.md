@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130529"]
 title: "Sometimes things have to go wrong in order to go right."
 author: "Sherrilyn Kenyon"
 description: "Sometimes things have to go wrong in order to go right. - Sherrilyn Kenyon quotes from GetInspired365.com"

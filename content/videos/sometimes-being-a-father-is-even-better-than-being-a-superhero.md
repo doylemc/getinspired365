@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130225"]
 title: "Sometimes, being a father is even better than being a superhero."
 author: "Marc Brown"
 description: "Sometimes, being a father is even better than being a superhero. - Marc Brown quotes from GetInspired365.com"

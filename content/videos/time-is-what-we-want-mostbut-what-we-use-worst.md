@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130705"]
 title: "Time is what we want most,but what we use worst."
 author: "William Penn"
 description: "Time is what we want most,but what we use worst. - William Penn quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141123"]
 title: "Your purpose in life is to find your purpose and give your whole heart and soul to it"
 author: "Gautama Buddha"
 description: "Your purpose in life is to find your purpose and give your whole heart and soul to it - Gautama Buddha quotes from GetInspired365.com"

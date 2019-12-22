@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140902"]
 title: "People who are homeless are not social inadequates. They are people without homes."
 author: "Sheila McKechnie"
 description: "People who are homeless are not social inadequates. They are people without homes. - Sheila McKechnie quotes from GetInspired365.com"

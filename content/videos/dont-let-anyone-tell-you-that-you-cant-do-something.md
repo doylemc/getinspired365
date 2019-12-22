@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150129"]
 title: "Don't let anyone tell you THAT YOU CAN'T DO SOMETHING."
 author: "Chris Gardner"
 description: "Don't let anyone tell you THAT YOU CAN'T DO SOMETHING. - Chris Gardner quotes from GetInspired365.com"

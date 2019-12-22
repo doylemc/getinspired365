@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141229"]
 title: "Tell me I can't, then watch me work twice as hard to prove you wrong."
 author: "Heather Mitts"
 description: "Tell me I can't, then watch me work twice as hard to prove you wrong. - Heather Mitts quotes from GetInspired365.com"

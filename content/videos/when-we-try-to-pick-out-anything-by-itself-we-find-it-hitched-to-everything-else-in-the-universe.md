@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141010"]
 title: "When we try to pick out anything by itself, we find it hitched to everything else in the Universe."
 author: "John Muir"
 description: "When we try to pick out anything by itself, we find it hitched to everything else in the Universe. - John Muir quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140218"]
 title: "You want something? Go get it. Period."
 author: "Will Smith"
 description: "You want something? Go get it. Period. - Will Smith quotes from GetInspired365.com"

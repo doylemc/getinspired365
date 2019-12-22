@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141208"]
 title: "It's amazing how a little tomorrow can make up for a whole lot of yesterday."
 author: "John Guare"
 description: "It's amazing how a little tomorrow can make up for a whole lot of yesterday. - John Guare quotes from GetInspired365.com"

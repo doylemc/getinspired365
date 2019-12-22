@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141204"]
 title: "Every dreamer knows that it is entirely possible to be homesick for a place you've never been to, perhaps more homesick than for familiar ground."
 author: "Judith Truman"
 description: "Every dreamer knows that it is entirely possible to be homesick for a place you've never been to, perhaps more homesick than for familiar ground. - Judith Truman quotes from GetInspired365.com"

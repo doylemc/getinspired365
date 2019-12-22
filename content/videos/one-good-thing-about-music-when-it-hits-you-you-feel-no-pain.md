@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130703"]
 title: "One good thing about music, when it hits you, you feel no pain."
 author: "Bob Marley"
 description: "One good thing about music, when it hits you, you feel no pain. - Bob Marley quotes from GetInspired365.com"

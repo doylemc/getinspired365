@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140415"]
 title: "One of the most beneficial and valuable gifts we can give to ourselves in this life: is allowing ourselves to be surprised! It is okay if life surprises you. Its a good thing!"
 author: "C. JoyBell C."
 description: "One of the most beneficial and valuable gifts we can give to ourselves in this life: is allowing ourselves to be surprised! It is okay if life surprises you. Its a good thing! - C. JoyBell C. quotes from GetInspired365.com"

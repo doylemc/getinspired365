@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130630"]
 title: "Happiness is part of who we are. Joy is the feeling"
 author: "Tony DeLiso"
 description: "Happiness is part of who we are. Joy is the feeling - Tony DeLiso quotes from GetInspired365.com"

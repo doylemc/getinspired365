@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140608"]
 title: "Be a little kinder than you have to."
 author: "E. Lockhart"
 description: "Be a little kinder than you have to. - E. Lockhart quotes from GetInspired365.com"

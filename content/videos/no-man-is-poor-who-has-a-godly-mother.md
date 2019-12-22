@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140424"]
 title: "No man is poor who has a Godly mother."
 author: "Abraham Lincoln"
 description: "No man is poor who has a Godly mother. - Abraham Lincoln quotes from GetInspired365.com"

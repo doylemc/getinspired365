@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150523"]
 title: "No one has ever become poor by giving."
 author: "Anne Frank"
 description: "No one has ever become poor by giving. - Anne Frank quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141209"]
 title: "Practice doesn't make perfect. Practice reduces the imperfection."
 author: "Toba Beta"
 description: "Practice doesn't make perfect. Practice reduces the imperfection. - Toba Beta quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150718"]
 title: "We are an impossibility in an impossible universe."
 author: "Ray Bradbury"
 description: "We are an impossibility in an impossible universe. - Ray Bradbury quotes from GetInspired365.com"

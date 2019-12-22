@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140429"]
 title: "Take it to the next level"
 author: "Nike"
 description: "Take it to the next level - Nike quotes from GetInspired365.com"

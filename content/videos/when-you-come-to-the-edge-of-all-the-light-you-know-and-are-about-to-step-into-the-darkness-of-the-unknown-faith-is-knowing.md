@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140913"]
 title: "When you come to the edge of all the light you know and are about to step into the darkness of the unknown. Faith is knowing that one of two things will happen. There will be solid ground to stand on or you will be taught to fly."
 author: "Author Unknown"
 description: "When you come to the edge of all the light you know and are about to step into the darkness of the unknown. Faith is knowing that one of two things will happen. There will be solid ground to stand on or you will be taught to fly. - Author Unknown quotes from GetInspired365.com"

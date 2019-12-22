@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150416"]
 title: "It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams."
 author: "Gabriel Garcia Marquez"
 description: "It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams. - Gabriel Garcia Marquez quotes from GetInspired365.com"

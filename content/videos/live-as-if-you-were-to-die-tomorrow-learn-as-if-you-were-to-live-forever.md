@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150201"]
 title: "LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE FOREVER."
 author: "Mahatma Gandhi"
 description: "LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE FOREVER. - Mahatma Gandhi quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150123"]
 title: "Love is hard to find, hard to keep, and hard to forget."
 author: "Alysha Speer"
 description: "Love is hard to find, hard to keep, and hard to forget. - Alysha Speer quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141025"]
 title: "Forever is composed of nows."
 author: "Emily Dickinson"
 description: "Forever is composed of nows. - Emily Dickinson quotes from GetInspired365.com"

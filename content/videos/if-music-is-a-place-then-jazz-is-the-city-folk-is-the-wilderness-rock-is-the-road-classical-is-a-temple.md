@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130430"]
 title: "If Music is a Place -- then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple."
 author: "Vera Nazarian"
 description: "If Music is a Place -- then Jazz is the City, Folk is the Wilderness, Rock is the Road, Classical is a Temple. - Vera Nazarian quotes from GetInspired365.com"

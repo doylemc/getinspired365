@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130614"]
 title: "If you don't build your dream, someone will hire you to help build theirs..."
 author: "Tony Gaskins"
 description: "If you don't build your dream, someone will hire you to help build theirs... - Tony Gaskins quotes from GetInspired365.com"

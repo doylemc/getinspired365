@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140528"]
 title: "Your Alarm Clock Is Not An M16 Rifle"
 author: "Osama Siddique"
 description: "Your Alarm Clock Is Not An M16 Rifle - Osama Siddique quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131124"]
 title: "Gratitude is not only the greatest of virtues, but the parent of all others."
 author: "Cicero"
 description: "Gratitude is not only the greatest of virtues, but the parent of all others. - Cicero quotes from GetInspired365.com"

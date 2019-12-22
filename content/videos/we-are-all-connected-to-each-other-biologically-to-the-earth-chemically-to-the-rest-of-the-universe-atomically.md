@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140216"]
 title: "We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically."
 author: "Neil deGrasse Tyson"
 description: "We are all connected; To each other, biologically. To the earth, chemically. To the rest of the universe atomically. - Neil deGrasse Tyson quotes from GetInspired365.com"

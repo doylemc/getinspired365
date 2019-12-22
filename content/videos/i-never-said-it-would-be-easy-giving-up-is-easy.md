@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140622"]
 title: "I never said it would be easy. Giving up is easy."
 author: "Maria V. Snyder"
 description: "I never said it would be easy. Giving up is easy. - Maria V. Snyder quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140502"]
 title: "For Attractive lips, speak words of kindness.  For lovely eyes, seek out the good in people.  For a slim figure, share your food with the hungry.  For poise, walk with the knowledge that you never walk alone."
 author: "Sam Levenson"
 description: "For Attractive lips, speak words of kindness.  For lovely eyes, seek out the good in people.  For a slim figure, share your food with the hungry.  For poise, walk with the knowledge that you never walk alone. - Sam Levenson quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150602"]
 title: "What do you want to be when you grow up?"
 author: "Author Unknown"
 description: "What do you want to be when you grow up? - Author Unknown quotes from GetInspired365.com"

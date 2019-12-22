@@ -1,4 +1,5 @@
 ---
+aliases: ["/20141031"]
 title: "Waste no more time arguing about what a good man should be. Be one."
 author: "Marcus Aurelius"
 description: "Waste no more time arguing about what a good man should be. Be one. - Marcus Aurelius quotes from GetInspired365.com"

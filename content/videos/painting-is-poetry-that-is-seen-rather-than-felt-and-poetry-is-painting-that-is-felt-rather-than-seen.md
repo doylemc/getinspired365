@@ -1,4 +1,5 @@
 ---
+aliases: ["/20131201"]
 title: "Painting is poetry that is seen rather than felt, and poetry is painting that is felt rather than seen."
 author: "Leonardo da Vinci"
 description: "Painting is poetry that is seen rather than felt, and poetry is painting that is felt rather than seen. - Leonardo da Vinci quotes from GetInspired365.com"

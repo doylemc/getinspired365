@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150704"]
 title: "Imagination is the only weapon in the war against reality."
 author: "Lewis Carroll"
 description: "Imagination is the only weapon in the war against reality. - Lewis Carroll quotes from GetInspired365.com"

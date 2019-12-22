@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130324"]
 title: "Running & Reading is The Key to Life"
 author: "Will Smith"
 description: "Running & Reading is The Key to Life - Will Smith quotes from GetInspired365.com"

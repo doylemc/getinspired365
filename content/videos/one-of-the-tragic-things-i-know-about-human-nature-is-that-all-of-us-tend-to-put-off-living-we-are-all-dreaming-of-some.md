@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140503"]
 title: "One of the tragic things I know about human nature is that all of us tend to put off living. We are all dreaming of some magical rose garden over the horizon - instead of enjoying the roses that are blooming outside our windows today."
 author: "Dale Carnegie"
 description: "One of the tragic things I know about human nature is that all of us tend to put off living. We are all dreaming of some magical rose garden over the horizon - instead of enjoying the roses that are blooming outside our windows today. - Dale Carnegie quotes from GetInspired365.com"

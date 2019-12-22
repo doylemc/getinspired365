@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150517"]
 title: "The way to get started is to quit talking and begin doing."
 author: "Walt Disney"
 description: "The way to get started is to quit talking and begin doing. - Walt Disney quotes from GetInspired365.com"

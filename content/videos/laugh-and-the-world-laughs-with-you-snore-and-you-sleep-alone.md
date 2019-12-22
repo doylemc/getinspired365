@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140417"]
 title: "Laugh and the world laughs with you, snore and you sleep alone."
 author: "Anthony Burgess"
 description: "Laugh and the world laughs with you, snore and you sleep alone. - Anthony Burgess quotes from GetInspired365.com"

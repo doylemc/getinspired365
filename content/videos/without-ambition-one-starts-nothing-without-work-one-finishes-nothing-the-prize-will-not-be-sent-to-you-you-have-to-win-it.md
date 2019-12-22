@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130903"]
 title: "Without ambition one starts nothing. Without work one finishes nothing. The prize will not be sent to you. You have to win it."
 author: "Ralph Waldo Emerson"
 description: "Without ambition one starts nothing. Without work one finishes nothing. The prize will not be sent to you. You have to win it. - Ralph Waldo Emerson quotes from GetInspired365.com"

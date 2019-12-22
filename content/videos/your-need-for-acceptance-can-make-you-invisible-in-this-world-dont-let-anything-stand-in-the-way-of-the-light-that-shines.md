@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150221"]
 title: "Your need for acceptance can make you invisible in this world. Don't let anything stand in the way of the light that shines through this form. Risk being seen in all of your glory."
 author: "Jim Carrey"
 description: "Your need for acceptance can make you invisible in this world. Don't let anything stand in the way of the light that shines through this form. Risk being seen in all of your glory. - Jim Carrey quotes from GetInspired365.com"

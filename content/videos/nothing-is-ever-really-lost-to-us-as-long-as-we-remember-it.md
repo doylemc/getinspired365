@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130520"]
 title: "Nothing is ever really lost to us as long as we remember it."
 author: "L.M. Montgomery"
 description: "Nothing is ever really lost to us as long as we remember it. - L.M. Montgomery quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150626"]
 title: "Adversity has the effect of eliciting talents which, in prosperous circumstances, would have lain dormant"
 author: "Horace"
 description: "Adversity has the effect of eliciting talents which, in prosperous circumstances, would have lain dormant - Horace quotes from GetInspired365.com"

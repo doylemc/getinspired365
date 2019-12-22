@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150712"]
 title: "Do your little bit of good where you are; it's those little bits of good put together that overwhelm the world."
 author: "Desmond Tutu"
 description: "Do your little bit of good where you are; it's those little bits of good put together that overwhelm the world. - Desmond Tutu quotes from GetInspired365.com"

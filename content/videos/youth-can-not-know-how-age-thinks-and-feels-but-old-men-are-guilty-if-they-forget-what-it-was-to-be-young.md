@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140617"]
 title: "Youth can not know how age thinks and feels. But old men are guilty if they forget what it was to be young."
 author: "J.K. Rowling"
 description: "Youth can not know how age thinks and feels. But old men are guilty if they forget what it was to be young. - J.K. Rowling quotes from GetInspired365.com"

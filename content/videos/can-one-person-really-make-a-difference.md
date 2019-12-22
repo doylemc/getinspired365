@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130711"]
 title: "Can one person really make a Difference?"
 author: "Hanna Konadu"
 description: "Can one person really make a Difference? - Hanna Konadu quotes from GetInspired365.com"

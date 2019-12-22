@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140501"]
 title: "Not all those who wander are lost."
 author: "J.R.R. Tolkien"
 description: "Not all those who wander are lost. - J.R.R. Tolkien quotes from GetInspired365.com"

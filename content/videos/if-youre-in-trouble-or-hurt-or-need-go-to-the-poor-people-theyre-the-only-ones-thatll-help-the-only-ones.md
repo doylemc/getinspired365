@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140306"]
 title: "If you're in trouble, or hurt or need - go to the poor people. They're the only ones that'll help - the only ones."
 author: "John Steinbeck"
 description: "If you're in trouble, or hurt or need - go to the poor people. They're the only ones that'll help - the only ones. - John Steinbeck quotes from GetInspired365.com"

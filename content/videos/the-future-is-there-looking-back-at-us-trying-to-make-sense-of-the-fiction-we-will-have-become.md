@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130313"]
 title: "The future is there... looking back at us. Trying to make sense of the fiction we will have become."
 author: "William Gibson"
 description: "The future is there... looking back at us. Trying to make sense of the fiction we will have become. - William Gibson quotes from GetInspired365.com"

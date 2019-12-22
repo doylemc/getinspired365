@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130429"]
 title: "Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife."
 author: "Kahlil Gibran"
 description: "Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife. - Kahlil Gibran quotes from GetInspired365.com"

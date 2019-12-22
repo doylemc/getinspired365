@@ -1,4 +1,5 @@
 ---
+aliases: ["/20140125"]
 title: "It feels so good to be happy."
 author: "Etta James"
 description: "It feels so good to be happy. - Etta James quotes from GetInspired365.com"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/20130413"]
 title: "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends."
 author: "J.K. Rowling"
 description: "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends. - J.K. Rowling quotes from GetInspired365.com"

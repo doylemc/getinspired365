@@ -1,4 +1,5 @@
 ---
+aliases: ["/20150618"]
 title: "We have far more in common than that divides us."
 author: "Jo Cox"
 description: "We have far more in common than that divides us. - Jo Cox quotes from GetInspired365.com"
