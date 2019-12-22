@@ -56,6 +56,7 @@
         {{- end -}}
         {{- end -}}
 
+        
         {{- $.Scratch.Set "g-card-counter" 0 -}}
         {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 20 -}}
         {{- if lt (.Params.Title | countwords) 10 -}}
