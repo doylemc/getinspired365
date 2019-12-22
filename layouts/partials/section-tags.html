@@ -6,7 +6,9 @@
             <div class="col s12">
                 <h2>Related Tags</h2>
                 {{- range .Params.tags -}}
+                {{- if and  (ne (substr . 0 1) "_") (ne . "") -}}
                 <a class="btn" href="/tags/{{ . | lower }}">{{ . }}</a>
+                {{- end -}}
                 {{- end -}}
             </div>
         </div>

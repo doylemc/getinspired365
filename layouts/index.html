@@ -12,7 +12,8 @@
                     <div class="gutter-sizer"></div>
 
                     <div class="gi s12 m6 l6">
-                        {{- range where .Site.Pages "Type" "videos"  | shuffle | first 1 -}}
+                        {{- $p:= slice "_featured" -}}
+                        {{- range where (where .Site.Pages "Type" "videos") ".Params.tags" "intersect" $p | shuffle | first 1 -}}
                         <div class="card video featured h8 img-66 bg-dark-to-right font-8 z-depth-1">
                             {{- partial "card-video.html" . -}}
                         </div>
@@ -331,7 +332,9 @@
         <div class="row">
             <div class="col s12">
                 {{- range first 10 .Site.Taxonomies.tags.ByCount -}}
+                {{- if and (ne (substr .Name 0 1) "_") (ne .Name "") -}}
                 <a href="/tags/{{ .Name | urlize -}}" class="btn">{{ upper .Name }}</a>
+                {{- end -}}
                 {{- end -}}
             </div>
         </div>

@@ -408,14 +408,15 @@ figure.writer figcaption .readingtime {
 
 .bg-dark-to-right {
     background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #060606, #0b0b0b); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #060606, #0b0b0b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #060606 50%, #0b0b0b 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #060606 50%, #0b0b0b 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 
 .bg-dark-to-bottom {
     background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0f0f0f, #101010); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #0f0f0f, #101010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #0f0f0f 50%, #101010 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f0f0f 50%, #101010 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .bg-angled-dark {
