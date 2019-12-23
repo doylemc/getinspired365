@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/gi365.css">
     <link rel="stylesheet" href="/css/materialize.css">
     <link rel="stylesheet" href="/css/player.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
@@ -20,15 +21,21 @@
     {{- if .Data.Singular -}}<meta name="robots" content="noindex">{{- end -}}
 </head>
 {{- if .IsHome -}}
-<body class="bg-angled-dark-wide">
+<body class="bg-an1gled-dark-wide">
 {{- else -}}
-<body class="bg-angled-{{- .Section -}}">
+<body class="bg-{{- .Section -}}-500">
 {{- end -}}
 
+{{- if .IsHome -}}
+<div class="bg-angled-dark-wide">
+{{- else -}}
+<div class="bg-angled-{{- .Section -}}">
+{{- end -}}
     {{- partial "site-navigation.html" . -}}
     {{- partial "page-header.html" . -}}
     {{- partial "section-navigation.html" . -}}
-    
+</div>
+
     <div id="page-content">
         {{- block "content" . -}}
         {{- end -}}
@@ -42,6 +49,7 @@
     <script src="https://kit.fontawesome.com/6dd30041ec.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
     <script src="/js/main.js"></script>
 

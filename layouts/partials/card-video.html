@@ -1,7 +1,7 @@
 {{- partial "card-x-clickable.html" . -}}
 {{- partial "card-x-image.html" . -}}
 <div class="content">
-    <h6 class="caption bg-videos-300">YOUTUBE</h6>
+    <h6 class="caption bg-videos-300">{{ .Params.author }}</h6>
     {{- if gt ( .Params.Title | countwords) 20 -}}
         <h2 class="title"><a href="{{ .Permalink }}">"{{ substr .Params.title 0 100 }}...</a></h2>
     {{- else -}}

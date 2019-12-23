@@ -72,3 +72,14 @@ document.getElementById('burger').addEventListener("click", event => {
         document.getElementById('burger_menu').style.display = "block";
     }
 })
+
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity(elem, {
+    // options
+    cellAlign: 'right',
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: false,
+    autoPlay: 5000,
+});
