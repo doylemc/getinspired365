@@ -235,166 +235,6 @@ figure.writer figcaption .readingtime {
     padding: 0;
 }
 
-/************************************************************************
--- QUOTE CARD
-************************************************************************/
-.card.quote figure {
-    /* background: #090909; */
-    border-radius: 0.25em;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 0 0.5em var(--gutter-width) 0;
-    min-height: 200px;
-    height: 100%;
-    opacity: 0.9;
-    padding: 1em;
-    position: relative;
-    vertical-align: top;
-    width: 100%;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    z-index: 1;
-}
-
-.card.quote {
-    transition: transform 0.2s ease-in;
-}
-
-/* 
-.card.quote:hover {
-    transform: scale(1.05);
-    transition: transform 0.1s ease-out;
-    z-index: 9999 !important;
-} */
-
-.card.quote figure blockquote {
-    color: #eee;
-    /* font-family: "Montserrat"; */
-    letter-spacing: 0px;
-    margin-top: -0.2em;
-    text-align: center;
-}
-
-.card.quote figure blockquote::before {
-     color: var(--quotes-color-100);
-     font-family: FontAwesome;
-     font-weight: 900;
-     content: "\f10d";
-     float: left;
-     margin-bottom: 1em;
-     margin-top: 1em;
-     padding-right: 0.5em;
-     text-align: center;
-     width: 100%;
-}
-
-.card.quote figure figcaption {
-    color: var(--quotes-color-200);
-    display: block;
-    font-size: 0.8em;
-    font-style: normal;
-    margin-bottom: 1em;
-    margin-top: 3.5em;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.card.quote figure figcaption::before {
-    background: var(--quotes-color-300);
-    border-right: 1px #aaa;
-    content: '';
-    display: block;
-    height: 3px;
-    left: calc(50% - 10px);
-    position: absolute;
-    text-align: center;
-    top: -20px;
-    width: 20px;
-}
-
-.card.quote figure img {
-    display: none;
-}
-
-/* .gi:nth-child(3n) figure {
-    background: repeating-linear-gradient(-55deg,
-    var(--quotes-color-400),
-    var(--quotes-color-400) 1px,
-    var(--quotes-color-300) 2px,
-    var(--quotes-color-500) 4px);
-}
-
-.gi:nth-child(4n) figure {
-    background: var(--quotes-color-400);
-}
-
-.gi:nth-child(5n) figure {
-    background: var(--quotes-color-500);
-}
-
-.gi:nth-child(5n) figure blockquote {
-    text-align: left;
-}
-
-.gi:nth-child(5n) figure blockquote::before {
-    color: var(--quotes-color-100);
-    font-size: 1.4em;
-    margin-bottom: 0.25em;
-    margin-top: 0.5em;
-    text-align: left;
-    z-index: 1;
-}
-
-.gi:nth-child(5n) figure figcaption {
-    color: var(--quotes-color-300);
-    margin: 1.5em 0 1em 3em;
-    text-align: left;
-}
-
-.gi:nth-child(5n) figure figcaption::before {
-    display: none;
-}
-
-.gi:nth-child(5n) figure {
-    /* font-famsily: 'Montserrat'; 
-    text-align: left;
-    z-index: 10;
-} */
-
-.gi:nth-child(6n) .card.quote figure {
-    /* font-famsily: 'Montserrat'; */
-    font-size: 1.4em;
-}
-
-.gi:nth-child(7n) .card.quote figure {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-}
-
-.gi:nth-child(8n) .card.quote figure {
-    background: none;
-    border-radius: 0;
-}
-
-.gi:nth-child(9n) .card.quote figure img {
-    border-radius: 50%;
-    display: block;
-    height: 48px;
-    right: 16px;
-    position: absolute;
-    bottom: 16px;
-    width: 48px;
-}
-
-.gi:nth-child(10n) .card.quote blockquote {
-    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 /************************************************************************
 -- BACKGROUNDS
@@ -1285,7 +1125,7 @@ ul.section-nav.tags a:hover {
 -- CARD IMAGES
 ************************************************************************/
 .card img { height: 50%; object-fit: cover; object-position: top; overflow: hidden; position: relative; transition: transform 0.3s ease-in-out; width: 100%; }
-.card.wide img { height: 100%; width: 33%; float: left; }
+.card.wide img { height: 100%; width: 33%; }
 .card.img-25 img { height: 25%; }
 .card.img-33 img { height: 33%; }
 .card.img-50 img { height: 50%; }
@@ -1294,7 +1134,7 @@ ul.section-nav.tags a:hover {
 .card.img-100 img { height: 100%; }
 .card.img-full-border-radius img { border-radius: var(--border-radius); }
 
-.card .img-container { float: left; height: 50%; margin-bottom: 0.5em; overflow: hidden; position: relative; width: 100%; }
+.card .img-container { float: left; height: 50%; overflow: hidden; position: relative; width: 100%; }
 .card.img-25 .img-container { height: 25%; }
 .card.img-33 .img-container { height: 33%; }
 .card.img-50 .img-container { height: 50%; }
@@ -1306,7 +1146,7 @@ ul.section-nav.tags a:hover {
 .card .img-container img { height: calc(100% + 60px); left: -60px; position: absolute; top: -30px; width: calc(100% + 120px); }
 .card.video .img-container img { height: calc(100% + 80px); left: -80px; object-position: center; position: absolute; top: -40px; width: calc(100% + 160px); }
 .card.video.featured .img-container img { height: calc(100% + 120px); left: -120px; object-position: center; position: absolute; top: -60px; width: calc(100% + 240px); }
-.card.wide .img-container { height: 100%; width: 33%; }
+.card.wide .img-container { float: left; height: 100%; width: 33%; }
 .card .img-container.tag img { opacity: 0.95; -webkit-filter: grayscale(10%); filter: grayscale(10%); }
 
 
@@ -1363,12 +1203,18 @@ ul.section-nav.tags a:hover {
 
 .card .content {
     /* margin-bottom: var(--gutter-width); */
+    float: left;
+    margin: 0;
     padding: 0.5em 0.5em;
     z-index: 1 !important;
 }
 
 .card .content.no-pad {
     padding: 0;
+}
+
+.card .content.no-pad-top {
+    padding-top: 0;
 }
 
 .card .content .caption {
@@ -1421,7 +1267,11 @@ ul.section-nav.tags a:hover {
 }
 
 .card.wide .content {
-    margin-left: calc(32% + 0.5rem);
+    height: 100%;
+    float: left;
+    width: 67%;
+    margin-top: 0;
+    /* margin-left: calc(32% + 1rem); */
 }
 
 .card.video.featured .content {
@@ -1431,6 +1281,10 @@ ul.section-nav.tags a:hover {
 .card.h1 .content {
     font-size: 0.85em;
     margin-top: -0.75em;
+}
+
+.card.wide .content {
+    padding-left: 0.5em !important;
 }
 
 .card.wide .content .caption {
@@ -1495,7 +1349,7 @@ ul.section-nav.tags a:hover {
 }
 
 .card.wide.no-bg .content {
-    margin-top: 0 ;
+    margin-top: 0;
     padding-top: 0;
 }
 
@@ -1507,43 +1361,43 @@ ul.section-nav.tags a:hover {
 /************************************************************************
 -- CARDS - FONT SIZES
 ************************************************************************/
-.card.font-1 .title {
+.card.font-1 .title, .card.font-1 figure blockquote {
     font-size: 0.6em;
     font-weight: 900;
 }
-.card.font-2 .title {
+.card.font-2 .title, .card.font-2 figure blockquote {
     font-size: 0.75em;
     font-weight: 900;
 }
-.card.font-3 .title {
+.card.font-3 .title, .card.font-3 figure blockquote {
     font-size: 0.9em;
     font-weight: 900;
 }
-.card.font-4 .title {
+.card.font-4 .title, .card.font-4 figure blockquote {
     font-size: 1.1em;
     font-weight: 900;
 }
-.card.font-5 .title {
+.card.font-5 .title, .card.font-5 figure blockquote {
     font-size: 1.2em;
     font-weight: 900;
 }
-.card.font-6 .title {
+.card.font-6 .title, .card.font-6 figure blockquote {
     font-size: 1.3em;
     font-weight: 900;
 }
-.card.font-7 .title {
+.card.font-7 .title, .card.font-7 figure blockquote {
     font-size: 1.4em;
     font-weight: 900;
 }
-.card.font-8 .title {
+.card.font-8 .title, .card.font-8 figure blockquote {
     font-size: 1.5em;
     font-weight: 900;
 }
-.card.font-9 .title {
+.card.font-9 .title, .card.font-9 figure blockquote {
     font-size: 1.7em;
     font-weight: 900;
 }
-.card.font-10 .title {
+.card.font-10 .title, .card.font-10 figure blockquote {
     font-size: 1.9em;
     font-weight: 900;
 }
@@ -1601,6 +1455,167 @@ ul.section-nav.tags a:hover {
 }
 .card.overlay.article .content span.reading-time {
     display: none;
+}
+
+/************************************************************************
+-- CARD QUOTES
+************************************************************************/
+.card.quote figure {
+    /* background: #090909; */
+    border-radius: 0.25em;
+    display: inline-block;
+    /* font-size: 1em; */
+    /* font-weight: bold; */
+    margin: 0 0.5em var(--gutter-width) 0;
+    min-height: 200px;
+    height: 100%;
+    opacity: 0.9;
+    padding: 1em;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    z-index: 1;
+}
+
+.card.quote {
+    transition: transform 0.2s ease-in;
+}
+
+/* 
+.card.quote:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-out;
+    z-index: 9999 !important;
+} */
+
+.card.quote figure blockquote {
+    color: #eee;
+    /* font-family: "Montserrat"; */
+    letter-spacing: 0px;
+    margin-top: -0.2em;
+    text-align: center;
+}
+
+.card.quote figure blockquote::before {
+     color: var(--quotes-color-100);
+     font-family: FontAwesome;
+     font-weight: 900;
+     content: "\f10d";
+     float: left;
+     margin-bottom: 1em;
+     margin-top: 1em;
+     padding-right: 0.5em;
+     text-align: center;
+     width: 100%;
+}
+
+.card.quote figure figcaption {
+    color: var(--quotes-color-200);
+    display: block;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 1em;
+    margin-top: 3.5em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.card.quote figure figcaption::before {
+    background: var(--quotes-color-300);
+    border-right: 1px #aaa;
+    content: '';
+    display: block;
+    height: 3px;
+    left: calc(50% - 10px);
+    position: absolute;
+    text-align: center;
+    top: -20px;
+    width: 20px;
+}
+
+.card.quote figure img {
+    display: none;
+}
+
+/* .gi:nth-child(3n) figure {
+    background: repeating-linear-gradient(-55deg,
+    var(--quotes-color-400),
+    var(--quotes-color-400) 1px,
+    var(--quotes-color-300) 2px,
+    var(--quotes-color-500) 4px);
+}
+
+.gi:nth-child(4n) figure {
+    background: var(--quotes-color-400);
+}
+
+.gi:nth-child(5n) figure {
+    background: var(--quotes-color-500);
+}
+
+.gi:nth-child(5n) figure blockquote {
+    text-align: left;
+}
+
+.gi:nth-child(5n) figure blockquote::before {
+    color: var(--quotes-color-100);
+    font-size: 1.4em;
+    margin-bottom: 0.25em;
+    margin-top: 0.5em;
+    text-align: left;
+    z-index: 1;
+}
+
+.gi:nth-child(5n) figure figcaption {
+    color: var(--quotes-color-300);
+    margin: 1.5em 0 1em 3em;
+    text-align: left;
+}
+
+.gi:nth-child(5n) figure figcaption::before {
+    display: none;
+}
+
+.gi:nth-child(5n) figure {
+    /* font-famsily: 'Montserrat'; 
+    text-align: left;
+    z-index: 10;
+} */
+
+/* .gi:nth-child(6n) .card.quote figure {
+    font-size: 1.4em;
+}
+
+.gi:nth-child(7n) .card.quote figure {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.gi:nth-child(8n) .card.quote figure {
+    background: none;
+    border-radius: 0;
+}
+
+.gi:nth-child(9n) .card.quote figure img {
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    right: 16px;
+    position: absolute;
+    bottom: 16px;
+    width: 48px;
+} */
+
+.gi:nth-child(10n) .card.quote blockquote {
+    background: -webkit-linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--news-color-100), var(--videos-color-100)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /************************************************************************

@@ -22,11 +22,11 @@
 <!-- <img src="{{ .Params.background }}" style="position: fixed; right: 0; top: 0; width: 100%; height: auto; z-index: -1; opacity: 0.6;" /> -->
 {{- end -}}
 
-<div class="section bb">
+<div class="section bb no-pad-top">
     <div class="container">
         <div class="row">
             <div class="col s12 m9 l9">
-                <h2>{{ .Params.author }}</h2>
+                <h2 class="c-quotes-200 linetoend">{{ .Title }}</h2>
                 <div class="grid">
 
                     <div class="gutter-sizer"></div>
@@ -64,21 +64,26 @@
                     {{- else -}}
                     <div class="gi s12 m6 l4">
                     {{- end -}}
-                    {{- if eq (mod ($.Scratch.Get "quoteid") 5) 0 -}}
-                        <div class="card quote bg-quotes-gradient z-depth-3">
-                            <div class="carousel-cell">
-                                <figure>
-                                    <blockquote>{{ $quote }}</blockquote>
-                                    <figcaption>{{ $author }}</figcaption>
-                                </figure>
-                            </div>
+                    {{- if eq (mod ($.Scratch.Get "quoteid") 3) 0 -}}
+                        {{- if lt ($quote | countwords) 10 -}}
+                        <div class="card quote font-8 bg-quotes-gradient z-depth-3">
+                        {{- else if lt ($quote | countwords) 20 -}}
+                        <div class="card quote font-6 bg-quotes-gradient z-depth-3">
+                        {{- else -}}
+                        <div class="card quote font-4 bg-quotes-gradient z-depth-3">
+                        {{- end -}}                    
+                            <figure>
+                                <blockquote>{{ $quote }}</blockquote>
+                                <figcaption>{{ $author }}</figcaption>
+                            </figure>
                         </div>
                     {{- else -}}
-                        <div class="card fluid no-bg font-4" data-k-tagcsv="{{ $tags }}" data-k-quoteid="{{ $.Scratch.Get "quoteid" }}">
-                            <div class="img-container" id="img_container_{{ $.Scratch.Get "quoteid" }}">
+                        <div class="card fluid font-4" data-k-tagcsv="{{ $tags }}" data-k-quoteid="{{ $.Scratch.Get "quoteid" }}">
+                            <div class="img-container bb-quotes" id="img_container_{{ $.Scratch.Get "qteid" }}">
                                 <img src="https://source.unsplash.com/600x200/?{{ $tags }}" />
                             </div>
-                            <div class="content" id="content_{{ $.Scratch.Get "quoteid" }}">
+                            <div class="content no-pad-top bg-quotes-gradient center" id="content_{{ $.Scratch.Get "quoteid" }}">
+                                <br>
                                 <h4 class="title">"{{ $quote }}"</h4>
                                 <h5>{{ $author }}</h5>
                             </div>
@@ -103,40 +108,53 @@
             </div>
 
             <div class="col s12 m3 l3">
+                
                 <div class="card fluid">
-                    <h2>Profile</h2>
-                    <h4>{{ $thisauthor }}</h4>
-                    <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
-                    <h4>{{ $.Scratch.Get "nationality" }}</h4>
-                    <!-- <h3 class="quotes-gradient-text">Profession</h3> -->
-                    <h4>{{ $.Scratch.Get "profession" }}</h4>
-                    <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
-                    <h4>DOB {{ $.Scratch.Get "dob" }}</h4>
-                    <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
-                    <h4><a target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
+                    <h2 class="c-quotes-200 linetoend">Profile</h2>
+                    <div class="c-gradient">
+                        <h4>{{ $thisauthor }}</h4>
+                        <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
+                        <h4>{{ $.Scratch.Get "nationality" }}</h4>
+                        <!-- <h3 class="quotes-gradient-text">Profession</h3> -->
+                        <h4>{{ $.Scratch.Get "profession" }}</h4>
+                        <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
+                        <h4>Born {{ $.Scratch.Get "dob" }}</h4>
+                        <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
+                        <h4><a class="c-gradient display-inline-block" target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
+                    </div>
                 </div>
                 
-                <h2>Other Authors</h2>
-                {{ $related := .Site.RegularPages.Related . | first 5 }}
-                {{ with $related }}
-                    {{ range . }}
-                    <div class="card wide s12 m12 l12 h2 bg-dark-to-right font-4">
-                        {{ partial "card-author.html" .}} 
-                    </div>  
-                    {{ end }}
-                {{ end }}
-
-                <br/><br />
-                <h2>Also See</h2>
-                {{ $related := .Site.RegularPages.Related . | first 5 }}
-                {{ with $related }}
-                {{ range . }}
-                <div class="card wide s12 m12 l12 h2 bg-dark-to-right">
-                    {{ partial "card-author.html" .}}
+                <h2 class="c-quotes-200 linetoend">More Authors</h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                {{- if .IsDescendant ($.Site.GetPage "/quotes/authors") -}}
+                {{- if and (ne .Title "Quotes By Author") (ne .Params.author $thisauthor) -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 4 -}}
+                <div class="card font-3 wide h2 bg-quotes-400 z-depth-5">
+                    {{- partial "card-author.html" . -}}
                 </div>
-                {{ end }}
-                {{ end }}
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
 
+                <div class="row"></div>
+                <h2 class="c-quotes-100 linetoend">Topics</h2>
+                {{- $.Scratch.Set "g-card-counter" 0 -}}
+                {{- range where .Site.Pages "Section" "quotes" | first 20 -}}
+                {{- if .IsDescendant ($.Site.GetPage "/quotes/topics") -}}
+                {{- if and (ne .Title "Quotes By Topic") (ne .Title ($.Scratch.Get "thistitle")) -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 5 -}}
+                <div class="card font-3 wide h2 bg-quotes-400 z-depth-5 font-medium">
+                    {{- partial "card-topic.html" . -}}
+                </div>
+                {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+                {{- end -}}
+                
             </div>
 
         </div>
