@@ -1,3 +1,5 @@
+var API_URL = 'https://api.unsplash.com/photos/random/?client_id=b81b8f22687dce8013857edf6b5d344b2e21bf1dfa0cf2bb216ca24e0594a8ef';
+
 // function resize() {
 //     var heights = window.innerHeight;
 //     document.getElementById("page-content").style.height = heights - 50 + "px";
@@ -83,3 +85,36 @@ var flkty = new Flickity(elem, {
     prevNextButtons: false,
     autoPlay: 5000,
 });
+
+// var cards = document.getElementsByClassName("card");
+// for (var i = cards.length - 1; i >= 0; i--) {
+//     var quoteid = cards[i].getAttribute('data-k-quoteid');
+//     var tagcsv = cards[i].getAttribute('data-k-tagcsv');
+//     if (quoteid) {
+//         getUnsplash(quoteid, tagcsv);
+//     }
+// }
+
+// function getUnsplash(quoteid, searchTerm) {
+
+//     console.log(quoteid);    
+//     var w = document.getElementById("img_container_" + quoteid).clientWidth;
+//     var h = document.getElementById("img_container_" + quoteid).clientHeight;
+//     var o = "landscape";
+//     if (w < h) {
+//         o = "portrait";
+//     }
+
+//     fetch(API_URL + '&query=' + searchTerm + "&w=" + w + "&h=" + h + "&orientation=" + o)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (myJson) {
+
+
+//             // Show the Image
+//             document.getElementById("img_container_" + quoteid).innerHTML += "<img src='" + myJson.urls["full"] + "' alt='' />" 
+//             document.getElementById("content_" + quoteid).innerHTML += "<a target='_blank' class='attribution' href='" + myJson.user.links["html"] + "><i class='fas fa-camera'></i></a>";
+
+//         });
+// }

@@ -50,28 +50,53 @@
                     {{ $.Scratch.Set "image" .Params.image }}
                     {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
+                    {{- $.Scratch.Delete "quoteid" -}}
+                    {{- $.Scratch.Set "quoteid" 1 -}}
                     {{- range $i, $r := getCSV $sep $url -}}
                     {{- $author := index $r 3 -}}
+                    {{- $tags := index $r 9 -}}
                     {{- if eq $author $thisauthor -}}
                     {{- $quote := index $r 8 -}}
                     {{- if lt ($quote | countwords) 10 -}}
-                    <div class="gi s12 m6 l3">
+                    <div class="gi s12 m6 l4">
                     {{- else if lt ($quote | countwords) 20 -}}
                     <div class="gi s12 m6 l4">
                     {{- else -}}
-                    <div class="gi s12 m6 l5">
+                    <div class="gi s12 m6 l4">
                     {{- end -}}
-                        <div class="card quote bg-dark-to-right">
+                    {{- if eq (mod ($.Scratch.Get "quoteid") 5) 0 -}}
+                        <div class="card quote bg-quotes-gradient z-depth-3">
+                            <div class="carousel-cell">
+                                <figure>
+                                    <blockquote>{{ $quote }}</blockquote>
+                                    <figcaption>{{ $author }}</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    {{- else -}}
+                        <div class="card fluid no-bg font-4" data-k-tagcsv="{{ $tags }}" data-k-quoteid="{{ $.Scratch.Get "quoteid" }}">
+                            <div class="img-container" id="img_container_{{ $.Scratch.Get "quoteid" }}">
+                                <img src="https://source.unsplash.com/600x200/?{{ $tags }}" />
+                            </div>
+                            <div class="content" id="content_{{ $.Scratch.Get "quoteid" }}">
+                                <h4 class="title">"{{ $quote }}"</h4>
+                                <h5>{{ $author }}</h5>
+                            </div>
+                        </div>
+                    {{- end -}}
+
+                        <!-- <div class="card quote bg-dark-to-right" >
                             <figure class="z-depth-5">
                                 <img src="{{ $.Scratch.Get "image" }}" />
                                 <blockquote>{{ $quote | humanize }}</blockquote>
                                 <figcaption>{{ $author }}</figcaption>
                             </figure>
-                        </div>
+                        </div> -->
                         <!-- <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}"> -->
                     </div>
                     {{- end -}}
-                    {{ end }}
+                    {{- $.Scratch.Set "quoteid" (add ($.Scratch.Get "quoteid") 1) -}}
+                    {{- end -}}
 
                 </div>
                 

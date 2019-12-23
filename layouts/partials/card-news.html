@@ -6,10 +6,9 @@
 {{- $source:= replace .Params.source " " "-" -}}
 {{- $source:= lower $source -}}
 
-{{- $t := (time .Params.date) -}}
-{{- $n := (time now) -}}
-{{- $delta := $t.Sub ($n) -}}
-{{- $delta := int (mul $delta.Minutes -1) -}}
+{{- $t:= (time .Params.date) -}}
+{{- $n:= (time now) -}}
+{{- $delta:= 2 -}}
 
 <div class="content">
     <h6 class="caption bg-news-300">{{ .Params.source }}</h6>

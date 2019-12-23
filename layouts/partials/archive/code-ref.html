@@ -325,3 +325,8 @@
         </div>
     </div>
 </div>
+
+{{- $t:= (time now) -}}
+{{- $n:= (time now) -}}
+{{- $delta:= $t.Sub ($n) -}}
+{{- $delta:= int (mul $delta.Minutes -1) -}}

@@ -261,11 +261,12 @@ figure.writer figcaption .readingtime {
     transition: transform 0.2s ease-in;
 }
 
+/* 
 .card.quote:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.1s ease-out;
-    z-index: 99 !important;
-}
+    z-index: 9999 !important;
+} */
 
 .card.quote figure blockquote {
     color: #eee;
@@ -1332,13 +1333,13 @@ ul.section-nav.tags a:hover {
     background: var(--videos-color-500)
 }
 
-.card:hover .img-container  {
+/* .card:hover .img-container  {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-}
+} */
 
 .card:hover .img-container img { 
-    transform: scale(0.8); 
+    transform: scale(0.75); 
     transform-origin: center; 
     transition: transform 0.3s ease-out; 
     opacity: 1; 

@@ -166,9 +166,9 @@
                     {{- $p := slice "_article_story" -}}
                     {{- range where .Site.Pages "Params.tags" "intersect" $p | shuffle | first 4 -}}
                     {{- if eq ($.Scratch.Get "g-card-counter") 3 -}}
-                    <div class="card article wide h3 s12 m6 l6 no-1bg bg-articles-500 font-7 z-depth-1">
+                    <div class="card article wide h3 s12 m6 l6 no-bg font-7 z-depth-1">
                     {{- else -}}
-                    <div class="card article wide h3 s12 m6 l6 no-1bg bg-articles-500 font-7 z-depth-1">
+                    <div class="card article wide h3 s12 m6 l6 no-bg font-7 z-depth-1">
                     {{- end -}}
                     {{ partial "card-article.html" . }}
                     </div>
@@ -183,9 +183,9 @@
                     {{- $p := slice "_article_interview" -}}
                     {{- range where .Site.Pages "Params.tags" "intersect" $p | shuffle | first 2 -}}
                     {{- if eq ($.Scratch.Get "g-card-counter") 3 -}}
-                    <div class="card article wide h6 s12 m12 l12 no-1bg bg-articles-500 font-3 hide-summary z-depth-1">
+                    <div class="card article wide h6 s12 m12 l12 no-bg font-3 hide-summary z-depth-1">
                     {{- else -}}
-                    <div class="card article wide h2 s12 m12 l12 no-1bg bg-articles-500 font-3 hide-summary z-depth-1">
+                    <div class="card article wide h2 s12 m12 l12 no-bg font-3 hide-summary z-depth-1">
                     {{- end -}}
                     {{ partial "card-article.html" . }}
                     </div>
@@ -196,9 +196,9 @@
                     {{- $p := slice "_article_opinion" -}}
                     {{- range where .Site.Pages "Params.tags" "intersect" $p | shuffle | first 1 -}}
                     {{- if eq ($.Scratch.Get "g-card-counter") 3 -}}
-                    <div class="card article wide h6 s12 m12 l12 no-b1g bg-articles-500 font-3 hide-on-med-and-up z-depth-1">
+                    <div class="card article wide h6 s12 m12 l12 no-bg font-3 hide-on-med-and-up z-depth-1">
                     {{- else -}}
-                    <div class="card article wide h2 s12 m12 l12 no-b1g bg-articles-500 font-3 hide-summary z-depth-1">
+                    <div class="card article wide h2 s12 m12 l12 no-bg font-3 hide-summary z-depth-1">
                     {{- end -}}
                     {{ partial "card-article.html" . }}
                     </div>
@@ -287,7 +287,7 @@
                     {{ if .IsDescendant ($.Site.GetPage "/quotes/topics") }}
                     {{ if ne .Title "Quotes By Topic" }}
                     {{- if lt ($.Scratch.Get "g-card-counter") 3 -}}
-                    <div class="card wide h2 s12 m12 l12 bg-quotes-1400 font-3 z-depth-1">
+                    <div class="card wide h2 s12 m12 l12 no-bg font-3 z-depth-1">
                         {{ partial "card-topic.html" . }}
                     </div>
                     {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
