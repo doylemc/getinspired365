@@ -49,15 +49,15 @@
                             {{- $quote := index $r 8 -}}
                             <div class="gi s12 m6 l4">
 
-                                {{- if eq (mod ($.Scratch.Get "quoteid") 5) 0 -}}
+                                {{- if eq (mod ($.Scratch.Get "quoteid") 2) 0 -}}
                                     {{- if lt ($quote | countwords) 10 -}}
-                                    <div class="card quote fluid font-8 bg-quotes-gradient z-depth-3">
+                                    <div class="card quote fluid font-8 bg-quotes-400 z-depth-3">
                                     {{- else if lt ($quote | countwords) 20 -}}
-                                    <div class="card quote fluid font-6 bg-quotes-gradient z-depth-3">
+                                    <div class="card quote fluid font-6 bg-articles-400 z-depth-3">
                                     {{- else if lt ($quote | countwords) 30 -}}
-                                    <div class="card quote fluid font-4 bg-quotes-gradient z-depth-3">
+                                    <div class="card quote fluid font-4 bg-news-400 z-depth-3">
                                     {{- else if lt ($quote | countwords) 40 -}}
-                                    <div class="card quote fluid font-3 bg-quotes-gradient z-depth-3">
+                                    <div class="card quote fluid font-3 bg-videos-400 z-depth-3">
                                     {{- else -}}
                                     <div class="card quote fluid font-2 bg-quotes-gradient z-depth-3">
                                     {{- end -}}
@@ -114,7 +114,7 @@
                 
                 <div class="card fluid">
                     <h2 class="c-quotes-200 linetoend">Profile</h2>
-                    <div class="c-gradient">
+                    <div class="c-gradient1">
                         <h4>{{ $thisauthor }}</h4>
                         <!-- <h3 class="quotes-gradient-text">Nationality</h3> -->
                         <h4>{{ $.Scratch.Get "nationality" }}</h4>
@@ -123,7 +123,7 @@
                         <!-- <h3 class="quotes-gradient-text">Date of Birth</h3> -->
                         <h4>Born {{ $.Scratch.Get "dob" }}</h4>
                         <!-- <h3 class="quotes-gradient-text">Full Bio</h3> -->
-                        <h4><a class="c-gradient display-inline-block" target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
+                        <h4><a class="c-gra1dient display-inl1ine-block" target="_blank" href="{{ $.Scratch.Get "fullbio" }}">Full Bio (Wikipedia) ></a></h4>
                     </div>
                 </div>
                 
