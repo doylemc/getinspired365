@@ -49,37 +49,8 @@
                             {{- $quote := index $r 8 -}}
                             <div class="gi s12 m6 l4">
 
-                                {{- if eq (mod ($.Scratch.Get "quoteid") 2) 0 -}}
-                                    {{- if lt ($quote | countwords) 10 -}}
-                                    <div class="card quote fluid font-8 bg-quotes-400 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 20 -}}
-                                    <div class="card quote fluid font-6 bg-articles-400 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 30 -}}
-                                    <div class="card quote fluid font-4 bg-news-400 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 40 -}}
-                                    <div class="card quote fluid font-3 bg-videos-400 z-depth-3">
-                                    {{- else -}}
-                                    <div class="card quote fluid font-2 bg-quotes-gradient z-depth-3">
-                                    {{- end -}}
-                                        <figure>
-                                            <blockquote>{{ $quote }}</blockquote>
-                                            <figcaption>{{ $author }}</figcaption>
-                                        </figure>
-                                    </div>
-
-                                {{- else -}}
-
-                                    {{- if lt ($quote | countwords) 10 -}}
+                                {{- if and (eq (mod ($.Scratch.Get "quoteid") 1) 0) (lt ($quote | countwords) 14) -}}
                                     <div class="card quote fluid overlay font-8 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 20 -}}
-                                    <div class="card quote fluid overlay font-6 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 30 -}}
-                                    <div class="card quote fluid overlay font-4 z-depth-3">
-                                    {{- else if lt ($quote | countwords) 40 -}}
-                                    <div class="card quote fluid overlay font-3 z-depth-3">
-                                    {{- else -}}
-                                    <div class="card quote fluid overlay font-2 z-depth-3">
-                                    {{- end -}}
                                         <div class="img-container" id="img_container_{{ $.Scratch.Get "quoteid" }}">
                                             {{- if eq $tags "NULL" -}}
                                             <img src="https://source.unsplash.com/600x200/?inspiration,motivation" />
@@ -95,7 +66,27 @@
                                             </figure>
                                         </div>
                                     </div>
-
+                                {{- else -}}
+                                    {{- if lt ($quote | countwords) 10 -}}
+                                    <div class="card quote fluid font-8 bg-quotes-400 z-depth-3">
+                                        {{- else if lt ($quote | countwords) 15 -}}
+                                        <div class="card quote fluid font-6 bg-articles-400 z-depth-3">
+                                        {{- else if lt ($quote | countwords) 20 -}}
+                                        <div class="card quote fluid font-6 bg-dark-to-right z-depth-3">
+                                        {{- else if lt ($quote | countwords) 25 -}}
+                                        <div class="card quote fluid font-6 bg-quotes-gradient z-depth-3">
+                                        {{- else if lt ($quote | countwords) 30 -}}
+                                        <div class="card quote fluid font-4 bg-news-400 z-depth-3">
+                                        {{- else if lt ($quote | countwords) 40 -}}
+                                        <div class="card quote fluid font-3 bg-videos-400 z-depth-3">
+                                        {{- else -}}
+                                        <div class="card quote fluid font-2 bg-quotes-gradient z-depth-3">
+                                            {{- end -}}
+                                            <figure>
+                                                <blockquote>{{ $quote }}</blockquote>
+                                                <figcaption>{{ $author }}</figcaption>
+                                            </figure>
+                                        </div>                                
                                 {{- end -}}
                             
                             </div>  
