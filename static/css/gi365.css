@@ -1405,29 +1405,66 @@ ul.section-nav.tags a:hover {
 /************************************************************************
 -- CARDS - OVERLAYS
 ************************************************************************/
-.card.overlay img { 
+/* .card.overlay img { 
     height: 60%; 
     opacity: 0.8; 
     position: absolute; 
     width: 100%; 
     z-index: 0; 
-}
+} */
 
 .card.overlay:hover .content { 
     opacity: 1; 
 }
 
+.card.overlay .img-overlay {
+    /* background: black; */
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
 .card.overlay .content {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    font-size: 0.89em;
-    height: 50%;
-    left: -0.75rem; 
+    height: 100%;
     opacity: 0.95;
-    padding: 0.25rem 0 0 1.25rem;
+    padding: 0 var(--gutter-width);
     position: absolute; 
-    bottom: -10%; 
-    width: 106%;
+    bottom: 0;
+    width: 100%;
+    z-index: 3 !important;
+}
+
+.card.overlay .content figure {
+    /* bottom: 0; */
+    /* left: 0; */
+    margin: 0;
+    padding: 0 calc(var(--gutter-width) / 3);
+    /* position: absolute; */
+    width: auto !important;
+}
+
+.card.overlay .content figure blockquote {
+    margin: var(--gutter-width) 0 0 0;
+    padding: 0;
+    min-width: 100%;
+    width: 100%;
+}
+
+.card.overlay  .content figure blockquote:before {
+    float: none;
+}
+
+.card.overlay .content figure figcaption:before {
+    display: none;
+}
+
+.card.overlay .content figure figcaption {
+    margin: calc(var(--gutter-width) / 2) 0 0 0;
+    width: 100%;
 }
 
 .card.overlay .content .caption {
@@ -1445,17 +1482,6 @@ ul.section-nav.tags a:hover {
     width: 100%;
 }
 
-.card.overlay.article .content {
-    background: var(--articles-color-400);
-}
-
-.card.overlay.article .content p.summary {
-    font-size: 0.8em;
-    margin-top: -0.5em;
-}
-.card.overlay.article .content span.reading-time {
-    display: none;
-}
 
 /************************************************************************
 -- CARD QUOTES

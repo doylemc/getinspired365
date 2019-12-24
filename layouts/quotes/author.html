@@ -32,75 +32,78 @@
                     <div class="gutter-sizer"></div>
                     <div class="grid-sizer"></div>
 
-                    <!-- <div class="gi s12 m12 l4">
-                        <div class="card fluid center">
-                            <h2 class="c-quotes-gradient">
-                                {{- .Params.Author -}}
-                            </h2>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="grid-item">
-                        <div class="card">
-                            <h3>BIO</h3>
-                            <p>{{- $.Scratch.Get "briefbio" -}}</p>
-                        </div>
-                    </div> -->
-
                     {{ $.Scratch.Set "image" .Params.image }}
+                    
                     {{- $url := "/csv/quotes.csv" -}}
                     {{- $sep := "," -}}
+                    
                     {{- $.Scratch.Delete "quoteid" -}}
                     {{- $.Scratch.Set "quoteid" 1 -}}
+                    
                     {{- range $i, $r := getCSV $sep $url -}}
-                    {{- $author := index $r 3 -}}
-                    {{- $tags := index $r 9 -}}
-                    {{- if eq $author $thisauthor -}}
-                    {{- $quote := index $r 8 -}}
-                    {{- if lt ($quote | countwords) 10 -}}
-                    <div class="gi s12 m6 l4">
-                    {{- else if lt ($quote | countwords) 20 -}}
-                    <div class="gi s12 m6 l4">
-                    {{- else -}}
-                    <div class="gi s12 m6 l4">
-                    {{- end -}}
-                    {{- if eq (mod ($.Scratch.Get "quoteid") 3) 0 -}}
-                        {{- if lt ($quote | countwords) 10 -}}
-                        <div class="card quote font-8 bg-quotes-gradient z-depth-3">
-                        {{- else if lt ($quote | countwords) 20 -}}
-                        <div class="card quote font-6 bg-quotes-gradient z-depth-3">
-                        {{- else -}}
-                        <div class="card quote font-4 bg-quotes-gradient z-depth-3">
-                        {{- end -}}                    
-                            <figure>
-                                <blockquote>{{ $quote }}</blockquote>
-                                <figcaption>{{ $author }}</figcaption>
-                            </figure>
-                        </div>
-                    {{- else -}}
-                        <div class="card fluid font-4" data-k-tagcsv="{{ $tags }}" data-k-quoteid="{{ $.Scratch.Get "quoteid" }}">
-                            <div class="img-container bb-quotes" id="img_container_{{ $.Scratch.Get "qteid" }}">
-                                <img src="https://source.unsplash.com/600x200/?{{ $tags }}" />
-                            </div>
-                            <div class="content no-pad-top bg-quotes-gradient center" id="content_{{ $.Scratch.Get "quoteid" }}">
-                                <br>
-                                <h4 class="title">"{{ $quote }}"</h4>
-                                <h5>{{ $author }}</h5>
-                            </div>
-                        </div>
-                    {{- end -}}
+                        
+                        {{- $author := index $r 3 -}}
+                        {{- if eq $author $thisauthor -}}
 
-                        <!-- <div class="card quote bg-dark-to-right" >
-                            <figure class="z-depth-5">
-                                <img src="{{ $.Scratch.Get "image" }}" />
-                                <blockquote>{{ $quote | humanize }}</blockquote>
-                                <figcaption>{{ $author }}</figcaption>
-                            </figure>
-                        </div> -->
-                        <!-- <blockquote class="z-depth-{{ index (seq 5 | shuffle) 0 }}"> -->
-                    </div>
-                    {{- end -}}
-                    {{- $.Scratch.Set "quoteid" (add ($.Scratch.Get "quoteid") 1) -}}
+                            {{- $tags := index $r 9 -}}
+                            {{- $quote := index $r 8 -}}
+                            <div class="gi s12 m6 l4">
+
+                                {{- if eq (mod ($.Scratch.Get "quoteid") 5) 0 -}}
+                                    {{- if lt ($quote | countwords) 10 -}}
+                                    <div class="card quote fluid font-8 bg-quotes-gradient z-depth-3">
+                                    {{- else if lt ($quote | countwords) 20 -}}
+                                    <div class="card quote fluid font-6 bg-quotes-gradient z-depth-3">
+                                    {{- else if lt ($quote | countwords) 30 -}}
+                                    <div class="card quote fluid font-4 bg-quotes-gradient z-depth-3">
+                                    {{- else if lt ($quote | countwords) 40 -}}
+                                    <div class="card quote fluid font-3 bg-quotes-gradient z-depth-3">
+                                    {{- else -}}
+                                    <div class="card quote fluid font-2 bg-quotes-gradient z-depth-3">
+                                    {{- end -}}
+                                        <figure>
+                                            <blockquote>{{ $quote }}</blockquote>
+                                            <figcaption>{{ $author }}</figcaption>
+                                        </figure>
+                                    </div>
+
+                                {{- else -}}
+
+                                    {{- if lt ($quote | countwords) 10 -}}
+                                    <div class="card quote fluid overlay font-8 z-depth-3">
+                                    {{- else if lt ($quote | countwords) 20 -}}
+                                    <div class="card quote fluid overlay font-6 z-depth-3">
+                                    {{- else if lt ($quote | countwords) 30 -}}
+                                    <div class="card quote fluid overlay font-4 z-depth-3">
+                                    {{- else if lt ($quote | countwords) 40 -}}
+                                    <div class="card quote fluid overlay font-3 z-depth-3">
+                                    {{- else -}}
+                                    <div class="card quote fluid overlay font-2 z-depth-3">
+                                    {{- end -}}
+                                        <div class="img-container" id="img_container_{{ $.Scratch.Get "quoteid" }}">
+                                            {{- if eq $tags "NULL" -}}
+                                            <img src="https://source.unsplash.com/600x200/?inspiration,motivation" />
+                                            {{- else -}}
+                                            <img src="https://source.unsplash.com/600x200/?{{ $tags }}" />
+                                            {{- end -}}
+                                            <div class="img-overlay bg-quotes-gradient"></div>
+                                        </div>
+                                        <div class="content">
+                                            <figure>
+                                                <blockquote>{{ $quote }}</blockquote>
+                                                <figcaption>{{ $author }}</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                {{- end -}}
+                            
+                            </div>  
+
+                        {{- end -}}
+
+                        {{- $.Scratch.Set "quoteid" (add ($.Scratch.Get "quoteid") 1) -}}
+
                     {{- end -}}
 
                 </div>
