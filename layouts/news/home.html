@@ -4,33 +4,54 @@
         <div class="row">
             <div class="col s12 l8">
                 <h2><a href="celebrity" class="c-news-100">Celebrity News ></a></h2>
-                <div class="card-grid bg-news-200">
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+
+                <!-- <div class="card-grid bg-news-200"> -->
                     {{- $.Scratch.Set "g-card-counter" 0 -}}
                     {{- range (where .Site.Pages "Type" "news") -}}
-                    {{- if lt ($.Scratch.Get "g-card-counter") 8 -}}
+                    {{- if lt ($.Scratch.Get "g-card-counter") 9 -}}
                     {{- if in .Params.tags "celebrity" -}}
-                    <div class="card font-2 s6 m4 l3 h4 bg-news-500">
-                        {{- partial "card-news.html" . -}}
+                    {{- if eq ($.Scratch.Get "g-card-counter") 0 -}}
+                    <div class="gi s12 m6 l6">
+                        <div class="card font-8 h8 bg-news-400">
+                    {{- else if lt ($.Scratch.Get "g-card-counter") 5 -}}
+                    <div class="gi s12 m6 l3">
+                        <div class="card font-4 h4 bg-news-400">
+                    {{- else if eq (mod ($.Scratch.Get "g-card-counter") 3) 0 }}
+                    <div class="gi s6 m6 l6">
+                        <div class="card font-4 h6 bg-news-400">
+                    {{- else -}}
+                    <div class="gi s6 m6 l6">
+                        <div class="card font-4 h6 bg-news-400">
+                    {{- end -}}
+                    {{- partial "card-news.html" . -}}
+                        </div>
                     </div>
                     {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
                     {{- end -}}
                     {{- end -}}
                     {{- end -}}
                 </div>
+                <!-- </div> -->
             </div>
-            <div class="col s12 l4">
+            <div class="col s12 m12 l4">
                 <h2><a href="real-life" class="c-news-100">Real-Life Heroes ></a></h2>
+                <div class="card-grid">
+
                 {{- $.Scratch.Set "g-card-counter" 0 -}}
                 {{- range (where .Site.Pages "Type" "news") -}}
-                {{- if lt ($.Scratch.Get "g-card-counter") 16 -}}
+                {{- if lt ($.Scratch.Get "g-card-counter") 10 -}}
                 {{- if in .Params.tags "real-life" -}}
-                <div class="card font-2 h2 wide bg-news-500">
+                <div class="card s12 m6 l12 font-2 h2 wide bg-news-500">
                     {{- partial "card-news.html" . -}}
                 </div>
                 {{- $.Scratch.Set "g-card-counter" (add ($.Scratch.Get "g-card-counter") 1) -}}
                 {{- end -}}
                 {{- end -}}
                 {{- end -}}
+                </div>
             </div>
         </div>
     </div>

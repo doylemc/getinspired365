@@ -34,15 +34,15 @@
                         {{- range where (where .Site.Pages "Type" "videos") ".Title" "!=" "Inspirational Videos" | shuffle | first 1 -}}
                             {{- if .IsHome -}}
                             <div class="hide-on-med-and-up center">
-                                <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                                <h5 class="c-quote1s-100">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
                                 <br/>
                             </div>
                             {{- end -}}
                             <div class="hide-on-med-and-down right">
                                 {{- if and (eq ($.Scratch.Get "section") "videos") (ne ($.Scratch.Get "pagetitle") "Inspirational Videos") -}}
-                                    <h5 class="c-gradient">"{{ $.Scratch.Get "pagetitle" }}"<br>{{ $.Scratch.Get "pageauthor" }}</h5>
+                                    <h5 class="c-q1uotes-300">"{{ $.Scratch.Get "pagetitle" }}"<br>{{ $.Scratch.Get "pageauthor" }}</h5>
                                 {{- else -}}
-                                    <h5 class="c-gradient">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
+                                    <h5 class="c-q1uotes-300">"{{- .Params.title -}}"<br>{{.Params.author}}</h5>
                                 {{- end -}}
                             </div>
                         {{- end -}}

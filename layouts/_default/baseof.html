@@ -19,6 +19,19 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- DON'T INDEX TAG PAGES -->
     {{- if .Data.Singular -}}<meta name="robots" content="noindex">{{- end -}}
+    {{- if eq .Section "videos" -}}
+    <script type="text/javascript">
+        (function () {
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = ('https:' == document.location.protocol ? 'https://s' : 'http://i')
+                + '.po.st/static/v4/post-widget.js#publisherKey=e5d46ot4maqqr95gki32';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    {{- end -}}
 </head>
 {{- if .IsHome -}}
 <body class="bg-an1gled-dark-wide">

@@ -14,10 +14,12 @@
                     <div class="gi s12 m6 l6">
                         {{- $p:= slice "_featured" -}}
                         {{- range where (where .Site.Pages "Type" "videos") ".Params.tags" "intersect" $p | shuffle | first 1 -}}
-                        <div class="card video featured h8 no-bg img-66 bg-dark-to- font-7 z-depth-1">
+                        <div class="card video featured h8 no-bg img-66 font-7 z-depth-1">
                             {{- partial "card-video.html" . -}}
                             {{- if ne .Params.summary "" -}}
-                            <p class="font-small">{{ .Params.summary }}</p>
+                            <div style="margin-top: 0; float: left;">
+                                <p class="font-small c-videos-200"><i class="far fa-lightbulb"></i> {{ .Params.summary }}</p>
+                            </div>
                             {{- end -}}
                         </div>
                         {{- end -}}
@@ -310,7 +312,7 @@
                 {{- $.Scratch.Set "counter" 0 -}}
                 {{- range where (where .Site.Pages "Type" "videos") ".Params.title" "!=" "Inspirational Videos" | shuffle | first 8 -}}
                 {{- if eq ($.Scratch.Get "counter") 0 -}}
-                <div class="card video h4 s6 m6 l3 img-50 no-1bg bg-dar1k-to-right font-3 z-depth-1">
+                <div class="card video h4 s6 m6 l3 img-50 no-bg bg-dar1k-to-right font-3 z-depth-1">
                     {{- else -}}
                     <div class="card video h4 s6 m6 l3 img-50 no-bg bg-d1ark-to-right font-3 z-depth-1">
                     {{- end -}}
